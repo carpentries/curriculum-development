@@ -81,4 +81,37 @@ The authors identify 7 principles (direct quotation from the book in bold):
   skills that have already been introduced during the workshop, and with a
   limited range of possible answers.
 * **"Students' current level of development interacts with the social,
-  emotional, and intellectual climate of the course to impact learning."** -- 
+  emotional, and intellectual climate of the course to impact learning."** -- A
+  positive workshop's environment makes our learners thrive and is more likely
+  to increase their confidence in their ability to use the skills we teach.
+  Creating a positive environment is a shared responsibility between all
+  participants: instructors, helpers, and learners. Setting expectations by
+  having and enforcing our code of conduct contributes to making the workshop
+  space welcoming for everyone. Other strategies that the Carpentries use such
+  as the green sitckies, are outlined in instructor training. In terms of
+  content for the curriculum, creating a positive environment means that
+  examples chosen are not alienating, that the skill level is appropriate for
+  the audience, and we use examples and challenges leading to outcomes with
+  direct applications for our learners. For instance, when one of our learners
+  grasp how to create a visualization that they can directly apply on their own
+  data, it favors a positive climate.
+* **"To become self-directed learners, students must learn to monitor and adjust
+  their approaches to learning."** -- It is one of the advantages of having a
+  in-person workshop. Instructors can model the thinking process that is needed
+  to address the challenges that are included in our lessons. As an instructor
+  being very explicit ("thinking aloud") about the steps of the mental model
+  that are involved in identifying the functions to use, the values of the
+  arguments they take, and the order in which to call these functions to solve
+  the challenge, will help learners think of the questions they will need to ask
+  themselves when facing new problems to solve. While this type of approach
+  works for any level of complexity in the challenges we teach, it works best
+  for most advanced ones, where several steps need to be integrated to solve the
+  challenge. Before reaching this level of complexity, the challenges can be
+  designed to guide this process, using scaffolding. Scaffolding is the process
+  where all the pieces of code to answer the problem are already written but are
+  not in the correct order (Parson's problem), or fill in the blanks.
+  
+
+we emphasize some of these concepts given 2 day constraints
+
+These principles is based on a commbination of delivery and content. Most of the delivery aspects are outlined in instructor training, here we will focus on the content of these lessons.
