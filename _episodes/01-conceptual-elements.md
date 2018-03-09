@@ -112,6 +112,78 @@ The authors identify 7 principles (direct quotation from the book in bold):
   not in the correct order (Parson's problem), or fill in the blanks.
   
 
-we emphasize some of these concepts given 2 day constraints
+In the context of a 2-day workshop, not all of the principles outlined by the authors of "How learning works" apply. We emphasize those that create a positive, engaging experience for our participants, and that will motivate them to learn more about the best practices and skills covered in our workshops.
 
-These principles is based on a commbination of delivery and content. Most of the delivery aspects are outlined in instructor training, here we will focus on the content of these lessons.
+Applying these principles require an effective commbination of how the lessons are taught (delivery) and what is included in the lessons (content). Most of aspects regarding how we deliver workshops are outlined in our Instructor Training. Before diving into creating lesson content, we recommend that you familiarize yourself with some of the concepts included in our Instructor Training curriculum. In this handbook, we focus on how to design the content of our workshops.
+
+### Backward and Learner-centered lesson design
+
+We use a backward lesson design:
+
+1. We identify the practical skills we aim to teach. 
+2. We design challenges to give an opporunity for our learners to practice and
+   integrate these skills.
+3. We identify what we need to teach for our learners to have learn these
+   skills.
+   
+Using this approach ensures that all the skills we teach work together to meet the over-arching goal of our lesson. It also limits the risk of not teaching a concept needed to be able to master the skills we aim to teach. Similarly, it avoids that we teach topics that do not help us meet our goals.
+
+Reducing distractions is also part of our lesson design as we strive to reduce cognitive load on learners. To this end, we also develop our lessons to be centered around a narrative and a dataset they can relate with quickly.
+
+Because our workshops are domain-specific, the data we use, and the type of questions we ask with the data are already somewhat familiar to our learners. Their energy and focus can be directed towards learning the skills we teach rather than getting familiar with data and concepts that are foreign to them. This strategy also increases the motivation of our learners. By learning how to solve problems that are familiar to them, they can more easily transpose these skills directly to their own data, and make a good starting point to continue their learning process as they try to solve new or more complex problems with their own data.
+
+
+#### How to identify the practical skills?
+
+Above all, in a Carpentries workshop, our aim is to increase the confidence of our learners. We want to demystify and make accessible the process of computing and analyzing data. A fraction of people attending our workshops have little to no coding experience. Attending an in-person workshop provides an opportunity to try, in a friendly-environment, something they perceive as intimidating. [Does Kari have data on this?]
+
+Another important goal is to make the research life of our learners easier. We emphasize best practices. The kind of skills that are difficult to learn from a Google search. Teaching defensive programming, how to organize data in spreadsheets, or how to organize files consistently across research projects, are practical skills that can save a lot time when learners apply them in their own research.
+
+When deciding what to teach, try to identify the skills that are the most useful and have the highest impact first. Having domain-specific workshops has the advantage that we can adapt the content of the workshops to reflect what the most useful and high-impact skills are for each domains.
+
+The lessons should be designed to create frequent opportunities for Learners to practice the skills taught while exemplifying the tasks they perform in their daily research lives. Live coding and hands-on challenges that Learners can directly relate to should allow them to project how they can start using the skills taught with their own data as soon as the workshop is over.
+
+Teaching the most useful in a practical way aims at encouraging continued learning after attending a workshop. Additionally, we have found that having local communities created by Instructors and Learners, provide a resource and support group that fosters this culture of continuous and continued learning.
+
+As you are planning the design of your lesson material identify:
+
+* Which skills do I use daily in my research workflow?
+* Which skills do I use in combination/do I integrate to perform common tasks?
+* What are the specificities of the data, datasets, and metadata used in my
+  research?
+* What are the tools, libraries, packages that are typical of my domain?
+* What is the life cycle of my data: How is the data transformed and analyzed
+  from acquisition to publication and archival?
+  
+As an expert in your field, there might be mutliple steps involved in your analysis that you have become so used to, that you might not recognize them as separate steps (expert blind spot, fluid representation). When designing the content of your lesson and curriculum, it is crucial that you identify these intermediate steps that will need to be taught to novices in the field.
+
+It is also however important when building the lesson to organize the content to put useful and applicable examples as early as possible. We have found that in the context of a 2-day workshop, starting with teaching how to generate high-quality plots before teaching about data types leads to more motivated Learners than doing the opposite.
+
+
+#### Creating a narrative and selecting a dataset
+
+
+#### Limitations of our approach
+
+* We don't teach Learners to be experts in 2 days, some of the complexity that
+  comes with expertise can't be part of our workshop. We do aim to set up the
+  mental model of our Learners to allow them to grow into experts in the future.
+  
+  
+
+### The structure of our curriculum
+
+#### The Hierarchy
+
+1. Workshop
+2. Lessons
+3. Episodes
+4. Challenges
+
+#### The I-We-You model
+
+
+
+### Collaborative lesson design
+
+We transpose the model of open-source software development to collaborative lesson development.
