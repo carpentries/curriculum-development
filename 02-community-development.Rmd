@@ -1,0 +1,15 @@
+# Community development
+
+* What are the roles in the development process and what expertise should each of these have
+  - CAC
+  - Authors
+  - Reviewers - outside people who along with CAC will give feedback
+  - Maintainers 
+    +  How to run Maintainer onboarding
+  - Pilot instructors
+  - Instructors
+    + How to onboard existing instructors 
+    +  How to recruit new instructors from the domain
+  - When to put these roles in place
+  - How many people we need in these roles
+* What are expectations for things like geographical diversity, career levels, diversity of perspectives, etc. 

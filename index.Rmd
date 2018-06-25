@@ -1,0 +1,17 @@
+--- 
+title: "The Carpentries Curricumlum Development Handbook"
+author: "François Michonneau"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: carpentries/curriculum-development
+description: "This is a work in progress of the curriculum development handbook for The Carpentries."
+---
+
+# Work in progress
+
+This is work in progress. 
