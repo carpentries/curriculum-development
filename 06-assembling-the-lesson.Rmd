@@ -14,3 +14,15 @@
 * Clean-up (authors and staff)
 * Put workshop page together
 * We now have the alpha version of the lesson. (?)
+
+## Picking a dataset
+
+ have the full data publicly available, in something like FigShare
+- likely good to create a teaching version of the dataset. This should also be publicly available in something like FigShare.
+- representative of and relevant to researchers in the field
+- large enough to represent real challenges (e.g. a tabular dataset should be larger than what would be easy to analyze in Excel. For instance Ecology dataset is ~35,000 rows.)
+- complex enough to be able to ask interesting questions (e.g. at least a few variables for each observation)
+- interesting and relevant in different geographies (e.g. even if it’s regionally based, other geographies should understand it without much context and find the questions compelling)
+- fields and motivation for study or data collection understandable without much context
+- have metadata about how the data was collected
+- ideally have a publication associated with it for reference, and to demonstrate it’s actual usage in the field
