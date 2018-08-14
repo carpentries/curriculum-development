@@ -25,51 +25,49 @@
 
 ## Overview of the process
 
-In general, when creating a lesson for The Carpentries, an individual or a small group of people start developing a lesson. From there, they teach it, use the feedback from the learners and from their experience teaching the lesson to improve it. They may go through this iterative process a few times. After that, people not involved in initial development efforts may start contributing to the lesson, and yet others may start teaching it. After a few monthsAt this stage, the lesson is mature enough and documented enough so that anyone interested can teach it.
+If you have an idea for a lesson that would be a good fit for The Carpentries, The initial development of a Carpentries lessons . From this first draft (Pre-Alpha), the original authors organize a pilot workshop, and improve the content of the lessons based on the feedback from learners and the other instructors, as well as from their experience teaching it. They may go through this iterative process a few times. After that, people not involved in initial development efforts may start contributing to the lesson, and yet others may start teaching it. After a few monthsAt this stage, the lesson is mature enough and documented enough so that anyone interested can teach it.
 
 
 ## Pathway for community-developed lessons
 
 ![Overview of the lesson release timeline](figures/release_timeline.svg)
 
-### Initial contact
+### The blueprint (lesson proposal)
 
-If you have an idea for a lesson you think would be appropriate for The Carpentries, the first step is to email [the Curriculum Development Team](mailto:curriculum@carpentries.org) to determine whether someone is already working on a similar lesson. If not, and if the Curriculum Development Team expresses interest in the lesson, the Curriculum Development Team and other members of the Carpentries community will assit you in preparing a short proposal (see below).
+If you have an idea for a lesson you think would be appropriate for The Carpentries, submit a proposal to the [`proposals`](https://github.com/carpentrieslab/proposals) repository in the Carpentries Lab organization following our template. The Curriculum Development Team will assess the fit of the proposed lesson, check for possible overlap with other efforts, and assign an Editor. If you have questions before submitting your proposal you may contact [the Curriculum Development Team](mailto:curriculum@carpentries.org).
 
-### The lesson proposal
+The Curriculum Development Team and the Editor will work with you on your proposal. Once your proposal is accepted, we will publish the revised version of your proposal on The Carpentries websites. Community members who wish to join the proposal or support it in other ways will be able do so.
 
-Your proposal will be submitted as a pull request on the [proposals](https://github.com/carpentrieslab/proposals) repository in the Carpentries Lab organization. The Curriculum Development Team will assign an Editor for your lesson, who will provide guidance in the lesson development process, answer questions that may arise during the development, and coordinate the review process for your lesson. Your proposal will be public. The review process on your proposal will be open: all comments will be visible to all community members. Community members who wish to join the proposal or support it in other ways may do so at this point.
+The Editor for your lesson will provide guidance during the lesson development process, answer questions that may arise during the development, and coordinate the review process for your lesson.
 
-### Early development ("Pre-Alpha")
+### The assembly (Early development, "Pre-Alpha")
 
-If your proposal is accepted, we will publish the reviewed and revised version of your proposal on The Carpentries websites. We will give you write access to the GitHub Carpentries Lab organization to create a repository where you can start the development of your lesson for which you will use our lesson template, and follow The Carpentries lesson development guidelines. Your lesson will be in the "Pre-Alpha" stage.
+We will create or transfer your repository to the GitHub Carpentries Lab organization where you will develop your lesson. We will provide you with our lesson template, and you will follow The Carpentries lesson development guidelines. During this initial development stage, your lesson will be in the "Pre-Alpha" stage.
 
-As lesson development progresses, you will report monthly to the Editor for your lesson. You will work with your handling Editor to set a date to teach the lesson for the first time. The Editor will provide general feedback on the content and structure of the lesson and ensure that it is ready to be taught.
+As lesson development progresses, you will report monthly to the Editor for your lesson. You will work with your handling Editor to set a date to teach the lesson for the first time. The Editor will provide general feedback on the content and structure of the lesson, and ensure that it is ready to be taught.
 
-### The field test ("Alpha")
+### The sanding (field test, "Alpha")
 
-When the lesson is taught for the first time, it will enter the "Alpha" stage. Field-testing a lesson is a good opportunity to receive feedback from learners who attended the lesson, instructors who taught it, and developers who can compare their expectations to the reality. The initial feedback gathered during the first time a lesson is taught is really important. The Carpentries Assessment Team will work with you to develop surveys to gather feedback from your learners, helpers, and instructors. The Curriculum Development Team and the Editor for the lesson will review the feedback with you, and help you decide how to incorporate this feedback in your lesson.
+Once the lesson is ready to be taught for the first time, it will enter the "Alpha" stage. Field-testing a lesson is a good opportunity to receive and incorporate feedback from learners, Instructors, and Developers who can compare their expectations to the reality. The initial feedback gathered during the first time a lesson is taught is really important. The Carpentries Assessment Team will work with you to develop surveys to gather feedback from your learners, helpers, and instructors. The Curriculum Development Team and the Editor for the lesson will review the feedback with you, and help you decide how to incorporate this feedback in your lesson.
 
 The Carpentries Community Manager will make an announcement that a new "Alpha" lesson is available to contribute to and can be taught by instructors interested in early-adoption of the lesson.
 
-After a few iteration of teaching/integrating feedback (and at least 2 early pilots), you will let the Carpentries Editor know that your lesson is ready to be officially reviewed. The Editor will select 2-3 people within our community with teaching experience and/or appropriate domain expertise, who will provide an open, friendly review of your lesson. After incorporating feedback and comments from the reviewers, your lesson will be "stamped" Carpentries-reviewed and will be listed on our websites as such.
+These early workshops are also a good time for Instructors not involved in the development process to teach these lessons. They can provide a fresh perspective and useful feedback on the content of the lessons.
 
-During this process, you will have the possibility to include a short paper describing your lesson in the GitHub repository and have your lesson considered for publication in JOSE. Once your lesson has gone through the peer-review process and has been approved by the editor, we will create an official Zenodo release for it, and the lesson will enter the "Beta" stage.
+After a few iterations of teaching and integrating feedback (and at least 2 early workshop pilots), you will let the Carpentries Editor know that your lesson is ready to be reviewed. The Editor will select 2-3 reviewers within The Carpentries community with teaching experience and/or appropriate domain expertise, who will provide an open and friendly review of the lesson. After incorporating feedback and comments from the reviewers, your lesson will be badged "Reviewed by the Carpentries Community" and will be listed on our websites as such.
 
-### The Beta stage
+During this process, you will have the possibility to include a short paper describing your lesson in the GitHub repository and have your lesson considered for publication in [JOSE](http://jose.theoj.org/), the Journal of Open Science Education. Once your lesson has gone through the peer-review process and has been approved by the Editor, we will create an official Zenodo release for it, and the lesson will enter the "Beta" stage.
 
-The "Beta" stage lasts 6 months. During this time, we let members of our community teach it and contribute to the content of the lesson. Around the 4th month in this stage, you will organize a "Lesson Polishing" event (aka Bug BBQ). The main goal of this phase of the lesson development is to develop the documentation needed to ensure that people who have not contributed to the initial development efforts of the lesson have enough information to teach it effectively.
+### The polishing ("Beta")
 
-After a final check from one of The Carpentries' Editors, we will create a stable release for the lesson that will be listed on our website. Anyone in our community, including our local Carpentries communities, will be able to use the lesson in their workshops or meetups. We will generate new releases every 6 months. 
+The "Beta" stage lasts approximately 6 months. During this time, members of The Carpentries community can teach it and contribute to the content of the lesson. Around the 4th month in this stage, you will organize a "Lesson Polishing" event (aka Bug BBQ). The main goal of this phase of the lesson development is to develop the documentation needed to ensure that people who have not contributed to the initial development efforts of the lesson have enough information to teach it effectively.
+
+After a final check from one of The Carpentries' Editors, we will create a stable release for the lesson that will be listed on our website. Anyone in our community, including local Carpentries communities, will be able to use the lesson in their workshops or meetups.
 
 
+### The stable lesson
 
-## The Lesson Proposal
+T
+We will generate new releases every 6 months.
+ 
 
-- intended audience
-- duration in length
-- tools used
-- learning objectives
-- some ideas for datasets to use
-- why do you think it would be a good fit for The Carpentries
-- the list of people involved in developing the initial version of the lesson
