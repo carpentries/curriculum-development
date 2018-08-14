@@ -1,0 +1,11 @@
+# (APPENDIX) Appendix {-}
+
+# The Lesson Proposal
+
+- intended audience
+- duration in length
+- tools used
+- learning objectives
+- some ideas for datasets to use
+- why do you think it would be a good fit for The Carpentries
+- the list of people involved in developing the initial version of the lesson
