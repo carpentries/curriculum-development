@@ -22,15 +22,20 @@
 
 ----
 
+## Overview
 
-## Overview of the process
-
-If you have an idea for a lesson that would be a good fit for The Carpentries, The initial development of a Carpentries lessons . From this first draft (Pre-Alpha), the original authors organize a pilot workshop, and improve the content of the lessons based on the feedback from learners and the other instructors, as well as from their experience teaching it. They may go through this iterative process a few times. After that, people not involved in initial development efforts may start contributing to the lesson, and yet others may start teaching it. After a few monthsAt this stage, the lesson is mature enough and documented enough so that anyone interested can teach it.
+* Community-developed lessons
+* Lessons with grant support
 
 
 ## Pathway for community-developed lessons
 
 ![Overview of the lesson release timeline](figures/release_timeline.svg)
+
+If you have an idea for a lesson that would be a good fit for The Carpentries, you first need to check if there are not already existing efforts to develop lessons on the same topic that you could join. The first draft (Pre-Alpha) of a lesson is usally written by an individual or a small group of people. From this first draft, the original authors organize a pilot workshop, and improve the content of the lessons based on the feedback from learners and co-instructors. They go through this iterative process a few times to bring the lesson where it is ready to be peer-reviewed by members of The Carpentries. After that, the lesson should be developed enough that people not involved in initial development efforts can teach it and contribute to it (Beta). After about six months in this stage, the lesson is mature enough and documented enough so that anyone interested can teach it and is officially released.
+
+The Pre-Alpha and Alpha development stages should focus on the content of the lesson: What to teach? How to teach it (which exercises, in which order should the concepts be introduced)? In the Beta stage, development efforts should focus on documenting the lesson, so that any Instructor familiar with the concepts covered in the lesson can understand the design of the lesson.
+
 
 ### The blueprint (lesson proposal)
 
