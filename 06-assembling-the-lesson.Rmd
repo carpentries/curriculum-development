@@ -15,27 +15,36 @@
 * Put workshop page together
 * We now have the alpha version of the lesson. (?)
 
+---
 
 ## Picking a dataset
 
-The dataset is a critical element of The Carpentries lessons. It needs to be chosen carefully and meet several criteria.
+The dataset is a critical element of The Carpentries lessons. It needs to be chosen carefully and meet the following criteria.
 
-1. **Use a single dataset** -- Workshops are domain-specific and the same dataset should be used across all lessons that are part of the same workshop. When developing a lesson that is not part of a standalone workshop, we encourage you to choose a dataset that is already in use in one of the workshops. If needed, you may want to create subsets of the main dataset that can include modifications. For instance, to illustrate the principles of tidy data in the Data Carpentry Ecology Spreadsheet lesson, messy spreadsheets are created but they use the same variables and observation types as the original dataset. Whenever possible, create these derived datasets from the original dataset using scripts rather than by hand.
+1. **Use a single dataset** -- Workshops are domain-specific and the same dataset should be used across all lessons that are part of the same workshop. When developing a lesson that is not part of a standalone workshop, we encourage you to choose a dataset that is already in use in one of the workshops. If needed, you may want to create subsets of the main dataset that can include modifications. For instance, to illustrate the principles of tidy data in the Data Carpentry Ecology Spreadsheet lesson, messy spreadsheets are created from the original dataset. They use the same variables and observation types as the original dataset. Whenever possible, create these derived datasets using scripts rather than by hand, so they can be regenerated if the original dataset changes.
 
-2. **The dataset should be released under a CC0 license** -- Copyright laws and laws governing use and sharing of data and databases vary among countries. The Creative Commons Zero license is designed to allow the free and unrestricted use and sharing of data universally. The CC0 license allows the development of lessons around the dataset and modification of the dataset to suit our teaching needs.
+1. **The dataset should be released under a CC0 license** -- Copyright laws and laws governing use and sharing of data and databases vary among countries. The Creative Commons Zero license is designed to allow unrestricted use and sharing of data universally. The CC0 license allows the development of lessons around the dataset and modification of the dataset to suit our teaching needs.
 
-3. **The dataset should be deposited in a public repository** -- The dataset used in the lesson should be 
+1. **The datasets should be deposited in a public repository** -- We typically use Figshare. If you choose another option, make sure that the repository where the data is archived should have the following features: 
+   - a DOI link points to an overview of the dataset
+   - pre-registration of the DOI
+   - all files can be downloaded directly as an archive (e.g., zip file) with a persistent link
+   - each file can be downloaded directly with a persistent link
+   - the repository supports versioning
 
-4. **Authors of the dataset should be identifiable and acknowledged** -- 
 
-5. **The dataset should be representative of what researchers in the field encounter** -- 
+1. **The dataset should be real and represent what researchers in the field encounter** -- Our workshops should provide an authentic experience. The datasets used as examples in the lessons should be based on real research datasets, and be of sufficient complexity that they are representative of the type of dataset that learners would encounter in their own research.
 
- have the full data publicly available, in something like FigShare
-- likely good to create a teaching version of the dataset. This should also be publicly available in something like FigShare.
-- representative of and relevant to researchers in the field
-- large enough to represent real challenges (e.g. a tabular dataset should be larger than what would be easy to analyze in Excel. For instance Ecology dataset is ~35,000 rows.)
-- complex enough to be able to ask interesting questions (e.g. at least a few variables for each observation)
-- interesting and relevant in different geographies (e.g. even if it’s regionally based, other geographies should understand it without much context and find the questions compelling)
-- fields and motivation for study or data collection understandable without much context
-- have metadata about how the data was collected
-- ideally have a publication associated with it for reference, and to demonstrate it’s actual usage in the field
+1. **Authors of the dataset should be identifiable, acknowledged, and there should be a link to the original source for the data** -- Even though the dataset we use in the lessons are released under a CC0 license, we want to acknowledge the authors of the dataset and link to the research projects based on the data we use.
+
+1. **The dataset should be large enough** -- It should represent a real challenge that highlights the power and usefulness of the tools covered in the lessons. The dataset should be larger than what would be easy to analyze and manipulate in a spreadsheet program. For instance, the main Data Carpentry Ecology lesson dataset has ~35,000 rows.
+
+1. **The dataset should be complex enough to ask interesting questions** -- Each observation should have at least 4-5 variables for each observations. These variables should be of a few different data types (at least continuous, discrete, integers, real numbers; and depending on the domain, include more specialized data types such as date/time, GPS coordinates, unstructured text, etc.)
+
+1. **The motivation for study and the protocol for data collection should be understable without much context** -- We have limited time in our workshops to cover the technical skills we want to teach. It should not take long to explain learners what the data is about, how it was collected, and interesting questions that can be asked from it.
+
+1. **The dataset should be relevant in different geographies and cultural contexts** -- Our workshops are taught to learners who have diverse cultural backgrounds. The dataset should be understood without much context or pre-requiste knowledge to find it compelling.
+
+1. **There should be clear and comprehensive metadata** -- The metadata should include a description of the data, and covers what is included in each column, how it was measured, and the unit in which it is reported.
+
+Overall, datasets we use in our teaching examples should be examples of publicly deposited data suitable for research re-use. Learners should be able to use these datasets as examples and guides for their own research data that they would like to publish and make available to the community.
