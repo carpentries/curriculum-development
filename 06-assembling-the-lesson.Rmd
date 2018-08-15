@@ -15,7 +15,20 @@
 * Put workshop page together
 * We now have the alpha version of the lesson. (?)
 
+
 ## Picking a dataset
+
+The dataset is a critical element of The Carpentries lessons. It needs to be chosen carefully and meet several criteria.
+
+1. **Use a single dataset** -- Workshops are domain-specific and the same dataset should be used across all lessons that are part of the same workshop. When developing a lesson that is not part of a standalone workshop, we encourage you to choose a dataset that is already in use in one of the workshops. If needed, you may want to create subsets of the main dataset that can include modifications. For instance, to illustrate the principles of tidy data in the Data Carpentry Ecology Spreadsheet lesson, messy spreadsheets are created but they use the same variables and observation types as the original dataset. Whenever possible, create these derived datasets from the original dataset using scripts rather than by hand.
+
+2. **The dataset should be released under a CC0 license** -- Copyright laws and laws governing use and sharing of data and databases vary among countries. The Creative Commons Zero license is designed to allow the free and unrestricted use and sharing of data universally. The CC0 license allows the development of lessons around the dataset and modification of the dataset to suit our teaching needs.
+
+3. **The dataset should be deposited in a public repository** -- The dataset used in the lesson should be 
+
+4. **Authors of the dataset should be identifiable and acknowledged** -- 
+
+5. **The dataset should be representative of what researchers in the field encounter** -- 
 
  have the full data publicly available, in something like FigShare
 - likely good to create a teaching version of the dataset. This should also be publicly available in something like FigShare.
