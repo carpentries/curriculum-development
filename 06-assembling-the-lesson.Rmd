@@ -51,20 +51,26 @@ Overall, datasets we use in our teaching examples should be examples of publicly
 
 ## Overview 
 
-Carpentries workshops last two full days. Generally workshops run from 9am to 5pm, with 30-minute breaks in the morning and afternoon, and an hour lunch break, leaving 6 hours of instruction. Having long and regular breaks are needed to pace the instruction, and allow learners to remain focused and engaged. Carpentries lessons are therefore designed to be taught in 1.5, 3 or 6 hours.
+Carpentries workshops last two full days. Generally workshops run from 9am to 5pm, with 30-minute breaks in the morning and in the afternoon, and an hour lunch break, leaving 6 hours of instruction. Carpentries lessons are therefore designed to be taught in 1.5, 3 or 6 hours. Having long and regular breaks are needed to pace the instruction, and allow learners to remain focused and engaged.
 
 Lessons are divided into episodes. Each episode should:
 
 - be designed to last 15-30 minutes;
-- limit cognitive load by introducing at most 7($\pm$ 2) concepts (3 to 5 concepts preferred);
-- include at least one exercise that let learners practice the concepts covered in the episode.
+- limit cognitive load by introducing at most 7($\pm$ 2) new concepts (3 to 5 concepts preferred);
+- include at least one to three exercises that let learners practice the concepts covered in the episode.
 
 ## Designing exercises
 
-Exercises should be designed before writing the text of the lesson
+Once the learning objectives for the lesson and each episode have been identified, you can start designing exercises that provide learners an opportunity to practice the skills outlined in the learning objectives. The Bloom taxonomy level of the learning objectives help frame how much information should be provided to the learners to be able to complete the exercise and the type of exercise. Writing the exercises before writing the content of the lesson ensures that the lesson will remain focused, and can reveal concepts needed to solve the exercises that were not previously considered.
 
-Start with the exercises that are the goal of the workshop (the ones done by learners at the end of the lesson)
+Starting with two to four exercises you want learners to be able to complete on their own at the end of the training will help you identify the skills that learners need to acquire. Creating this list of skills will guide you in assembling your learning objectives. This list, in combination with the learners' profiles, and the time you have available in your training, will help you identify the prerequisite skills for the audience of the workshop, and determine at which level of the Bloom taxonomy the learning objectives need to be written. This approach is "meet your learners where they are". [FIXME: this paragraph might belong better to the learning objective section].
+
+Identifying what the final exercises look like, and the skill they require, will also help you create the narrative for your lessons. The final exercises should be designed such that the learners can understand from the beginning of the lesson what they are working towards. The intermediate exercises can then be designed to build the skills and confidence learners need to be able to solve the final exercises. While lessons should include exercises that are direct applications to skills covered in the instructions, at least of the exercises should provide an opportunity for learners to integrate these new skills with skills covered previously in the lesson. Learning is reinforced when Instructors explicitly point out, when going over the solution, how the skills seen in earlier parts of the lesson are being integrated to solve the exercise.
+
+Exercises in Carpentries lessons are a form of formative assessment. They help learners further their learning by having a chance to put into practice the skills being taught. They also help Instructors monitor the level of understanding in the classroom, and potentially hightlight misconceptions that can be corrected early on.
 
 At least some/half of the exercises should be built up around the narrative of the lesson, and integrate the skills taught.
 
 Vary the types and Bloom level of the exercises (mix application of facts, to integration of skills)
+
+Exercises are formative assessment, help Instructors and learner monitor their learning.
