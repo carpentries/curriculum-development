@@ -67,18 +67,49 @@ Lessons are divided into episodes. Each episode should:
 - limit cognitive load by introducing at most 7($\pm$ 2) new concepts (3 to 5 concepts preferred);
 - include at least one to three exercises that let learners practice the concepts covered in the episode.
 
+
 ## Designing exercises
 
 Once the learning objectives for the lesson and each episode have been identified, you can start designing exercises that provide learners an opportunity to practice the skills outlined in the learning objectives. The Bloom taxonomy level of the learning objectives help frame how much information should be provided to the learners to be able to complete the exercise and the type of exercise. Writing the exercises before writing the content of the lesson ensures that the lesson will remain focused, and can reveal concepts needed to solve the exercises that were not previously considered.
 
-Starting with two to four exercises you want learners to be able to complete on their own at the end of the training will help you identify the skills that learners need to acquire. Creating this list of skills will guide you in assembling your learning objectives. This list, in combination with the learners' profiles, and the time you have available in your training, will help you identify the prerequisite skills for the audience of the workshop, and determine at which level of the Bloom taxonomy the learning objectives need to be written. This approach is "meet your learners where they are". [FIXME: this paragraph might belong better to the learning objective section].
+Starting with two to four exercises you want learners to be able to complete on their own at the end of the training, will help you identify the skills they need to acquire. Creating this list of skills will guide you in assembling your learning objectives. This list, in combination with the learners' profiles, and the time you have available in your training, will help you identify the prerequisite skills for the audience of the workshop, and determine at which level of the Bloom taxonomy the learning objectives need to be written. This approach is "meet your learners where they are". [FIXME: this paragraph might belong better to the learning objective section].
 
-Identifying what the final exercises look like, and the skill they require, will also help you create the narrative for your lessons. The final exercises should be designed such that the learners can understand from the beginning of the lesson what they are working towards. The intermediate exercises can then be designed to build the skills and confidence learners need to be able to solve the final exercises. While lessons should include exercises that are direct applications to skills covered in the instructions, at least of the exercises should provide an opportunity for learners to integrate these new skills with skills covered previously in the lesson. Learning is reinforced when Instructors explicitly point out, when going over the solution, how the skills seen in earlier parts of the lesson are being integrated to solve the exercise.
+Identifying what the final exercises look like, and the skill they require, will also help you create the narrative for your lessons. The final exercises should be designed such that the learners can understand from the beginning of the lesson what they are working towards. The intermediate exercises can then be designed to build the skills and confidence learners need to be able to solve the final exercises. While lessons should include exercises that are direct applications of the skills covered in the instructions, at least half of the exercises should provide an opportunity for learners to integrate these new skills with skills covered earlier in the lesson. Learning is reinforced when Instructors explicitly point out how the skills seen in earlier parts of the lesson are being integrated to solve the exercises.
 
-Exercises in Carpentries lessons are a form of formative assessment. They help learners further their learning by having a chance to put into practice the skills being taught. They also help Instructors monitor the level of understanding in the classroom, and potentially hightlight misconceptions that can be corrected early on.
+Exercises in Carpentries lessons are a form of formative assessment. They help learners further their learning by having a chance to put into practice the skills being taught. They also help Instructors monitor the level of understanding in the classroom, and potentially catch misconceptions in the learner's mental models that can be corrected early on.
 
-At least some/half of the exercises should be built up around the narrative of the lesson, and integrate the skills taught.
+## The different types of exercises
 
-Vary the types and Bloom level of the exercises (mix application of facts, to integration of skills)
+### Multiple Choice Questions
 
-Exercises are formative assessment, help Instructors and learner monitor their learning.
+Multiple choice questions can be an useful tool in formative assessment if the incorrect answers help you identify misconceptions. Designing MCQs with informative distractors takes time. It can also be challenging to identify useful distractors a priori (expert blindspot), appropriate answers for the MCQ may be prompted by teaching experience and may need to be refined. Don't test for too many concepts at once. Ask learners if they came up with other solutions, or thought of other ways of approaching the problem (that end up not working).
+
+a. 
+```{r, echo=TRUE, eval=FALSE}
+iris %>%
+  filter(Species == "setosa" & Petal.Length > 1.5) %>%
+  select(Species, Petal.Width)
+```
+b.
+```{r, echo=TRUE, eval=FALSE}
+iris %>%
+  select(Species == "setosa" & Petal.Length > 1.5) %>%
+  filter(Species, Petal.Width)
+```
+c.
+```{r, echo=TRUE, eval=FALSE}
+iris %>%
+  select(Species, Petal.Width)  %>%
+  filter(Species == "setosa" & Petal.Length > 1.5)
+```
+
+The distribution of the answers can also help you strategize how to address the misconceptions.
+
+
+### Parsons Problem
+
+### Fill in the blanks
+
+### Switch the dataset
+
+### Use the concept in a different context
