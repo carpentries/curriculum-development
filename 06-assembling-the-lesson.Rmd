@@ -43,15 +43,23 @@ The dataset is a critical element of The Carpentries lessons. It needs to be cho
 
 1. **The motivation for study and the protocol for data collection should be understable without much context** -- We have limited time in our workshops to cover the technical skills we want to teach. It should not take long to explain learners what the data is about, how it was collected, and interesting questions that can be asked from it.
 
-1. **The dataset should be relevant in different geographies and cultural contexts** -- Our workshops are taught to learners who have diverse cultural backgrounds. The dataset should be understood without much context or pre-requiste knowledge to find it compelling.
+1. **The dataset should be relevant in different geographies and cultural contexts** -- Our workshops are taught to learners from diverse cultural backgrounds. The dataset should be understood without much context or pre-requiste knowledge to find it compelling.
 
 1. **There should be clear and comprehensive metadata** -- The metadata should include a description of the data, and covers what is included in each column, how it was measured, and the unit in which it is reported.
 
 Overall, datasets we use in our teaching examples should be examples of publicly deposited data suitable for research re-use. Learners should be able to use these datasets as examples and guides for their own research data that they would like to publish and make available to the community.
 
+
+## Formatting the dataset for teaching
+
+A possible challenge when using research datasets for teaching is that the dataset can include complexity that make teaching more difficult. While it is important that the dataset provides an authentic experience to learners, you may want to consider simplifying it or doing some initial data cleaning and wrangling to make teaching easier. For instance, you may want to edit the dataset such that missing values are parsed as such when they are imported in R using the default values of the function used (e.g., `readr::read_csv()` considers empty cells and "NA" as default values for missing data). You may also want to consider removing data leading to errors or warnings during parsing, columns with data types that are not relevant for the learning objectives of the workshops, or variables for which the protocol used is difficult to explain.
+
+When preparing a dataset for teaching, aim to find the balance between providing an authentic experience to learners while keeping complexity low to limit distractions from the learning objectives. Depending on the lesson's goals, it might also be interesting to include several versions of the datasets that have undergone various levels of processing. At the beginning of the lesson, you can provide clean and well organized dataset, while later you can introduce more complexity and teach how to handle it to generate the cleaner version of the data. Don't introduce too many (no more than 3) versions of the datasets in your lessons, as dealing with many files and remembering their differences can become challenging for the learners.
+
+
 ## Overview 
 
-Carpentries workshops last two full days. Generally workshops run from 9am to 5pm, with 30-minute breaks in the morning and in the afternoon, and an hour lunch break, leaving 6 hours of instruction. Carpentries lessons are therefore designed to be taught in 1.5, 3 or 6 hours. Having long and regular breaks are needed to pace the instruction, and allow learners to remain focused and engaged.
+Carpentries workshops last two full days. Generally workshops run from 9am to 5pm, with 30-minute breaks in the morning and in the afternoon, and an hour lunch break, leaving 6 hours for instruction. Carpentries lessons are therefore designed to be taught in 1.5, 3 or 6 hours. Having long and regular breaks are needed to pace the instruction, and allow learners to remain focused and engaged.
 
 Lessons are divided into episodes. Each episode should:
 
