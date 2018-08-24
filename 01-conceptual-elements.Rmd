@@ -167,12 +167,24 @@ It is also however important when building the lesson to organize the content to
 
 ## The structure of our curriculum
 
-### The Hierarchy
+### The elements of The Carpentries Curriculum
 
-1. Workshop
-2. Lessons
-3. Episodes
-4. Challenges
+#### Episodes
+
+An episode teaches one concept. It has learning objectives and exercises that "test" understanding of those learning objectives, essentially with summative assessment. Episodes can be used independently from each other, but often draw concepts from other episodes.
+
+#### Lesson
+
+A lesson is a set of episodes that teaches a group of related concepts with a particular goal. There is a "landing page" for the lesson that has a list of all the episodes as well as the overall learning objectives. Within a lesson, episodes should be linked together. The lesson should have learning objectives that are met by the episodes, or by linking the concepts across episodes. Assessment of outcomes is more summative, potentially in an after-workshop survey. (We don’t necessarily have a way of ‘testing’ lesson-level learning objectives). Lessons can be used independently and should not rely on concepts from other lessons. A lesson can be constructed in a variety of ways, by adding or removing episodes related to that lesson. However, there should be a clear recommended structure or structures.
+
+#### Workshop
+
+A workshop is a set of connected lessons. The workshop should have goals and objectives. Objectives are evaluated in pre- and post-workshop surveys. (Although actually we don’t do this so much right now, but that’s ok). A workshop may have a narrative structure, explicitly linking lessons. Or it maybe be a set of episodes that are not explicitly linked, but work together to meet overall goals of the workshop. 
+
+#### Curriculum
+
+A curriculum is the full set of lessons and episodes within The Carpentries, or within a Lesson Program (e.g. Software Carpentry, Data Carpentry, Library Carpentry), or within a Data Carpentry domain (e.g. Data Carpentry Social Science, Data Carpentry Geospatial). The resources within a curriculum should meet overall goals and match the audience of the domain, Lesson Program, or The Carpentries.
+
 
 ### The I-We-You model
 
