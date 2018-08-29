@@ -14,4 +14,7 @@ description: "This is a work in progress of the curriculum development handbook 
 
 # Work in progress
 
-This is work in progress. 
+This is work in progress. Comments and suggestions are welcome either as:
+
+- an issue or a pull request on the GitHub [repository](https://github.com/carpentries/curriculum-development)
+- or using [hypothes.is](https://web.hypothes.is/start/)
