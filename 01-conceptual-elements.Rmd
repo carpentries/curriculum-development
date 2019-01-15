@@ -116,7 +116,7 @@ Applying these principles require an effective commbination of how the lessons a
 We use a backward lesson design:
 
 1. We identify the practical skills we aim to teach. 
-2. We design challenges to give an opporunity for our learners to practice and
+2. We design challenges to give an opportunity for our learners to practice and
    integrate these skills.
 3. We identify what we need to teach for our learners to acquire these skills.
    
@@ -129,7 +129,7 @@ Because our workshops are domain-specific, the data we use, and the type of ques
 
 ### How to identify the practical skills?
 
-Above all, in a Carpentries workshop, our aim is to increase the confidence of our Learners. We want to demystify and make accessible the process of computing and analyzing data. A fraction of people attending our workshops have little to no coding experience. Attending an in-person workshop provides an opportunity to try, in a friendly-environment, something they perceive as intimidating. [Does Kari have data on this?]
+Above all, in a Carpentries workshop, our aim is to increase the confidence of our Learners. We want to demystify and make accessible the process of computing and analyzing data. A fraction of people attending our workshops have little to no coding experience. Attending an in-person workshop provides an opportunity to try, in a friendly-environment, something they perceive as intimidating. [FIXME Does Kari have data on this?]
 
 Another important goal is to make the research life of our learners easier. We emphasize best practices. The kind of skills that are difficult to learn from a Google search. Teaching defensive programming, how to use spreadsheets effectively, or how to organize files consistently across research projects, are practical skills that can save a lot time when learners apply them in their own research.
 
@@ -153,15 +153,22 @@ As an expert in your field, there might be mutliple steps involved in your analy
 
 It is also however important when building the lesson to organize the content to put useful and applicable examples as early as possible. We have found that in the context of a 2-day workshop, starting with teaching how to generate high-quality plots before teaching about data types leads to more motivated Learners than doing the opposite.
 
+### How to design challenges to assess understanding?
 
-### Creating a narrative and selecting a dataset
+
+### How to plan for the content of the lesson?
 
 
-### Limitations of our approach
+## Creating a narrative and selecting a dataset 
+
+
+## Limitations of our approach
 
 * We don't teach Learners to be experts in 2 days, some of the complexity that
   comes with expertise can't be part of our workshop. We do aim to set up the
   mental model of our Learners to allow them to grow into experts in the future.
+  Managing this expectation is important because it limits demotivation.
+  
   
   
 
@@ -187,6 +194,16 @@ A curriculum is the full set of lessons and episodes within The Carpentries, or 
 
 
 ### The I-We-You model
+
+* Gradual release of responsibility
+* Thinking aloud (I do)
+* Provide scaffoding (We do) -- think-pair-share, use this to identify
+  misconceptions
+* During the you do, move around, ask for their thinking aloud, listen to their
+  thinking, identify misconceptions.
+
+* Limitations
+  - teach to the mean.
 
 
 ## Collaborative lesson design
