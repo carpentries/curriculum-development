@@ -113,6 +113,8 @@ Applying these principles require an effective commbination of how the lessons a
 
 ## Backward and Learner-centered lesson design
 
+Analogy with drawing: you want to draw the outline before filling the details.
+
 We use a backward lesson design:
 
 1. We identify the practical skills we aim to teach. 
