@@ -5,3 +5,17 @@
 * Determining scope (thinking of where the learners start and where they will end after the workshop)
 * Learning pathways (where this lesson fits in and what it leads to)
 * How to identify the core competencies you want to teach
+
+As you are planning the design of your lesson material identify:
+
+* Which skills do I use daily in my research workflow?
+* Which skills do I use in combination/do I integrate to perform common tasks?
+* What are the specificities of the data, datasets, and metadata used in my
+  research?
+* What are the tools, libraries, packages that are typical of my domain?
+* What is the life cycle of my data: How is the data transformed and analyzed
+  from acquisition to publication and archival?
+  
+As an expert in your field, there might be mutliple steps involved in your analysis that you have become so used to, that you might not recognize them as separate steps (expert blind spot, fluid representation). When designing the content of your lesson and curriculum, it is crucial that you identify these intermediate steps that will need to be taught to novices in the field.
+
+It is also however important when building the lesson to organize the content to put useful and applicable examples as early as possible. We have found that in the context of a 2-day workshop, starting with teaching how to generate high-quality plots before teaching about data types leads to more motivated learners than doing the opposite.
