@@ -32,7 +32,7 @@ The authors identify seven principles of learning (direct quotation from the boo
 
 * **"Students' prior knowledge can help or hinder learning."** -- Identifying
   what the learners know before coming to our workshops help us adjust what we
-  teach. One way we do this is through [our pre-workshop surveys](http://static.carpentries.org/assessment/). We also give the learners
+  teach. One way we do this is through [our pre-workshop surveys](https://carpentries.org/assessment/). We also give the learners
   frequent exercises (or "challenges") throughout our lessons, which help Instructors
   and learners identify and correct misconceptions.
 * **"How students organize knowledge influences how they learn and apply what
