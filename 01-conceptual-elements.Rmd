@@ -205,7 +205,17 @@ aspects of creating useful challenge problems is discussed in a later section.
 
 ## Creating a narrative and selecting a dataset 
 
-Because we strive to provide a realistic
+Because we strive to provide a realistic experience for learners
+that is as similar as possible to the workflow they would use
+in their own work, our lessons use real data and are structured
+in a natural flow that corresponds to how a learner would experience
+working with their data in real life. For many curricula, this
+means starting with a lesson on data organisation and progressing
+through data cleaning, analysis, and visualisation or reporting. 
+It is important to choose a dataset that is an authentic 
+representation of what your audience would encounter in their
+day-to-day work. The practicalities of chosing an appropriate 
+dataset are covered in a later section of this handbook.
 
 ## Limitations of our approach
 
