@@ -1,8 +1,51 @@
 # Community development
 
+## Roles
+
+Our lessons are intended to be teachable by any certified
+Carpentries Instructor with the appropriate domain experience
+and background knowledge. Lessons should also be appropriate for
+learners at different institutions, and not require specialized
+local or institutional knowledge. Our lessons attain this 
+broad usability by virtue of being the product of many people
+at differnt institutions around the world who work together
+in different roles to create, test, and iteratively improve and
+update lesson materials. 
+
+### Lesson Authors
+
+A lesson may have one or several initial authors. Authors draft
+the lesson content, figures, and code and create appropriate challenge problems. Authors should have both appropriate domain
+experience - working in the same field as the intended audience for the materials,
+and programmatic experience - regularly using the tools for which they are
+developing lessons in their own work. From a technical standpoint, authors
+will also need to be familiar with specific technologies that we use for 
+developing and hosting The Carpentries lessons - including git, GitHub, Markdown,
+RMarkdown, ... But don't panic! If you're not comfortable with any or all of these
+tools, we'll walk you through what you need to know to use them [later in this
+Handbook](link). Most importantly, to ensure that lesson materials are consistent with The Carpentries vision and
+values, 
+lesson authors should be certified Carpentries Instructors or otherwise involved
+in The Carpentries community. If a group of authors are writing a lesson
+collaboratively, we recommend dividing lessons up by episode, and having only one
+author per episode. Clearly defining the learning objectives for each episode
+will help avoid overlap and ensure the lesson flows smoothly - but it will
+still be important to have regular checkins with all authors. 
+
+### Reviewers
+
+No one is perfect! Lesson materials should be read and tested by at least
+one person other than the original author before being used in a pilot workshop. 
+If a lesson has more than one author, 
+
+
+- Reviewers - test lesson code and text before intial teaching. continue to provide review as materials are piloted and taught broadly
+- Curriculum Advisors - provide oversight, vision, and leadership for a curriculum. Guide updates. 
+- Maintainers - implement community suggestions as appropriate, ensure that lessons remain bug and typo free and are continously teachable.
+- Pilot Instructors - teach
+
 * What are the roles in the development process and what expertise should each of these have
   - CAC
-  - Authors
   - Reviewers - outside people who along with CAC will give feedback
   - Maintainers 
     +  How to run Maintainer onboarding
