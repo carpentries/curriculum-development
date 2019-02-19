@@ -1,14 +1,7 @@
 # Conceptual elements
 
-* What are the goals of a Carpentries lesson and how do we achieve them
-  increased confidence in the tools we teach
 * Self-directed learning
-* The open source model of development adapted for lesson 
-* Collaborative lesson development. 
-* Writing lessons for others to use
-* What to consider when selecting a dataset
 * The I, We, You model
-* The idea of having a narrative to the lesson
 
 ## The Carpentries mindset for curriculum development
 
@@ -201,6 +194,12 @@ aspects of creating useful challenge problems is discussed in a later section.
 
 ### Planning the content of the lesson
 
+Once you've determined the core skills your learners need in order
+to improve their workflow and be more efficient, you now need to
+identify what key concepts and pieces of knowledge are required
+for your learners to gain those skills. For example, one key skill
+for our . . . lesson is . . .. In order to achieve that skill, 
+learners need to . . . 
 
 
 ## Creating a narrative and selecting a dataset 
@@ -295,4 +294,7 @@ the broader Carpentries community.
 
 ## Collaborative lesson design
 
-We transpose the model of open-source software development to collaborative lesson development.
+We transpose the model of open-source software development to collaborative lesson development. . . 
+* The open source model of development adapted for lesson 
+* Collaborative lesson development. 
+* Writing lessons for others to use
