@@ -34,12 +34,27 @@ still be important to have regular checkins with all authors.
 
 ### Reviewers
 
-No one is perfect! Lesson materials should be read and tested by at least
+We know no one is perfect! Lesson materials should be read and tested by at least
 one person other than the original author before being used in a pilot workshop. 
-If a lesson has more than one author, 
+If a lesson has more than one author, co-authors can review each other's content. 
+Community members can also serve as reviewers. A reviewer commits to carefully
+reading and testing all code for a lesson or set of episodes and leaving detailed
+feedback for lesson authors to correct any errors or other issues found. This feedback is 
+provided as issues and/or pull requests (PRs) in the lesson's GitHub repository 
+(we'll explain all of that soon!). Authors modify the lessons based on reviewer feedback to ensure the 
+lesson is bug-free, all code runs as expected, exercises are appropriate and test
+only the concepts being taught, and in general that the lesson is ready to be
+delivered to learners in a pilot workshop.
+
+Don't worry - this review stage is not the only point at which lessons will
+receive feedback. Our collaborative lesson development model ensures that 
+Instructors and other community members will continue to engage with the lesson 
+materials at all stages of their development and provide near real-time feedback
+to keep the lessons in good shape for as long as they are actively being taught!
+
+### Lesson Maintainers
 
 
-- Reviewers - test lesson code and text before intial teaching. continue to provide review as materials are piloted and taught broadly
 - Curriculum Advisors - provide oversight, vision, and leadership for a curriculum. Guide updates. 
 - Maintainers - implement community suggestions as appropriate, ensure that lessons remain bug and typo free and are continously teachable.
 - Pilot Instructors - teach
