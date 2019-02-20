@@ -52,18 +52,72 @@ Instructors and other community members will continue to engage with the lesson
 materials at all stages of their development and provide near real-time feedback
 to keep the lessons in good shape for as long as they are actively being taught!
 
+Reviewers do not need to have any particular domain background or tool expertise. 
+In fact, we recommend including reviewers who are complete novices either
+the tool being taught by the lesson and/or the lesson's target domain. This can
+help overcome authors' [expert blind spot](link to appropriate instructor training page). 
+
+Reviewers should also include people from different geographic regions and
+cultural and linguistic contexts than the lessons' authors. If all of
+a lesson's authors are based in the UK, for example, there should be at least
+one reviewer from outside the UK, and ideally from a non-majority English-speaking
+area. Ensuring that lessons are reviewed by people from a variety of cultural and linguistic 
+contexts helps us to avoid colloquialisms, culturally-specific references, and other issues that might make our lessons less accessible to a global community.
+
+[Include something about accessibility?]
+
 ### Lesson Maintainers
 
+Lesson Maintainers are essential for the long-term viability of a lesson. As a
+lesson is taught, new Instructors and learners identify potential places
+for improvement - whether correcting a typo, simplifying code, or suggesting
+a significant shift in the narrative of a lesson. Maintainers proactively monitor
+their lesson's GitHub repository to make sure that PRs and issues are addressed
+in a timely manner. Maintainers also play a vital role in communicating with 
+contributors, ensuring that our community lives up to it's ideals in welcoming
+and appreciating contributions from everyone - from first-time contributors to long-time
+members of The Carpentries community.
 
-- Curriculum Advisors - provide oversight, vision, and leadership for a curriculum. Guide updates. 
-- Maintainers - implement community suggestions as appropriate, ensure that lessons remain bug and typo free and are continously teachable.
-- Pilot Instructors - teach
+People acting as Maintainers should be experienced with the tool that is being 
+taught in the lesson, ideally using it daily or weekly in their own work. In 
+addition, they should have experience working in a relevant domain related to the
+lesson materials and/or experience working with GitHub and the other technologies
+we use to create and host our lessons (link to that section of Handbook). Each
+lesson will have at least two Maintainers, and it's ok for one Maintainer
+to have domain experience and another to be more comfortable with the technical
+aspects of lesson maintainence. 
+
+Maintainer recruitment, requirements and time commitment
+https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#
+Maintainer onboarding (how to run)
+https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding 
+Maintainer meetings and skill development / office hours
+
+### Curriculum Advisors
+
+Curriculum Advisors provide high-level oversight, vision, and leadership for a
+curriculum and guide large-scale updates. A Curriculum Advisory Committee (CAC)
+is composed of 5-8 people with significant domain expertise who represent the 
+breadth of the field that a curriculum is intended to reach. For example, the
+[Data Carpentry Geospatial CAC](https://datacarpentry.org/lesson-leadership/)
+includes researchers in ecology, limnology, environmental sciences, and sociology,
+along with university staff leading institutional GIS education efforts. Multiple
+career levels are represented, from PhD candidates at the end of their graduate
+work, to mid-late career professionals. At least one member of the CAC should
+be actively teaching in the field, so they can bring a practical perspective
+about what skills students and early-career researchers need. 
+
+Ideally, a Curriculum Advisory Committee should be assembled in the initial
+stages of lesson development, before materials start to be drafted. The CAC
+can then provide high-level guidance, including defining the learning objectives
+and core content for the curriculum and selecting an appropriate dataset that 
+will speak to a broad group of learners. However, we recognize that 
+
+### Pilot Instructors - teach
 
 * What are the roles in the development process and what expertise should each of these have
   - CAC
   - Reviewers - outside people who along with CAC will give feedback
-  - Maintainers 
-    +  How to run Maintainer onboarding
   - Pilot instructors
   - Instructors
     + How to onboard existing instructors 
