@@ -62,7 +62,8 @@ cultural and linguistic contexts than the lessons' authors. If all of
 a lesson's authors are based in the UK, for example, there should be at least
 one reviewer from outside the UK, and ideally from a non-majority English-speaking
 area. Ensuring that lessons are reviewed by people from a variety of cultural and linguistic 
-contexts helps us to avoid colloquialisms, culturally-specific references, and other issues that might make our lessons less accessible to a global community.
+contexts helps us to avoid colloquialisms, culturally-specific references, and other issues that might make our lessons less accessible to a global community. You will likely need one or two reviewers for every
+two hours of lesson content. A four-hour (half day) lesson should have at least two to four reviewers.
 
 [Include something about accessibility?]
 
@@ -88,12 +89,14 @@ to have domain experience and another to be more comfortable with the technical
 aspects of lesson maintainence. 
 
 Maintainer recruitment, requirements and time commitment
+It's a good idea to recruit three or four Maintainers per lesson, as some may not complete onboarding
+or may realize that they don't have the time to commit to this role. 
 https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#
 Maintainer onboarding (how to run)
 https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding 
 Maintainer meetings and skill development / office hours
 
-A lesson should have a fully functioning set of Maintainers before it enters the 
+A lesson should have at least two or three trained and active Maintainers before it enters the 
 pilot workshop phase. Before that time, lesson feedback and edits will be 
 managed by the lesson authors.
 
@@ -150,15 +153,21 @@ to troubleshoot organizational or technological issues with the lesson, and
 should certainly be done if resources allow, but is
 not a sufficient test of the lesson's broader teachability. It is always easier
 for the creator of a set of curricular materials to use those materials, but
-more difficult to communicate to others all of the relevant details to enable
+more difficult to communicate all of the relevant details to enable
 others to deliver the curriculum efficiently. In order to ensure
 that our lessons are able to be taught by all appropriately experienced 
-certified Instructors, a lesson should be taught outside of the institution 
-in which it was developed. Pilot Instructors may be lesson reviewers,
+certified Instructors, a lesson should be piloted at least twice outside of the institution 
+in which it was developed, ideally in two different countries. Because lessons at this stage are
+expected to still have some technical and flow issues, instructors for these pilot
+workshops should be certified Carpentries Instructors who have previously taught at least two
+Carpentries workshops. Instructors with this level of experience will be more prepared to troubleshoot
+issues that arise during the workshop, and more likely to provide useful feedback after the workshop. 
+Pilot instructors may be lesson reviewers,
 Maintainers, Curriculum Advisors, or any Carpentries community member other than
-lesson authors. 
+lesson authors. In fact, recruiting pilot instructors from these areas is likely to be fruitful,
+as these people are already playing active roles in the lesson and are invested in bringing the lesson
+to maturity. For two pilot workshops, you will need at least four instructors. 
 
-Experienced instructors
 Feedback from pilots - how given and how incorporated
 How to recruit pilot Instructors
 Onboarding?
