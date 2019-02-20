@@ -96,7 +96,14 @@ Maintainer meetings and skill development / office hours
 ### Curriculum Advisors
 
 Curriculum Advisors provide high-level oversight, vision, and leadership for a
-curriculum and guide large-scale updates. A Curriculum Advisory Committee (CAC)
+curriculum and guide large-scale updates. Unlike Maintainers, who are responsible
+for the day-to-day work of keeping lessons stable and teachable, Curriculum 
+Advisors maintain a broader perspective on the state of the field and make 
+strategic decisions about major changes to a lesson, for example, updating the
+technology being taught to take into account major advances in the field or 
+changing the dataset used in the lessons to appeal to a braoder group of learners.
+
+A Curriculum Advisory Committee (CAC)
 is composed of 5-8 people with significant domain expertise who represent the 
 breadth of the field that a curriculum is intended to reach. For example, the
 [Data Carpentry Geospatial CAC](https://datacarpentry.org/lesson-leadership/)
@@ -105,13 +112,27 @@ along with university staff leading institutional GIS education efforts. Multipl
 career levels are represented, from PhD candidates at the end of their graduate
 work, to mid-late career professionals. At least one member of the CAC should
 be actively teaching in the field, so they can bring a practical perspective
-about what skills students and early-career researchers need. 
+about what skills students and early-career researchers need. Lesson Maintainers
+may also serve as Curriculum Advisors, but most Curriculum Advisors will not
+also be Maintainers. 
+
+A Curriculum Advisory Committee meets virtually approximately twice a year to
+discuss and make decisions about proposed large-scale
+changes to the lessons within their curriculum. These proposals may be initiated
+by community members, including Maintainers, or by members of the CAC. The CAC
+communicates their recommendations back to the Lesson Maintainers and provides
+consulation and support to Maintainers in implementing proposed changes. 
 
 Ideally, a Curriculum Advisory Committee should be assembled in the initial
 stages of lesson development, before materials start to be drafted. The CAC
 can then provide high-level guidance, including defining the learning objectives
 and core content for the curriculum and selecting an appropriate dataset that 
-will speak to a broad group of learners. However, we recognize that 
+will speak to a broad group of learners. However, we recognize that lesson 
+development may be part of a grant or other structure with requirements that are
+incompatible with putting together a CAC at such an early stage. If a curriculum
+will be included in the official Carpentries lesson stack, there
+must be a Curriculum Advisory Committee in place at the time of 
+its first publication.
 
 ### Pilot Instructors - teach
 
