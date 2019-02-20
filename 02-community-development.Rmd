@@ -93,6 +93,10 @@ Maintainer onboarding (how to run)
 https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding 
 Maintainer meetings and skill development / office hours
 
+A lesson should have a fully functioning set of Maintainers before it enters the 
+pilot workshop phase. Before that time, lesson feedback and edits will be 
+managed by the lesson authors.
+
 ### Curriculum Advisors
 
 Curriculum Advisors provide high-level oversight, vision, and leadership for a
@@ -114,7 +118,10 @@ work, to mid-late career professionals. At least one member of the CAC should
 be actively teaching in the field, so they can bring a practical perspective
 about what skills students and early-career researchers need. Lesson Maintainers
 may also serve as Curriculum Advisors, but most Curriculum Advisors will not
-also be Maintainers. 
+also be Maintainers. Curriculum Advisors commit to a minimum one-year term, but 
+may serve multiple terms. A CAC should include members from multiple geographic
+regions and cultural and linguistic contexts to ensure that the curriculum 
+meets the needs of our global community. 
 
 A Curriculum Advisory Committee meets virtually approximately twice a year to
 discuss and make decisions about proposed large-scale
@@ -132,17 +139,36 @@ development may be part of a grant or other structure with requirements that are
 incompatible with putting together a CAC at such an early stage. If a curriculum
 will be included in the official Carpentries lesson stack, there
 must be a Curriculum Advisory Committee in place at the time of 
-its first publication.
+its first publication. The CAC must should regularly for as long as a curriculum
+remains active. 
 
-### Pilot Instructors - teach
+### Pilot Instructors
 
-* What are the roles in the development process and what expertise should each of these have
-  - CAC
-  - Reviewers - outside people who along with CAC will give feedback
-  - Pilot instructors
-  - Instructors
+A new lesson or curriculum is often taught for the first time locally at 
+the organization that houses the lesson authors. This can be an opportunity 
+to troubleshoot organizational or technological issues with the lesson, and
+should certainly be done if resources allow, but is
+not a sufficient test of the lesson's broader teachability. It is always easier
+for the creator of a set of curricular materials to use those materials, but
+more difficult to communicate to others all of the relevant details to enable
+others to deliver the curriculum efficiently. In order to ensure
+that our lessons are able to be taught by all appropriately experienced 
+certified Instructors, a lesson should be taught outside of the institution 
+in which it was developed. Pilot Instructors may be lesson reviewers,
+Maintainers, Curriculum Advisors, or any Carpentries community member other than
+lesson authors. 
+
+Experienced instructors
+Feedback from pilots - how given and how incorporated
+How to recruit pilot Instructors
+Onboarding?
+
+
+### Instructors
+
     + How to onboard existing instructors 
     +  How to recruit new instructors from the domain
+    
+    
   - When to put these roles in place
   - How many people we need in these roles
-* What are expectations for things like geographical diversity, career levels, diversity of perspectives, etc. 
