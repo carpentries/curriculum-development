@@ -238,7 +238,43 @@ feedback on challenges and misconceptions that their learners had. Our exercises
 continuously improved by pooling the teaching experience of our 1,500+ strong Instructor
 community!
 
-### Parsons problems
+### Parson's problems
+
+One reason well-designed multiple choice questions are so useful is that they constrain
+the problem space. Learners don't need to worry about all of the details of syntax and how
+to spell all of the variable names, but can focus on just the concepts that the exercise
+author intended them to focus on. Another type of formative assessment that provides this
+benefit are Parson's problems. A Parson's problem is an exercise where learners are given a 
+set of items (in our case, lines of code) and asked to put them into an appropriate order to
+accomplish a specific task. The MCQ example given above could be formulated as a Parson's
+problem:
+
+```{r, echo=TRUE, eval=FALSE}
+filter(Species == "setosa" & Petal.Length > 1.5) %>%
+iris %>%
+select(Species, Petal.Width)
+```
+
+A more difficult version of a Parson's problem might include lines that are not part of the 
+solution (*distractors*):
+
+```{r, echo=TRUE, eval=FALSE}
+filter(Species == "setosa" & Petal.Length > 1.5) %>%
+filter(Species, Petal.Width)
+iris %>%
+select(Species, Petal.Width)
+select(Species == "setosa" & Petal.Length > 1.5) %>%
+```
+
+If this is the case, make sure learners know that not all of the code chunks need to be
+included in their answer! 
+
+Parson's problems are somewhat less structured that MCQs, which makes them slightly
+better for preparing learners to tackle similar problems in their own work. However, this also
+makes it more difficult for Instructors to diagnose learner misconceptions and adjust their 
+teaching accordingly (because there are more possible responses). As will all of the challenge
+types we will discuss in this chapter, MCQs and Parson's problems can be used in combination
+to provide learners with both structure and appropriate levels of challenge. 
 
 ### Fill in the blanks
 
