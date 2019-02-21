@@ -276,10 +276,64 @@ teaching accordingly (because there are more possible responses). As will all of
 types we will discuss in this chapter, MCQs and Parson's problems can be used in combination
 to provide learners with both structure and appropriate levels of challenge. 
 
-### Fill in the blanks
+### Fill-in-the-blank problems
 
-Example of this from SWC shell lesson in directory navigation. 
+Fill-in-the blank problems can be thought of as the next level of decreasing structure after
+MCQs and Parson's problems (although this depends on the number of lines in the Parson's
+problem and the number of possible choices for filling in the blanks, among other factors). 
+The following challenge (from the Software Carpentry lesson on 
+[The Unix Shell](http://swcarpentry.github.io/shell-novice/)) illustrates one possible
+application of fill-in-the-blank problems: 
 
+> ## Moving to the Current Folder
+>
+> After running the following commands,
+> Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder:
+>
+> ~~~
+> $ ls -F
+>  analyzed/ raw/
+> $ ls -F analyzed
+> fructose.dat glucose.dat maltose.dat sucrose.dat
+> $ cd raw/
+> ~~~
+> {: .language-bash}
+>
+> Fill in the blanks to move these files to the current folder
+> (i.e., the one she is currently in):
+>
+> ~~~
+> $ mv ___/sucrose.dat  ___/maltose.dat ___
+> ~~~
+> {: .language-bash}
+> > ## Solution
+> > ```
+> > $ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
+> > ```
+> > {: .language-bash}
+> > Recall that `..` refers to the parent directory (i.e. one above the current directory)
+> > and that `.` refers to the current directory.
+> {: .solution}
+{: .challenge}
+
+We can also apply this concept to our earlier example and ask learners to fill-in-the-blanks
+to build a code block that will return only the values of the "Species" and "Petal.Width"
+variables and only for observations of the "setosa" species where petal length
+was greater than 1.5: 
+
+```{r, echo=TRUE, eval=FALSE}
+iris %>%
+  filter(Species ___ "setosa" & ___ > 1.5) %>%
+  select(Species, ___ )
+```
+
+The difficulty of a fill-in-the-blank problem can be adjusted by changing the number of blanks,
+and by providing (or not providing) a "word bank" of options to use. You can even use a series
+of similar fill-in-the-blank problems, increasing the number of blanks each time, to prepare 
+learners to build a code chunk without scaffolding. When used in this way, fill-in-the-blank
+problems are also called *faded examples*. We discuss the use of faded examples, and why they
+are a useful tool, in more detail in 
+[our Instructor Training course](https://carpentries.github.io/instructor-training/05-memory/index.html). 
 
 ### Switch the dataset
 
