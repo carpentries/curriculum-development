@@ -335,10 +335,72 @@ problems are also called *faded examples*. We discuss the use of faded examples,
 are a useful tool, in more detail in 
 [our Instructor Training course](https://carpentries.github.io/instructor-training/05-memory/index.html). 
 
+### Use the concept in a different context
+
+Once learners have had an opportunity to practice using a concept in the same context as
+it was originally taught (direct application challenges), it's time to stretch their
+understanding by asking them to apply the same concept in a different context. This adds 
+realism and makes learners better prepared to apply these concepts to unique
+problems in their own work. This type of exercise will often require learners to proactively
+look up help files or do a Google search. 
+
+For example, in the Data Carpentry lesson [Data Analysis and Visualization in for Ecologists](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python/index.html), 
+plotting is taught using the `plotnine` package. That package implements the grammar of graphics developed by
+[Leland Wilkinson](https://en.wikipedia.org/wiki/Leland_Wilkinson), which includes the concept
+of a plot's *geometry*. Different plot types have different underlying geometries that interact
+differently with other plot parameters. In this lesson, learners are led through an example
+where they create a scatterplot (using `geom_point()`) of weight versus an animal's hindfoot
+length. 
+
+~~~
+surveys_plot = p9.ggplot(data=surveys_complete,
+                         mapping=p9.aes(x='weight', y='hindfoot_length'))
+
+surveys_plot + p9.geom_point()
+~~~
+{: .language-python}
+
+![png](../fig/06_first_plot.png)
+
+They are then asked to create a barchart showing the number of observations in each region 
+(or "plot") of the field site. 
+
+> ## Challenge - bar chart
+> Working on the `surveys_complete` data set, use the `plot-id` column to
+> create a `bar`-plot that counts the number of records for each plot. (Check
+> the documentation of the bar geometry to handle the counts)
+>
+> > ## Answers
+> >
+> > ~~~
+> > (p9.ggplot(data=surveys_complete,
+> >            mapping=p9.aes(x='plot_id'))
+> >     + p9.geom_bar()
+> > )
+> > ~~~
+> > {: .language-python}
+> >
+> > ![png](../fig/06_challenge_bar.png)
+> {: .solution}
+{: .challenge}
+
+To answer this problem, learners need to locate and decipher the appropriate help file (for
+the `geom_bar()` function). They also need to change the `mapping` attribute to apply to "plot_id" rather than "weight" and "hindfoot_length". Later challenges in this lesson require
+learners to apply multiple concepts in new contexts, for example, modifying both the plot type
+and underlying *aesthetics* like color. 
+
+These types of problems are incredibly powerful, as 
+they provide the most realistic example we've discussed so far of the skills learners will 
+need to be able to apply what they've learned to their own work. This also means, however,
+that these problems are fairly unstructured, and include many more potential areas for learners
+to get off track. It is also very easy, when designing these problems, to make them more 
+difficult than you intended - either by requiring learners to apply multiple concepts in new
+contexts or by including new concepts that haven't yet been covered in the lesson. Be careful,
+always have your lesson reviewed by at least one novice user if possible, and above all else,
+be prepared for feedback from Instructors "in the field" about how to improve these (and all of your) challenge problems. 
+
 ### Switch the dataset
 
 
-### Use the concept in a different context
 
-Near vs far transfer
-Take into account cognitive load, make sure you're not introducing new concepts in the exercise.
+
