@@ -1,11 +1,9 @@
 # Assembling the lesson
 
-* Picking a dataset
-* Formatting a dataset to make it a teaching dataset
-* How to write exercises (you)
-* Different types of exercises and why / how to use them
-* How to test exercises for correct level
-* How to space exercises
+* How to write challenges (you)
+* Different types of challenges and why / how to use them
+* How to test challenges for correct level
+* How to space challenges
 * Writing the live code (we)
 * What to write for instructor notes
 * Writing the narrative around the code (I)
@@ -125,24 +123,66 @@ Lessons are divided into episodes. Each episode should:
 
 - be designed to last 15-30 minutes;
 - limit cognitive load by introducing at most 7($\pm$ 2) new concepts (3 to 5 concepts preferred);
-- include at least one to three exercises that let learners practice the concepts covered in the episode.
+- include at least one to three challenges that let learners practice the concepts covered in the episode.
 
 
-## Designing exercises
+## Designing challenges
 
-Once the learning objectives for the lesson and each episode have been identified, you can start designing exercises that provide learners an opportunity to practice the skills outlined in the learning objectives. The Bloom taxonomy level of the learning objectives help frame how much information should be provided to the learners to be able to complete the exercise and the type of exercise. Writing the exercises before writing the content of the lesson ensures that the lesson will remain focused, and can reveal concepts needed to solve the exercises that were not previously considered.
+Once the learning objectives for the lesson and each episode have been identified, you can start
+designing challenges that provide learners an opportunity to practice the skills outlined in the
+learning objectives. The Bloom taxonomy level of the learning objectives help frame how much
+information should be provided to the learners to be able to complete the exercise and the type
+of exercise. Writing the challenges before writing the content of the lesson ensures that the
+lesson will remain focused, and can reveal concepts needed to solve the challenges that were not
+previously considered.
 
-Starting with two to four exercises you want learners to be able to complete on their own at the end of the training, will help you identify the skills they need to acquire. Creating this list of skills will guide you in assembling your learning objectives. This list, in combination with the learners' profiles, and the time you have available in your training, will help you identify the prerequisite skills for the audience of the workshop, and determine at which level of the Bloom taxonomy the learning objectives need to be written. This approach is "meet your learners where they are". [FIXME: this paragraph might belong better to the learning objective section].
+Starting with two to four challenges you want learners to be able to complete on their own at the
+end of the training, will help you identify the skills they need to acquire. Creating this list
+of skills will guide you in assembling your learning objectives. This list, in combination with
+the learners' profiles, and the time you have available in your training, will help you identify
+the prerequisite skills for the audience of the workshop, and determine at which level of the
+Bloom taxonomy the learning objectives need to be written. This approach is "meet your learners
+where they are". [FIXME: this paragraph might belong better to the learning objective section].
 
-Identifying what the final exercises look like, and the skill they require, will also help you create the narrative for your lessons. The final exercises should be designed such that the learners can understand from the beginning of the lesson what they are working towards. The intermediate exercises can then be designed to build the skills and confidence learners need to be able to solve the final exercises. While lessons should include exercises that are direct applications of the skills covered in the instructions, at least half of the exercises should provide an opportunity for learners to integrate these new skills with skills covered earlier in the lesson. Learning is reinforced when Instructors explicitly point out how the skills seen in earlier parts of the lesson are being integrated to solve the exercises.
+When starting to design challenges, it is helpful to start by planning the last exercise of each
+episode. Identifying what these final challenges look like, and the skills they require, will
+also help you
+to craft the narrative for your lesson. The final challenges should be designed to be a natural
+culmination of all of the skills and concepts that learners are taught during the lesson. 
+Starting from the end allows you to design the rest of the lesson's challenges to 
+build the skills and confidence learners need to
+be able to solve the final challenges. 
 
-Exercises in Carpentries lessons are a form of formative assessment. They help learners further their learning by having a chance to put into practice the skills being taught. They also help Instructors monitor the level of understanding in the classroom, and potentially catch misconceptions in the learner's mental models that can be corrected early on.
+The challenges in a lesson should be a mixture of direct application challenges and synthesis
+challenges. A direct application challenge is a straightforward implementation of a concept
+that learners have just been exposed to, while a synthesis challenge requires learners to 
+integrate recently learned skills with skills that were covered earlier in
+the lesson. Learning is reinforced when Instructors explicitly point out how the skills seen in
+earlier parts of the lesson are being integrated to solve the challenges.
 
-## The different types of exercises
+Challenges in Carpentries lessons are a form of formative assessment. They help learners further
+their learning by having a chance to put into practice the skills being taught. They also help
+Instructors monitor the level of understanding in the classroom, and potentially catch
+misconceptions in the learner's mental models that can be corrected in real time, before they
+become ingrained.
+
+
+## Different types of challenges
 
 ### Multiple Choice Questions
 
-Multiple choice questions can be an useful tool in formative assessment if the incorrect answers help you identify misconceptions. Designing MCQs with informative distractors takes time. It can also be challenging to identify useful distractors a priori (expert blindspot), appropriate answers for the MCQ may be prompted by teaching experience and may need to be refined. Don't test for too many concepts at once. Ask learners if they came up with other solutions, or thought of other ways of approaching the problem (that end up not working).
+Multiple choice questions (MCQs) can be a useful tool for formative assessment if they are
+designed such that each incorrect answer helps the Instructor to identify learners' 
+misconceptions. Each incorrect answer should be a *plausible distractor* with *diagnostic power*. 
+"Plausible" means that an answer looks like it could be right, and "diagnostic power" means
+that each of the distractors helps the instructor figure out
+what concepts learners are having difficulty with.  
+
+For example, if learners are learning about subsetting data in `R` with the `dplyr` 
+functions `filter()` and `select()`, you might ask them to determine which of the 
+following code blocks will return only the values of the "Species" and "Petal.Width" variables
+and only for observations of the "setosa" species where petal length
+was greater than 1.5. 
 
 a. 
 ```{r, echo=TRUE, eval=FALSE}
@@ -150,12 +190,20 @@ iris %>%
   filter(Species == "setosa" & Petal.Length > 1.5) %>%
   select(Species, Petal.Width)
 ```
+
+This is the correct answer. 
+
 b.
 ```{r, echo=TRUE, eval=FALSE}
 iris %>%
   select(Species == "setosa" & Petal.Length > 1.5) %>%
   filter(Species, Petal.Width)
 ```
+
+Learners who select this answer have a simple factual misconception. They've confused the 
+`select()` and `filter()` functions. They need to be reminded that `filter()` is for 
+subsetting by row and `select()` is for subsetting by column. 
+
 c.
 ```{r, echo=TRUE, eval=FALSE}
 iris %>%
@@ -163,13 +211,44 @@ iris %>%
   filter(Species == "setosa" & Petal.Length > 1.5)
 ```
 
-The distribution of the answers can also help you strategize how to address the misconceptions.
+Learners who select this answer have a conceptual misunderstanding that will may require more 
+time and effort to correct. They haven't understood that the pipe (`%>%`) character only 
+passes into the next command the output of the previous command, and **nothing else**. Since
+they have used the `select()` function first, the "Petal.Length" column is no longer present
+in the output and cannot be used for comparison. This misconception might be addressed by 
+drawing a diagram and walking through what the data looks like at each step of the command. 
+Another follow-up question using the same skills could then be used to assess whether learners
+have understood the concept.
 
+As illustrated above, formative assessments are most powerful when an instructor modifies their
+instruction depending on the
+results of the assessment. An instructor may learn they need to change their pace or review a
+particular concept. 
+Knowing how to respond to the results of a formative assessment is a skill that you will develop
+over time. Making sure your assessments are designed to test only one or two concepts at a time
+will help ensure that the feedback is useful. 
 
-### Parsons Problem
+The process of developing diagnostic plausible distractors takes time and requires some
+knowledge of what common
+misconceptions are for a particular topic. This knowledge can come through teaching experience 
+(yourself or others') and is sometimes formally defined through [concept inventories]().
+One strength of The Carpentries community is that our lessons are taught over and over again
+by different Instructors in different teaching contexts. Some of those Instructors give
+feedback on challenges and misconceptions that their learners had. Our exercises are thus 
+continuously improved by pooling the teaching experience of our 1,500+ strong Instructor
+community!
+
+### Parsons problems
 
 ### Fill in the blanks
 
+Example of this from SWC shell lesson in directory navigation. 
+
+
 ### Switch the dataset
 
+
 ### Use the concept in a different context
+
+Near vs far transfer
+Take into account cognitive load, make sure you're not introducing new concepts in the exercise.
