@@ -1,5 +1,158 @@
 # Technological introductions
 
+Our goal is to make 
+developing and contributing to lessons as simple and accessible
+as possible. The more people who are able to contribute to a
+lesson, the more we can harness community knowledge and 
+experience to create materials that are teachable and applicable
+in a range of learning contexts. We recognize that technology
+can be a major barrier to contribution, and we are currently 
+working on a major update to our lesson infrastructure to reduce
+this barrier. This chapter reflects our current lesson
+infrastructure and describes what lesson authors and other 
+contributors need to know to use The Carpentries lesson template. 
+In the individual sections below, we have noted whether particular
+technological knowledge will remain necessary or be phased out
+in upcoming infrastructure updates. 
+
+What knowledge are we assuming lesson authors will have?
+What knowledge will this chapter help them gain?
+
+## Lesson hosting and rendering
+
+The Carpentries hosts all of our lessons on [GitHub](https://github.com). We use a 
+shared lesson template to provide aesthetic and structural 
+consistency across our lessons. Template files for each lesson are 
+rendered into a webpage using [Jekyll](https://jekyllrb.com/) - 
+a static site generator which is written in [Ruby](https://www.ruby-lang.org/en/).
+
+You do *not* need to know Ruby or Jekyll to write
+or contribute to a Carpentries lesson. However, you will need to 
+have these software packages installed on your computer if you
+want to preview your lesson materials locally before pushing them
+to GitHub.
+
+Information about installing Ruby and Jekyll is available ...
+
+## Using the lesson template
+
+Each lesson is made up of *episodes*, which are focused on a
+particular topic and
+include time for both teaching and exercises. A lesson repository
+(or "repo") includes one file for each episode, 
+and a set of helper files that are required to build
+the lesson webpage. Most of these helper files are standardized
+across all of our lessons and aren't something that lesson
+authors or contributors need to interact with. In this section,
+we will focus only on the files that you are likely to 
+need to create or modify. If you're interested in the details
+of how the template is structured, and what each of the files 
+does, these details are provided in APPENDIX. We recommend not
+spending time learning these details now, as we are in the 
+process of greatly simplifying our lesson template. 
+
+### Episode files
+
+
+
+
+### Extras
+
+`reference.md`
+:   A reference guide for the lesson.
+    The template will automatically generate a summary of the episodes' key points.
+    1.  It must use the `reference` layout.
+    2.  Its title must be `"Reference"`.
+    3.  Its permalink must be `/reference/`.
+    4.  It should include a glossary, laid out as a description list.
+    5.  It may include other material as appropriate.
+
+`setup.md`
+:   Detailed setup instructions for the lesson.
+    Note that we usually divide setup instructions by platform,
+    e.g.,
+    include level-2 headings for Windows, macOS, and Linux
+    with instructions for each.
+    The [workshop template]({{ site.workshop_repo }})
+    links to the setup instructions for core lessons.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Setup"`.
+    3.  Its permalink must be `/setup/`.
+    4.  It should include whatever setup instructions are required.
+    
+    `_extras/guide.md`
+:   The instructors' guide for the lesson.
+    This page records tips and warnings from people who have taught the lesson.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Instructors' Guide"`.
+    3.  Its permalink must be `/guide/`.
+    4.  It may include whatever content the author thinks appropriate.
+
+### Lesson Homepage
+
+The lesson homepage provides an overview of the lesson, including
+any prequisites, an introduction to the
+dataset used, a schedule showing
+the episodes and the time alloted for each, and any other
+information learners will need for the lesson.
+
+For inspiration to guide you in writing your lesson homepage, 
+check out these examples for [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/), [Software Carpentry](http://swcarpentry.github.io/git-novice/), and [Library Carpentry](https://librarycarpentry.org/lc-open-refine/).
+
+The lesson homepage is created from the `index.md` file, which is
+automatically created when you initialize a lesson repository. You
+will need to add the following to this file: 
+
+1. A few paragraphs of explanatory text describing the lesson. 
+1. One or more `.prereq` boxes detailing the lesson's prerequisites, giving an overview of the dataset, and/or calling attention to the lesson's Instructor notes.
+
+The schedule will automatically be included in the lesson homepage. 
+
+### Other information 
+
+In addition to populating the lesson content (episodes), 
+Instructor's notes, lesson homepage, and other lesson-specific
+pages, lesson authors need to make a few changes to the template
+files to make sure that the lesson has all of the neccessary 
+information. 
+
+1) In the `_config.yml` file, 
+* set the `carpentry` variable to the appropriate lesson program,
+* set `title` to be the overall title for your lesson,
+* set `email` to the correct contact email for your lesson.
+
+`CONTRIBUTING.md`
+:   Contribution guidelines.
+    The `issues` and `repo` links at the bottom of the file must be changed
+    to match the URLs of the lesson:
+    look for uses of `FIXME`.
+
+`CITATION`
+:   A plain text file explaining how to cite this lesson.
+
+`AUTHORS`
+:   A plain text file listing the names of the lesson's authors.
+
+`_extras/about.md`
+:   General notes about this lesson.
+    This page includes brief descriptions of Software Carpentry and Data Carpentry,
+    and is a good place to put institutional acknowledgments.
+
+`_extras/discussion.md`
+:   General discussion of the lesson contents for learners who wish to know more:
+    This page normally includes links to further reading
+    and/or brief discussion of more advanced topics.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Discussion"`.
+    3.  Its permalink must be `/discuss/`.
+    4.  It may include whatever content the author thinks appropriate.
+
+## Figures
+
+All figures related with the lesson **must** be placed inside the directory `fig` at the root of the project.
+
+
+
 * How to write Markdown
 * How to write RMarkdown
 * GitHub & GitHub workflow (issues → PRs, who merges, how to have conversations)
@@ -8,3 +161,4 @@
 * Cheat-sheets from lesson example for syntax and page building 
 * Social aspects of Carpentries lesson dev on GitHub
 * Social infrastructure - Maintainers, staff, CAC (roles of)
+
