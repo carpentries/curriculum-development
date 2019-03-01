@@ -287,35 +287,23 @@ Code chunks may also be nested within blockquotes as needed.
 
 ### Extras
 
-`reference.md`
-:   A reference guide for the lesson.
-    The template will automatically generate a summary of the episodes' key points.
-    1.  It must use the `reference` layout.
-    2.  Its title must be `"Reference"`.
-    3.  Its permalink must be `/reference/`.
-    4.  It should include a glossary, laid out as a description list.
-    5.  It may include other material as appropriate.
+So far we've covered how to create and format the content of your lesson homepage (in the `index.md` file)
+and your lesson episodes (in multiple `.md` files within the `_episodes` directory). This covers most of the
+files you will need to work with when you create a new lesson. There are a few remaining files that you will
+need to populate in order for your lesson to be fully fleshed out and ready to teach:
 
-`setup.md`
-:   Detailed setup instructions for the lesson.
-    Note that we usually divide setup instructions by platform,
-    e.g.,
-    include level-2 headings for Windows, macOS, and Linux
-    with instructions for each.
-    The [workshop template]({{ site.workshop_repo }})
-    links to the setup instructions for core lessons.
-    1.  It must use the `page` layout.
-    2.  Its title must be `"Setup"`.
-    3.  Its permalink must be `/setup/`.
-    4.  It should include whatever setup instructions are required.
-    
-    `_extras/guide.md`
-:   The instructors' guide for the lesson.
-    This page records tips and warnings from people who have taught the lesson.
-    1.  It must use the `page` layout.
-    2.  Its title must be `"Instructors' Guide"`.
-    3.  Its permalink must be `/guide/`.
-    4.  It may include whatever content the author thinks appropriate.
+1. The Reference page (`reference.md`) - this file will be created automatically and will include a list
+of all of the keypoints that you defined in your episode YAML headers. You don't need to do anything to create
+this list! However, it's a good idea to add a glossary of terms that are used in your lesson. 
+
+1. The Setup page (`setup.md`) - this file will be created automatically, but needs to be populated with
+installation instructions for software learners will need to have before begining the lesson. If learners are
+expected to download data prior to the workshop, that data should also be linked and described here. The setup
+page may be [quite simple](http://swcarpentry.github.io/git-novice/setup.html) or 
+[more complex](https://datacarpentry.org/geospatial-workshop/setup.html), but should
+always include installation information for all three major platforms (Windows, Unix/MacOS, Linux). 
+
+1. The Instructors' Guide (`_extras/guide.md`) - 
 
 ### Other information 
 
@@ -357,8 +345,6 @@ information.
     4.  It may include whatever content the author thinks appropriate.
 
 
-
-* How to write Markdown
 * How to write RMarkdown
 * GitHub & GitHub workflow (issues → PRs, who merges, how to have conversations)
 * Lesson template - link to full documentation
