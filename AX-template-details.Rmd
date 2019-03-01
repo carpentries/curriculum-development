@@ -171,3 +171,6 @@ i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and th
     2.  Its title must be `"Discussion"`.
     3.  Its permalink must be `/discuss/`.
     4.  It may include whatever content the author thinks appropriate.
+    
+    
+Add info on installing Ruby and Jekyll. 
