@@ -1,5 +1,549 @@
 # Technological introductions
 
+Our goal is to make 
+developing and contributing to lessons as simple and accessible
+as possible. The more people who are able to contribute to a
+lesson, the more we can harness community knowledge and 
+experience to create materials that are teachable and applicable
+in a range of learning contexts. We recognize that technology
+can be a major barrier to contribution, and we are currently 
+working on a major update to our lesson infrastructure to reduce
+this barrier. This chapter reflects our current lesson
+infrastructure and describes what lesson authors and other 
+contributors need to know to use The Carpentries lesson template. 
+In the individual sections below, we have noted whether particular
+technological knowledge will remain necessary or be phased out
+in upcoming infrastructure updates. 
+
+What knowledge are we assuming lesson authors will have?
+What knowledge will this chapter help them gain?
+
+## Lesson hosting and rendering
+
+The Carpentries hosts all of our lessons on [GitHub](https://github.com). We use a 
+shared lesson template to provide aesthetic and structural 
+consistency across our lessons. Template files for each lesson are 
+rendered into a webpage using [Jekyll](https://jekyllrb.com/) - 
+a static site generator which is written in [Ruby](https://www.ruby-lang.org/en/).
+
+You do *not* need to know Ruby or Jekyll to write
+or contribute to a Carpentries lesson. However, you will need to 
+have these software packages installed on your computer if you
+want to preview your lesson materials locally before pushing them
+to GitHub.
+
+Information about installing Ruby and Jekyll is available ...
+
+## Using the lesson template
+
+Each lesson is made up of *episodes*, which are focused on a
+particular topic and
+include time for both teaching and exercises. A lesson repository
+(or "repo") includes one file for each episode, 
+and a set of helper files that are required to build
+the lesson webpage. Most of these helper files are standardized
+across all of our lessons and aren't something that lesson
+authors or contributors need to interact with. In this section,
+we will focus only on the files that you are likely to 
+need to create or modify. If you're interested in the details
+of how the template is structured, and what each of the files 
+does, these details are provided in APPENDIX. We recommend not
+spending time learning these details now, as we are in the 
+process of greatly simplifying our lesson template. 
+
+### Lesson Homepage
+
+The lesson homepage provides an overview of the lesson, including
+any prequisites, an introduction to the
+dataset used, a schedule showing
+the episodes and the time alloted for each, and any other
+information learners will need for the lesson.
+
+For inspiration to guide you in writing your lesson homepage, 
+check out these examples for [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/), [Software Carpentry](http://swcarpentry.github.io/git-novice/), and [Library Carpentry](https://librarycarpentry.org/lc-open-refine/).
+
+The lesson homepage is created from the `index.md` file, which is
+automatically created when you initialize a lesson repository. You
+will need to add the following to this file: 
+
+1. A few paragraphs of explanatory text describing the lesson. 
+1. One or more `.prereq` boxes detailing the lesson's prerequisites, giving an overview of the dataset, and/or calling attention to the lesson's Instructor notes.
+
+The schedule will automatically be included in the lesson homepage. 
+
+### Episode files
+
+The majority of a lessons content is in its episode files. 
+Episode files are stored in the `_episodes/` folder within your lesson repo. 
+Episodes file names must start with a two-digit identifier number (e.g. `01`) followed
+by a short descriptive name, separated by a dash (`-`). For example `02-loop.md`, `03-lists.md`. 
+The numeric identifier is used to place your episode files in the correct sequence within the lesson. 
+Episode files are written in *markdown* (more on that in a moment). 
+
+#### Episode headers
+
+When your lesson repository is created, it will start out with one pre-made episode file (`01-introduction.md`).
+You can use this file as a template for creating each of your episode files, as it provides an
+example of how these files must be structured. The content of this pre-made episode file is shown below:
+
+
+```
+---
+title: "Introduction"
+teaching: 0
+exercises: 0
+questions:
+- "Key question (FIXME)"
+objectives:
+- "First learning objective. (FIXME)"
+keypoints:
+- "First key point. Brief Answer to questions. (FIXME)"
+---
+FIXME
+
+{% include links.md %}
+```
+
+The material between the first and second instances of `---` is called the *YAML header*. The information
+stored in the YAML header is used by the lesson template to populate important parts of the lesson webpage. 
+This section explains each component of the YAML header and what that information is used for. 
+
+For each episode, you will need to create a copy of this file and: 
+
+1. Replace `Introduction` with the episode title (**not** the lesson title) in quotation marks. The episode
+title will appear on the episode page and in the schedule that appears on the lesson homepage. 
+1. Enter an estimated number of minutes for teaching the episode and an estimated number of minutes for learners to spend completing challenge problems (including class discussion of challenge solutions). These time estimates
+will likely be updated by Instructors as they get real-world data on how learners respond to the pacing of
+the episodes, but it is useful to have a starting point to benchmark from. The lesson template creates a schedule
+from these time estimates and places it on the lesson homepage. 
+1. Replace `Key question (FIXME)` with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear in the schedule on the lesson homepage. 
+1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see OTHER CHAPTER. 
+1. Replace `First key point. Brief Answer to questions. (FIXME)` with 3-7 major take-aways from the episode. For
+information on how to distill an episode's key points, see OTHER CHAPTER. Key points for all episodes are shown 
+together in the lesson's reference page. 
+
+#### Episode content
+
+After the YAML header, your episode file will contain the content for that episode. This content will likely
+include:
+*   paragraphs of text
+*   lists
+*   tables
+*   images or figures
+*   code chunks
+*   special blockquotes (described below)
+
+This content will be written in *Markdown*, a light-weight markup language that makes it possible to create
+fancy HTML pages using only a few formating tricks. In this section, we'll cover only the Markdown syntax that
+you will need in order to create the content types listed above. You can find more information about Markdown
+at ...
+
+1. Paragraphs of text - To create text paragraphs in Markdown, just type as you normally would! A few neat tricks: 
+* surround text with a single pair of stars (`*`) to make text *italic* (`*italic*`)
+* use a double pair of stars to make text **bold** (`**bold**`)
+* create headers by starting a line of text with two hash signs (`##`)
+There are lots of other fancy things you can do, but this should get you started!
+
+1. Lists - To create a numbered list in Markdown, do this:
+
+```
+1. A
+1. numbered
+1. list
+```
+
+This will show up like this:
+1. A
+1. numbered
+1. list
+
+Hint: You can use sequential numbers if you want, but it's easier to update the list later if you use only 1s.
+Markdown will create the sequence for you. 
+
+To create an un-numbered list in Markdown, do this:
+
+```
+* An
+* unnumbered
+* list
+```
+
+This will show up like this:
+* An
+* unnumbered
+* list
+
+1. Tables - To insert a small table into your episode, do this:
+
+```
+| Category | Item | 
+|--------- | ---- |
+| Food     | Sandwich |
+| Drink    | Tea | 
+| Food     | Apple |
+```
+
+This will show up like this:
+
+| Category | Item | 
+|--------- | ---- |
+| Food     | Sandwich |
+| Drink    | Tea | 
+| Food     | Apple |
+
+
+1. Images or figures - Place a copy of the image you would like to display into the `fig` directory. You can
+then link to the figure using the syntax:
+
+```
+![Figure Description](../fig/figure_file_name.svg)]
+```
+
+Note about alt text. Question: Is this the "proper" way to insert a figure link? 
+
+1. Code chunks - 
+
+
+## Maximum Line Length
+
+Limit all lines to a maximum of 100 characters.
+`bin/lesson_check.py` will report lines longer than 100 characters
+and this can block your contributions of being accepted.
+
+The two reasons behind the decision to enforce a maximum line lenght are
+(1) make diff and merge easier in the command line and other user interfaces
+and
+(2) make update of translation of the lessons easier.
+
+## Locations and Names
+
+When referring to other episodes, use:
+
+{% raw %}
+    [link text]({{ page.root }}{% link _episodes/dd-subject.md %})
+{% endraw %}
+
+i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and the name of the file.
+
+
+## Formatting Code
+
+Inline code fragments are formatted using back-quotes.
+Longer code blocks are formatted by opening and closing the block with `~~~` (three tildes),
+with a class specifier after the block:
+
+{% raw %}
+    ~~~
+    for thing in collection:
+        do_something
+    ~~~
+    {: .source}
+{% endraw %}
+
+which is rendered as:
+
+~~~
+for thing in collection:
+    do_something
+~~~
+{: .source}
+
+The class specified at the bottom using an opening curly brace and colon,
+the class identifier with a leading dot,
+and a closing curly brace.
+The [template]({{ site.template_repo }}) provides three styles for code blocks:
+
+~~~
+.source: program source.
+~~~
+{: .source}
+
+~~~
+.output: program output.
+~~~
+{: .output}
+
+~~~
+.error: error messages.
+~~~
+{: .error}
+
+### Syntax Highlighting
+
+The following styles like `.source`, but include syntax highlighting for the
+specified language.
+Please use them where possible to indicate the type of source being displayed,
+and to make code easier to read.
+
+`.language-bash`: Bash shell commands:
+
+~~~
+echo "Hello World"
+~~~
+{: .language-bash}
+
+`.html`: HTML source:
+
+~~~
+<html>
+<body>
+<em>Hello World</em>
+</body>
+</html>
+~~~
+{: .html}
+
+`.language-make`: Makefiles:
+
+~~~
+all:
+    g++ main.cpp hello.cpp -o hello
+~~~
+{: .language-make}
+
+`.language-matlab`: MATLAB source:
+
+~~~
+disp('Hello, world!')
+~~~
+{: .language-matlab}
+
+`.language-python`: Python source:
+
+~~~
+print("Hello World")
+~~~
+{: .language-python}
+
+`.language-r`: R source:
+
+~~~
+cat("Hello World")
+~~~
+{: .language-r}
+
+`.language-sql`: SQL source:
+
+~~~
+CREATE PROCEDURE HelloWorld AS
+PRINT 'Hello, world!'
+RETURN (0)
+~~~
+{: .language-sql}
+
+
+
+## Special Blockquotes
+
+We use blockquotes to group headings and text
+rather than wrapping them in `div` elements.
+in order to avoid confusing [Jekyll][jekyll]'s parser
+(which sometimes has trouble with Markdown inside HTML).
+Each special blockquote must started with a level-2 header,
+but may contain anything after that.
+For example,
+a callout is formatted like this:
+
+~~~
+> ## Callout Title
+>
+> text
+> text
+> text
+>
+> ~~~
+> code
+> ~~~
+> {: .source}
+{: .callout}
+~~~
+{: .source}
+
+(Note the empty lines within the blockquote after the title and before the code block.)
+This is rendered as:
+
+> ## Callout Title
+>
+> text
+> text
+> text
+>
+> ~~~
+> code
+> ~~~
+> {: .source}
+{: .callout}
+
+The [lesson template]({{ site.template_repo }}) defines styles
+for the following special blockquotes:
+
+<div class="row">
+  <div class="col-md-6" markdown="1">
+
+> ## `.callout`
+>
+> An aside or other comment.
+{: .callout}
+
+> ## `.challenge`
+>
+> An exercise.
+{: .challenge}
+
+> ## `.checklist`
+>
+> Checklists.
+{: .checklist}
+
+> ## `.discussion`
+>
+> Discussion questions.
+{: .discussion}
+
+> ## `.keypoints`
+>
+> Key points of an episode.
+{: .keypoints}
+
+  </div>
+  <div class="col-md-6" markdown="1">
+
+> ## `.objectives`
+>
+> Episode objectives.
+{: .objectives}
+
+> ## `.prereq`
+>
+> Prerequisites.
+{: .prereq}
+
+> ## `.solution`
+>
+> Exercise solution.
+{: .solution}
+
+> ## `.testimonial`
+>
+> A laudatory quote from a user.
+{: .testimonial}
+
+  </div>
+</div>
+
+Note that `.challenge` and `.discussion` have the same color but different icons.
+Note also that one other class, `.quotation`,
+is used to mark actual quotations
+(the original purpose of the blockquote element).
+This does not add any styling,
+but is used to prevent the checking tools from complaining about a missing class.
+
+Most authors will only use `.callout`, `.challenge`, and `.prereq`,
+as the others are automatically generated by the template.
+Note that `.prereq` is meant for describing things
+that learners should know before starting this lesson;
+setup instructions do not have a particular style,
+but are instead put on the `setup.md` page.
+
+Note also that solutions are nested inside exercises as shown below:
+
+~~~
+> ## Challenge Title
+>
+> This is the body of the challenge.
+>
+> ~~~
+> it may include some code
+> ~~~
+> {: .source}
+>
+> > ## Solution
+> >
+> > This is the body of the solution.
+> >
+> > ~~~
+> > it may also include some code
+> > ~~~
+> > {: .output}
+> {: .solution}
+{: .challenge}
+~~~
+{: .source}
+
+
+### Extras
+
+`reference.md`
+:   A reference guide for the lesson.
+    The template will automatically generate a summary of the episodes' key points.
+    1.  It must use the `reference` layout.
+    2.  Its title must be `"Reference"`.
+    3.  Its permalink must be `/reference/`.
+    4.  It should include a glossary, laid out as a description list.
+    5.  It may include other material as appropriate.
+
+`setup.md`
+:   Detailed setup instructions for the lesson.
+    Note that we usually divide setup instructions by platform,
+    e.g.,
+    include level-2 headings for Windows, macOS, and Linux
+    with instructions for each.
+    The [workshop template]({{ site.workshop_repo }})
+    links to the setup instructions for core lessons.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Setup"`.
+    3.  Its permalink must be `/setup/`.
+    4.  It should include whatever setup instructions are required.
+    
+    `_extras/guide.md`
+:   The instructors' guide for the lesson.
+    This page records tips and warnings from people who have taught the lesson.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Instructors' Guide"`.
+    3.  Its permalink must be `/guide/`.
+    4.  It may include whatever content the author thinks appropriate.
+
+### Other information 
+
+In addition to populating the lesson content (episodes), 
+Instructor's notes, lesson homepage, and other lesson-specific
+pages, lesson authors need to make a few changes to the template
+files to make sure that the lesson has all of the neccessary 
+information. 
+
+1) In the `_config.yml` file, 
+* set the `carpentry` variable to the appropriate lesson program,
+* set `title` to be the overall title for your lesson,
+* set `email` to the correct contact email for your lesson.
+
+`CONTRIBUTING.md`
+:   Contribution guidelines.
+    The `issues` and `repo` links at the bottom of the file must be changed
+    to match the URLs of the lesson:
+    look for uses of `FIXME`.
+
+`CITATION`
+:   A plain text file explaining how to cite this lesson.
+
+`AUTHORS`
+:   A plain text file listing the names of the lesson's authors.
+
+`_extras/about.md`
+:   General notes about this lesson.
+    This page includes brief descriptions of Software Carpentry and Data Carpentry,
+    and is a good place to put institutional acknowledgments.
+
+`_extras/discussion.md`
+:   General discussion of the lesson contents for learners who wish to know more:
+    This page normally includes links to further reading
+    and/or brief discussion of more advanced topics.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Discussion"`.
+    3.  Its permalink must be `/discuss/`.
+    4.  It may include whatever content the author thinks appropriate.
+
+
+
 * How to write Markdown
 * How to write RMarkdown
 * GitHub & GitHub workflow (issues → PRs, who merges, how to have conversations)
@@ -8,3 +552,4 @@
 * Cheat-sheets from lesson example for syntax and page building 
 * Social aspects of Carpentries lesson dev on GitHub
 * Social infrastructure - Maintainers, staff, CAC (roles of)
+
