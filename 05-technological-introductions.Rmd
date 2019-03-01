@@ -51,8 +51,29 @@ does, these details are provided in APPENDIX. We recommend not
 spending time learning these details now, as we are in the 
 process of greatly simplifying our lesson template. 
 
+### Lesson Homepage
+
+The lesson homepage provides an overview of the lesson, including
+any prequisites, an introduction to the
+dataset used, a schedule showing
+the episodes and the time alloted for each, and any other
+information learners will need for the lesson.
+
+For inspiration to guide you in writing your lesson homepage, 
+check out these examples for [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/), [Software Carpentry](http://swcarpentry.github.io/git-novice/), and [Library Carpentry](https://librarycarpentry.org/lc-open-refine/).
+
+The lesson homepage is created from the `index.md` file, which is
+automatically created when you initialize a lesson repository. You
+will need to add the following to this file: 
+
+1. A few paragraphs of explanatory text describing the lesson. 
+1. One or more `.prereq` boxes detailing the lesson's prerequisites, giving an overview of the dataset, and/or calling attention to the lesson's Instructor notes.
+
+The schedule will automatically be included in the lesson homepage. 
+
 ### Episode files
 
+The majority of a lessons content is in its episode files. 
 Episode files are stored in the `_episodes/` folder within your lesson repo. 
 Episodes file names must start with a two-digit identifier number (e.g. `01`) followed
 by a short descriptive name, separated by a dash (`-`). For example `02-loop.md`, `03-lists.md`. 
@@ -85,31 +106,29 @@ FIXME
 
 The material between the first and second instances of `---` is called the *YAML header*. The information
 stored in the YAML header is used by the lesson template to populate important parts of the lesson webpage. 
+This section explains each component of the YAML header and what that information is used for. 
 
-You
-will need to add the following to this file: 
+For each episode, you will need to create a copy of this file and: 
 
-1. Replace `Introduction` with the episode title (**not** the lesson title) in quotation marks. 
+1. Replace `Introduction` with the episode title (**not** the lesson title) in quotation marks. The episode
+title will appear on the episode page and in the schedule that appears on the lesson homepage. 
 1. Enter an estimated number of minutes for teaching the episode and an estimated number of minutes for learners to spend completing challenge problems (including class discussion of challenge solutions). These time estimates
 will likely be updated by Instructors as they get real-world data on how learners respond to the pacing of
-the episodes, but it is useful to have a starting point to benchmark from. 
-1. Replace `Key question (FIXME)` with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear on the lesson homepage. 
-1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see OTHER CHAPTER.
+the episodes, but it is useful to have a starting point to benchmark from. The lesson template creates a schedule
+from these time estimates and places it on the lesson homepage. 
+1. Replace `Key question (FIXME)` with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear in the schedule on the lesson homepage. 
+1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see OTHER CHAPTER. 
 1. Replace `First key point. Brief Answer to questions. (FIXME)` with 3-7 major take-aways from the episode. For
-information on how to distill an episode's key points, see OTHER CHAPTER.
+information on how to distill an episode's key points, see OTHER CHAPTER. Key points for all episodes are shown 
+together in the lesson's reference page. 
+
+#### Episode content
 
 
 - "Episodes should not use sub-titles or HTML layout."
 - "Code blocks can have the source, regular output, or error class."
 - "Special sections are formatted as blockquotes that open with a level-2 header and close with a class identifier."
 - "Special sections may be callouts or challenges; other styles are used by the template itself."
-
-A lesson consists of one or more episodes,
-each of which has:
-
-*   a [YAML][yaml] header containing required values
-*   some teachable content
-*   some exercises
 
 The diagram below shows the internal structure of a single episode file
 (click on the image to see a larger version):
@@ -131,19 +150,6 @@ and
 
 ## Locations and Names
 
-Episode files are stored in `_episodes`
-or, for the case of R Markdown files, `_episodes_rmd`
-so that [Jekyll][jekyll] will create a [collection][jekyll-collection] for them.
-Episodes are named `dd-subject.md`,
-where `dd` is a two-digit sequence number (with a leading 0)
-and `subject` is a one- or two-word identifier.
-For example,
-the first three episodes of this example lesson are
-`_episodes/01-design.md`,
-`_episodes/02-tooling.md`
-and `_episodes/03-formatting.md`.
-These become `/01-design/index.html`, `/02-tooling/index.html`, and `/03-formatting/index.html`
-in the published site.
 When referring to other episodes, use:
 
 {% raw %}
@@ -152,22 +158,6 @@ When referring to other episodes, use:
 
 i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and the name of the file.
 
-## Episode Header
-
-Each episode's [YAML][yaml] header must contain:
-
-*   the episode's title
-*   time estimates for teaching and exercises
-*   motivating questions
-*   lesson objectives
-*   a summary of key points
-
-These values are stored in the header so that [Jekyll][jekyll] will read them
-and make them accessible in other pages as `site.episodes.the_episode.key`,
-where `the_episode` is the particular episode
-and `key` is the key in the [YAML][yaml] header.
-This lets us do things like
-list each episode's key questions in the syllabus on the lesson home page.
 
 ## Episode Structure
 
@@ -493,26 +483,6 @@ but the alternatives we considered and discarded are worse:
     2.  Its title must be `"Instructors' Guide"`.
     3.  Its permalink must be `/guide/`.
     4.  It may include whatever content the author thinks appropriate.
-
-### Lesson Homepage
-
-The lesson homepage provides an overview of the lesson, including
-any prequisites, an introduction to the
-dataset used, a schedule showing
-the episodes and the time alloted for each, and any other
-information learners will need for the lesson.
-
-For inspiration to guide you in writing your lesson homepage, 
-check out these examples for [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/), [Software Carpentry](http://swcarpentry.github.io/git-novice/), and [Library Carpentry](https://librarycarpentry.org/lc-open-refine/).
-
-The lesson homepage is created from the `index.md` file, which is
-automatically created when you initialize a lesson repository. You
-will need to add the following to this file: 
-
-1. A few paragraphs of explanatory text describing the lesson. 
-1. One or more `.prereq` boxes detailing the lesson's prerequisites, giving an overview of the dataset, and/or calling attention to the lesson's Instructor notes.
-
-The schedule will automatically be included in the lesson homepage. 
 
 ### Other information 
 
