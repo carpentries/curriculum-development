@@ -163,4 +163,11 @@ When referring to other episodes, use:
 
 i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and the name of the file.
 
-
+`_extras/discussion.md`
+:   General discussion of the lesson contents for learners who wish to know more:
+    This page normally includes links to further reading
+    and/or brief discussion of more advanced topics.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Discussion"`.
+    3.  Its permalink must be `/discuss/`.
+    4.  It may include whatever content the author thinks appropriate.
