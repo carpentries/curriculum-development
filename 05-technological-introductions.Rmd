@@ -131,7 +131,7 @@ include:
 *   tables
 *   images or figures
 *   code chunks
-*   special blockquotes (described below)
+*   special blockquotes, including exercises and solutions (described below)
 
 This content will be written in *Markdown*, a light-weight markup language that makes it possible to create
 fancy HTML pages using only a few formating tricks. In this section, we'll cover only the Markdown syntax that
@@ -201,275 +201,89 @@ then link to the figure using the syntax:
 
 Note about alt text. Question: Is this the "proper" way to insert a figure link? 
 
-1. Code chunks - 
+1. Code chunks - As discussed in EARLIER CHAPTER, Carpentries workshops are taught using participatory
+live coding. Instructors
+type the code as they teach it and learners type along with the Instructor. For more information about how
+live coding works, and what its advantages and disadvantages are, read that section of our 
+[Instructor Training program](https://carpentries.github.io/instructor-training/14-live/index.html). The fact 
+that Carpentries workshops are taught using live coding means that much of your episode content will be 
+*code chunks* - short blocks of code that learners type along with the Instructor and evaluate on their own
+machines. Each code chunk should correspond to one interactive session. If learners will be
+running the code as two distinct commands, that code should be displayed as two distinct chunks in the episode
+file.
 
+You can add a code chunk to your episode using the following syntax: 
 
-## Maximum Line Length
-
-Limit all lines to a maximum of 100 characters.
-`bin/lesson_check.py` will report lines longer than 100 characters
-and this can block your contributions of being accepted.
-
-The two reasons behind the decision to enforce a maximum line lenght are
-(1) make diff and merge easier in the command line and other user interfaces
-and
-(2) make update of translation of the lessons easier.
-
-## Locations and Names
-
-When referring to other episodes, use:
-
-{% raw %}
-    [link text]({{ page.root }}{% link _episodes/dd-subject.md %})
-{% endraw %}
-
-i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and the name of the file.
-
-
-## Formatting Code
-
-Inline code fragments are formatted using back-quotes.
-Longer code blocks are formatted by opening and closing the block with `~~~` (three tildes),
-with a class specifier after the block:
-
-{% raw %}
-    ~~~
-    for thing in collection:
-        do_something
-    ~~~
-    {: .source}
-{% endraw %}
-
-which is rendered as:
-
+```
 ~~~
-for thing in collection:
-    do_something
+pwd
 ~~~
 {: .source}
+```
 
-The class specified at the bottom using an opening curly brace and colon,
-the class identifier with a leading dot,
-and a closing curly brace.
-The [template]({{ site.template_repo }}) provides three styles for code blocks:
+Which will show up like: 
 
-~~~
-.source: program source.
-~~~
-{: .source}
+```{bash, echo = TRUE, eval = FALSE}
+pwd
+```
 
-~~~
-.output: program output.
-~~~
-{: .output}
+Code chunks that learners should type out with the Instructor should use the `{: .source}` tag as shown above.
+Chunks that show expected output should use the `{: .output}` tag. Chunks that show an expected error
+message should use the `{: .error}` tag.
 
-~~~
-.error: error messages.
-~~~
-{: .error}
+The generic `{: .source}` tag can be used for all programming languages. To make your code more stylish, 
+you can use a language-specific tag (instead of `{: .source}`). This will add things like syntax highlighting
+to your code. The language-specific tags available with our lesson template are: 
 
-### Syntax Highlighting
+* `{: .language-bash}`
+* `{: .html}`
+* `{: .language-make}`
+* `{: .language-matlab}`
+* `{: .language-python}`
+* `{: .language-r}`
+* `{: .language-sql}`
 
-The following styles like `.source`, but include syntax highlighting for the
-specified language.
-Please use them where possible to indicate the type of source being displayed,
-and to make code easier to read.
+You don't need to use these language-specific tags, but they make your lesson a little prettier. 
 
-`.language-bash`: Bash shell commands:
+1. Special blockquotes - Exercises, solutions, helpful tips, and a few other types of special information are
+formatted as blockquotes within the episode file. Each blockquote has the same general structure, but ends
+with a different tag. The ending tag determines how the blockquote will appear on the lesson webpage. The 
+general structure of a blockquote is:
 
-~~~
-echo "Hello World"
-~~~
-{: .language-bash}
-
-`.html`: HTML source:
-
-~~~
-<html>
-<body>
-<em>Hello World</em>
-</body>
-</html>
-~~~
-{: .html}
-
-`.language-make`: Makefiles:
-
-~~~
-all:
-    g++ main.cpp hello.cpp -o hello
-~~~
-{: .language-make}
-
-`.language-matlab`: MATLAB source:
-
-~~~
-disp('Hello, world!')
-~~~
-{: .language-matlab}
-
-`.language-python`: Python source:
-
-~~~
-print("Hello World")
-~~~
-{: .language-python}
-
-`.language-r`: R source:
-
-~~~
-cat("Hello World")
-~~~
-{: .language-r}
-
-`.language-sql`: SQL source:
-
-~~~
-CREATE PROCEDURE HelloWorld AS
-PRINT 'Hello, world!'
-RETURN (0)
-~~~
-{: .language-sql}
-
-
-
-## Special Blockquotes
-
-We use blockquotes to group headings and text
-rather than wrapping them in `div` elements.
-in order to avoid confusing [Jekyll][jekyll]'s parser
-(which sometimes has trouble with Markdown inside HTML).
-Each special blockquote must started with a level-2 header,
-but may contain anything after that.
-For example,
-a callout is formatted like this:
-
-~~~
-> ## Callout Title
+```
+> ## Title
 >
 > text
 > text
 > text
->
-> ~~~
-> code
-> ~~~
-> {: .source}
 {: .callout}
-~~~
-{: .source}
+```
 
-(Note the empty lines within the blockquote after the title and before the code block.)
-This is rendered as:
+where the `{: .callout}` tag should be replaced with one of the following as appropriate:
 
-> ## Callout Title
->
-> text
-> text
-> text
->
-> ~~~
-> code
-> ~~~
-> {: .source}
-{: .callout}
+* `{: .callout}` for sharing an aside or comment. Use sparingly.
+* `{: .challenge}` for an exercise.
+* `{: .discussion}` for a discussion question.
+* `{: .solution}` for an exercise solution.
 
-The [lesson template]({{ site.template_repo }}) defines styles
-for the following special blockquotes:
+Additional blockquote tags included in our lesson template are described in APPENDIX, however, the four listed
+above should cover all normal use cases for a lesson author. 
 
-<div class="row">
-  <div class="col-md-6" markdown="1">
+Exercise solutions are nested within the blockquote for that exercise, as shown below: 
 
-> ## `.callout`
->
-> An aside or other comment.
-{: .callout}
-
-> ## `.challenge`
->
-> An exercise.
-{: .challenge}
-
-> ## `.checklist`
->
-> Checklists.
-{: .checklist}
-
-> ## `.discussion`
->
-> Discussion questions.
-{: .discussion}
-
-> ## `.keypoints`
->
-> Key points of an episode.
-{: .keypoints}
-
-  </div>
-  <div class="col-md-6" markdown="1">
-
-> ## `.objectives`
->
-> Episode objectives.
-{: .objectives}
-
-> ## `.prereq`
->
-> Prerequisites.
-{: .prereq}
-
-> ## `.solution`
->
-> Exercise solution.
-{: .solution}
-
-> ## `.testimonial`
->
-> A laudatory quote from a user.
-{: .testimonial}
-
-  </div>
-</div>
-
-Note that `.challenge` and `.discussion` have the same color but different icons.
-Note also that one other class, `.quotation`,
-is used to mark actual quotations
-(the original purpose of the blockquote element).
-This does not add any styling,
-but is used to prevent the checking tools from complaining about a missing class.
-
-Most authors will only use `.callout`, `.challenge`, and `.prereq`,
-as the others are automatically generated by the template.
-Note that `.prereq` is meant for describing things
-that learners should know before starting this lesson;
-setup instructions do not have a particular style,
-but are instead put on the `setup.md` page.
-
-Note also that solutions are nested inside exercises as shown below:
-
-~~~
+```
 > ## Challenge Title
 >
 > This is the body of the challenge.
 >
-> ~~~
-> it may include some code
-> ~~~
-> {: .source}
->
 > > ## Solution
 > >
 > > This is the body of the solution.
-> >
-> > ~~~
-> > it may also include some code
-> > ~~~
-> > {: .output}
 > {: .solution}
 {: .challenge}
-~~~
-{: .source}
+```
 
+Code chunks may also be nested within blockquotes as needed. 
 
 ### Extras
 
