@@ -344,7 +344,7 @@ realism and makes learners better prepared to apply these concepts to unique
 problems in their own work. This type of exercise will often require learners to proactively
 look up help files or do a Google search. 
 
-For example, in the Data Carpentry lesson [Data Analysis and Visualization in for Ecologists](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python/index.html), 
+For example, in the Data Carpentry lesson [Data Analysis and Visualization in Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python/index.html), 
 plotting is taught using the `plotnine` package. That package implements the grammar of graphics developed by
 [Leland Wilkinson](https://en.wikipedia.org/wiki/Leland_Wilkinson), which includes the concept
 of a plot's *geometry*. Different plot types have different underlying geometries that interact
