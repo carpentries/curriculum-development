@@ -1,23 +1,7 @@
 # Conceptual elements
 
-
-* The Carpentries mindset to curriculum development - evidence-based curriculum
-  development
-* What are the core pedagogical concepts that are part of a Carpentry lesson?
-  - Teach most useful first
-  - motivation
-* What are the goals of a Carpentries lesson and how do we achieve them
-  increased confidence in the tools we teach
 * Self-directed learning
-* The open source model of development adapted for lesson 
-* Collaborative lesson development. 
-* Writing lessons for others to use
-* Backwards lesson development / learner centered design
-  - Formative assessment
-* Lesson structure - workshop / lesson / episode / challenge
-* What to consider when selecting a dataset
 * The I, We, You model
-* The idea of having a narrative to the lesson
 
 ## The Carpentries mindset for curriculum development
 
@@ -30,12 +14,12 @@ do, and why our lessons are designed the way they are.
 
 The authors identify seven principles of learning (direct quotation from the book are bolded):
 
-* **"Students' prior knowledge can help or hinder learning."** -- Identifying
+1. **"Students' prior knowledge can help or hinder learning."** -- Identifying
   what the learners know before coming to our workshops help us adjust what we
   teach. One way we do this is through [our pre-workshop surveys](https://carpentries.org/assessment/). We also give the learners
   frequent exercises (or "challenges") throughout our lessons, which help Instructors
   and learners identify and correct misconceptions.
-* **"How students organize knowledge influences how they learn and apply what
+2. **"How students organize knowledge influences how they learn and apply what
   they know."** -- Human working memory is limited, and can only handle about
   five to seven separate items of information at a time. We organize our lessons
   to introduce a few concepts at a time, and then provide challenges to give learners
@@ -44,7 +28,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   knowledge into their long-term memory, 
   increasing the likelihood that they will be able to use this information successfully
   in new contexts.
-* **"Students' motivation determines, directs, and sustains what they do to
+3. **"Students' motivation determines, directs, and sustains what they do to
   learn."** -- Our learners come to our workshops already motivated to learn the concepts
   we teach. They realize they need the skills we teach to conduct their
   research more effectively. They have experienced the pain that comes with
@@ -56,7 +40,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   are: (1) to create a positive learning environment, and (2) to teach the most
   useful skills first. We teach [both of these in our Instructor Training program](https://carpentries.github.io/instructor-training/08-motivation/index.html),
   and discuss how they influence curricular design below.
-* **"To develop mastery, students must acquire component skills, practice
+4. **"To develop mastery, students must acquire component skills, practice
   integrating them, and know when to apply what they have learned."** -- 
   Our lessons use frequent challenges to provide
   opportunities for learners to practice applying their new skills. These challenges
@@ -64,7 +48,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   and new skills. Careful attention to exercise design helps assure learners will
   be able to transfer the
   skills they acquire in our workshop to their own research.
-* **"Goal-directed practice coupled with targeted feedback enhances the quality
+5. **"Goal-directed practice coupled with targeted feedback enhances the quality
   of students' learning."** -- When Learners try to solve the challenges we include in our
   lessons, they receive direct feedback from the computer - either an
   error message or the expected answer. Error messages are often opaque, and
@@ -75,7 +59,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   challenges used in a lesson should only require the skills
   that have already been introduced during the workshop, and should have a limited
   range of possible answers.
-* **"Students' current level of development interacts with the social,
+6. **"Students' current level of development interacts with the social,
   emotional, and intellectual climate of the course to impact learning."** -- Providing
   a positive learning environment reduces learners' stress
   and helps increase their confidence in their ability to use the skills we teach.
@@ -94,7 +78,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   creates a visualization that they can directly apply to their own
   data, it reinforces their motivation and favors a positive learning
   climate.
-* **"To become self-directed learners, students must learn to monitor and adjust
+7. **"To become self-directed learners, students must learn to monitor and adjust
   their approaches to learning."** -- In-person workshops allow Instructors to
   model the thinking process that is needed to address the challenges 
   in our lessons. As an Instructor, being very explicit ("thinking
@@ -194,22 +178,58 @@ in [a later chapter](https://carpentries.github.io/curriculum-development/how-to
 
 ### Designing challenges to assess understanding
 
+In traditional Western instruction, learners are presented with new material during course time
+and then sent home to practice applying the concepts learnt on their own. A major limitation of this
+approach is that learners often encounter difficulties in trying to apply their new knowledge or skills
+and need to troubleshoot on their own, without support. Education research shows that novices learn best when
+they are given feedback and coaching in real time while practicing their new skills (see principle
+number 5 above) so that errors are corrected and mis-steps redirected before mistakes have a chance to become
+discouraging or engrained in learners' memory.
+
+To this end, Carpentries workshops are designed to provide frequent opportunities for learners to practice new skills. To be
+helpful in providing useful feedback, these challenges need to both a) be narrowly targeted to the skills 
+that have been taught (i.e. not to depend on untaught concepts) and b) be diagnostic (Instructors should be
+able to tell what the learner is misunderstanding based on how they answer the question). The practical 
+aspects of creating useful challenge problems is discussed in a later section. 
 
 ### Planning the content of the lesson
+
+Once you've determined the core skills your learners need in order
+to improve their workflow and be more efficient, you now need to
+identify what key concepts and pieces of knowledge are required
+for your learners to gain those skills. For example, one key skill
+for our . . . lesson is . . .. In order to achieve that skill, 
+learners need to . . . 
 
 
 ## Creating a narrative and selecting a dataset 
 
+Because we strive to provide a realistic experience for learners
+that is as similar as possible to the workflow they would use
+in their own work, our lessons use real data and are structured
+in a natural flow that corresponds to how a learner would experience
+working with their data in real life. For many curricula, this
+means starting with a lesson on data organisation and progressing
+through data cleaning, analysis, and visualisation or reporting. 
+It is important to choose a dataset that is an authentic 
+representation of what your audience would encounter in their
+day-to-day work. The practicalities of chosing an appropriate 
+dataset are covered in a later section of this handbook.
 
 ## Limitations of our approach
 
-* We don't teach Learners to be experts in 2 days, some of the complexity that
-  comes with expertise can't be part of our workshop. We do aim to set up the
-  mental model of our Learners to allow them to grow into experts in the future.
-  Managing this expectation is important because it limits demotivation.
-  
-  
-  
+Learners can't go from complete novices to experts in two days (or 
+in the course of any single class). We aim to provide learners with 
+three things: 
+1) A set of foundational concepts and skills,
+2) A mental model that connects those concepts into a useful
+framework and that can be built upon in their future learning, and
+3) The motivation and skillset they need to continue learning 
+past the end of the workshop. 
+
+Managing learners' expectations, and clearly communicating to 
+them what they will (and won't) be able to do by the end of the
+workshop, is important because it limits the chance of demotivation. 
 
 ## The structure of our curriculum
 
@@ -274,4 +294,7 @@ the broader Carpentries community.
 
 ## Collaborative lesson design
 
-We transpose the model of open-source software development to collaborative lesson development.
+We transpose the model of open-source software development to collaborative lesson development. . . 
+* The open source model of development adapted for lesson 
+* Collaborative lesson development. 
+* Writing lessons for others to use
