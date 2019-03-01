@@ -352,13 +352,11 @@ differently with other plot parameters. In this lesson, learners are led through
 where they create a scatterplot (using `geom_point()`) of weight versus an animal's hindfoot
 length. 
 
-~~~
+```{python, eval=FALSE}
 surveys_plot = p9.ggplot(data=surveys_complete,
                          mapping=p9.aes(x='weight', y='hindfoot_length'))
-
 surveys_plot + p9.geom_point()
-~~~
-{: .language-python}
+```
 
 ![png](../fig/06_first_plot.png)
 
@@ -372,13 +370,12 @@ They are then asked to create a barchart showing the number of observations in e
 >
 > > ## Answers
 > >
-> > ~~~
+> > ```{python, eval=FALSE}
 > > (p9.ggplot(data=surveys_complete,
 > >            mapping=p9.aes(x='plot_id'))
 > >     + p9.geom_bar()
 > > )
-> > ~~~
-> > {: .language-python}
+> > ```
 > >
 > > ![png](../fig/06_challenge_bar.png)
 > {: .solution}
