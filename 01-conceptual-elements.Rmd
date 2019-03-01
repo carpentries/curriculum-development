@@ -186,7 +186,7 @@ they are given feedback and coaching in real time while practicing their new ski
 number 5 above) so that errors are corrected and mis-steps redirected before mistakes have a chance to become
 discouraging or engrained in learners' memory.
 
-To this end, Carpentries workshops provide frequent opportunities for learners to practice new skills. To be
+To this end, Carpentries workshops are designed to provide frequent opportunities for learners to practice new skills. To be
 helpful in providing useful feedback, these challenges need to both a) be narrowly targeted to the skills 
 that have been taught (i.e. not to depend on untaught concepts) and b) be diagnostic (Instructors should be
 able to tell what the learner is misunderstanding based on how they answer the question). The practical 
