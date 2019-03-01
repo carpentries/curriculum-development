@@ -128,8 +128,8 @@ After the YAML header, your episode file will contain the content for that episo
 include:
 *   paragraphs of text
 *   lists
-*   images or figures
 *   tables
+*   images or figures
 *   code chunks
 *   special blockquotes (described below)
 
@@ -173,22 +173,36 @@ This will show up like this:
 * unnumbered
 * list
 
-1. Images or figures - 
+1. Tables - To insert a small table into your episode, do this:
+
+```
+| Category | Item | 
+|--------- | ---- |
+| Food     | Sandwich |
+| Drink    | Tea | 
+| Food     | Apple |
+```
+
+This will show up like this:
+
+| Category | Item | 
+|--------- | ---- |
+| Food     | Sandwich |
+| Drink    | Tea | 
+| Food     | Apple |
 
 
+1. Images or figures - Place a copy of the image you would like to display into the `fig` directory. You can
+then link to the figure using the syntax:
 
+```
+![Figure Description](../fig/figure_file_name.svg)]
+```
 
+Note about alt text. Question: Is this the "proper" way to insert a figure link? 
 
+1. Code chunks - 
 
-
-
-
-
-
-- "Episodes should not use sub-titles or HTML layout."
-- "Code blocks can have the source, regular output, or error class."
-- "Special sections are formatted as blockquotes that open with a level-2 header and close with a class identifier."
-- "Special sections may be callouts or challenges; other styles are used by the template itself."
 
 ## Maximum Line Length
 
@@ -210,18 +224,6 @@ When referring to other episodes, use:
 {% endraw %}
 
 i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and the name of the file.
-
-*   paragraphs
-*   images
-*   tables
-*   ordered and unordered lists
-*   code samples (described below).
-*   special blockquotes (described below)
-
-Authors should *not* use:
-
-*   sub-titles (instead, use H2 subheadings (`##`) in the episode files)
-*   HTML layout (e.g., `div` elements).
 
 
 ## Formatting Code
@@ -539,10 +541,6 @@ information.
     2.  Its title must be `"Discussion"`.
     3.  Its permalink must be `/discuss/`.
     4.  It may include whatever content the author thinks appropriate.
-
-## Figures
-
-All figures related with the lesson **must** be placed inside the directory `fig` at the root of the project.
 
 
 
