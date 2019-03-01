@@ -35,7 +35,7 @@ still be important to have regular checkins with all authors.
 ### Reviewers
 
 We know no one is perfect! Lesson materials should be read and tested by at least
-one person other than the original author before being used in a pilot workshop. 
+one person other than the original author before being released for use by the broader community in beta pilot workshops. 
 If a lesson has more than one author, co-authors can review each other's content. 
 Community members can also serve as reviewers. A reviewer commits to carefully
 reading and testing all code for a lesson or set of episodes and leaving detailed
@@ -44,7 +44,7 @@ provided as issues and/or pull requests (PRs) in the lesson's GitHub repository
 (we'll explain all of that soon!). Authors modify the lessons based on reviewer feedback to ensure the 
 lesson is bug-free, all code runs as expected, exercises are appropriate and test
 only the concepts being taught, and in general that the lesson is ready to be
-delivered to learners in a pilot workshop.
+delivered to learners in a beta pilot workshop.
 
 Don't worry - this review stage is not the only point at which lessons will
 receive feedback. Our collaborative lesson development model ensures that 
@@ -97,7 +97,7 @@ https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintain
 Maintainer meetings and skill development / office hours
 
 A lesson should have at least two or three trained and active Maintainers before it enters the 
-pilot workshop phase. Before that time, lesson feedback and edits will be 
+beta pilot workshop phase. Before that time, lesson feedback and edits will be 
 managed by the lesson authors.
 
 ### Curriculum Advisors
@@ -145,7 +145,7 @@ must be a Curriculum Advisory Committee in place at the time of
 its first publication. The CAC must should regularly for as long as a curriculum
 remains active. 
 
-### Pilot Instructors
+### Beta Pilot Instructors
 
 A new lesson or curriculum is often taught for the first time locally at 
 the organization that houses the lesson authors. This can be an opportunity 
@@ -156,20 +156,20 @@ for the creator of a set of curricular materials to use those materials, but
 more difficult to communicate all of the relevant details to enable
 others to deliver the curriculum efficiently. In order to ensure
 that our lessons are able to be taught by all appropriately experienced 
-certified Instructors, a lesson should be piloted at least twice outside of the institution 
+certified Instructors, a lesson should be beta piloted at least twice outside of the institution 
 in which it was developed, ideally in two different countries. Because lessons at this stage are
-expected to still have some technical and flow issues, instructors for these pilot
+expected to still have some technical and flow issues, instructors for these beta pilot
 workshops should be certified Carpentries Instructors who have previously taught at least two
 Carpentries workshops. Instructors with this level of experience will be more prepared to troubleshoot
 issues that arise during the workshop, and more likely to provide useful feedback after the workshop. 
-Pilot instructors may be lesson reviewers,
+Beta pilot instructors may be lesson reviewers,
 Maintainers, Curriculum Advisors, or any Carpentries community member other than
-lesson authors. In fact, recruiting pilot instructors from these areas is likely to be fruitful,
+lesson authors. In fact, recruiting beta pilot instructors from these areas is likely to be fruitful,
 as these people are already playing active roles in the lesson and are invested in bringing the lesson
-to maturity. For two pilot workshops, you will need at least four instructors. 
+to maturity. For two beta pilot workshops, you will need at least four instructors. 
 
-Feedback from pilots - how given and how incorporated
-How to recruit pilot Instructors
+Feedback from beta pilots - how given and how incorporated
+How to recruit beta pilot Instructors
 Onboarding?
 
 
