@@ -1,6 +1,66 @@
-# How to decide what to teach?
+# Deciding what to teach
 
-* Understanding your target audience
+As discussed in an [earlier chapter](https://carpentries.github.io/curriculum-development/conceptual-elements.html#backward-design), the first step in designing a curriculum according to backward design principles is to 
+identify the practical skills that you aim to teach. This step is absolutely critical to defining the scope of 
+your curriculum and to avoid scope creep, both during initial writing of the lesson materials and later
+community-driven development. 
+
+## Target audience
+
+To identify the skills you aim to teach, it is first essential to define your 
+target audience, as different audiences will have different needs, as well as different starting skill sets. For
+example, Data Carpentry's [Genomics workshop curriculum](https://datacarpentry.org/genomics-workshop/) assumes
+that learners have some background in the biological sciences and will understand biological terminology and 
+abbreviations used in those lessons, but does not assume any prior experience with the tools taught in the lesson,
+including The Unix Shell and Amazon Web Services. These assumptions set the stage for lesson development, by 
+placing boundaries around what will and won't need to be explained in the lesson.
+
+You probably already have some sense of your target audience. To help refine this sense, ask yourself the 
+following questions. Write down your answers and see if you can clearly articulate who is and isn't included
+in your audience. Share these thoughts with your colleagues and see if they agree. 
+
+### Audience definition questions
+* What is the expected educational level of your audience? - Do you expect most learners to be undergraduate 
+students, graduate students, or to have completed graduate school? If you are targeting graduate students, 
+do you expect learners to be new graduate students, masters degree holders, or doctoral candidates?
+
+* What type of exposure do your audience members have to the technologies you plan to teach? - Think about the
+typical course work that someone in your field has completed when they are at your targeted educational level. 
+Have they had classes where they needed to use R, Python, or some other programming language for their homework?
+Does your department require any courses on data organization or management? Do students in your field 
+ever interact with a remote computing system? Don't worry if the answer to all of these questions is "no", 
+most university departments don't build computational training into their undergraduate or graduate programs - 
+which is why The Carpentries exists! Talk with others in your field, especially colleagues at different
+institutions and in different countries. Having an accurate picture of your target audience's actual exposure 
+to these skills will help you plan a realistic curriculum.
+
+[Add some references to papers that conducted data skills training surveys in different domains?]
+
+* What are the pain points they are currently experiencing? - The Carpentries trainings are designed to 
+meet learners where they are and help them improve their workflows in a way that is immediately useful for them.
+We avoid idealism in favor of realism. Yes, it would be excellent if use of version control was standard 
+across the research community, but if the learners at your workshop don't see the immediate benefit of version 
+control, they are unlikely to implement it. Talk with students and other new researchers in your field. What are
+the computational tasks they spend hours upon hours doing, only to have to redo when they get their reviews 
+back from the publisher? What repetitive tasks do they do by hand and find mistakes in weeks or months later? 
+People love to share stories like this and you can learn a lot about what others in your field are struggling with
+by collecting these stories. These are the skills you should be targeting in your lesson. 
+
+* What types of data does your target audience work with? Is this variable or well-defined? - If you're designing
+a domain-specific curriculum, you'll need to consider the range of data types that members of your domain 
+community work with. For example, researchers in the social sciences work with a wide range of data types, but
+survey data is common in this research community. Data Carpentry elected to develop lessons around closed-ended
+survey data, with the hopes of expanding this lesson set to include analysis of free-response text in the future. 
+Similarly, a genomics researcher may work with data sets that span multiple species or multiple individuals or 
+populations within a species. The Data Carpentry Genomics curriculum development team chose to focus on 
+intra-species data sets. Researchers in the field who work with different data types will still be able to 
+benefit from the lessons, but choosing a common data type will ensure your lesson is maximally useful for a broad
+component of your domain community. It is important to make this decision early on, as trying to include every 
+type of data that researchers in your field work with will result in sprawling, ungainly lessons that aren't 
+useful for anyone. Choose one thing and do it well!
+
+
+
 * Learner profiles
 * Determining scope (thinking of where the learners start and where they will end after the workshop)
 * Learning pathways (where this lesson fits in and what it leads to)
