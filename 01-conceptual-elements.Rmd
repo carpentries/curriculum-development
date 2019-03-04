@@ -146,7 +146,7 @@ own data.
 
 Our primary aim in a Carpentries workshop is to increase the confidence of our learners. We
 want to demystify and make accessible the process of computing and analyzing data. More than
-a third of learners at our workshops have little to no coding experience [(Jordan et al., 2018](https://zenodo.org/record/1325464#.XF39ts9Kjw4). Our workshops provide them an
+a third of learners at our workshops have little to no coding experience [(Jordan et al., 2018](https://zenodo.org/record/1325464#.XF39ts9Kjw4)). Our workshops provide them an
 opportunity to try, in a friendly environment, something they perceive as intimidating.
 
 Another important goal is to make the research life of our learners easier. We emphasize
@@ -190,7 +190,7 @@ To this end, Carpentries workshops are designed to provide frequent opportunitie
 helpful in providing useful feedback, these challenges need to both a) be narrowly targeted to the skills 
 that have been taught (i.e. not to depend on untaught concepts) and b) be diagnostic (Instructors should be
 able to tell what the learner is misunderstanding based on how they answer the question). The practical 
-aspects of creating useful challenge problems is discussed in a later section. 
+aspects of creating useful challenge problems is discussed in a [later section](https://carpentries.github.io/curriculum-development/assembling-the-lesson.html#designing-challenges). 
 
 ### Planning the content of the lesson
 
@@ -214,16 +214,16 @@ through data cleaning, analysis, and visualisation or reporting.
 It is important to choose a dataset that is an authentic 
 representation of what your audience would encounter in their
 day-to-day work. The practicalities of chosing an appropriate 
-dataset are covered in a later section of this handbook.
+dataset are covered in a [later section](https://carpentries.github.io/curriculum-development/assembling-the-lesson.html#picking-a-dataset) of this handbook.
 
 ## Limitations of our approach
 
 Learners can't go from complete novices to experts in two days (or 
 in the course of any single class). We aim to provide learners with 
-three things: 
-1) A set of foundational concepts and skills,
+three things:  
+1) A set of foundational concepts and skills,  
 2) A mental model that connects those concepts into a useful
-framework and that can be built upon in their future learning, and
+framework and that can be built upon in their future learning, and  
 3) The motivation and skillset they need to continue learning 
 past the end of the workshop. 
 
@@ -246,7 +246,7 @@ and contains a number of challenges to assess
 learners' ability to perform those learning objectives. Episodes within a lesson can be
 dependent on earlier episodes and are generally taught in sequence. 
 
-#### Lesson
+#### Lessons
 
 A lesson is a collection of episodes that together help the learner to develop a particular
 set of competencies 
@@ -294,7 +294,8 @@ the broader Carpentries community.
 
 ## Collaborative lesson design
 
-We transpose the model of open-source software development to collaborative lesson development. . . 
-* The open source model of development adapted for lesson 
-* Collaborative lesson development. 
-* Writing lessons for others to use
+We transpose the model of open-source software development to collaborative lesson development
+
+* The open source model of development adapted for lesson  
+* Collaborative lesson development.  
+* Writing lessons for others to use  
