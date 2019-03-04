@@ -2,7 +2,7 @@
 
 As discussed in an [earlier chapter](https://carpentries.github.io/curriculum-development/conceptual-elements.html#backward-design), the first step in designing a curriculum according to backward design principles is to 
 identify the practical skills that you aim to teach. This step is absolutely critical to defining the scope of 
-your curriculum and to avoid scope creep, both during initial writing of the lesson materials and later
+your curriculum and to avoid [scope creep](https://en.wikipedia.org/wiki/Scope_creep), both during initial writing of the lesson materials and later
 community-driven development. 
 
 ## Target audience
@@ -85,11 +85,30 @@ various segments of your target audience. These profiles can then be consulted a
 curriculum development process. For example, when developing an exercise, you can look at your learner 
 profiles and ask "Is this exercise useful for my target learners?". 
 
+## Skills list
+
+Congratulations! You now have a solid understanding of the users of your lesson materials and can concretely 
+define the background knowledge and goals of your learners. These goals are a combination of a) reducing or 
+removing pain points that your learners can self-identify and b) achieving next-level competencies that 
+learners may not realize are possible, but which will be practically useful to them in their research. 
+You can think of these two components as the
+starting and ending points for your lesson. The background knowledge and skills that your learners bring 
+to the workshop define the starting point, while your learners' goals define the end point. With these
+start and end points, you can now define the list of skills that you will need to teach at your workshop. 
+
+It is important at this stage to be sure you are defining **skills** that your learners will acquire, not
+**topics** that you will teach. You may be tempted to say, for example, that learners will learn about the 
+[grammar of graphics](https://vita.had.co.nz/papers/layered-grammar.html) - which places the emphasis on a **topic** that learners will learn **about** - or that they will learn how to use
+the [R package ggplot2](https://ggplot2.tidyverse.org/) - which emphasizes the **tool** that learners will be
+exposed to. Neither of these ways of stating the learning goal focuses on the **abilities** that learners
+will develop that will help them in their work. Since you, as the lesson developer, will be using this skills
+list to create exercises and lesson content, it is essential to describe specific competencies and abilities that
+the content will help learners to develop. For example, this learning goal would be better phrased as 
+"create plots that can be quickly and reproducibly modified and customized." If your target audience
+has specific plotting needs (like creating time-series plots, or visualising very large datasets), this 
+learning goal would be phrased to incorporate those specific needs. 
 
 
-* Determining scope (thinking of where the learners start and where they will end after the workshop)
-* Learning pathways (where this lesson fits in and what it leads to)
-* How to identify the core competencies you want to teach
 
 As you are planning the design of your lesson material identify:
 
@@ -104,3 +123,6 @@ As you are planning the design of your lesson material identify:
 As an expert in your field, there might be mutliple steps involved in your analysis that you have become so used to, that you might not recognize them as separate steps (expert blind spot, fluid representation). When designing the content of your lesson and curriculum, it is crucial that you identify these intermediate steps that will need to be taught to novices in the field.
 
 It is also however important when building the lesson to organize the content to put useful and applicable examples as early as possible. We have found that in the context of a 2-day workshop, starting with teaching how to generate high-quality plots before teaching about data types leads to more motivated learners than doing the opposite.
+
+Resources
+https://www.suu.edu/cetl/pdf/abriefoverviewofbackwarddesign.pdf 
