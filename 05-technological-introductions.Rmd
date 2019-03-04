@@ -367,20 +367,6 @@ on GitHub in one of several *organisations*. The following high-level organisati
 * [data-lessons](https://github.com/data-lessons) - hosts lessons in development which are targeted to become part of the official Carpentries lesson stack
 * [carpentrieslab](http://github.com/carpentrieslab) - hosts lessons in development which may or may not become part of the official Carpentries lesson stack
 
-
-
-
-Your lesson files will be publically hosted on GitHub, within the [data-lessons](https://github.com/data-lessons) or
-[carpentrieslab](https://github.com/carpentrieslab) organization. Lessons that are intended to be offered as 
-core Carpentries lessons will be hosted in data-lessons, while more informal lessons that use The Carpentries
-template and pedagogical model, but are not intended for broad teaching will be hosted in carpentrieslab. When
-a lesson has fulfilled the requirements to be a core Carpentries lesson, it will be migrated to the appropriate
-GitHub organization for that Lesson Program (e.g. [datacarpentry](https://github.com/datacarpentry)). 
-Lessons developed in data-lessons or carpentrieslab can both become core Carpentries lessons, however 
-these organizations carry different expectations for level of community and staff support. 
-
-
-
 In order to contribute to lesson materials, you will need a GitHub ID. 
 
 To manage changes, we follow [GitHub flow][github-flow]. 
@@ -409,9 +395,5 @@ repository for reference while revising.
 If you choose to contribute via GitHub, you may want to look at
 [How to Contribute to an Open Source Project on GitHub][how-contribute].
 
-* How to write RMarkdown
-* GitHub & GitHub workflow (issues → PRs, who merges, how to have conversations)
 * Creating new lesson or working with existing lesson
-* Social aspects of Carpentries lesson dev on GitHub
-* Social infrastructure - Maintainers, staff, CAC (roles of)
 
