@@ -56,7 +56,7 @@ back from the publisher? What repetitive tasks do they do by hand and find mista
 People love to share stories like this and you can learn a lot about what others in your field are struggling with
 by collecting these stories. These are the skills you should be targeting in your lesson. 
 
-* What types of data does your target audience work with? Is this variable or well-defined? - If you're designing
+* What types of data does your target audience work with? What are the commonalities in the datasets your target audience will encounter? (types of variable, size, standard data formats, etc.) - If you're designing
 a domain-specific curriculum, you'll need to consider the range of data types that members of your domain 
 community work with. For example, researchers in the social sciences work with a wide range of data types, but
 survey data is common in this research community. Data Carpentry elected to develop lessons around closed-ended
@@ -75,11 +75,11 @@ After thinking through the audience definition questions above, and discussing t
 in other institutions, you should have a fairly clear understanding of your target audience. You should now
 know who you expect to show up to your workshops, what knowledge and expectations they will bring with them, 
 and what their motivations are. Keeping this information front-and-center throughout the lesson development
-process is incredibly important, as it is all to easy to forget your target learner and go down tangents in
+process is incredibly important, as it is all too easy to forget your target learner and go down tangents in
 your lesson that don't serve this set of learner's needs. To make your target audience more concrete, we 
 recommend creating a set of learner profiles. A learner profile describes a fictional learner at your workshop 
 and includes the person’s general background, the problems they face, and how the course will help them. 
-Software Carpentry has [example learner profiles](http://static.carpentries.org/audience/) that will be useful
+Software Carpentry has [example learner profiles](https://carpentries.org/audience/) that will be useful
 in developing learner profiles for your own course. We recommend creating 2-4 learner profiles that describe
 various segments of your target audience. These profiles can then be consulted at future stages in the 
 curriculum development process. For example, when developing an exercise, you can look at your learner 

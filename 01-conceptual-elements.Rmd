@@ -146,7 +146,7 @@ own data.
 
 Our primary aim in a Carpentries workshop is to increase the confidence of our learners. We
 want to demystify and make accessible the process of computing and analyzing data. More than
-a third of learners at our workshops have little to no coding experience [(Jordan et al., 2018](https://zenodo.org/record/1325464#.XF39ts9Kjw4)). Our workshops provide them an
+a third of learners at our workshops have little to no coding experience ([Jordan et al., 2018](https://zenodo.org/record/1325464#.XF39ts9Kjw4)). Our workshops provide them an
 opportunity to try, in a friendly environment, something they perceive as intimidating.
 
 Another important goal is to make the research life of our learners easier. We emphasize
