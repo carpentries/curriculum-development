@@ -1,0 +1,235 @@
+# Detailed information about our lesson template
+
+Our lessons need artwork,
+CSS style files,
+and a few bits of Javascript.
+We could load these from the web,
+but that would make offline authoring difficult.
+Instead, each lesson's repository is self-contained.
+
+The diagram below shows how source files and directories are laid out,
+and how they are mapped to destination files and directories:
+
+![Source and Destination Files]({{ page.root }}/fig/file-mapping.svg)
+
+> ## Collections
+>
+> As described [earlier]({{ page.root }}/02-tooling/#collections),
+> files that appear as top-level items in the navigation menu are stored in the root directory.
+> Files that appear under the "extras" menu are stored in the `_extras` directory,
+> while lesson episodes are stored in the `_episodes` directory.
+{: .callout}
+
+## Helper Files
+
+As is standard with [Jekyll][jekyll] sites,
+page layouts are stored in `_layouts`
+and snippets of HTML included by these layouts are stored in `_includes`.
+Each of these files includes a comment explaining its purpose.
+
+Authors do not have to specify that episodes use the `episode.html` layout,
+since that is set by the configuration file.
+Pages that authors create should have the `page` layout unless specified otherwise below.
+
+The `assets` directory contains the CSS, Javascript, fonts, and image files
+used in the generated website.
+Authors should not modify these.
+
+# Standard Files
+
+When the lesson repository is first created,
+the initial author should create a `README.md` file containing
+a one-line explanation of the lesson's purpose.
+
+The [lesson template]({{ site.template_repo }}) provides the following files
+which should *not* be modified:
+
+*   `CONDUCT.md`: the code of conduct.
+*   `LICENSE.md`: the lesson license.
+*   `Makefile`: commands for previewing the site, cleaning up junk, etc.
+
+## Starter Files
+
+The `bin/lesson_initialize.py` script creates files that need to be customized for each lesson:
+
+`CONTRIBUTING.md`
+:   Contribution guidelines.
+    The `issues` and `repo` links at the bottom of the file must be changed
+    to match the URLs of the lesson:
+    look for uses of `FIXME`.
+
+`_config.yml`
+:   The [Jekyll][jekyll] configuration file.
+    This must be edited so that its links and other settings are correct for this lesson.
+    *   `carpentry` should be either "dc" (for Data Carpentry) or "swc" (for Software Carpentry).
+    *   `title` is the title of your lesson,
+        e.g.,
+        "Defence Against the Dark Arts".
+    *   `email` is the contact email address for the lesson.
+
+`CITATION`
+:   A plain text file explaining how to cite this lesson.
+
+`AUTHORS`
+:   A plain text file listing the names of the lesson's authors.
+
+`index.md`
+:   The home page for the lesson.
+    1.  It must use the `lesson` layout.
+    2.  It must *not* have a `title` field in its [YAML][yaml] header.
+    3.  It must open with a few paragraphs of explanatory text.
+    4.  That introduction must be followed by a single `.prereq` blockquote
+        detailing the lesson's prerequisites.
+        (Setup instructions appear separately.)
+    5.  That must be followed by inclusion of `syllabus.html`,
+        which generates the syllabus for the lesson
+        from the metadata in its episodes.
+
+`reference.md`
+:   A reference guide for the lesson.
+    The template will automatically generate a summary of the episodes' key points.
+    1.  It must use the `reference` layout.
+    2.  Its title must be `"Reference"`.
+    3.  Its permalink must be `/reference/`.
+    4.  It should include a glossary, laid out as a description list.
+    5.  It may include other material as appropriate.
+
+`setup.md`
+:   Detailed setup instructions for the lesson.
+    Note that we usually divide setup instructions by platform,
+    e.g.,
+    include level-2 headings for Windows, macOS, and Linux
+    with instructions for each.
+    The [workshop template]({{ site.workshop_repo }})
+    links to the setup instructions for core lessons.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Setup"`.
+    3.  Its permalink must be `/setup/`.
+    4.  It should include whatever setup instructions are required.
+
+`_extras/about.md`
+:   General notes about this lesson.
+    This page includes brief descriptions of Software Carpentry and Data Carpentry,
+    and is a good place to put institutional acknowledgments.
+
+`_extras/discussion.md`
+:   General discussion of the lesson contents for learners who wish to know more:
+    This page normally includes links to further reading
+    and/or brief discussion of more advanced topics.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Discussion"`.
+    3.  Its permalink must be `/discuss/`.
+    4.  It may include whatever content the author thinks appropriate.
+
+`_extra/figures.md` and `_includes/all_figures.html`
+:   Does nothing but include `_includes/all_figures.html`,
+    which is (re)generated by `make lesson-figures`.
+    This page displays all the images referenced by all of the episodes,
+    in order,
+    so that instructors can scroll through them while teaching.
+
+`_extras/guide.md`
+:   The instructors' guide for the lesson.
+    This page records tips and warnings from people who have taught the lesson.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Instructors' Guide"`.
+    3.  Its permalink must be `/guide/`.
+    4.  It may include whatever content the author thinks appropriate.
+
+## Figures
+
+All figures related with the lesson **must** be placed inside the directory `fig` at the root of the project.
+
+{% include links.md %}
+
+## Maximum Line Length
+
+Limit all lines to a maximum of 100 characters.
+`bin/lesson_check.py` will report lines longer than 100 characters
+and this can block your contributions of being accepted.
+
+The two reasons behind the decision to enforce a maximum line lenght are
+(1) make diff and merge easier in the command line and other user interfaces
+and
+(2) make update of translation of the lessons easier.
+
+## Locations and Names
+
+When referring to other episodes, use:
+
+{% raw %}
+    [link text]({{ page.root }}{% link _episodes/dd-subject.md %})
+{% endraw %}
+
+i.e., use [Jekyll's tag link](https://jekyllrb.com/docs/templates/#links) and the name of the file.
+
+`_extras/discussion.md`
+:   General discussion of the lesson contents for learners who wish to know more:
+    This page normally includes links to further reading
+    and/or brief discussion of more advanced topics.
+    1.  It must use the `page` layout.
+    2.  Its title must be `"Discussion"`.
+    3.  Its permalink must be `/discuss/`.
+    4.  It may include whatever content the author thinks appropriate.
+    
+    
+Add info on installing Ruby and Jekyll. 
+
+---
+title: "Checking and Previewing"
+teaching: 5
+exercises: 0
+questions:
+- "How can lesson formatting be checked?"
+- "How can lessons be previewed?"
+objectives:
+- "Run the lesson checking script and interpret its output correctly."
+- "Preview a lesson locally."
+keypoints:
+- "Lessons are checked by running `make lesson-check`."
+- "The checker uses the same Markdown parser as Jekyll."
+- "Lessons can be previewed by running `make serve`."
+---
+
+The lesson template comes with several utilities to simplify lesson development and maintenance.
+
+## Checking
+
+The template includes a Python program to check
+whether lesson files conform to our template.
+You can run this using `make lesson-check`,
+which in turn invokes `bin/markdown_ast.rb` to parse Markdown files
+and `bin/lesson_check.py` to check their structure.
+The former is written in Ruby,
+and uses [Jekyll][jekyll]'s own Markdown parser (called [Kramdown][kramdown])
+so that we are guaranteed to be checking the same dialect of Markdown that Jekyll uses on GitHub.
+The latter is written in Python 3,
+and executes all of the checks.
+
+The template also includes `bin/repo_check.py`,
+which can be invoked by running `make repo-check`.
+This program looks in `_config.yml` to find the repository's URL,
+then checks that the repository has the right labels set up for issues and pull requests.
+Other checks will be added as time goes by.
+
+## Previewing
+
+[Jekyll][jekyll] can be used in two ways:
+to compile source files into HTML pages in the `_site` directory,
+or to do that and also run a small web server at <http://0.0.0.0:4000/>
+so that the pages can be previewed.
+We recommend using the latter,
+since it gives a more accurate impression of what your lesson will actually look like.
+
+The Makefile in the root directory of the project contains commands for building the site.
+`make site` builds files but does not run a server,
+while `make serve` builds the files and runs a server.
+(It also re-builds the site whenever it notices changes in the source files.)
+Run `make` on its own to get a full list of commands.
+
+In order to use Jekyll and/or the checking script,
+you may need to install it and some other software.
+The [setup instructions]({{ page.root }}{% link setup.md %}#optional-jekyll-setup-for-lesson-development) explain what you need and how to get it.
+
+{% include links.md %}
+
