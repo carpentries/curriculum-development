@@ -75,11 +75,11 @@ episode files.
 ### Episode files
 
 The majority of a lessons content is in its episode files. 
-Episode files are stored in the `_episodes/` folder within your lesson repo. 
+Episode files are stored in the `_episodes/` folder within your lesson repo (or in `_episodes_rmd/` for lessons written in R). 
 Episode file names must start with a two-digit identifier number (e.g. `01`) followed
 by a short descriptive name, separated by a dash (`-`). For example `02-loop.md`, `03-lists.md`. 
 The numeric identifier is used to place your episode files in the correct sequence within the lesson. 
-Episode files are written in *Markdown* (more on that in a moment). 
+Episode files are written in *Markdown* (more on that in a moment) or *RMarkdown*. 
 
 #### Episode headers
 
@@ -137,7 +137,7 @@ include:
 This content will be written in *Markdown*, a light-weight markup language that makes it possible to create
 fancy HTML pages using only a few formating tricks. In this section, we'll cover only the Markdown syntax that
 you will need in order to create the content types listed above. You can find more information about Markdown
-at ...
+at https://commonmark.org/help/.
 
 1. Paragraphs of text - To create text paragraphs in Markdown, just type as you normally would! A few neat tricks: 
 * surround text with a single pair of stars (`*`) to make text *italic* (`*italic*`)
@@ -197,7 +197,7 @@ This will show up like this:
 then link to the figure using the syntax:
 
 ```
-![Figure Description](../fig/figure_file_name.svg)]
+![Figure Description](../fig/figure_file_name.svg)
 ```
 
 Note about alt text. Question: Is this the "proper" way to insert a figure link? 
@@ -365,17 +365,18 @@ on GitHub in one of several *organisations*. The following high-level organisati
 * [librarycarpentry](https://github.com/librarycarpentry) - hosts Library Carpentry specific lesson materials and website
 * [swcarpentry](https://github.com/swcarpentry) - hosts Software Carpentry specific lesson materials and website
 * [data-lessons](https://github.com/data-lessons) - hosts lessons in development which are targeted to become part of the official Carpentries lesson stack
-* [carpentrieslab](http://github.com/carpentrieslab) - hosts lessons in development which may or may not become part of the official Carpentries lesson stack
+* [carpentrieslab](http://github.com/carpentrieslab) - community-developed lessons which may or may not become part of the official Carpentries lesson stack
 
-In order to contribute to lesson materials, you will need a GitHub ID. 
+In order to contribute to lesson materials, you will need a GitHub account. 
 
 To manage changes, we follow [GitHub flow][github-flow]. 
 Each lesson has two maintainers who review issues and pull requests or encourage others to do so.
 The maintainers are community volunteers and have final say over what gets merged into the lesson.
 To use the web interface for contributing to a lesson:
 
-1.  Fork the originating repository to your GitHub profile.
-2.  Within your version of the forked repository, move to the `gh-pages` branch and
+1.  Fork the originating repository to your GitHub account.
+2.  Within your version of the forked repository, move to the
+default branch (e.g. `gh-pages`) and
 create a new branch for each significant change being made.
 3.  Navigate to the file(s) you wish to change within the new branches and make revisions as required.
 4.  Commit all changed files within the appropriate branches.
