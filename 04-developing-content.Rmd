@@ -43,8 +43,8 @@ Use the `-l` option for the `ls` command to display more information for each it
 
 In order to solve this challenge, learners need to know the following (in approximately reverse order): 
 1. That options come after the command (e.g. `ls -l` not `-l ls`).
-1. What the `ls` command does in its bare form. 
 1. How to find the manual page for `ls` to understand the output.
+1. What the `ls` command does in its bare form. 
 1. How to navigate to the right directory.
 1. How to tell what directory they're in.
 1. How to open the bash shell on their machines.
@@ -54,11 +54,12 @@ didn't seem that complex to you, please revisit the idea of [expert blind spot](
 curriculum. 
 
 With this list, you can now construct the pieces of code that an Instructor will need to walk learners through
-before this first exercise. Those pieces of code (in the same order as above), are something like:
+before this first exercise. Those pieces of code (in the same order as above - the reverse order they would
+be used in a lesson), are something like:
 
 1. `ls -F` (or any other commonly used `ls` option other than `ls`)
-1. `ls`
 1. `man ls` (or `man cd` or `man pwd`)
+1. `ls`
 1. `cd`
 1. `pwd`
 1. Not a code chunk, but a demonstration of how to open the bash shell on the Instructor's machine. 
@@ -67,6 +68,63 @@ You now have your first set of code chunks corresponding with your first exercis
 and you're well on your way to writing your lesson!
 
 ### Narrative text
+
+The narrative text component of the lesson provides a guide for Instructors to use while teaching. It should
+provide a clear and complete narrative that (in theory) could be used by an Instructor as a script for
+the lesson. Instructors *will not* actually be using this text as a script, because they will be responding to
+the needs of their particular learners in real time, both in terms of the level of detail they go into, and
+in how they answer questions. However, this text should give Instructors a starting point for explaining the 
+lesson content. This text can also be used by independent learners to work through the lesson materials outside
+of a workshop setting.
+
+Wait to start writing your narrative text until you're fairly confident about the set of code chunks
+you've written. Any changes to the code chunks will require corresponding changes to the text, which 
+can become time consuming. For the set of code chunks above, we would need to write a short explanation for
+each step. For example, the narrative corresponding to the `ls` code chunk in this lesson is: 
+
+We can see files and subdirectories are in this directory by running `ls`,
+which stands for "listing":
+
+```{bash}
+$ ls
+```
+
+`ls` prints the names of the files and directories in the current directory in
+alphabetical order,
+arranged neatly into columns.
+
+
+And the narrative corresponding to the `man ls` command in this lesson is:
+
+`ls` has lots of other options. To find out what they are, we can type:
+
+```{bash}
+$ man ls
+```
+
+Some manual files are very long. You can scroll through the file using
+your keyboard's down arrow or use the <kbd>Space</kbd> key to go forward one page
+and the <kbd>b</kbd> key to go backwards one page. When you are done reading, hit <kbd>q</kbd>
+to quit.
+
+Narrative text should be as short as possible and should avoid discussion of edge cases or caveats. If there
+are important caveats, those can be included in a callout box (see the 
+[Technological Introductions](https://carpentries.github.io/curriculum-development/technological-introductions.html) 
+chapter for formatting details of callout boxes). Only include callouts for cases a significant fraction of your
+learners will experience in their work. It's very easy to clutter the lesson and overwhelm learners. 
+
+### Considering cognitive load
+
+You may have noticed that the exercise we dissected above required six pieces of knowledge to solve. 
+This number isn't random! Cognitive science research has clearly established that human working memory is
+limited, and can only handle a small number of separate items of information at once. This number is generally
+considered to be 7 plus or minus 2, but recent research has suggested it may be even smaller. If learners are
+presented with more than this many discrete pieces of information, they will not be able to keep all those
+pieces in mind similtanously. Once they have had an opportunity to work with those pieces of information, their
+brains will create connections that will allow them to store the information in long-term memory and retrieve it
+as needed. This is why it is essential to include frequent exercises, spread throughout the lesson at regular
+intervals with only ~5 intervening new concepts. If you find that you need more than about this many code chunks
+between exercises, you probably need to either simplify your exercise, or add another exercise in between.
 
 ## Supporting elements
 
