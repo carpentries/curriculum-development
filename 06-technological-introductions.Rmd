@@ -202,7 +202,7 @@ then link to the figure using the syntax:
 
 Note about alt text. Question: Is this the "proper" way to insert a figure link? 
 
-1. Code chunks - As discussed in EARLIER CHAPTER, Carpentries workshops are taught using participatory
+1. Code chunks - As discussed in [an earlier chapter](https://carpentries.github.io/curriculum-development/developing-content.html), Carpentries workshops are taught using participatory
 live coding. Instructors
 type the code as they teach it and learners type along with the Instructor. For more information about how
 live coding works, and what its advantages and disadvantages are, read that section of our 
