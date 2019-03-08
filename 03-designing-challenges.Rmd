@@ -378,6 +378,7 @@ be prepared for feedback from Instructors "in the field" about how to improve th
 
 ### Switch the dataset
 
-
+This is a very advanced exercise type. Information to be added in a later version 
+of this handbook.
 
 
