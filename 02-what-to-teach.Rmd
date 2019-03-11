@@ -141,11 +141,14 @@ concrete skills.
 
 
 Fan's background knowledge and skills include:
-- maybe some vague recolection of basic syntax and terminology from his Python course
+
+- maybe some vague recolection of basic syntax and terminology from his Python
+  course
 - use of Excel to process tabular data and create graphics
 - interaction with a web GUI to upload data to his lab's website
 
 Fan's goals include: 
+
 - creating parameter files automatically
 - managing his many parameter files efficiently
 - automating analysis for multiple runs of his experiment
@@ -153,27 +156,35 @@ Fan's goals include:
 - uploading data and results to his lab's website
 
 An (incomplete) list of target skills that can be extracted from this information includes:
+
 - writing for loops (to create parameter lists)
 - writing data to a file (e.g. parameter lists)
 - writing reusable scripts
 - creating a specific type of graphic programmatically
 - customizing graphics to label them appropriately for a particular data set
-- creating a version controlled repository for storing his parameter and output files
+- creating a version controlled repository for storing his parameter and output
+  files
 - pushing output files to his lab's website programatically
 
-It is important at this stage to be sure you are defining **skills** that your learners will acquire, not
-**topics** that you will teach. You may be tempted to say, for example, that learners will learn about the 
-[grammar of graphics](https://vita.had.co.nz/papers/layered-grammar.html) - which places the emphasis on a **topic** that learners will learn **about** - or that they will learn how to use
-the [R package ggplot2](https://ggplot2.tidyverse.org/) - which emphasizes the **tool** that learners will be
-exposed to. Neither of these ways of stating the learning goal focuses on the **abilities** that learners
-will develop that will help them in their work. Since you, as the lesson developer, will be using this skills
-list to create exercises and lesson content, it is essential to describe specific competencies and abilities that
-the content will help learners to develop. For example, this learning goal would be better phrased as 
-"create plots that can be quickly and reproducibly modified and customized." If your target audience
-has specific plotting needs (like creating time-series plots, or visualising very large datasets), this 
-learning goal would be phrased to incorporate those specific needs.
+It is important at this stage to be sure you are defining **skills** that your
+learners will acquire, not **topics** that you will teach. You may be tempted to
+say, for example, that learners will learn about the [grammar of
+graphics](https://vita.had.co.nz/papers/layered-grammar.html) - which places the
+emphasis on a **topic** that learners will learn **about** - or that they will
+learn how to use the [R package ggplot2](https://ggplot2.tidyverse.org/) - which
+emphasizes the **tool** that learners will be exposed to. Neither of these ways
+of stating the learning goal focuses on the **abilities** that learners will
+develop that will help them in their work. Since you, as the lesson developer,
+will be using this skills list to create exercises and lesson content, it is
+essential to describe specific competencies and abilities that the content will
+help learners to develop. For example, this learning goal would be better
+phrased as "create plots that can be quickly and reproducibly modified and
+customized." If your target audience has specific plotting needs (like creating
+time-series plots, or visualising very large datasets), this learning goal would
+be phrased to incorporate those specific needs.
 
-Spend as much time as you need to on defining this skills list. Don't rush it! This list
-will drive the rest of the curriculum development process. It's ok if your initial
-list needs to be modified later, but it's well worth the time to make this list as complete
-and concrete as possible now as it will save time in the remaining steps. 
+Spend as much time as you need to on defining this skills list. Don't rush it!
+This list will drive the rest of the curriculum development process. It's ok if
+your initial list needs to be modified later, but it's well worth the time to
+make this list as complete and concrete as possible now as it will save time in
+the remaining steps.
