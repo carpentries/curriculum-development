@@ -85,8 +85,8 @@ each step. For example, the narrative corresponding to the `ls` code chunk in th
 We can see files and subdirectories are in this directory by running `ls`,
 which stands for "listing":
 
-```{bash}
-$ ls
+```{bash, eval=FALSE}
+ls
 ```
 
 `ls` prints the names of the files and directories in the current directory in
@@ -98,8 +98,8 @@ And the narrative corresponding to the `man ls` command in this lesson is:
 
 `ls` has lots of other options. To find out what they are, we can type:
 
-```{bash}
-$ man ls
+```{bash, eval=FALSE}
+man ls
 ```
 
 Some manual files are very long. You can scroll through the file using
