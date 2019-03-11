@@ -106,17 +106,39 @@ start and end points, you can now define the list of skills that you will need t
 The following example illustrates how a learner profile can be used to define a list of
 concrete skills. 
 
-```
-Fan Fullerene is a graduate student in chemistry who is working as a lab technician to help cover his family's living costs. His only programming experience is a general first-year introduction to computational science using Python.
 
-Fan's supervisor is studying the production of fullerenes (also known as "buckyballs"). Each set of experiments involves testing a sample at 20 different temperatures and 15 different pressures. Using a machine borrowed from a collaborating lab, Fan can run all temperature and pressure combinations in one job, but must upload a parameter file to the machine to do this. The temperatures and pressures to be used vary from sample to sample, so Fan now has two dozen different parameter files, each containing 300 lines of control information that he fervently hopes is correct.
+> ### Example of Learner Profile {-}
+>
+> Fan Fullerene is a graduate student in chemistry who is working as a lab
+> technician to help cover his family's living costs. His only programming
+> experience is a general first-year introduction to computational science using
+> Python.
+>
+> Fan's supervisor is studying the production of fullerenes (also known as
+> "buckyballs"). Each set of experiments involves testing a sample at 20
+> different temperatures and 15 different pressures. Using a machine borrowed
+> from a collaborating lab, Fan can run all temperature and pressure
+> combinations in one job, but must upload a parameter file to the machine to do
+> this. The temperatures and pressures to be used vary from sample to sample, so
+> Fan now has two dozen different parameter files, each containing 300 lines of
+> control information that he fervently hopes is correct.
+>
+> The machine sends these files to Fan once the experiment is completed. Fan
+> analyzes them by opening Excel, copying and pasting the data into a
+> spreadsheet, then creating a chart using the chart wizard. He then saves the
+> chart as a PNG file on the group's web site, along with the original data
+> file.
+>
+> Fan and his wife have had two children arrive while in graduate school, and
+> his research progress is behind that of his peers. He is very nervous about
+> finishing his PhD and suffers from undiagnosed depression.
+>
+> Software Carpentry will teach Fan how to write programs to generate parameter
+> files and analyze experimental results, and how to track the provenance of the
+> data he is working with so that scientists can trace backward from the final
+> charts to the raw data they represent. It will also teach him how to use
+> version control systems to manage changes to his code.
 
-The machine sends these files to Fan once the experiment is completed. Fan analyzes them by opening Excel, copying and pasting the data into a spreadsheet, then creating a chart using the chart wizard. He then saves the chart as a PNG file on the group's web site, along with the original data file.
-
-Fan and his wife have had two children arrive while in graduate school, and his research progress is behind that of his peers. He is very nervous about finishing his PhD and suffers from undiagnosed depression.
-
-Software Carpentry will teach Fan how to write programs to generate parameter files and analyze experimental results, and how to track the provenance of the data he is working with so that scientists can trace backward from the final charts to the raw data they represent. It will also teach him how to use version control systems to manage changes to his code.
-```
 
 Fan's background knowledge and skills include:
 - maybe some vague recolection of basic syntax and terminology from his Python course
