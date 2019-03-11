@@ -15,6 +15,13 @@ abbreviations used in those lessons, but does not assume any prior experience wi
 including The Unix Shell and Amazon Web Services. These assumptions set the stage for lesson development, by 
 placing boundaries around what will and won't need to be explained in the lesson.
 
+Defining your target audience is also essential to reducing the impact of expert
+blind spot. As an experienced researcher in your field, there are likely many steps in the data 
+management and analysis process that you do without consciously thinking about. Without 
+explicitly evaluating your target audience and understanding their actual background
+and skill level, you are in danger of skipping over intermediate steps that they 
+need to know in order to succeed in their research. 
+
 You probably already have some sense of your target audience. To help refine this sense, ask yourself the 
 following questions. Write down your answers and see if you can clearly articulate who is and isn't included
 in your audience. Share these thoughts with your colleagues and see if they agree. 
@@ -33,8 +40,6 @@ most university departments don't build computational training into their underg
 which is why The Carpentries exists! Talk with others in your field, especially colleagues at different
 institutions and in different countries. Having an accurate picture of your target audience's actual exposure 
 to these skills will help you plan a realistic curriculum.
-
-[Add some references to papers that conducted data skills training surveys in different domains?]
 
 * What types of tools do they already use? - Related to the previous question, it is useful to understand 
 the toolkit that your target audience is already comfortable with. Do they commonly use spreadsheet software 
@@ -81,7 +86,7 @@ recommend creating a set of learner profiles. A learner profile describes a fict
 and includes the person’s general background, the problems they face, and how the course will help them. 
 Software Carpentry has [example learner profiles](https://carpentries.org/audience/) that will be useful
 in developing learner profiles for your own course. We recommend creating 2-4 learner profiles that describe
-various segments of your target audience. These profiles can then be consulted at future stages in the 
+different segments of your target audience. These profiles can then be consulted at future stages in the 
 curriculum development process. For example, when developing an exercise, you can look at your learner 
 profiles and ask "Is this exercise useful for my target learners?". 
 
@@ -96,6 +101,44 @@ starting and ending points for your lesson. The background knowledge and skills 
 to the workshop define the starting point, while your learners' goals define the end point. With these
 start and end points, you can now define the list of skills that you will need to teach at your workshop. 
 
+### Example using a Software Carpentry Learner Profile
+
+The following example illustrates how a learner profile can be used to define a list of
+concrete skills. 
+
+```
+Fan Fullerene is a graduate student in chemistry who is working as a lab technician to help cover his family's living costs. His only programming experience is a general first-year introduction to computational science using Python.
+
+Fan's supervisor is studying the production of fullerenes (also known as "buckyballs"). Each set of experiments involves testing a sample at 20 different temperatures and 15 different pressures. Using a machine borrowed from a collaborating lab, Fan can run all temperature and pressure combinations in one job, but must upload a parameter file to the machine to do this. The temperatures and pressures to be used vary from sample to sample, so Fan now has two dozen different parameter files, each containing 300 lines of control information that he fervently hopes is correct.
+
+The machine sends these files to Fan once the experiment is completed. Fan analyzes them by opening Excel, copying and pasting the data into a spreadsheet, then creating a chart using the chart wizard. He then saves the chart as a PNG file on the group's web site, along with the original data file.
+
+Fan and his wife have had two children arrive while in graduate school, and his research progress is behind that of his peers. He is very nervous about finishing his PhD and suffers from undiagnosed depression.
+
+Software Carpentry will teach Fan how to write programs to generate parameter files and analyze experimental results, and how to track the provenance of the data he is working with so that scientists can trace backward from the final charts to the raw data they represent. It will also teach him how to use version control systems to manage changes to his code.
+```
+
+Fan's background knowledge and skills include:
+- maybe some vague recolection of basic syntax and terminology from his Python course
+- use of Excel to process tabular data and create graphics
+- interaction with a web GUI to upload data to his lab's website
+
+Fan's goals include: 
+- creating parameter files automatically
+- managing his many parameter files efficiently
+- automating analysis for multiple runs of his experiment
+- quickly and easily creating a specific graphic from his data
+- uploading data and results to his lab's website
+
+An (incomplete) list of target skills that can be extracted from this information includes:
+- writing for loops (to create parameter lists)
+- writing data to a file (e.g. parameter lists)
+- writing reusable scripts
+- creating a specific type of graphic programmatically
+- customizing graphics to label them appropriately for a particular data set
+- creating a version controlled repository for storing his parameter and output files
+- pushing output files to his lab's website programatically
+
 It is important at this stage to be sure you are defining **skills** that your learners will acquire, not
 **topics** that you will teach. You may be tempted to say, for example, that learners will learn about the 
 [grammar of graphics](https://vita.had.co.nz/papers/layered-grammar.html) - which places the emphasis on a **topic** that learners will learn **about** - or that they will learn how to use
@@ -106,23 +149,9 @@ list to create exercises and lesson content, it is essential to describe specifi
 the content will help learners to develop. For example, this learning goal would be better phrased as 
 "create plots that can be quickly and reproducibly modified and customized." If your target audience
 has specific plotting needs (like creating time-series plots, or visualising very large datasets), this 
-learning goal would be phrased to incorporate those specific needs. 
+learning goal would be phrased to incorporate those specific needs.
 
-
-
-As you are planning the design of your lesson material identify:
-
-* Which skills do I use daily in my research workflow?
-* Which skills do I use in combination/do I integrate to perform common tasks?
-* What are the specificities of the data, datasets, and metadata used in my
-  research?
-* What are the tools, libraries, packages that are typical of my domain?
-* What is the life cycle of my data: How is the data transformed and analyzed
-  from acquisition to publication and archival?
-  
-As an expert in your field, there might be mutliple steps involved in your analysis that you have become so used to, that you might not recognize them as separate steps (expert blind spot, fluid representation). When designing the content of your lesson and curriculum, it is crucial that you identify these intermediate steps that will need to be taught to novices in the field.
-
-It is also however important when building the lesson to organize the content to put useful and applicable examples as early as possible. We have found that in the context of a 2-day workshop, starting with teaching how to generate high-quality plots before teaching about data types leads to more motivated learners than doing the opposite.
-
-Resources
-https://www.suu.edu/cetl/pdf/abriefoverviewofbackwarddesign.pdf 
+Spend as much time as you need to on defining this skills list. Don't rush it! This list
+will drive the rest of the curriculum development process. It's ok if your initial
+list needs to be modified later, but it's well worth the time to make this list as complete
+and concrete as possible now as it will save time in the remaining steps. 

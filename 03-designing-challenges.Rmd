@@ -1,19 +1,13 @@
-# Assembling the lesson
+# Designing challenges
 
-* How to write challenges (you)
-* Different types of challenges and why / how to use them
-* How to test challenges for correct level
-* How to space challenges
-* Writing the live code (we)
-* What to write for instructor notes
-* Writing the narrative around the code (I)
-* How to evaluate lesson drafts for expert blind spot, correct leveling and scope
-* Issue Bonanza (limited - CAC?)
-* Clean-up (authors and staff)
-* Put workshop page together
-* We now have the alpha version of the lesson. (?)
-
----
+Now that you have a list of the concrete skills that your learners will develop in your
+workshop, it's time to start the second step of backward design - designing the 
+challenges that you will use to help your learners practice those skills. These challenges
+will also enable the instructors to evaluate learner's skill progression in real time
+and re-direct their teaching as needed. Carpentries workshops use real-world
+data to increase the immediate applicability of our lessons and to reduce cognitive load 
+for the learner. The first step towards developing the exercises you will use in your 
+lessons is to select an appropriate dataset. 
 
 ## Picking a dataset
 
@@ -115,43 +109,12 @@ version of the data. Don't introduce too many (no more than three) versions of t
 your lessons, as dealing with many files and remembering their differences can become
 challenging for the learners.
 
-## Overview 
-
-Carpentries workshops last two full days. Generally workshops run from 9am to 5pm, with 30-minute breaks in the morning and in the afternoon, and an hour lunch break, leaving 6 hours for instruction. Carpentries lessons are therefore designed to be taught in 1.5, 3 or 6 hours. Having long and regular breaks are needed to pace the instruction, and allow learners to remain focused and engaged.
-
-Lessons are divided into episodes. Each episode should:
-
-- be designed to last 15-30 minutes;
-- limit cognitive load by introducing at most 7($\pm$ 2) new concepts (3 to 5 concepts preferred);
-- include at least one to three challenges that let learners practice the concepts covered in the episode.
-
-
 ## Designing challenges
 
-Once the learning objectives for the lesson and each episode have been identified, you can start
-designing challenges that provide learners an opportunity to practice the skills outlined in the
-learning objectives. The Bloom taxonomy level of the learning objectives help frame how much
-information should be provided to the learners to be able to complete the exercise and the type
-of exercise. Writing the challenges before writing the content of the lesson ensures that the
-lesson will remain focused, and can reveal concepts needed to solve the challenges that were not
-previously considered.
-
-Starting with two to four challenges you want learners to be able to complete on their own at the
-end of the training, will help you identify the skills they need to acquire. Creating this list
-of skills will guide you in assembling your learning objectives. This list, in combination with
-the learners' profiles, and the time you have available in your training, will help you identify
-the prerequisite skills for the audience of the workshop, and determine at which level of the
-Bloom taxonomy the learning objectives need to be written. This approach is "meet your learners
-where they are". [FIXME: this paragraph might belong better to the learning objective section].
-
-When starting to design challenges, it is helpful to start by planning the last exercise of each
-episode. Identifying what these final challenges look like, and the skills they require, will
-also help you
-to craft the narrative for your lesson. The final challenges should be designed to be a natural
-culmination of all of the skills and concepts that learners are taught during the lesson. 
-Starting from the end allows you to design the rest of the lesson's challenges to 
-build the skills and confidence learners need to
-be able to solve the final challenges. 
+Once the dataset is in place, you can start to
+design challenges that provide learners an opportunity to practice the skills that you've
+included in your skills list. Writing the challenges before writing the content of the lesson ensures that the
+lesson will remain focused, and can reveal gaps in your skills list.
 
 The challenges in a lesson should be a mixture of direct application challenges and synthesis
 challenges. A direct application challenge is a straightforward implementation of a concept
@@ -166,8 +129,25 @@ Instructors monitor the level of understanding in the classroom, and potentially
 misconceptions in the learner's mental models that can be corrected in real time, before they
 become ingrained.
 
+When starting to design challenges, it is helpful to start by planning the last exercise of each
+episode. This will help you keep the big picture in mind and ensure that the rest of the
+exercises you develop lead up to this larger goal. These final challenges are also 
+the most likely to be "unscaffolded", and so are easier to develop without detailed 
+knowledge of the various types of exercises discussed later in this chapter. So you 
+can go ahead and draft those final challenges now before reading the rest!
 
 ## Different types of challenges
+
+There are many different types of challenge questions that can be developed. In this 
+section, we introduce a few common types of challenges, in order of increasing 
+difficulty (for the learner). When planning your exercises, keep in mind that you will
+need at least one exercise for every 10-15 minutes of instruction (and more is better!). 
+To quickly estimate how many exercises you need to develop, divide the number of 
+minutes of total delivery time (the number of minutes your learners will be in their 
+seats) by 20. For example, a two hour lesson needs around six exercises. 
+As a rough estimate, plan 8 minutes for each exercise 
+(including discussion of the solution and questions) and 12 minutes of instructional time
+between exercises. 
 
 ### Multiple Choice Questions
 
@@ -398,6 +378,7 @@ be prepared for feedback from Instructors "in the field" about how to improve th
 
 ### Switch the dataset
 
-
+This is a very advanced exercise type. Information to be added in a later version 
+of this handbook.
 
 
