@@ -265,36 +265,33 @@ The following challenge (from the Software Carpentry lesson on
 [The Unix Shell](http://swcarpentry.github.io/shell-novice/)) illustrates one possible
 application of fill-in-the-blank problems: 
 
-> ## Moving to the Current Folder
+> ### Challenge: Moving to the Current Folder {-}
 >
-> After running the following commands,
-> Jamie realizes that she put the files `sucrose.dat` and `maltose.dat` into the wrong folder:
+> After running the following commands, Jamie realizes that she put the files
+> `sucrose.dat` and `maltose.dat` into the wrong folder:
 >
-> ~~~
+> ```{bash, eval=FALSE}
 > $ ls -F
 >  analyzed/ raw/
 > $ ls -F analyzed
 > fructose.dat glucose.dat maltose.dat sucrose.dat
 > $ cd raw/
-> ~~~
-> {: .language-bash}
+> ```
 >
 > Fill in the blanks to move these files to the current folder
 > (i.e., the one she is currently in):
 >
-> ~~~
+> ```{bash, eval=FALSE}
 > $ mv ___/sucrose.dat  ___/maltose.dat ___
-> ~~~
-> {: .language-bash}
-> > ## Solution
-> > ```
-> > $ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
-> > ```
-> > {: .language-bash}
-> > Recall that `..` refers to the parent directory (i.e. one above the current directory)
-> > and that `.` refers to the current directory.
-> {: .solution}
-{: .challenge}
+> ```
+>
+> > ### Solution {-}
+>> ```{bash, eval=FALSE}
+>> $ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
+>> ```
+>> Recall that `..` refers to the parent directory (i.e. one above the current directory)
+>> and that `.` refers to the current directory.
+
 
 We can also apply this concept to our earlier example and ask learners to fill-in-the-blanks
 to build a code block that will return only the values of the "Species" and "Petal.Width"
@@ -338,29 +335,34 @@ surveys_plot = p9.ggplot(data=surveys_complete,
 surveys_plot + p9.geom_point()
 ```
 
-![png](../fig/06_first_plot.png)
+```{r, echo=FALSE}
+knitr::include_graphics("./figures/python_scatterplot_example.png")
+```
+
 
 They are then asked to create a barchart showing the number of observations in each region 
 (or "plot") of the field site. 
 
-> ## Challenge - bar chart
+> ### Challenge - bar chart {-}
+>
 > Working on the `surveys_complete` data set, use the `plot-id` column to
 > create a `bar`-plot that counts the number of records for each plot. (Check
 > the documentation of the bar geometry to handle the counts)
 >
-> > ## Answers
-> >
-> > ```{python, eval=FALSE}
-> > (p9.ggplot(data=surveys_complete,
-> >            mapping=p9.aes(x='plot_id'))
-> >     + p9.geom_bar()
-> > )
-> > ```
-> >
-> > ![png](../fig/06_challenge_bar.png)
-> {: .solution}
-{: .challenge}
-
+>> ### Answers {-}
+>>
+>> ```{python, eval=FALSE}
+>> (p9.ggplot(data=surveys_complete,
+>>            mapping=p9.aes(x='plot_id'))
+>>     + p9.geom_bar()
+>> )
+>> ```
+>>
+>> ```{r, echo=FALSE}
+>> knitr::include_graphics("./figures/python_barplot_example.png")
+>> ```
+                     
+                      
 To answer this problem, learners need to locate and decipher the appropriate help file (for
 the `geom_bar()` function). They also need to change the `mapping` attribute to apply to "plot_id" rather than "weight" and "hindfoot_length". Later challenges in this lesson require
 learners to apply multiple concepts in new contexts, for example, modifying both the plot type
