@@ -1,6 +1,6 @@
 --- 
 title: "The Carpentries Curriculum Development Handbook"
-author: "François Michonneau"
+author: "Erin Becker and François Michonneau"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -12,7 +12,7 @@ github-repo: carpentries/curriculum-development
 description: "This is a work in progress of the curriculum development handbook for The Carpentries."
 ---
 
-# Work in progress
+# Preface {-}
 
 This is work in progress. Comments and suggestions are welcome either as:
 
