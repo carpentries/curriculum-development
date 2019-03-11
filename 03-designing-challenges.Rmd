@@ -285,12 +285,13 @@ application of fill-in-the-blank problems:
 > $ mv ___/sucrose.dat  ___/maltose.dat ___
 > ```
 >
-> > ### Solution {-}
->> ```{bash, eval=FALSE}
->> $ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
->> ```
->> Recall that `..` refers to the parent directory (i.e. one above the current directory)
->> and that `.` refers to the current directory.
+> ### Solution {-}
+> ```{bash, eval=FALSE}
+> $ mv ../analyzed/sucrose.dat ../analyzed/maltose.dat .
+> ```
+>
+> Recall that `..` refers to the parent directory (i.e. one above the current
+> directory) and that `.` refers to the current directory.
 
 
 We can also apply this concept to our earlier example and ask learners to fill-in-the-blanks
@@ -349,18 +350,18 @@ They are then asked to create a barchart showing the number of observations in e
 > create a `bar`-plot that counts the number of records for each plot. (Check
 > the documentation of the bar geometry to handle the counts)
 >
->> ### Answers {-}
->>
->> ```{python, eval=FALSE}
->> (p9.ggplot(data=surveys_complete,
->>            mapping=p9.aes(x='plot_id'))
->>     + p9.geom_bar()
->> )
->> ```
->>
->> ```{r, echo=FALSE}
->> knitr::include_graphics("./figures/python_barplot_example.png")
->> ```
+> ### Answers {-}
+>
+> ```{python, eval=FALSE}
+> (p9.ggplot(data=surveys_complete,
+>            mapping=p9.aes(x='plot_id'))
+>     + p9.geom_bar()
+> )
+> ```
+>
+> ```{r, echo=FALSE}
+> knitr::include_graphics("./figures/python_barplot_example.png")
+> ```
                      
                       
 To answer this problem, learners need to locate and decipher the appropriate help file (for

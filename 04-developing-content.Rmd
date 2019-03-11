@@ -4,7 +4,7 @@ At this point in the lesson development process, you should have a list of the c
 will teach, along with a set of exercises that you will incorporate into your lesson. If you've taken the time 
 to go through these steps, the remaining parts of the development process will be much more straightforward
 and take less time than if you try to start with developing content. Its ok if your list of skills and set
-of exercises changes a little as you develop your lesson content - none of us get it right on the first try -
+of exercises changes a little as you develop your lesson content -- none of us get it right on the first try --
 however, if you've invested time in the first two steps of the backward design process,
 these changes should be fairly small.
 
@@ -14,34 +14,44 @@ here on the bare minimum you need to know to get started. It's perfectly ok to w
 steps described in this chapter before worrying about the logistics of putting your materials up on GitHub, 
 but if you're working with multiple authors, it may be worth putting your materials on GitHub at this stage,
 to make collaboration easier. The [Technological Introductions](https://carpentries.github.io/curriculum-development/technological-introductions.html) chapter
-can get you started with hosting your lesson on GitHub.  
+can get you started with hosting your lesson on GitHub.
 
 ## Fundamental elements
 
-The bulk of a Carpentries lesson consists of exercises, example code chunks, and narrative text. You have already
-developed many or all of the exercises you will include in your lesson, so congratulations on being one-third
-done with content development! The remaining two major components of the lesson are described below. 
+The bulk of a Carpentries lesson consists of exercises, example code chunks, and
+narrative text. You have already developed many or all of the exercises you will
+include in your lesson, so congratulations on being one-third done with content
+development! The remaining two major components of the lesson are described
+below.
 
 ### Code chunks
-Carpentries workshops are taught using participatory
-live coding. Instructors
-type the code as they teach it and learners type along with the Instructor. For more information about how
-live coding works, and what its advantages and disadvantages are, read that section of our 
-[Instructor Training program](https://carpentries.github.io/instructor-training/14-live/index.html). The fact 
-that Carpentries workshops are taught using live coding means that much of your episode content will be 
-*code chunks* - short blocks of code that learners type along with the Instructor and evaluate on their own
-machines. 
 
-Since you already know the structure of your dataset, and already have your exercises in place, it's fairly
-straightforward to create the code chunks for your lesson. Starting with the first exercise, make a list of each
-of the commands and syntax elements that learners need to be familiar with in order to solve the exercise. For
-example, the first exercise in the Data Carpentry lesson [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) asks learners to: 
+Carpentries workshops are taught using participatory live coding. Instructors
+type the code as they teach it and learners type along with the Instructor. For
+more information about how live coding works, and what its advantages and
+disadvantages are, read that section of our [Instructor Training
+program](https://carpentries.github.io/instructor-training/14-live/index.html).
+The fact that Carpentries workshops are taught using live coding means that much
+of your episode content will be *code chunks* - short blocks of code that
+learners type along with the Instructor and evaluate on their own machines.
 
-```
-Use the `-l` option for the `ls` command to display more information for each item in the directory. What is one piece of additional information this long format gives you that you don’t see with the bare `ls` command?
-```
+Since you already know the structure of your dataset, and already have your
+exercises in place, it's fairly straightforward to create the code chunks for
+your lesson. Starting with the first exercise, make a list of each of the
+commands and syntax elements that learners need to be familiar with in order to
+solve the exercise. For example, the first exercise in the Data Carpentry lesson
+[Introduction to the Command Line for
+Genomics](https://datacarpentry.org/shell-genomics/) asks learners to:
+
+> ### Challenge {-}
+>
+> Use the `-l` option for the `ls` command to display more information for each
+> item in the directory. What is one piece of additional information this long
+> format gives you that you don’t see with the bare `ls` command?
+
 
 In order to solve this challenge, learners need to know the following (in approximately reverse order): 
+
 1. That options come after the command (e.g. `ls -l` not `-l ls`).
 1. How to find the manual page for `ls` to understand the output.
 1. What the `ls` command does in its bare form. 
@@ -109,7 +119,7 @@ to quit.
 
 Narrative text should be as short as possible and should avoid discussion of edge cases or caveats. If there
 are important caveats, those can be included in a callout box (see the 
-[Technological Introductions](https://carpentries.github.io/curriculum-development/technological-introductions.html) 
+[Technological Introductions]
 chapter for formatting details of callout boxes). Only include callouts for cases a significant fraction of your
 learners will experience in their work. It's very easy to clutter the lesson and overwhelm learners. 
 
@@ -134,7 +144,7 @@ of content for both learners and Instructors. These supporting elements are lear
 framing questions. When you create your lesson repository from The Carpentries template, there will be sections
 for you to enter these supporting items for each episode. The template will extract these elements and embed 
 them in the rendered lesson webpage. For details, see the 
-[Technological Introductions](https://carpentries.github.io/curriculum-development/technological-introductions.html) chapter.
+[Technological Introductions] chapter.
 
 ### Learning objectives
 
