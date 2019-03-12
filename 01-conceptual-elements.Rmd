@@ -70,8 +70,8 @@ The authors identify seven principles of learning (direct quotation from the boo
   Curricular content also plays a major role in creating a positive environment:
   examples chosen should not be alienating, skill level must be appropriate for
   the audience, and the examples and challenges must be directly applicable
-  for our learners. For instance, when a learner
-  creates a visualization that they can directly apply to their own
+  for our learners. For instance, when learners
+  create a visualization that they can directly apply to their own
   data, it reinforces their motivation and favors a positive learning
   climate.
 7. **"To become self-directed learners, students must learn to monitor and adjust
