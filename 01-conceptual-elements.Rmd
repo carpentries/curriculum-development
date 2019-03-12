@@ -49,7 +49,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   lessons, they receive direct feedback from the computer - either an
   error message or the expected answer. Error messages are often opaque, and
   do not on their own help learners advance in their learning process, making them
-  frustrating and demotivating. Our lessons are designed to be delivered as real-time
+  frustrated and demotivated. Our lessons are designed to be delivered as real-time
   in-person instruction, so that learners get feedback from Instructors and workshop helpers
   that is human-parsable and directed to their level of understanding. Furthermore,
   challenges used in a lesson should only require the skills
