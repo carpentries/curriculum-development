@@ -75,7 +75,7 @@ for improvement - whether correcting a typo, simplifying code, or suggesting
 a significant shift in the narrative of a lesson. Maintainers proactively monitor
 their lesson's GitHub repository to make sure that PRs and issues are addressed
 in a timely manner. Maintainers also play a vital role in communicating with 
-contributors, ensuring that our community lives up to it's ideals in welcoming
+contributors, ensuring that our community lives up to its ideals in welcoming
 and appreciating contributions from everyone - from first-time contributors to long-time
 members of The Carpentries community.
 
