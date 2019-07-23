@@ -301,8 +301,8 @@ was greater than 1.5:
 
 ```{r, echo=TRUE, eval=FALSE}
 iris %>%
-  filter(Species ___ "setosa" & ___ > 1.5) %>%
-  select(Species, ___ )
+  ________(Species __ "setosa" ___ Petal.Length > 1.5) %>%
+  ________(Species, ___ )
 ```
 
 The difficulty of a fill-in-the-blank problem can be adjusted by changing the number of blanks,
