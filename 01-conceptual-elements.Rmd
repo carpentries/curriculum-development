@@ -86,10 +86,14 @@ The authors identify seven principles of learning (direct quotation from the boo
   challenges we teach, it works best for the most advanced ones, where several steps
   need to be integrated to come to the solution. Before reaching this level of
   complexity, the challenges can be designed to guide this process, using
-  scaffolding. Scaffolding is the process where all the pieces of code to answer
-  the problem are already written but are not in the correct order (Parson's
-  problem), or fill in the blanks. This might be one of the most important
-  things we teach in our workshops. It sets learners on a successful path
+  scaffolding. Scaffolding is the process of providing support to a learner while 
+  new subjects and concepts are introduced.  Scaffolding assists learners as they 
+  progress through increasingly complex code creation by breaking the complex code 
+  into smaller, more manageable chunks.  Common parctice problems used in instructional 
+  scaffolding are Parson's problems, where all the pieces of code to answer the problem 
+  are already written but are not in the correct order; and, fill in the blanks. 
+  Instructional scaffolding might be one of the most important
+  things we use in our workshops. It sets learners on a successful path
   for further self-directed learning. When developing the content of the curriculum, think of the
   kind of thinking process that is needed to successfully address the research
   questions in your field.
