@@ -1,14 +1,10 @@
 # Conceptual elements
 
-* Self-directed learning
-* The I, We, You model
-
 ## The Carpentries mindset for curriculum development
 
 Carpentries curricula are developed based on the results of research in the science of
 teaching and learning. We rely on findings synthesized in the book 
-[How Learning Works: Seven Research-Based Principles for Smart Teaching](https://www.wiley.com/en-us/How+Learning+Works%3A+Seven+Research+Based+Principles+for+Smart+Teaching-p-9780470484104)
-(Ambrose et al., 2010). We use this text in our Instructor Trainer training program, so that
+[How Learning Works: Seven Research-Based Principles for Smart Teaching](https://www.wiley.com/en-us/How+Learning+Works%3A+Seven+Research+Based+Principles+for+Smart+Teaching-p-9780470484104) [@ambrose2010learning]. We use this text in our Instructor Trainer training program, so that
 Trainers (who teach our Instructor Training courses) can understand why we teach the way we
 do, and why our lessons are designed the way they are.
 
@@ -44,7 +40,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   integrating them, and know when to apply what they have learned."** -- 
   Our lessons use frequent challenges to provide
   opportunities for learners to practice applying their new skills. These challenges
-  are designed to incrementally build on each other and integrate previous taught
+  are designed to incrementally build on each other and integrate previously taught
   and new skills. Careful attention to exercise design helps assure learners will
   be able to transfer the
   skills they acquire in our workshop to their own research.
@@ -53,7 +49,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   lessons, they receive direct feedback from the computer - either an
   error message or the expected answer. Error messages are often opaque, and
   do not on their own help learners advance in their learning process, making them
-  frustrating and demotivating. Our lessons are designed to be delivered as real-time
+  frustrated and demotivated. Our lessons are designed to be delivered as real-time
   in-person instruction, so that learners get feedback from Instructors and workshop helpers
   that is human-parsable and directed to their level of understanding. Furthermore,
   challenges used in a lesson should only require the skills
@@ -72,9 +68,9 @@ The authors identify seven principles of learning (direct quotation from the boo
   Other strategies we use to create a positive learning environment [are covered in our
   Instructor Training](https://carpentries.github.io/instructor-training/08-motivation/index.html). 
   Curricular content also plays a major role in creating a positive environment:
-  examples chosen cannot be alienating, skill level must be appropriate for
+  examples chosen should not be alienating, skill level must be appropriate for
   the audience, and the examples and challenges must be directly applicable
-  for our learners. For instance, a learner
+  for our learners. For instance, when a learner
   creates a visualization that they can directly apply to their own
   data, it reinforces their motivation and favors a positive learning
   climate.
@@ -87,24 +83,26 @@ The authors identify seven principles of learning (direct quotation from the boo
   which to call these functions to solve an exercise, helps learners to think
   of the questions they need to ask themselves when facing new problems to
   solve. While this type of approach works for any level of complexity in the
-  challenges we teach, it works best for most advanced ones, where several steps
+  challenges we teach, it works best for the most advanced ones, where several steps
   need to be integrated to come to the solution. Before reaching this level of
   complexity, the challenges can be designed to guide this process, using
-  scaffolding. Scaffolding is the process where all the pieces of code to answer
-  the problem are already written but are not in the correct order (Parson's
-  problem), or fill in the blanks. This might be one of the most important
-  things we teach in our workshops. It sets learners on a successful path
+  scaffolding. Scaffolding is the process of providing support to a learner while 
+  new subjects and concepts are introduced.  Scaffolding assists learners as they 
+  progress through increasingly complex code creation by breaking the complex code 
+  into smaller, more manageable chunks.  Common parctice problems used in instructional 
+  scaffolding are Parson's problems, where all the pieces of code to answer the problem 
+  are already written but are not in the correct order; and, fill in the blanks. 
+  Instructional scaffolding might be one of the most important
+  things we use in our workshops. It sets learners on a successful path
   for further self-directed learning. When developing the content of the curriculum, think of the
   kind of thinking process that is needed to successfully address the research
   questions in your field.
-
-In the context of a two-day workshop, not all of the principles outlined by the authors of "How Learning Works" apply. We emphasize those that create a positive, engaging experience for our participants, and that will motivate them to learn more about the best practices and skills covered in our workshops.
 
 Applying these principles effectively requires that they are incorporated into both
 **what** is taught (content) and **how** it is taught (delivery). Our 
 Instructor Training program focuses on teaching Instructors how to use these principles 
 in their teaching. In this handbook, we focus on applying these principles to
-curriculum design. Before starting to create lesson content, we hihgly recommend that you familiarize yourself with our [Instructor Training curriculum](https://carpentries.github.io/instructor-training/). 
+curriculum design. Before starting to create lesson content, we highly recommend that you familiarize yourself with our [Instructor Training curriculum](https://carpentries.github.io/instructor-training/). 
 
 ## Backward design
 
@@ -117,8 +115,6 @@ these outcomes. This model was developed by Grant J. Wiggins and Jay McTighe in 
 [Understanding by Design](https://www.pearson.com/us/higher-education/program/Wiggins-Understanding-by-Design-Expanded-Second-Edition-2nd-Edition/PGM229455.html). We use backward design in developing our curricula because of its focus on identifying clear, measurable
 learning goals and providing assessments aligned with those goals. 
 
-[Analogy with drawing: you want to draw the outline before filling the details.]
-
 In essense, the backward design process has three stages:
 
 1. Identify the practical skills we aim to teach. 
@@ -129,7 +125,7 @@ In essense, the backward design process has three stages:
 This approach ensures that all the skills we teach work together to meet the over-arching
 goals of our curriculum. It also reduces the risk that we won't teach a concept learners
 need in order to be able
-to master the skills we aim to teach. Similarly, it avoids teaching topics that do not help us meet our goals.
+to master the skills we aim to teach. Similarly, it avoids teaching topics that do not help us (and our learners) meet our goals.
 
 Reducing distractions is part of our lesson design as we strive to reduce cognitive load on learners. To this end, we also develop our lessons to be centered around a narrative and a dataset they can relate with quickly.
 
@@ -146,37 +142,33 @@ own data.
 
 Our primary aim in a Carpentries workshop is to increase the confidence of our learners. We
 want to demystify and make accessible the process of computing and analyzing data. More than
-a third of learners at our workshops have little to no coding experience ([Jordan et al., 2018](https://zenodo.org/record/1325464#.XF39ts9Kjw4)). Our workshops provide them an
+a third of learners at our workshops have little to no coding experience [@jordan2018assessment]. Our workshops provide them an
 opportunity to try, in a friendly environment, something they perceive as intimidating.
 
-Another important goal is to make the research life of our learners easier. We emphasize
-teaching "good enough practices" [(Wilson, et al., 2017)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) - 
-concrete skills that are accessible, able to be adopted by researchers of any skill level,
-and likely to make an immediate positive impact on learners' work. Teaching defensive
-programming, how to use spreadsheets effectively, or how to organize files consistently
-across research projects, are practical skills that can save a lot time when learners apply
-them in their own research.
+Another important goal is to make the research life of our learners easier. We
+emphasize teaching "good enough practices" [@wilson2017goodenough] - concrete
+skills that are accessible, able to be adopted by researchers of any skill
+level, and likely to make an immediate positive impact on learners' work.
+Teaching defensive programming, how to use spreadsheets effectively, or how to
+organise files consistently across research projects, are practical skills that
+can save a lot time when learners apply them in their own research.
 
 When developing a new curriculum, the first step is to identify the skills that will be the
 most immediately useful to learners and have the biggest impact on their work. This will 
 vary a lot, so having a clear idea of your lesson's intended audience is critical at this
 stage.
 
+We will discuss in detail the process of defining your 
+audience and identifying these core skills for your lesson
+in [a later chapter][Deciding what to teach].
+
+### Designing challenges to assess understanding
+
 Once you have identified these high-impact skills, the lesson content should be designed to
 create frequent opportunities for learners to practice these skills while exemplifying the
 tasks they perform in their daily work. Live coding and hands-on challenges that learners
-can directly relate to should allow them to project how they can start using the skills
+can directly relate to should allow them to envision how they can start using the skills
 taught with their own data as soon as the workshop is over.
-
-Teaching the most useful skills in a practical way aims at encouraging continued learning
-after attending a workshop. Additionally, we have found that having local communities
-created by Instructors and learners, provides a resource and support group that fosters this
-culture of continuous learning.
-
-We will discuss in detail the process of identifying these core skills for your lesson
-in [a later chapter](https://carpentries.github.io/curriculum-development/how-to-decide-what-to-teach.html).
-
-### Designing challenges to assess understanding
 
 In traditional Western instruction, learners are presented with new material during course time
 and then sent home to practice applying the concepts learnt on their own. A major limitation of this
@@ -187,20 +179,26 @@ number 5 above) so that errors are corrected and mis-steps redirected before mis
 discouraging or engrained in learners' memory.
 
 To this end, Carpentries workshops are designed to provide frequent opportunities for learners to practice new skills. To be
-helpful in providing useful feedback, these challenges need to both a) be narrowly targeted to the skills 
-that have been taught (i.e. not to depend on untaught concepts) and b) be diagnostic (Instructors should be
-able to tell what the learner is misunderstanding based on how they answer the question). The practical 
-aspects of creating useful challenge problems is discussed in a [later section](https://carpentries.github.io/curriculum-development/assembling-the-lesson.html#designing-challenges). 
+helpful in providing useful feedback, these challenges need to both be:
+
+1. narrowly targeted to the skills that have been taught (i.e. not to depend
+   on untaught concepts), and;
+2. diagnostic (Instructors should be able to tell what the learner is
+   misunderstanding based on how they answer the question).
+
+The practical aspects of creating useful challenge problems is discussed in [a
+later chapter][Designing challenges].
 
 ### Planning the content of the lesson
 
-Once you've determined the core skills your learners need in order
-to improve their workflow and be more efficient, you now need to
-identify what key concepts and pieces of knowledge are required
-for your learners to gain those skills. For example, one key skill
-for our . . . lesson is . . .. In order to achieve that skill, 
-learners need to . . . 
-
+After deciding on a list of core skills your learners need, and 
+creating a set of well-targeted, diagnostic exercises, you can
+then start to create the bulk of the content for the lesson. 
+This material can be thought of as the "script" for the 
+instructor to follow while teaching and should be planned
+very carefully to complement the exercises you've already
+designed. We cover the process of creating curricular content
+in [a later chapter][Developing content]
 
 ## Creating a narrative and selecting a dataset 
 
@@ -214,17 +212,19 @@ through data cleaning, analysis, and visualisation or reporting.
 It is important to choose a dataset that is an authentic 
 representation of what your audience would encounter in their
 day-to-day work. The practicalities of chosing an appropriate 
-dataset are covered in a [later section](https://carpentries.github.io/curriculum-development/assembling-the-lesson.html#picking-a-dataset) of this handbook.
+dataset are covered in a [later section][Picking a dataset]
+of this handbook.
 
 ## Limitations of our approach
 
 Learners can't go from complete novices to experts in two days (or 
 in the course of any single class). We aim to provide learners with 
-three things:  
-1) A set of foundational concepts and skills,  
-2) A mental model that connects those concepts into a useful
-framework and that can be built upon in their future learning, and  
-3) The motivation and skillset they need to continue learning 
+three things:
+
+1. A set of foundational concepts and skills;
+1. A mental model that connects those concepts into a useful
+framework and that can be built upon in their future learning; and
+1. The motivation and skillset they need to continue learning 
 past the end of the workshop. 
 
 Managing learners' expectations, and clearly communicating to 

@@ -118,9 +118,9 @@ will likely be updated by Instructors as they get real-world data on how learner
 the episodes, but it is useful to have a starting point to benchmark from. The lesson template creates a schedule
 from these time estimates and places it on the lesson homepage. 
 1. Replace `Key question (FIXME)` with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear in the schedule on the lesson homepage. 
-1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see OTHER CHAPTER. 
+1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see the [Developing Content](https://carpentries.github.io/curriculum-development/developing-content.html) chapter. 
 1. Replace `First key point. Brief Answer to questions. (FIXME)` with 3-7 major take-aways from the episode. For
-information on how to distill an episode's key points, see OTHER CHAPTER. Key points for all episodes are shown 
+information on how to distill an episode's key points, see the [Developing Content](https://carpentries.github.io/curriculum-development/developing-content.html) chapter. Key points for all episodes are shown 
 together in the lesson's reference page. 
 
 #### Episode content
@@ -202,7 +202,7 @@ then link to the figure using the syntax:
 
 Note about alt text. Question: Is this the "proper" way to insert a figure link? 
 
-1. Code chunks - As discussed in EARLIER CHAPTER, Carpentries workshops are taught using participatory
+1. Code chunks - As discussed in [an earlier chapter](https://carpentries.github.io/curriculum-development/developing-content.html), Carpentries workshops are taught using participatory
 live coding. Instructors
 type the code as they teach it and learners type along with the Instructor. For more information about how
 live coding works, and what its advantages and disadvantages are, read that section of our 

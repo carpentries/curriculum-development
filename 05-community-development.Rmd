@@ -17,13 +17,13 @@ update lesson materials.
 A lesson may have one or several initial authors. Authors draft
 the lesson content, figures, and code and create appropriate challenge problems. Authors should have both appropriate domain
 experience - working in the same field as the intended audience for the materials,
-and programmatic experience - regularly using the tools for which they are
+and programmatic experience -- regularly using the tools for which they are
 developing lessons in their own work. From a technical standpoint, authors
 will also need to be familiar with specific technologies that we use for 
 developing and hosting The Carpentries lessons - including git, GitHub, Markdown,
 RMarkdown, ... But don't panic! If you're not comfortable with any or all of these
 tools, we'll walk you through what you need to know to use them [later in this
-Handbook](link). Most importantly, to ensure that lesson materials are consistent with The Carpentries vision and
+Handbook][Technological Introductions]. Most importantly, to ensure that lesson materials are consistent with The Carpentries vision and
 values, 
 lesson authors should be certified Carpentries Instructors or otherwise involved
 in The Carpentries community. If a group of authors are writing a lesson
@@ -75,7 +75,7 @@ for improvement - whether correcting a typo, simplifying code, or suggesting
 a significant shift in the narrative of a lesson. Maintainers proactively monitor
 their lesson's GitHub repository to make sure that PRs and issues are addressed
 in a timely manner. Maintainers also play a vital role in communicating with 
-contributors, ensuring that our community lives up to it's ideals in welcoming
+contributors, ensuring that our community lives up to its ideals in welcoming
 and appreciating contributions from everyone - from first-time contributors to long-time
 members of The Carpentries community.
 
@@ -88,7 +88,8 @@ lesson will have at least two Maintainers, and it's ok for one Maintainer
 to have domain experience and another to be more comfortable with the technical
 aspects of lesson maintainence. 
 
-Maintainer recruitment, requirements and time commitment
+#### Maintainer recruitment, requirements and time commitment
+
 It's a good idea to recruit three or four Maintainers per lesson, as some may not complete onboarding
 or may realize that they don't have the time to commit to this role. 
 https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#
@@ -175,9 +176,7 @@ Onboarding?
 
 ### Instructors
 
-    + How to onboard existing instructors 
-    +  How to recruit new instructors from the domain
-    
-    
-  - When to put these roles in place
-  - How many people we need in these roles
+- How to onboard existing instructors 
+- How to recruit new instructors from the domain
+- When to put these roles in place
+- How many people we need in these roles
