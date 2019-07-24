@@ -34,7 +34,7 @@ still be important to have regular checkins with all authors.
 
 ### Reviewers
 
-We know no one is perfect! Lesson materials should be read and tested by at least
+No one is perfect! Lesson materials should be read and tested by at least
 one person other than the original author before being released for use by the broader community in beta pilot workshops. 
 If a lesson has more than one author, co-authors can review each other's content. 
 Community members can also serve as reviewers. A reviewer commits to carefully
@@ -46,6 +46,9 @@ lesson is bug-free, all code runs as expected, exercises are appropriate and tes
 only the concepts being taught, and in general that the lesson is ready to be
 delivered to learners in a beta pilot workshop.
 
+Reviewers will also check to be sure the lesson complies with our 
+[our accessibility requirements][accessibility-reqs]. 
+
 Don't worry - this review stage is not the only point at which lessons will
 receive feedback. Our collaborative lesson development model ensures that 
 Instructors and other community members will continue to engage with the lesson 
@@ -55,7 +58,7 @@ to keep the lessons in good shape for as long as they are actively being taught!
 Reviewers do not need to have any particular domain background or tool expertise. 
 In fact, we recommend including reviewers who are complete novices either
 the tool being taught by the lesson and/or the lesson's target domain. This can
-help overcome authors' [expert blind spot](link to appropriate instructor training page). 
+help overcome authors' [expert blind spot][expert-blind-spot]. 
 
 Reviewers should also include people from different geographic regions and
 cultural and linguistic contexts than the lessons' authors. If all of
@@ -64,8 +67,6 @@ one reviewer from outside the UK, and ideally from a non-majority English-speaki
 area. Ensuring that lessons are reviewed by people from a variety of cultural and linguistic 
 contexts helps us to avoid colloquialisms, culturally-specific references, and other issues that might make our lessons less accessible to a global community. You will likely need one or two reviewers for every
 two hours of lesson content. A four-hour (half day) lesson should have at least two to four reviewers.
-
-[Include something about accessibility?]
 
 ### Lesson Maintainers
 
@@ -90,15 +91,33 @@ aspects of lesson maintainence.
 
 #### Maintainer recruitment, requirements and time commitment
 
-It's a good idea to recruit three or four Maintainers per lesson, as some may not complete onboarding
-or may realize that they don't have the time to commit to this role. 
-https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#
-Maintainer onboarding (how to run)
-https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding 
-Maintainer meetings and skill development / office hours
+It's a good idea to recruit at least four Maintainers per lesson, as our
+community members are volunteers and may have fluxuating levels of time to
+commit to this role. Having a larger team of Maintainers ensures you'll
+always have
+at least one or two active Maintainers at any given time. 
 
-A lesson should have at least two or three trained and active Maintainers before it enters the 
-beta pilot workshop phase. Before that time, lesson feedback and edits will be 
+Maintainers commit to a [specific set of duties][maintainer-guidelines], and
+go through a short onboarding process to familiarise them with the social,
+technological, and curriculum-specific elements of lesson maintanence. 
+This onboarding is available as a [written curriculum][maintainer-onboarding-lesson]
+and as a [video recording][maintainer-onboarding-video], however, if 
+time allows, we recommend running onboarding for your Maintainer group via
+synchronous video-conference. Getting everyone in the same virtual room for
+these discussions creates a sense of community and will make it easier for
+your lesson Maintainers to work together. Information about how to run
+a synchronous Maintainer onboarding, including email templates and 
+scheduling information, is available in [The Carpentries Handbook][maintainer-onboarding-process].
+
+Once your Maintainers have been onboarded, they will join The Carpentries
+full [Maintainer team][maintainer-team]. This team meets monthly to share
+skills, exchange ideas, and get suggestions from each other around 
+challenging issues and pull requests in their individual lesson repositories.
+Meeting times and information about how to stay in touch with the Maintainer
+team is available in [The Carpentries Handbook][maintainer-stay-in-touch].
+
+A lesson should have at least three onboarded Maintainers before it enters the 
+beta pilot workshop phase. Before that time, lesson feedback and edits will generally be 
 managed by the lesson authors.
 
 ### Curriculum Advisors
@@ -114,7 +133,7 @@ changing the dataset used in the lessons to appeal to a braoder group of learner
 A Curriculum Advisory Committee (CAC)
 is composed of 5-8 people with significant domain expertise who represent the 
 breadth of the field that a curriculum is intended to reach. For example, the
-[Data Carpentry Geospatial CAC](https://datacarpentry.org/lesson-leadership/)
+[Data Carpentry Geospatial CAC][dc-geo-cac]
 includes researchers in ecology, limnology, environmental sciences, and sociology,
 along with university staff leading institutional GIS education efforts. Multiple
 career levels are represented, from PhD candidates at the end of their graduate
@@ -180,3 +199,13 @@ Onboarding?
 - How to recruit new instructors from the domain
 - When to put these roles in place
 - How many people we need in these roles
+
+[accessibility-reqs]: link
+[expert-blind-spot]: https://carpentries.github.io/instructor-training/03-expertise/
+[dc-geo-cac]: https://datacarpentry.org/lesson-leadership/
+[maintainer-guidelines]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-guidelines
+[maintainer-onboarding-lesson]: https://carpentries.github.io/maintainer-onboarding/
+[maintainer-onboarding-video]: link
+[maintainer-onboarding-process]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding
+[maintainer-team]: https://carpentries.org/maintainers/
+[maintainer-stay-in-touch]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#how-to-stay-in-touch

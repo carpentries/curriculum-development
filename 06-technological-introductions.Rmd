@@ -398,3 +398,6 @@ If you choose to contribute via GitHub, you may want to look at
 
 * Creating new lesson or working with existing lesson
 
+[github-flow]: https://guides.github.com/introduction/flow/
+[github-join]: https://github.com/join
+[how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
