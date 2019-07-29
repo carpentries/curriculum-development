@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 432 270.3" style="enable-background:new 0 0 432 270.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'Fieldwork-Geo-Bold';}
+	.st1{font-size:12px;}
+	.st2{opacity:0.85;fill:#CCCCCC;enable-background:new    ;}
+	.st3{font-family:'Fieldwork-Geo-Light';}
+	.st4{fill:none;stroke:#4D4D4D;stroke-miterlimit:10;}
+	.st5{font-size:8px;}
+</style>
+<text transform="matrix(1 0 0 1 5.3987 23.7044)" class="st0 st1">Lesson Programs</text>
+<text transform="matrix(1 0 0 1 125.3653 23.7046)" class="st0 st1">Lessons</text>
+<text transform="matrix(1 0 0 1 296.0561 23.7046)" class="st0 st1">Episodes</text>
+<rect x="0.3" y="33.2" class="st2" width="432" height="36.2"/>
+<text transform="matrix(1 0 0 1 5.3988 54.1589)" class="st3 st1">Data Carpentry</text>
+<text transform="matrix(1 0 0 1 125.3654 46.9589)" class="st3 st1">Data Organization in </text>
+<text transform="matrix(1 0 0 1 125.3654 61.3589)" class="st3 st1">Spreadsheets for Ecologists*</text>
+<text transform="matrix(1 0 0 1 296.0557 54.1591)" class="st3 st1">Exporting data</text>
+<g>
+	<rect x="0.5" y="105.2" class="st2" width="432" height="36.2"/>
+	<text transform="matrix(1 0 0 1 5.3992 126.1758)" class="st3 st1">Library Carpentry</text>
+	<text transform="matrix(1 0 0 1 125.3653 126.176)" class="st3 st1">OpenRefine</text>
+	<text transform="matrix(1 0 0 1 296.0556 126.176)" class="st3 st1">Faceting and filtering</text>
+</g>
+<g>
+	<rect x="0.5" y="177.2" class="st2" width="432" height="36.2"/>
+	<text transform="matrix(1 0 0 1 5.399 198.1923)" class="st3 st1">Software Carpentry</text>
+	<text transform="matrix(1 0 0 1 125.3651 190.9928)" class="st3 st1">Plotting and Programming </text>
+	<text transform="matrix(1 0 0 1 125.3651 205.3928)" class="st3 st1">in Python</text>
+	<text transform="matrix(1 0 0 1 296.0554 198.193)" class="st3 st1">Writing Functions</text>
+</g>
+<line class="st4" x1="-0.2" y1="33.2" x2="433.9" y2="31.9"/>
+<line class="st4" x1="-0.7" y1="7.7" x2="433.4" y2="6.4"/>
+<line class="st4" x1="-3.2" y1="248.6" x2="433.8" y2="247.4"/>
+<text transform="matrix(1 0 0 1 125.3652 82.9673)" class="st3 st1">Data Wrangling and </text>
+<text transform="matrix(1 0 0 1 125.3652 97.3673)" class="st3 st1">Processing for Genomics*</text>
+<text transform="matrix(1 0 0 1 296.0561 90.1671)" class="st3 st1">Assessing Read Quality</text>
+<text transform="matrix(1 0 0 1 125.3652 162.1839)" class="st3 st1">The Unix Shell</text>
+<text transform="matrix(1 0 0 1 296.0555 154.9842)" class="st3 st1">Automating the tedious </text>
+<text transform="matrix(1 0 0 1 296.0555 169.3842)" class="st3 st1">with loops</text>
+<g>
+	<text transform="matrix(1 0 0 1 125.3651 227.0013)" class="st3 st1">R para Análisis Científicos</text>
+	<text transform="matrix(1 0 0 1 125.3651 241.4013)" class="st3 st1">Reproducibles</text>
+	<text transform="matrix(1 0 0 1 296.0554 234.2015)" class="st3 st1">Guardando datos</text>
+</g>
+<text transform="matrix(1 0 0 1 45.9589 262.4322)" class="st3 st5">* Data Carpentry lessons are domain-specific, and lesson that are taught together form a “curriculum”.</text>
+</svg>
