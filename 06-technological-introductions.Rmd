@@ -21,7 +21,7 @@ What knowledge will this chapter help them gain?
 ## Lesson hosting and rendering
 
 The Carpentries hosts all of our lessons on [GitHub](https://github.com). We use a 
-shared lesson template to provide aesthetic and structural 
+shared [lesson template](http://carpentries.github.io/lesson-example/setup.html) to provide aesthetic and structural 
 consistency across our lessons. Template files for each lesson are 
 rendered into a webpage using [Jekyll](https://jekyllrb.com/) - 
 a static site generator which is written in [Ruby](https://www.ruby-lang.org/en/).
@@ -50,6 +50,14 @@ of how the template is structured, and what each of the files
 does, these details are provided in APPENDIX. We recommend not
 spending time learning these details now, as we are in the 
 process of greatly simplifying our lesson template. 
+
+### Creating your lesson repository
+
+The following sections will guide you through the pieces of 
+the lesson template that you will need to modify to create your lesson.
+In order to follow along with these examples, you can start by creating your
+lesson repository in GitHub. To do this, follow [the setup instructions
+on our example lesson][template-setup].
 
 ### Lesson homepage
 
@@ -350,6 +358,8 @@ information.
 
 ### Special notes on RMarkdown
 
+Coming soon!
+
 ## Working on GitHub
 
 GitHub is a web-based service for hosting code under version control. In addition to being a technical
@@ -401,3 +411,5 @@ If you choose to contribute via GitHub, you may want to look at
 [github-flow]: https://guides.github.com/introduction/flow/
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+[template-setup]: http://carpentries.github.io/lesson-example/setup.html
+[lesson-template]: https://github.com/carpentries/styles
