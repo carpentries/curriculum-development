@@ -235,6 +235,8 @@ workshop, is important because it limits the chance of demotivation.
 
 ### The elements of The Carpentries curriculum
 
+![image of lessons and episodes](figures/leson-episode-01.png)
+
 #### Episodes
 
 An episode is a single block of content and renders as a single page of a lesson website.
