@@ -83,8 +83,8 @@ members of The Carpentries community.
 People acting as Maintainers should be experienced with the tool that is being 
 taught in the lesson, ideally using it daily or weekly in their own work. In 
 addition, they should have experience working in a relevant domain related to the
-lesson materials and/or experience working with GitHub and the other technologies
-we use to create and host our lessons (link to that section of Handbook). Each
+lesson materials and/or experience working with GitHub and the [other technologies
+we use to create and host our lessons][Technological Introductions]. Each
 lesson will have at least two Maintainers, and it's ok for one Maintainer
 to have domain experience and another to be more comfortable with the technical
 aspects of lesson maintainence. 
@@ -128,7 +128,7 @@ for the day-to-day work of keeping lessons stable and teachable, Curriculum
 Advisors maintain a broader perspective on the state of the field and make 
 strategic decisions about major changes to a lesson, for example, updating the
 technology being taught to take into account major advances in the field or 
-changing the dataset used in the lessons to appeal to a braoder group of learners.
+changing the dataset used in the lessons to appeal to a broader group of learners.
 
 A Curriculum Advisory Committee (CAC)
 is composed of 5-8 people with significant domain expertise who represent the 
@@ -184,28 +184,69 @@ Carpentries workshops. Instructors with this level of experience will be more pr
 issues that arise during the workshop, and more likely to provide useful feedback after the workshop. 
 Beta pilot instructors may be lesson reviewers,
 Maintainers, Curriculum Advisors, or any Carpentries community member other than
-lesson authors. In fact, recruiting beta pilot instructors from these areas is likely to be fruitful,
-as these people are already playing active roles in the lesson and are invested in bringing the lesson
-to maturity. For two beta pilot workshops, you will need at least four instructors. 
+lesson authors. In fact, recruiting beta pilot instructors who are already playing active roles
+in the lesson is likely to be fruitful,
+as these people are invested in bringing the lesson
+to maturity. For two beta pilot workshops, you will need at least four instructors. Lesson
+authors should plan to meet virtually with pilot instructors before the workshop to
+answer questions and provide any technical help with setup. 
 
-Feedback from beta pilots - how given and how incorporated
-How to recruit beta pilot Instructors
-Onboarding?
+During the workshop, pilot instructors should take detailed notes, including:  
+- time lengths used to teach each section  
+- time lengths used for each exercise  
+- technical issues that arose during installation  
+- bugs or parts of the lesson code that didn't work as expected  
+- incorrect exercise solutions  
+- questions learners asked (and their answers)   
+- parts of the lesson that were confusing for learners  
 
+These notes can be collected in an Etherpad, Google Doc, or other collaborative document that is shared
+with co-instructors and workshop helpers. This document should not be shared with workshop learners, 
+as it will add significantly to their cognitive load. 
+
+After the workshop, instructors should share the notes document with the lesson authors - who 
+will convert the notes into individual issues in the lesson repo. Lesson authors should expect
+to spend at least four hours to create follow-up issues for each pilot workshop, and at least
+eight hours to putting in PRs to fix these issues. For two beta pilot workshops, this translates
+to ~24 hours of work, which can be distributed across the lesson authors. 
 
 ### Instructors
 
-- How to onboard existing instructors 
-- How to recruit new instructors from the domain
-- When to put these roles in place
-- How many people we need in these roles
+Carpentries lessons are designed to be teachable by any certified Instructor with the
+appropriate domain experience. In many cases, there will already be Instructors with
+the necessary background in our community. To help these Instructors prepare to teach
+the new materials, we recommend preparing an onboarding video to introduce the
+structure of the lesson, the dataset used, and any technical specifics that make
+this lesson different from other lessons Instructors are likely to be familiar with. 
+Onboarding videos should be made available on The Carpentries [YouTube channel][carpentries-youtube]
+with accurate (not auto-generated) subtitles. For inspiration, 
+check out the existing onboarding videos in our [Curriculum Onboarding playlist][onboarding-playlist]. To raise awareness of your curriculum, 
+you can also schedule themed [Community Discussions][community-discussions] around your lesson.
+
+If your lesson reaches a new domain which isn't well represented in The Carpentries community,
+and you would like to build capacity for teaching your lessons within The Carpentries, get in 
+touch with team@carpentries.org.
+
+### Summary
+
+| Role | Number needed | When needed |
+|------| ------------- | ----------- |
+| Authors | 1+ | from the beginning |
+| Reviewers | 2-4 per 4 hours of content (including co-authors) | before beta pilots |
+| Maintainers | 3+ per lesson | before beta pilots |
+| Curriculum Advisors | 5-8 | from the beginning (ideally) but at least before lesson publication |
+| Beta Pilot Instructors | 4+ | for beta pilots |
+| Instructors | the more the merrier! | after beta pilots |
 
 [accessibility-reqs]: link
-[expert-blind-spot]: https://carpentries.github.io/instructor-training/03-expertise/
+[carpentries-youtube]: https://www.youtube.com/c/thecarpentries
+[community-discussions]: https://pad.carpentries.org/community-discussions
 [dc-geo-cac]: https://datacarpentry.org/lesson-leadership/
+[expert-blind-spot]: https://carpentries.github.io/instructor-training/03-expertise/
 [maintainer-guidelines]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-guidelines
 [maintainer-onboarding-lesson]: https://carpentries.github.io/maintainer-onboarding/
 [maintainer-onboarding-video]: link
 [maintainer-onboarding-process]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding
 [maintainer-team]: https://carpentries.org/maintainers/
 [maintainer-stay-in-touch]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#how-to-stay-in-touch
+[onboarding-playlist]: https://www.youtube.com/watch?v=zgdutO5tejo&list=PLXLapl_LKb4e73Vf2e3rS2q2TDJ7oh_DX
