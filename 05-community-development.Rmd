@@ -191,25 +191,6 @@ to maturity. For two beta pilot workshops, you will need at least four instructo
 authors should plan to meet virtually with pilot instructors before the workshop to
 answer questions and provide any technical help with setup. 
 
-During the workshop, pilot instructors should take detailed notes, including:  
-- time lengths used to teach each section  
-- time lengths used for each exercise  
-- technical issues that arose during installation  
-- bugs or parts of the lesson code that didn't work as expected  
-- incorrect exercise solutions  
-- questions learners asked (and their answers)   
-- parts of the lesson that were confusing for learners  
-
-These notes can be collected in an Etherpad, Google Doc, or other collaborative document that is shared
-with co-instructors and workshop helpers. This document should not be shared with workshop learners, 
-as it will add significantly to their cognitive load. 
-
-After the workshop, instructors should share the notes document with the lesson authors - who 
-will convert the notes into individual issues in the lesson repo. Lesson authors should expect
-to spend at least four hours to create follow-up issues for each pilot workshop, and at least
-eight hours to putting in PRs to fix these issues. For two beta pilot workshops, this translates
-to ~24 hours of work, which can be distributed across the lesson authors. 
-
 ### Instructors
 
 Carpentries lessons are designed to be teachable by any certified Instructor with the
