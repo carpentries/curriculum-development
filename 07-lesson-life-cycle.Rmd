@@ -185,9 +185,25 @@ to spend at least four hours to create follow-up issues, and at least
 eight hours to putting in PRs to fix these issues. For two pilot workshops, this translates
 to ~24 hours of work, which can be distributed across the lesson authors. 
 
-## The polishing ("Beta")
+After incorporating workshop feedback, the lesson is
+now ready to be published. For lessons on the Official
+Track, our Curriculum Team will create a publication
+record on [Zenodo][zenodo]. The lesson is now in **beta**.
 
-The "Beta" stage lasts approximately 6 months. During this time, members of The Carpentries community can teach it and contribute to the content of the lesson. Around the 4th month in this stage, you will organize a "Lesson Polishing" event (aka Bug BBQ). The main goal of this phase of the lesson development is to develop the documentation needed to ensure that people who have not contributed to the initial development efforts of the lesson have enough information to teach it effectively.
+## Polishing: beta stage
+
+Now that the lesson has been published, it is ready 
+for teaching by instructors outside of the original
+authorship team, and for contributions from the broader
+Carpentries community. Lesson authors should submit
+a [workshop request form][wkshp-request] to request 
+
+Carpentries staff will assist
+lesson
+authors in recruiting instructors to teach beta pilots. 
+
+
+The **beta stage** lasts approximately 6 months. During this time, members of The Carpentries community can teach it and contribute to the content of the lesson. The main goal of this phase of the lesson development is to develop the documentation needed to ensure that people who have not contributed to the initial development efforts of the lesson have enough information to teach it effectively.
 
 After a final check from one of The Carpentries' Editors, we will create a stable release for the lesson that will be listed on our website. Anyone in our community, including local Carpentries communities, will be able to use the lesson in their workshops or meetups.
 
@@ -206,4 +222,5 @@ During this process, you will have the possibility to include a short paper desc
 [lesson-programs]: https://docs.carpentries.org/topic_folders/governance/lesson-program-policy.html
 [lesson-template]: https://github.com/carpentries/styles
 [slack]: https://swc-slack-invite.herokuapp.com/
-
+[wkshp-request]: http://carpentries.org/request-workshop
+[zenodo]: https://zenodo.org/communities/carpentries/?page=1&size=20
