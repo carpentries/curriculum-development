@@ -197,12 +197,15 @@ After a few iterations of teaching and integrating feedback (and at least 2 earl
 
 During this process, you will have the possibility to include a short paper describing your lesson in the GitHub repository and have your lesson considered for publication in [JOSE](http://jose.theoj.org/), the Journal of Open Science Education. Once your lesson has gone through the peer-review process and has been approved by the Editor, we will create an official Zenodo release for it, and the lesson will enter the "Beta" stage.
 
-## The stable lesson
+## The Stable Lesson: Maintenance and lesson releases
 
-TBA
-
-
-## Notes
+- How often to do releases
+  * Maintenance releases, as needed but at least every 3 months
+  * Big releases, once a year
+- How to coordinate lesson releases
+- How to communicate with Maintainers and community about lesson releases
+- How to split development and production
+- How to welcome and onboard new contributors, contributor guidelines
 
 * Announcements 
   - letting the community know that the lesson is being prepared for release and what that means
@@ -218,6 +221,7 @@ TBA
 * How to communicate about a release
 * How to do the release in Zenodo
 * Move on website to different category
+
 ----
 
 [discuss]: https://carpentries.topicbox.com/groups/discuss
