@@ -1,21 +1,5 @@
 # The lesson life-cycle
 
-* Announcements 
-  - letting the community know that the lesson is being prepared for release and what that means
-  - Advertising for Bug BBQ
-* Bug BBQ
-  - How to organize for, how to schedule
-  - Communications (when and how to announce)
-  - Prep (communicating with maintainers about the process)
-  - Facilitating communications during the actual event (real time communications, issue assignments, avoiding duplication of work)
-  - Clean-up (maintainers, staff, authors)
-    + Lesson release checklist
-* Pre-Release Release
-* How to communicate about a release
-* How to do the release in Zenodo
-* Move on website to different category
-----
-
 ## Scope of this chapter
 
 This chapter focuses on lessons that are being developed
@@ -215,6 +199,27 @@ During this process, you will have the possibility to include a short paper desc
 
 ## The stable lesson
 
+TBA
+
+
+## Notes
+
+* Announcements 
+  - letting the community know that the lesson is being prepared for release and what that means
+  - Advertising for Bug BBQ
+* Bug BBQ
+  - How to organize for, how to schedule
+  - Communications (when and how to announce)
+  - Prep (communicating with maintainers about the process)
+  - Facilitating communications during the actual event (real time communications, issue assignments, avoiding duplication of work)
+  - Clean-up (maintainers, staff, authors)
+    + Lesson release checklist
+* Pre-Release Release
+* How to communicate about a release
+* How to do the release in Zenodo
+* Move on website to different category
+----
+
 [discuss]: https://carpentries.topicbox.com/groups/discuss
 [incubator]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
 [issues]: https://github.com/carpentries-incubator/proposals/issues
@@ -224,3 +229,4 @@ During this process, you will have the possibility to include a short paper desc
 [slack]: https://swc-slack-invite.herokuapp.com/
 [wkshp-request]: http://carpentries.org/request-workshop
 [zenodo]: https://zenodo.org/communities/carpentries/?page=1&size=20
+
