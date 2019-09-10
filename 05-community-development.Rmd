@@ -1,6 +1,4 @@
-# Community development
-
-## Roles
+# Community development roles
 
 Our lessons are intended to be teachable by any certified
 Carpentries Instructor with the appropriate domain experience
@@ -12,7 +10,7 @@ at differnt institutions around the world who work together
 in different roles to create, test, and iteratively improve and
 update lesson materials. 
 
-### Lesson Authors
+## Lesson Authors
 
 A lesson may have one or several initial authors. Authors draft
 the lesson content, figures, and code and create appropriate challenge problems. Authors should have both appropriate domain
@@ -32,7 +30,7 @@ author per episode. Clearly defining the learning objectives for each episode
 will help avoid overlap and ensure the lesson flows smoothly - but it will
 still be important to have regular checkins with all authors. 
 
-### Reviewers
+## Reviewers
 
 No one is perfect! Lesson materials should be read and tested by at least
 one person other than the original author before being released for use by the broader community in beta pilot workshops. 
@@ -68,7 +66,7 @@ area. Ensuring that lessons are reviewed by people from a variety of cultural an
 contexts helps us to avoid colloquialisms, culturally-specific references, and other issues that might make our lessons less accessible to a global community. You will likely need one or two reviewers for every
 two hours of lesson content. A four-hour (half day) lesson should have at least two to four reviewers.
 
-### Lesson Maintainers
+## Lesson Maintainers
 
 Lesson Maintainers are essential for the long-term viability of a lesson. As a
 lesson is taught, new Instructors and learners identify potential places
@@ -89,7 +87,7 @@ lesson will have at least two Maintainers, and it's ok for one Maintainer
 to have domain experience and another to be more comfortable with the technical
 aspects of lesson maintainence. 
 
-#### Maintainer recruitment, requirements and time commitment
+### Maintainer recruitment, requirements and time commitment
 
 It's a good idea to recruit at least four Maintainers per lesson, as our
 community members are volunteers and may have fluxuating levels of time to
@@ -120,7 +118,7 @@ A lesson should have at least three onboarded Maintainers before it enters the
 beta pilot workshop phase. Before that time, lesson feedback and edits will generally be 
 managed by the lesson authors.
 
-### Curriculum Advisors
+## Curriculum Advisors
 
 Curriculum Advisors provide high-level oversight, vision, and leadership for a
 curriculum and guide large-scale updates. Unlike Maintainers, who are responsible
@@ -165,7 +163,7 @@ must be a Curriculum Advisory Committee in place at the time of
 its first publication. The CAC must should regularly for as long as a curriculum
 remains active. 
 
-### Beta Pilot Instructors
+## Beta Pilot Instructors
 
 A new lesson or curriculum is often taught for the first time locally at 
 the organization that houses the lesson authors. This can be an opportunity 
@@ -191,7 +189,7 @@ to maturity. For two beta pilot workshops, you will need at least four instructo
 authors should plan to meet virtually with pilot instructors before the workshop to
 answer questions and provide any technical help with setup. 
 
-### Instructors
+## Instructors
 
 Carpentries lessons are designed to be teachable by any certified Instructor with the
 appropriate domain experience. In many cases, there will already be Instructors with
@@ -208,7 +206,7 @@ If your lesson reaches a new domain which isn't well represented in The Carpentr
 and you would like to build capacity for teaching your lessons within The Carpentries, get in 
 touch with team@carpentries.org.
 
-### Summary
+## Summary
 
 | Role | Number needed | When needed |
 |------| ------------- | ----------- |

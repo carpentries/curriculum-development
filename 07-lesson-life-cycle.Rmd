@@ -197,12 +197,47 @@ After a few iterations of teaching and integrating feedback (and at least 2 earl
 
 During this process, you will have the possibility to include a short paper describing your lesson in the GitHub repository and have your lesson considered for publication in [JOSE](http://jose.theoj.org/), the Journal of Open Science Education. Once your lesson has gone through the peer-review process and has been approved by the Editor, we will create an official Zenodo release for it, and the lesson will enter the "Beta" stage.
 
-## The stable lesson
+## The stable lesson: Maintenance and lesson releases
 
-TBA
+Congratulations! Your lesson has now been published and is being actively taught by the community. 
+That means you're done, right? Not exactly. In order to ensure that your wonderful lesson materials 
+continue to be relevant and useful, you'll need to build and train a team of lesson Maintainers, who 
+are responsible for day-to-day upkeep and periodic publication of the lesson. 
+
+In a [previous chapter](community-development-roles#lesson-maintainers), we discussed the process for recruiting and training Maintainers. Here, we 
+will focus on the responsibilities of Maintainers, their day-to-day workflow, and their involvement
+in the lesson release process. 
+
+As your lesson is taught, workshop instructors and helpers will post issues and pull requests to 
+the lesson's GitHub repository. These will range from typo corrections, to installation problems, 
+to recommendations for changing the libraries or function calls demonstrated in the lesson, and will
+therefore require different levels of consideration and technical expertise to implement. A typo
+correction will probably be taken care of independetly by a single Maintainer, 
+while a proposal to change
+the plotting system used in the lesson from matplotlib to seaborn will require significant 
+discussion. Each lesson Maintainer team will develop their own strategies for managing their work, 
+but we recommend the following as a starting point. 
 
 
-## Notes
+* One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
+thank the contributor, and apply appropriate [issue tags]().
+* Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one
+Maintainer team member, based on the time commitment and availability discussed at that month's meeting.
+* Individual Maintainers 
+* something about how to decide whether to implement an issue themselves or ask for a community member to put in a PR
+* the maintainer guidelines that Peter and some others are working on with timelines for closing
+stale things
+* template language in common circumstances - e.g. acknowledging new issues and PRs, turning down/closing a proposal, notice of timeline for considering the proposal, asking proposer to put in a PR, etc
+* All Maintainers for a lesson get together via video-conference once a month to discuss larger proposals
+and agree on the following month's duty roster. 
+
+- How often to do releases
+  * Maintenance releases, as needed but at least every 3 months
+  * Big releases, once a year
+- How to coordinate lesson releases
+- How to communicate with Maintainers and community about lesson releases
+- How to split development and production
+- How to welcome and onboard new contributors, contributor guidelines
 
 * Announcements 
   - letting the community know that the lesson is being prepared for release and what that means
@@ -218,6 +253,7 @@ TBA
 * How to communicate about a release
 * How to do the release in Zenodo
 * Move on website to different category
+
 ----
 
 [discuss]: https://carpentries.topicbox.com/groups/discuss
