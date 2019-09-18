@@ -1,6 +1,4 @@
-# Conceptual elements
-
-## The Carpentries mindset for curriculum development
+# Guiding principles
 
 Carpentries curricula are developed based on the results of research in the science of
 teaching and learning. We rely on findings synthesized in the book 
@@ -215,6 +213,26 @@ day-to-day work. The practicalities of chosing an appropriate
 dataset are covered in a [later section][Picking a dataset]
 of this handbook.
 
+### The I-We-You model
+
+* Gradual release of responsibility
+* Thinking aloud (I do)
+* Provide scaffoding (We do) -- think-pair-share, use this to identify
+  misconceptions
+* During the you do, move around, ask for their thinking aloud, listen to their
+  thinking, identify misconceptions.
+
+* Limitations
+  - teach to the mean.
+
+## Collaborative lesson design
+
+We transpose the model of open-source software development to collaborative lesson development
+
+* The open source model of development adapted for lesson  
+* Collaborative lesson development.  
+* Writing lessons for others to use  
+
 ## Limitations of our approach
 
 Learners can't go from complete novices to experts in two days (or 
@@ -230,74 +248,3 @@ past the end of the workshop.
 Managing learners' expectations, and clearly communicating to 
 them what they will (and won't) be able to do by the end of the
 workshop, is important because it limits the chance of demotivation. 
-
-## The structure of our curriculum
-
-### The elements of The Carpentries curriculum
-
-![image of lessons and episodes](figures/leson-episode-01.png)
-
-#### Episodes
-
-An episode is a single block of content and renders as a single page of a lesson website.
-Each episode teaches a set of related concepts (for example, 
-[navigating files and directories](http://swcarpentry.github.io/shell-novice/02-filedir/index.html) 
-or [indexing and subsetting data](https://datacarpentry.org/python-ecology-lesson/03-index-slice-subset/index.html)). 
-It lists measurable learning objectives related to those concepts
-and contains a number of challenges to assess
-learners' ability to perform those learning objectives. Episodes within a lesson can be
-dependent on earlier episodes and are generally taught in sequence. 
-
-#### Lessons
-
-A lesson is a collection of episodes that together help the learner to develop a particular
-set of competencies 
-(for example, [version control](http://swcarpentry.github.io/git-novice/) or 
-[data organization](http://www.datacarpentry.org/spreadsheets-socialsci/)). 
-Each lesson has a landing page that lists all its episodes as well
-as the overall learning objectives. The overall learning objectives for the lesson
-should be met by its episodes. Assessment of lesson-level learning outcomes is summative and
-can be addressed with a post-workshop survey. Lessons can be used independently and should
-not rely on concepts from other lessons. Lessons may have optional episodes, but lesson
-designers should provide a recommended structure or structures for what episodes should
-be taught together and in what order.
-
-#### Curricula
-
-A curriculum is a set of lessons that together teach skills needed in a particular
-domain (for example, [genomics](https://datacarpentry.org/genomics-workshop/) or 
-[geospatial research](https://datacarpentry.org/geospatial-workshop/)). A curriculum has a
-landing page listing its component lessons and overall learning objectives, and describing
-the data used in the curriculum. Carpentries curricula often have a narrative structure,
-where lessons are explicitly linked in a sequence, for example, as steps in a data handling
-workflow.
-
-#### Lesson Collections
-
-A lesson collection is the full set of lessons housed within
-a specific Lesson Program (for example, all [Software Carpentry lessons](https://software-carpentry.org/lessons/)), or
-within The Carpentries organization (including our [Instructor Training](https://carpentries.github.io/instructor-training/) and 
-[Trainer Training](https://carpentries.github.io/trainer-training/) lessons).
-Lessons within a collection should match the target audience of the Lesson Program or
-the broader Carpentries community. 
-
-### The I-We-You model
-
-* Gradual release of responsibility
-* Thinking aloud (I do)
-* Provide scaffoding (We do) -- think-pair-share, use this to identify
-  misconceptions
-* During the you do, move around, ask for their thinking aloud, listen to their
-  thinking, identify misconceptions.
-
-* Limitations
-  - teach to the mean.
-
-
-## Collaborative lesson design
-
-We transpose the model of open-source software development to collaborative lesson development
-
-* The open source model of development adapted for lesson  
-* Collaborative lesson development.  
-* Writing lessons for others to use  
