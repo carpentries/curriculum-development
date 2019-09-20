@@ -379,9 +379,5 @@ contexts or by including new concepts that haven't yet been covered in the lesso
 always have your lesson reviewed by at least one novice user if possible, and above all else,
 be prepared for feedback from Instructors "in the field" about how to improve these (and all of your) challenge problems. 
 
-### Switch the dataset
-
-This is a very advanced exercise type. Information to be added in a later version 
-of this handbook.
 
 
