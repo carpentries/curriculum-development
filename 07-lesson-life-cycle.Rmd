@@ -53,10 +53,10 @@ period of six months.
 After beta pilots, the lesson authors and Maintainers
 incorporate feedback and produce a polished version of 
 the lesson. It is now mature enough and
-documented enough so that anyone interested can teach it. The lesson is published on Zenodo and listed on the
+documented enough so that anyone interested can teach it. The lesson is published on [Zenodo][zenodo] and listed on the
 Lessons page for the appropriate
 Lesson Program. It is added to The Carpentries
-workshop request form, and becomes an officially
+[workshop request form][wkshp-request], and becomes an officially
 supported lesson. The lesson is now considered **stable** and will remain in this stage for as long
 as it has active support from its Maintainer team.
 
@@ -127,12 +127,12 @@ process, the lessons will be hosted in The Carpentries
 Lab and will be officially endorsed by The Carpentries
 as high-quality resources.
 
-## Early development: pre-alpha through alpha
+## Early development (pre-alpha through alpha)
 
 We will create a repository for you in the appropriate
 GitHub organization, using our 
 [lesson template][lesson-template]. You will use the
-guidelines in the first four chapters of this handbook
+guidelines in the first five chapters of this handbook
 to develop your content. The Curriculum Team will 
 be available to answer questions about the template
 and provide pedagogical guidance. For lessons on the 
@@ -140,22 +140,22 @@ Official Track, authors will meet regularly with
 a member of the Curriculum Team to work through the
 lesson drafting process.
 
-## Field test: alpha stage
+## Field testing: alpha stage
 
 Once your lesson is ready to be taught for the first
 time, it will enter the **alpha stage**. Field-testing a
 lesson is a good opportunity to receive and incorporate
 feedback from learners, instructors, and workshop
 helpers who can compare their expectations to
-reality. The initial feedback gathered during this first
-workshop is really important. 
+reality. The initial feedback gathered during these first
+workshops is really important. 
 
-During the workshop, pilot instructors and helpers should take detailed notes, including:  
-- time lengths used to teach each section  
-- time lengths used for each exercise  
+During alpha pilot workshops, instructors and helpers should take detailed notes, including:  
+- amount of time used to teach each section  
+- amount of time used for each exercise  
 - technical issues that arose during installation  
 - bugs or parts of the lesson code that didn't work as expected  
-- incorrect exercise solutions  
+- incorrect or missing exercise solutions  
 - questions learners asked (and their answers)   
 - parts of the lesson that were confusing for learners  
 
@@ -167,35 +167,62 @@ After the workshop, instructors should share the notes document with the lesson 
 will convert the notes into individual issues in the lesson repo. For two-day workshops, lesson authors should expect
 to spend at least four hours to create follow-up issues, and at least
 eight hours to putting in PRs to fix these issues. For two pilot workshops, this translates
-to ~24 hours of work, which can be distributed across the lesson authors. 
+to ~24 hours of work, which can be distributed among the lesson authors. 
 
 After incorporating workshop feedback, the lesson is
 now ready to be published. For lessons on the Official
 Track, our Curriculum Team will create a publication
-record on [Zenodo][zenodo]. The lesson is now in **beta**.
+record on [Zenodo][zenodo]. Lesson authors on the Community or CarpentriesLab tracks
+may also choose to publish their lesson on Zenodo. At this stage, the lesson is in **beta**.
 
 ## Polishing: beta stage
 
 Now that the lesson has been published, it is ready 
 for teaching by instructors outside of the original
 authorship team, and for contributions from the broader
-Carpentries community. Lesson authors should submit
-a [workshop request form][wkshp-request] to request 
+Carpentries community. For lessons on the Official Track,
+Carpentries staff will assist lesson authors in recruiting instructors
+to teach beta pilots. Authors for non-Official Track lessons
+can recruit beta pilot hosts and instructors through our 
+[discussion list][discuss], [Slack organization][slack], 
+on Twitter, and through domain-specific mailing lists
+or other community groups they are part of. 
+For more information about the role played by 
+and qualifications needed to be a beta pilot instructors, see 
+our chapter on [community development roles][community-roles].
 
-Carpentries staff will assist
-lesson
-authors in recruiting instructors to teach beta pilots. 
+The **beta stage** lasts approximately 6 months. During this time, members of 
+The Carpentries community can teach it and contribute to the content of the lesson. 
+The main goal of this phase of the lesson development is to develop the documentation
+needed to ensure that people who have not contributed to the initial development
+efforts of the lesson have enough information to teach it effectively.
 
+Beta pilot instructors and helpers should take notes similar
+to those described above for alpha pilots, but should (hopefully!)
+notice fewer bugs and other issues. As with alpha pilots,
+beta pilot instructors will provide the lesson authors with 
+the notes they've collected during the workshop and the authors
+will convert those notes to issues and PRs to resolve concerns 
+raised during the workshop. Maintainers and other community members
+will be involved with this clean-up phase as well. 
 
-The **beta stage** lasts approximately 6 months. During this time, members of The Carpentries community can teach it and contribute to the content of the lesson. The main goal of this phase of the lesson development is to develop the documentation needed to ensure that people who have not contributed to the initial development efforts of the lesson have enough information to teach it effectively.
+After this polishing process, and a final check by a member of the
+Curriculum Team, your lesson will be published again on Zenodo,
+this time in its **stable state**. Official Track lessons will be added to 
+the appropriate Lesson Program lessons page (e.g. [Data Carpentry's lessons page][dc-lessons])
+and to our [workshop request form][wkshp-request]. Anyone may now request a centrally-organized
+Carpentries workshop using this curriculum. 
 
-After a final check from one of The Carpentries' Editors, we will create a stable release for the lesson that will be listed on our website. Anyone in our community, including local Carpentries communities, will be able to use the lesson in their workshops or meetups.
-
-The Carpentries Community Manager will make an announcement that a new "Alpha" lesson is available to contribute to and can be taught by instructors interested in early-adoption of the lesson.
-
-After a few iterations of teaching and integrating feedback (and at least 2 early workshop pilots), you will let the Carpentries Editor know that your lesson is ready to be reviewed. The Editor will select 2-3 reviewers within The Carpentries community with teaching experience and/or appropriate domain expertise, who will provide an open and friendly review of the lesson. After incorporating feedback and comments from the reviewers, your lesson will be badged "Reviewed by the Carpentries Community" and will be listed on our websites as such.
-
-During this process, you will have the possibility to include a short paper describing your lesson in the GitHub repository and have your lesson considered for publication in [JOSE](http://jose.theoj.org/), the Journal of Open Science Education. Once your lesson has gone through the peer-review process and has been approved by the Editor, we will create an official Zenodo release for it, and the lesson will enter the "Beta" stage.
+For lessons on the CarpentriesLab track, authors will submit their stable stage lessons for review. 
+The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience and/o
+r appropriate domain expertise, who will provide an open and friendly review of the lesson.
+After incorporating feedback and comments from the reviewers, your lesson will be badged
+"Reviewed by the Carpentries Community" and will be listed on our websites as such. During this process, 
+you will have the possibility to include a short paper describing your
+lesson in the GitHub repository and have your lesson considered for publication in
+[JOSE](http://jose.theoj.org/), the Journal of Open Science Education.
+**This review process is in development and we are not yet accepting submissions. Please watch for 
+announcements as we roll out this program.** 
 
 ## The stable lesson: Maintenance and lesson releases
 
@@ -212,53 +239,35 @@ As your lesson is taught, workshop instructors and helpers will post issues and 
 the lesson's GitHub repository. These will range from typo corrections, to installation problems, 
 to recommendations for changing the libraries or function calls demonstrated in the lesson, and will
 therefore require different levels of consideration and technical expertise to implement. A typo
-correction will probably be taken care of independetly by a single Maintainer, 
+correction will probably be taken care of independently by a single Maintainer, 
 while a proposal to change
 the plotting system used in the lesson from matplotlib to seaborn will require significant 
 discussion. Each lesson Maintainer team will develop their own strategies for managing their work, 
 but we recommend the following as a starting point. 
 
+- Maintainers for a lesson should set a regular meeting to discuss any unresolved issues that have arisen and to decide on the division of responsibilities until
+their next meeting.  
+- One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
+thank the contributor, and apply appropriate [issue tags][issue-tags].  
+- Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one team member, based on the time commitment and availability discussed at that month's meeting.  
+- Individual team members work on resolving issues and PRs, as assigned, asking
+their co-Maintainers for review when needed.
 
-* One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
-thank the contributor, and apply appropriate [issue tags]().
-* Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one
-Maintainer team member, based on the time commitment and availability discussed at that month's meeting.
-* Individual Maintainers 
-* something about how to decide whether to implement an issue themselves or ask for a community member to put in a PR
-* the maintainer guidelines that Peter and some others are working on with timelines for closing
-stale things
-* template language in common circumstances - e.g. acknowledging new issues and PRs, turning down/closing a proposal, notice of timeline for considering the proposal, asking proposer to put in a PR, etc
-* All Maintainers for a lesson get together via video-conference once a month to discuss larger proposals
-and agree on the following month's duty roster. 
+**The Maintainer community is working on developing a set of guidelines and template
+language for responding to common situations. These guidelines will be added
+to this section when they become available.**
 
-- How often to do releases
-  * Maintenance releases, as needed but at least every 3 months
-  * Big releases, once a year
-- How to coordinate lesson releases
-- How to communicate with Maintainers and community about lesson releases
-- How to split development and production
-- How to welcome and onboard new contributors, contributor guidelines
+The above description focuses on Maintainers' ongoing duties. Maintainers are
+also involved with lesson releases, which take place roughly every six months.
+Information about lesson releases will be added to a future version of this 
+handbook. 
 
-* Announcements 
-  - letting the community know that the lesson is being prepared for release and what that means
-  - Advertising for Bug BBQ
-* Bug BBQ
-  - How to organize for, how to schedule
-  - Communications (when and how to announce)
-  - Prep (communicating with maintainers about the process)
-  - Facilitating communications during the actual event (real time communications, issue assignments, avoiding duplication of work)
-  - Clean-up (maintainers, staff, authors)
-    + Lesson release checklist
-* Pre-Release Release
-* How to communicate about a release
-* How to do the release in Zenodo
-* Move on website to different category
-
-----
-
+[community-roles]: https://cdh.carpentries.org/community-development-roles.html#beta-pilot-instructors
 [discuss]: https://carpentries.topicbox.com/groups/discuss
+[dc-lessons]: https://datacarpentry.org/lessons/
 [incubator]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
 [issues]: https://github.com/carpentries-incubator/proposals/issues
+[issue-tags]: https://docs.carpentries.org/topic_folders/maintainers/github_labels.html
 [issue-template]: https://github.com/carpentries-incubator/proposals/blob/master/ISSUE_TEMPLATE.md
 [lesson-programs]: https://docs.carpentries.org/topic_folders/governance/lesson-program-policy.html
 [lesson-template]: https://github.com/carpentries/styles
