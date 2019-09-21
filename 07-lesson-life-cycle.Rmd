@@ -281,7 +281,6 @@ and agree on the following month's duty roster.
 * How to do the release in Zenodo
 * Move on website to different category
 
-----
 [community-roles]: https://cdh.carpentries.org/community-development-roles.html#beta-pilot-instructors
 [discuss]: https://carpentries.topicbox.com/groups/discuss
 [dc-lessons]: https://datacarpentry.org/lessons/
