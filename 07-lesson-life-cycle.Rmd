@@ -239,53 +239,35 @@ As your lesson is taught, workshop instructors and helpers will post issues and 
 the lesson's GitHub repository. These will range from typo corrections, to installation problems, 
 to recommendations for changing the libraries or function calls demonstrated in the lesson, and will
 therefore require different levels of consideration and technical expertise to implement. A typo
-correction will probably be taken care of independetly by a single Maintainer, 
+correction will probably be taken care of independently by a single Maintainer, 
 while a proposal to change
 the plotting system used in the lesson from matplotlib to seaborn will require significant 
 discussion. Each lesson Maintainer team will develop their own strategies for managing their work, 
 but we recommend the following as a starting point. 
 
+- Maintainers for a lesson should set a regular meeting to discuss any unresolved issues that have arisen and to decide on the division of responsibilities until
+their next meeting.  
+- One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
+thank the contributor, and apply appropriate [issue tags][issue-tags].  
+- Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one team member, based on the time commitment and availability discussed at that month's meeting.  
+- Individual team members work on resolving issues and PRs, as assigned, asking
+their co-Maintainers for review when needed.
 
-* One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
-thank the contributor, and apply appropriate [issue tags]().
-* Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one
-Maintainer team member, based on the time commitment and availability discussed at that month's meeting.
-* Individual Maintainers 
-* something about how to decide whether to implement an issue themselves or ask for a community member to put in a PR
-* the maintainer guidelines that Peter and some others are working on with timelines for closing
-stale things
-* template language in common circumstances - e.g. acknowledging new issues and PRs, turning down/closing a proposal, notice of timeline for considering the proposal, asking proposer to put in a PR, etc
-* All Maintainers for a lesson get together via video-conference once a month to discuss larger proposals
-and agree on the following month's duty roster. 
+**The Maintainer community is working on developing a set of guidelines and template
+language for responding to common situations. These guidelines will be added
+to this section when they become available.**
 
-- How often to do releases
-  * Maintenance releases, as needed but at least every 3 months
-  * Big releases, once a year
-- How to coordinate lesson releases
-- How to communicate with Maintainers and community about lesson releases
-- How to split development and production
-- How to welcome and onboard new contributors, contributor guidelines
-
-* Announcements 
-  - letting the community know that the lesson is being prepared for release and what that means
-  - Advertising for Bug BBQ
-* Bug BBQ
-  - How to organize for, how to schedule
-  - Communications (when and how to announce)
-  - Prep (communicating with maintainers about the process)
-  - Facilitating communications during the actual event (real time communications, issue assignments, avoiding duplication of work)
-  - Clean-up (maintainers, staff, authors)
-    + Lesson release checklist
-* Pre-Release Release
-* How to communicate about a release
-* How to do the release in Zenodo
-* Move on website to different category
+The above description focuses on Maintainers' ongoing duties. Maintainers are
+also involved with lesson releases, which take place roughly every six months.
+Information about lesson releases will be added to a future version of this 
+handbook. 
 
 [community-roles]: https://cdh.carpentries.org/community-development-roles.html#beta-pilot-instructors
 [discuss]: https://carpentries.topicbox.com/groups/discuss
 [dc-lessons]: https://datacarpentry.org/lessons/
 [incubator]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
 [issues]: https://github.com/carpentries-incubator/proposals/issues
+[issue-tags]: https://docs.carpentries.org/topic_folders/maintainers/github_labels.html
 [issue-template]: https://github.com/carpentries-incubator/proposals/blob/master/ISSUE_TEMPLATE.md
 [lesson-programs]: https://docs.carpentries.org/topic_folders/governance/lesson-program-policy.html
 [lesson-template]: https://github.com/carpentries/styles
