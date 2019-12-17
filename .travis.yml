@@ -31,15 +31,6 @@ dist: trusty
 cache: packages
 latex: false
 
-addons:
-  apt:
-    update: true
-    packages:
-    - texlive-latex-recommended
-    - texlive-xetex
-    - texlive-math-extra
-    - lmodern
-
 #env
 env:
   global:

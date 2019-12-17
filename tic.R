@@ -7,6 +7,8 @@ get_stage("install") %>%
 get_stage("deploy") %>%
   add_code_step({
     bookdown::render_book('index.Rmd', 'bookdown::gitbook')
+    tinytex::install_tinytex()
+    options(tinytex.verbose = TRUE)
     bookdown::render_book('index.Rmd', 'bookdown::pdf_book')
     bookdown::render_book('index.Rmd', 'bookdown::epub_book')
   },
