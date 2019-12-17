@@ -37,6 +37,7 @@ addons:
     packages:
     - texlive-xetex
     - texlive-math-extra
+    - lmodern
 
 #env
 env:
