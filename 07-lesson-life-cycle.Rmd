@@ -25,7 +25,9 @@ developing the lesson content, while the **beta** stage
 focuses on documenting the lesson, so that it can be
 taught by anyone with the appropriate subject knowledge.
 
-![Overview of the lesson release timeline](figures/release_timeline.svg)
+```{r release-timeline, fig.cap="release timeline", echo=FALSE}
+include_svg("figures/release_timeline.svg")
+```
 
 Lessons start in the **pre-alpha** stage - this stage
 encompasses everything from the initial lesson idea 

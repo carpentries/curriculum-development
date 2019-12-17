@@ -12,6 +12,10 @@ github-repo: carpentries/curriculum-development
 description: "This is a work in progress of the curriculum development handbook for The Carpentries."
 ---
 
+```{r setup}
+source("utils/utils.R")
+```
+
 # Preface {-}
 
 This is work in progress. Comments and suggestions are welcome either as:

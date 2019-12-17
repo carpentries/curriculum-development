@@ -31,6 +31,12 @@ dist: trusty
 cache: packages
 latex: false
 
+addons:
+  apt:
+    update: true
+    packages:
+      - librsvg2-bin
+
 #env
 env:
   global:
