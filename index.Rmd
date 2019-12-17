@@ -12,7 +12,7 @@ github-repo: carpentries/curriculum-development
 description: "This is a work in progress of the curriculum development handbook for The Carpentries."
 ---
 
-```{r setup}
+```{r setup, echo=FALSE}
 source("utils/utils.R")
 ```
 
