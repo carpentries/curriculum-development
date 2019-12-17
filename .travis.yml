@@ -7,7 +7,7 @@ before_install:
   - R -q -e 'install.packages(c("remotes", "curl")); remotes::install_github("ropenscilabs/tic"); tic::prepare_all_stages(); tic::before_install()'
 install:
   - sudo apt-get update
-  - sudo apt-get -y install texlive-xetex
+  - sudo apt-get -y install texlive-xetex texlive-math-extra
   - R -q -e 'tic::install()'
 after_install: R -q -e 'tic::after_install()'
 before_script: R -q -e 'tic::before_script()'
