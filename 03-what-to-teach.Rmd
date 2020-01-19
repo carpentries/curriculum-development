@@ -53,7 +53,7 @@ Microsoft Word or Google Docs? Do they use any web-based GUIs or databases? Havi
 appropriately target your content by making useful analogies and tying new knowledge to existing knowledge. It
 is also very important to understand what tools established researchers in the field are using. No matter how
 enthusiastic a new doctoral student might be about using Python, if everyone else in their lab (including
-their advisor) uses MatLab, they're unlikely to be successful in convincing the entire lab to change their
+their advisor) uses MATLAB, they're unlikely to be successful in convincing the entire lab to change their
 workflows.
 
 * **What are the pain points they are currently experiencing?** -- The Carpentries trainings are designed to 
