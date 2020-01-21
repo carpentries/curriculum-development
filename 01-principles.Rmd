@@ -87,7 +87,7 @@ The authors identify seven principles of learning (direct quotation from the boo
   scaffolding. Scaffolding is the process of providing support to a learner while 
   new subjects and concepts are introduced.  Scaffolding assists learners as they 
   progress through increasingly complex code creation by breaking the complex code 
-  into smaller, more manageable chunks.  Common parctice problems used in instructional 
+  into smaller, more manageable chunks.  Common practice problems used in instructional 
   scaffolding are Parson's problems, where all the pieces of code to answer the problem 
   are already written but are not in the correct order; and, fill in the blanks. 
   Instructional scaffolding might be one of the most important
