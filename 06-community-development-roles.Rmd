@@ -99,7 +99,7 @@ Maintainers commit to a [specific set of duties][maintainer-guidelines], and
 go through a short onboarding process to familiarise them with the social,
 technological, and curriculum-specific elements of lesson maintanence. 
 This onboarding is available as a [written curriculum][maintainer-onboarding-lesson]
-and as a [video recording][maintainer-onboarding-video], however, if 
+and in future may be made available as a video recording, however, if 
 time allows, we recommend running onboarding for your Maintainer group via
 synchronous video-conference. Getting everyone in the same virtual room for
 these discussions creates a sense of community and will make it easier for
@@ -224,7 +224,6 @@ touch with team@carpentries.org.
 [expert-blind-spot]: https://carpentries.github.io/instructor-training/03-expertise/
 [maintainer-guidelines]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-guidelines
 [maintainer-onboarding-lesson]: https://carpentries.github.io/maintainer-onboarding/
-[maintainer-onboarding-video]: link
 [maintainer-onboarding-process]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding
 [maintainer-team]: https://carpentries.org/maintainers/
 [maintainer-stay-in-touch]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#how-to-stay-in-touch
