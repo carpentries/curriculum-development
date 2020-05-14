@@ -135,6 +135,7 @@ together in the lesson's reference page.
 
 After the YAML header, your episode file will contain the content for that episode. This content will likely
 include:
+
 *   paragraphs of text
 *   lists
 *   tables
@@ -162,6 +163,7 @@ There are lots of other fancy things you can do, but this should get you started
 ```
 
 This will show up like this:
+
 1. A
 1. numbered
 1. list
@@ -178,6 +180,7 @@ To create an un-numbered list in Markdown, do this:
 ```
 
 This will show up like this:
+
 * An
 * unnumbered
 * list
