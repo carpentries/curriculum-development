@@ -72,7 +72,7 @@ how it was collected, and what types of interesting questions can be asked from 
 1. **The dataset should be relevant in different geographical and cultural contexts** -- Our
 workshops are taught to learners from diverse cultural and geographical backgrounds. The
 dataset should be
-understandable without much cultural context or pre-requiste knowledge needed
+understandable without much cultural context or pre-requisite knowledge needed
 to make it compelling.
 
 1. **There should be clear and comprehensive metadata** -- The metadata should include a
