@@ -65,7 +65,7 @@ should have at least 4-5 variables. These variables should be of a few
 different data types (at least continuous, discrete, integers, real numbers; and depending
 on the domain, may include more specialized data types such as date/time, GPS coordinates, unstructured text, etc.)
 
-1. **The motivation for study and the protocol for data collection should be understable without much context** -- We have limited time in our workshops to cover the technical
+1. **The motivation for study and the protocol for data collection should be understandable without much context** -- We have limited time in our workshops to cover the technical
 skills we want to teach. It should not take long to explain to learners what the data is about,
 how it was collected, and what types of interesting questions can be asked from it.
 
