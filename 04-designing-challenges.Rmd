@@ -191,7 +191,7 @@ iris %>%
   filter(Species == "setosa" & Petal.Length > 1.5)
 ```
 
-Learners who select this answer have a conceptual misunderstanding that will may require more 
+Learners who select this answer have a conceptual misunderstanding that may require more 
 time and effort to correct. They haven't understood that the pipe (`%>%`) character only 
 passes into the next command the output of the previous command, and **nothing else**. Since
 they have used the `select()` function first, the "Petal.Length" column is no longer present
