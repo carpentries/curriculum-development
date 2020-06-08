@@ -249,7 +249,7 @@ select(Species == "setosa" & Petal.Length > 1.5) %>%
 If this is the case, make sure learners know that not all of the code chunks need to be
 included in their answer! 
 
-Parson's problems are somewhat less structured that MCQs, which makes them slightly
+Parson's problems are somewhat less structured than MCQs, which makes them slightly
 better for preparing learners to tackle similar problems in their own work. However, this also
 makes it more difficult for Instructors to diagnose learner misconceptions and adjust their 
 teaching accordingly (because there are more possible responses). As will all of the challenge
