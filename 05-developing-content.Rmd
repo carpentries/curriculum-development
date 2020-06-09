@@ -130,7 +130,7 @@ This number isn't random! Cognitive science research has clearly established tha
 limited, and can only handle a small number of separate items of information at once. This number is generally
 considered to be 7 plus or minus 2, but recent research has suggested it may be even smaller. If learners are
 presented with more than this many discrete pieces of information, they will not be able to keep all those
-pieces in mind similtanously. Once they have had an opportunity to work with those pieces of information, their
+pieces in mind simultaneously. Once they have had an opportunity to work with those pieces of information, their
 brains will create connections that will allow them to store the information in long-term memory and retrieve it
 as needed. This is why it is essential to include frequent exercises, spread throughout the lesson at regular
 intervals with only ~5 intervening new concepts. If you find that you need more than about this many code chunks
