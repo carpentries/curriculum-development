@@ -148,7 +148,7 @@ them in the rendered lesson webpage. For details, see the
 
 ### Learning objectives
 
-Great news - you've already almost completed writing your learning ojectives! The skills list that you developed
+Great news - you've already almost completed writing your learning objectives! The skills list that you developed
 for your lesson can be easily transformed to learning objectives. Learning objectives are statements that 
 communicate to learners the skills they can expect to gain from the lesson. They should always be framed
 from the learner's perspective and use action words. In other words, they should emphasize what a learner
