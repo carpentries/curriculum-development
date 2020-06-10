@@ -160,7 +160,7 @@ development may be part of a grant or other structure with requirements that are
 incompatible with putting together a CAC at such an early stage. If a curriculum
 will be included in the official Carpentries lesson stack, there
 must be a Curriculum Advisory Committee in place at the time of 
-its first publication. The CAC must should regularly for as long as a curriculum
+its first publication. The CAC should meet regularly for as long as a curriculum
 remains active. 
 
 ## Beta Pilot Instructors
