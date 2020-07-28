@@ -159,42 +159,41 @@ that each of the distractors helps the instructor figure out
 what concepts learners are having difficulty with.  
 
 For example, if learners are learning about subsetting data in `R` with the `dplyr` 
-functions `filter()` and `select()`, you might ask them to determine which of the 
-following code blocks will return only the values of the "Species" and "Petal.Width" variables
-and only for observations of the "setosa" species where petal length
-was greater than 1.5. 
+functions `filter()` and `select()`, you might ask them, using the `[palmerpenguins](https://cran.r-project.org/package=palmerpenguins)` dataset to determine which of the 
+following code blocks will return only the values of the "species" and "body_mass_g" variables
+for observations from the Dream island collected after 2007.
 
 a. 
 ```{r, echo=TRUE, eval=FALSE}
-iris %>%
-  filter(Species == "setosa" & Petal.Length > 1.5) %>%
-  select(Species, Petal.Width)
+penguins %>%
+  filter(island == "Dream" & year > 2007) %>%
+  select(species, body_mass_g)
 ```
 
 This is the correct answer. 
 
 b.
 ```{r, echo=TRUE, eval=FALSE}
-iris %>%
-  select(Species == "setosa" & Petal.Length > 1.5) %>%
-  filter(Species, Petal.Width)
+penguins %>%
+  select(island == "Dream" & year > 2007) %>%
+  filter(species, body_mass_g)
 ```
 
-Learners who select this answer have a simple factual misconception. They've confused the 
+Learners who select this answer have a factual misconception. They have confused the 
 `select()` and `filter()` functions. They need to be reminded that `filter()` is for 
 subsetting by row and `select()` is for subsetting by column. 
 
 c.
 ```{r, echo=TRUE, eval=FALSE}
-iris %>%
-  select(Species, Petal.Width)  %>%
-  filter(Species == "setosa" & Petal.Length > 1.5)
+penguins %>%
+  select(species, body_mass_g) %>% 
+  filter(island == "Dream" & year > 2007)
 ```
 
 Learners who select this answer have a conceptual misunderstanding that may require more 
 time and effort to correct. They haven't understood that the pipe (`%>%`) character only 
 passes into the next command the output of the previous command, and **nothing else**. Since
-they have used the `select()` function first, the "Petal.Length" column is no longer present
+they have used the `select()` function first, the "island" column is no longer present
 in the output and cannot be used for comparison. This misconception might be addressed by 
 drawing a diagram and walking through what the data looks like at each step of the command. 
 Another follow-up question using the same skills could then be used to assess whether learners
@@ -230,20 +229,20 @@ accomplish a specific task. The MCQ example given above could be formulated as a
 problem:
 
 ```{r, echo=TRUE, eval=FALSE}
-filter(Species == "setosa" & Petal.Length > 1.5) %>%
-iris %>%
-select(Species, Petal.Width)
+filter(island == "Dream" & year > 2007) %>%
+penguins %>%
+select(species, body_mass_g)
 ```
 
 A more difficult version of a Parson's problem might include lines that are not part of the 
 solution (*distractors*):
 
 ```{r, echo=TRUE, eval=FALSE}
-filter(Species == "setosa" & Petal.Length > 1.5) %>%
-filter(Species, Petal.Width)
-iris %>%
-select(Species, Petal.Width)
-select(Species == "setosa" & Petal.Length > 1.5) %>%
+filter(island == "Dream" & year > 2007) %>%
+select(island == "Dream" & year > 2007) %>%
+penguins %>%
+filter(species, body_mass_g)
+select(species, body_mass_g)
 ```
 
 If this is the case, make sure learners know that not all of the code chunks need to be
@@ -295,14 +294,13 @@ application of fill-in-the-blank problems:
 
 
 We can also apply this concept to our earlier example and ask learners to fill-in-the-blanks
-to build a code block that will return only the values of the "Species" and "Petal.Width"
-variables and only for observations of the "setosa" species where petal length
-was greater than 1.5: 
+to build a code block that will return only the values of the "species" and "body_mass_g"
+variables and only for observations from the "Dream" island collected after 2007:
 
 ```{r, echo=TRUE, eval=FALSE}
-iris %>%
-  ________(Species __ "setosa" ___ Petal.Length > 1.5) %>%
-  ________(Species, ___ )
+penguins %>%
+  ________(island __ "Dream" ___ year > 2007) %>%
+  ________(species, ___ )
 ```
 
 The difficulty of a fill-in-the-blank problem can be adjusted by changing the number of blanks,
