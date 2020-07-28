@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Guiding principles | The Carpentries Curriculum Development Handbook</title>
+  <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  <meta name="generator" content="bookdown 0.20.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Guiding principles | The Carpentries Curriculum Development Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  <meta name="github-repo" content="carpentries/curriculum-development" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Guiding principles | The Carpentries Curriculum Development Handbook" />
+  
+  <meta name="twitter:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  
+
+<meta name="author" content="Erin Becker and François Michonneau" />
+
+
+<meta name="date" content="2020-07-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="our-curriculum-structure.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curriculum Development Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="guiding-principles.html"><a href="guiding-principles.html"><i class="fa fa-check"></i><b>1</b> Guiding principles</a><ul>
+<li class="chapter" data-level="1.1" data-path="guiding-principles.html"><a href="guiding-principles.html#backward-design"><i class="fa fa-check"></i><b>1.1</b> Backward design</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="guiding-principles.html"><a href="guiding-principles.html#identifying-the-practical-skills"><i class="fa fa-check"></i><b>1.1.1</b> Identifying the practical skills</a></li>
+<li class="chapter" data-level="1.1.2" data-path="guiding-principles.html"><a href="guiding-principles.html#designing-challenges-to-assess-understanding"><i class="fa fa-check"></i><b>1.1.2</b> Designing challenges to assess understanding</a></li>
+<li class="chapter" data-level="1.1.3" data-path="guiding-principles.html"><a href="guiding-principles.html#planning-the-content-of-the-lesson"><i class="fa fa-check"></i><b>1.1.3</b> Planning the content of the lesson</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="guiding-principles.html"><a href="guiding-principles.html#creating-a-narrative-and-selecting-a-dataset"><i class="fa fa-check"></i><b>1.2</b> Creating a narrative and selecting a dataset</a></li>
+<li class="chapter" data-level="1.3" data-path="guiding-principles.html"><a href="guiding-principles.html#limitations-of-our-approach"><i class="fa fa-check"></i><b>1.3</b> Limitations of our approach</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html"><i class="fa fa-check"></i><b>2</b> Our curriculum structure</a><ul>
+<li class="chapter" data-level="2.1" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#episodes"><i class="fa fa-check"></i><b>2.1</b> Episodes</a></li>
+<li class="chapter" data-level="2.2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#lessons"><i class="fa fa-check"></i><b>2.2</b> Lessons</a></li>
+<li class="chapter" data-level="2.3" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#curricula"><i class="fa fa-check"></i><b>2.3</b> Curricula</a></li>
+<li class="chapter" data-level="2.4" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#lesson-collections"><i class="fa fa-check"></i><b>2.4</b> Lesson Collections</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html"><i class="fa fa-check"></i><b>3</b> Deciding what to teach</a><ul>
+<li class="chapter" data-level="3.1" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#target-audience"><i class="fa fa-check"></i><b>3.1</b> Target audience</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#audience-definition-questions"><i class="fa fa-check"></i><b>3.1.1</b> Audience definition questions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#learner-profiles"><i class="fa fa-check"></i><b>3.1.2</b> Learner profiles</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#skills-list"><i class="fa fa-check"></i><b>3.2</b> Skills list</a></li>
+<li class="chapter" data-level="3.3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#example-using-a-software-carpentry-learner-profile"><i class="fa fa-check"></i><b>3.3</b> Example using a Software Carpentry Learner Profile</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="designing-challenges.html"><a href="designing-challenges.html"><i class="fa fa-check"></i><b>4</b> Designing challenges</a><ul>
+<li class="chapter" data-level="4.1" data-path="designing-challenges.html"><a href="designing-challenges.html#picking-a-dataset"><i class="fa fa-check"></i><b>4.1</b> Picking a dataset</a></li>
+<li class="chapter" data-level="4.2" data-path="designing-challenges.html"><a href="designing-challenges.html#formatting-the-dataset-for-teaching"><i class="fa fa-check"></i><b>4.2</b> Formatting the dataset for teaching</a></li>
+<li class="chapter" data-level="4.3" data-path="designing-challenges.html"><a href="designing-challenges.html#designing-challenges-1"><i class="fa fa-check"></i><b>4.3</b> Designing challenges</a></li>
+<li class="chapter" data-level="4.4" data-path="designing-challenges.html"><a href="designing-challenges.html#different-types-of-challenges"><i class="fa fa-check"></i><b>4.4</b> Different types of challenges</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="designing-challenges.html"><a href="designing-challenges.html#multiple-choice-questions"><i class="fa fa-check"></i><b>4.4.1</b> Multiple Choice Questions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="designing-challenges.html"><a href="designing-challenges.html#parsons-problems"><i class="fa fa-check"></i><b>4.4.2</b> Parson’s problems</a></li>
+<li class="chapter" data-level="4.4.3" data-path="designing-challenges.html"><a href="designing-challenges.html#fill-in-the-blank-problems"><i class="fa fa-check"></i><b>4.4.3</b> Fill-in-the-blank problems</a></li>
+<li class="chapter" data-level="4.4.4" data-path="designing-challenges.html"><a href="designing-challenges.html#use-the-concept-in-a-different-context"><i class="fa fa-check"></i><b>4.4.4</b> Use the concept in a different context</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="developing-content.html"><a href="developing-content.html"><i class="fa fa-check"></i><b>5</b> Developing content</a><ul>
+<li class="chapter" data-level="5.1" data-path="developing-content.html"><a href="developing-content.html#fundamental-elements"><i class="fa fa-check"></i><b>5.1</b> Fundamental elements</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="developing-content.html"><a href="developing-content.html#code-chunks"><i class="fa fa-check"></i><b>5.1.1</b> Code chunks</a></li>
+<li class="chapter" data-level="5.1.2" data-path="developing-content.html"><a href="developing-content.html#narrative-text"><i class="fa fa-check"></i><b>5.1.2</b> Narrative text</a></li>
+<li class="chapter" data-level="5.1.3" data-path="developing-content.html"><a href="developing-content.html#considering-cognitive-load"><i class="fa fa-check"></i><b>5.1.3</b> Considering cognitive load</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="developing-content.html"><a href="developing-content.html#supporting-elements"><i class="fa fa-check"></i><b>5.2</b> Supporting elements</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="developing-content.html"><a href="developing-content.html#learning-objectives"><i class="fa fa-check"></i><b>5.2.1</b> Learning objectives</a></li>
+<li class="chapter" data-level="5.2.2" data-path="developing-content.html"><a href="developing-content.html#key-points"><i class="fa fa-check"></i><b>5.2.2</b> Key points</a></li>
+<li class="chapter" data-level="5.2.3" data-path="developing-content.html"><a href="developing-content.html#framing-questions"><i class="fa fa-check"></i><b>5.2.3</b> Framing questions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="community-development-roles.html"><a href="community-development-roles.html"><i class="fa fa-check"></i><b>6</b> Community development roles</a><ul>
+<li class="chapter" data-level="6.1" data-path="community-development-roles.html"><a href="community-development-roles.html#lesson-authors"><i class="fa fa-check"></i><b>6.1</b> Lesson Authors</a></li>
+<li class="chapter" data-level="6.2" data-path="community-development-roles.html"><a href="community-development-roles.html#reviewers"><i class="fa fa-check"></i><b>6.2</b> Reviewers</a></li>
+<li class="chapter" data-level="6.3" data-path="community-development-roles.html"><a href="community-development-roles.html#lesson-maintainers"><i class="fa fa-check"></i><b>6.3</b> Lesson Maintainers</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="community-development-roles.html"><a href="community-development-roles.html#maintainer-recruitment-requirements-and-time-commitment"><i class="fa fa-check"></i><b>6.3.1</b> Maintainer recruitment, requirements and time commitment</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="community-development-roles.html"><a href="community-development-roles.html#curriculum-advisors"><i class="fa fa-check"></i><b>6.4</b> Curriculum Advisors</a></li>
+<li class="chapter" data-level="6.5" data-path="community-development-roles.html"><a href="community-development-roles.html#beta-pilot-instructors"><i class="fa fa-check"></i><b>6.5</b> Beta Pilot Instructors</a></li>
+<li class="chapter" data-level="6.6" data-path="community-development-roles.html"><a href="community-development-roles.html#instructors"><i class="fa fa-check"></i><b>6.6</b> Instructors</a></li>
+<li class="chapter" data-level="6.7" data-path="community-development-roles.html"><a href="community-development-roles.html#summary"><i class="fa fa-check"></i><b>6.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html"><i class="fa fa-check"></i><b>7</b> The lesson life-cycle</a><ul>
+<li class="chapter" data-level="7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#scope-of-this-chapter"><i class="fa fa-check"></i><b>7.1</b> Scope of this chapter</a></li>
+<li class="chapter" data-level="7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#overview-and-definitions"><i class="fa fa-check"></i><b>7.2</b> Overview and definitions</a></li>
+<li class="chapter" data-level="7.3" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#where-to-start"><i class="fa fa-check"></i><b>7.3</b> Where to start</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track"><i class="fa fa-check"></i><b>7.3.1</b> Official Track</a></li>
+<li class="chapter" data-level="7.3.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#community-track"><i class="fa fa-check"></i><b>7.3.2</b> Community Track</a></li>
+<li class="chapter" data-level="7.3.3" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#carpentries-lab-track"><i class="fa fa-check"></i><b>7.3.3</b> Carpentries Lab Track</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"><i class="fa fa-check"></i><b>7.4</b> Early development (pre-alpha through alpha)</a></li>
+<li class="chapter" data-level="7.5" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#field-testing-alpha-stage"><i class="fa fa-check"></i><b>7.5</b> Field testing: alpha stage</a></li>
+<li class="chapter" data-level="7.6" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#polishing-beta-stage"><i class="fa fa-check"></i><b>7.6</b> Polishing: beta stage</a></li>
+<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.7</b> The stable lesson: Maintenance and lesson releases</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a><ul>
+<li class="chapter" data-level="8.1" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-hosting-and-rendering"><i class="fa fa-check"></i><b>8.1</b> Lesson hosting and rendering</a></li>
+<li class="chapter" data-level="8.2" data-path="technological-introductions.html"><a href="technological-introductions.html#using-the-lesson-template"><i class="fa fa-check"></i><b>8.2</b> Using the lesson template</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="technological-introductions.html"><a href="technological-introductions.html#creating-your-lesson-repository"><i class="fa fa-check"></i><b>8.2.1</b> Creating your lesson repository</a></li>
+<li class="chapter" data-level="8.2.2" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-homepage"><i class="fa fa-check"></i><b>8.2.2</b> Lesson homepage</a></li>
+<li class="chapter" data-level="8.2.3" data-path="technological-introductions.html"><a href="technological-introductions.html#episode-files"><i class="fa fa-check"></i><b>8.2.3</b> Episode files</a></li>
+<li class="chapter" data-level="8.2.4" data-path="technological-introductions.html"><a href="technological-introductions.html#extras"><i class="fa fa-check"></i><b>8.2.4</b> Extras</a></li>
+<li class="chapter" data-level="8.2.5" data-path="technological-introductions.html"><a href="technological-introductions.html#other-information"><i class="fa fa-check"></i><b>8.2.5</b> Other information</a></li>
+<li class="chapter" data-level="8.2.6" data-path="technological-introductions.html"><a href="technological-introductions.html#special-notes-on-rmarkdown"><i class="fa fa-check"></i><b>8.2.6</b> Special notes on RMarkdown</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Carpentries Curriculum Development Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="guiding-principles" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Guiding principles</h1>
+<p>Carpentries curricula are developed based on the results of research in the science of
+teaching and learning. We rely on findings synthesized in the book
+<a href="https://www.wiley.com/en-us/How+Learning+Works%3A+Seven+Research+Based+Principles+for+Smart+Teaching-p-9780470484104">How Learning Works: Seven Research-Based Principles for Smart Teaching</a> <span class="citation">(Ambrose et al. <a href="#ref-ambrose2010learning">2010</a>)</span>. We use this text in our Instructor Trainer training program, so that
+Trainers (who teach our Instructor Training courses) can understand why we teach the way we
+do, and why our lessons are designed the way they are.</p>
+<p>The authors identify seven principles of learning (direct quotation from the book are bolded):</p>
+<ol style="list-style-type: decimal">
+<li><strong>“Students’ prior knowledge can help or hinder learning.”</strong> – Identifying
+what the learners know before coming to our workshops help us adjust what we
+teach. One way we do this is through <a href="https://carpentries.org/assessment/">our pre-workshop surveys</a>. We also give the learners
+frequent exercises (or “challenges”) throughout our lessons, which help Instructors
+and learners identify and correct misconceptions.</li>
+<li><strong>“How students organize knowledge influences how they learn and apply what
+they know.”</strong> – Human working memory is limited, and can only handle about
+five to seven separate items of information at a time. We organize our lessons
+to introduce a few concepts at a time, and then provide challenges to give learners
+an opportunity to practice using these new concepts. This lets learners build connections
+between new concepts and their previous knowledge and transfer this new
+knowledge into their long-term memory,
+increasing the likelihood that they will be able to use this information successfully
+in new contexts.</li>
+<li><strong>“Students’ motivation determines, directs, and sustains what they do to
+learn.”</strong> – Our learners come to our workshops already motivated to learn the concepts
+we teach. They realize they need the skills we teach to conduct their
+research more effectively. They have experienced the pain that comes with
+copying and pasting data across spreadsheets, or having to re-do complex
+graphs over and over as new data come in. However, they may also be
+intimidated by how much they have to learn before being proficient
+programmers and data analysts. Two strategies we use to keep our
+learners motivated
+are: (1) to create a positive learning environment, and (2) to teach the most
+useful skills first. We teach <a href="https://carpentries.github.io/instructor-training/08-motivation/index.html">both of these in our Instructor Training program</a>,
+and discuss how they influence curricular design below.</li>
+<li><strong>“To develop mastery, students must acquire component skills, practice
+integrating them, and know when to apply what they have learned.”</strong> –
+Our lessons use frequent challenges to provide
+opportunities for learners to practice applying their new skills. These challenges
+are designed to incrementally build on each other and integrate previously taught
+and new skills. Careful attention to exercise design helps assure learners will
+be able to transfer the
+skills they acquire in our workshop to their own research.</li>
+<li><strong>“Goal-directed practice coupled with targeted feedback enhances the quality
+of students’ learning.”</strong> – When Learners try to solve the challenges we include in our
+lessons, they receive direct feedback from the computer - either an
+error message or the expected answer. Error messages are often opaque, and
+do not on their own help learners advance in their learning process, making them
+frustrated and demotivated. Our lessons are designed to be delivered as real-time
+in-person instruction, so that learners get feedback from Instructors and workshop helpers
+that is human-parsable and directed to their level of understanding. Furthermore,
+challenges used in a lesson should only require the skills
+that have already been introduced during the workshop, and should have a limited
+range of possible answers.</li>
+<li><strong>“Students’ current level of development interacts with the social,
+emotional, and intellectual climate of the course to impact learning.”</strong> – Providing
+a positive learning environment reduces learners’ stress
+and helps increase their confidence in their ability to use the skills we teach.
+Creating this positive environment is a responsibility shared among all
+participants: Instructors, helpers, workshop hosts, and learners.
+Setting expectations by introducing
+<a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">our Code of Conduct</a>
+at the start of each workshop, and enforcing it,
+contributes to making the workshop a welcoming space for everyone.
+Other strategies we use to create a positive learning environment <a href="https://carpentries.github.io/instructor-training/08-motivation/index.html">are covered in our
+Instructor Training</a>.
+Curricular content also plays a major role in creating a positive environment:
+examples chosen should not be alienating, skill level must be appropriate for
+the audience, and the examples and challenges must be directly applicable
+for our learners. For instance, when a learner
+creates a visualization that they can directly apply to their own
+data, it reinforces their motivation and favors a positive learning
+climate.</li>
+<li><strong>“To become self-directed learners, students must learn to monitor and adjust
+their approaches to learning.”</strong> – In-person workshops allow Instructors to
+model the thinking process that is needed to address the challenges
+in our lessons. As an Instructor, being very explicit (“thinking
+aloud”) about the steps of the mental model that are involved in identifying
+the functions to use, the values of the arguments they take, and the order in
+which to call these functions to solve an exercise, helps learners to think
+of the questions they need to ask themselves when facing new problems to
+solve. While this type of approach works for any level of complexity in the
+challenges we teach, it works best for the most advanced ones, where several steps
+need to be integrated to come to the solution. Before reaching this level of
+complexity, the challenges can be designed to guide this process, using
+scaffolding. Scaffolding is the process of providing support to a learner while
+new subjects and concepts are introduced. Scaffolding assists learners as they
+progress through increasingly complex code creation by breaking the complex code
+into smaller, more manageable chunks. Common practice problems used in instructional
+scaffolding are Parson’s problems, where all the pieces of code to answer the problem
+are already written but are not in the correct order; and, fill in the blanks.
+Instructional scaffolding might be one of the most important
+things we use in our workshops. It sets learners on a successful path
+for further self-directed learning. When developing the content of the curriculum, think of the
+kind of thinking process that is needed to successfully address the research
+questions in your field.</li>
+</ol>
+<p>Applying these principles effectively requires that they are incorporated into both
+<strong>what</strong> is taught (content) and <strong>how</strong> it is taught (delivery). Our
+Instructor Training program focuses on teaching Instructors how to use these principles
+in their teaching. In this handbook, we focus on applying these principles to
+curriculum design. Before starting to create lesson content, we highly recommend that you familiarize yourself with our <a href="https://carpentries.github.io/instructor-training/">Instructor Training curriculum</a>.</p>
+<div id="backward-design" class="section level2">
+<h2><span class="header-section-number">1.1</span> Backward design</h2>
+<p><a href="https://en.wikipedia.org/wiki/Backward_design">Backward design</a> is an instructional
+design model that starts with identifying the desired outcomes of a learning experience,
+including core skills and concepts that learners need to acquire. These identified outcomes
+are used to develop course content and assessments to measure learners’ progress towards
+these outcomes. This model was developed by Grant J. Wiggins and Jay McTighe in the late
+1990s and is expanded on in their text
+<a href="https://www.pearson.com/us/higher-education/program/Wiggins-Understanding-by-Design-Expanded-Second-Edition-2nd-Edition/PGM229455.html">Understanding by Design</a>. We use backward design in developing our curricula because of its focus on identifying clear, measurable
+learning goals and providing assessments aligned with those goals.</p>
+<p>In essense, the backward design process has three stages:</p>
+<ol style="list-style-type: decimal">
+<li>Identify the practical skills we aim to teach.</li>
+<li>Design challenges to give an opportunity for our learners to practice and
+integrate these skills.</li>
+<li>Identify what we need to teach for our learners to acquire these skills.</li>
+</ol>
+<p>This approach ensures that all the skills we teach work together to meet the over-arching
+goals of our curriculum. It also reduces the risk that we won’t teach a concept learners
+need in order to be able
+to master the skills we aim to teach. Similarly, it avoids teaching topics that do not help us (and our learners) meet our goals.</p>
+<p>Reducing distractions is part of our lesson design as we strive to reduce cognitive load on learners. To this end, we also develop our lessons to be centered around a narrative and a dataset they can relate with quickly.</p>
+<p>Because our workshops are domain-specific, the data we use, and the type of questions we ask
+with the data are already somewhat familiar to our learners. Their energy and focus can be
+directed towards learning the skills we teach rather than on getting familiar with data and
+concepts that are foreign to them. This strategy also increases the motivation of our
+learners. By learning how to solve problems that are familiar to them, they can more easily
+transpose these skills directly to their own data, and have a good starting point to
+continue their learning process as they try to solve new or more complex problems with their
+own data.</p>
+<div id="identifying-the-practical-skills" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Identifying the practical skills</h3>
+<p>Our primary aim in a Carpentries workshop is to increase the confidence of our learners. We
+want to demystify and make accessible the process of computing and analyzing data. More than
+a third of learners at our workshops have little to no coding experience <span class="citation">(Jordan, Michonneau, and Weaver <a href="#ref-jordan2018assessment">2018</a>)</span>. Our workshops provide them an
+opportunity to try, in a friendly environment, something they perceive as intimidating.</p>
+<p>Another important goal is to make the research life of our learners easier. We
+emphasize teaching “good enough practices” <span class="citation">(Wilson et al. <a href="#ref-wilson2017goodenough">2017</a>)</span> - concrete
+skills that are accessible, able to be adopted by researchers of any skill
+level, and likely to make an immediate positive impact on learners’ work.
+Teaching defensive programming, how to use spreadsheets effectively, or how to
+organise files consistently across research projects, are practical skills that
+can save a lot time when learners apply them in their own research.</p>
+<p>When developing a new curriculum, the first step is to identify the skills that will be the
+most immediately useful to learners and have the biggest impact on their work. This will
+vary a lot, so having a clear idea of your lesson’s intended audience is critical at this
+stage.</p>
+<p>We will discuss in detail the process of defining your
+audience and identifying these core skills for your lesson
+in <a href="deciding-what-to-teach.html#deciding-what-to-teach">a later chapter</a>.</p>
+</div>
+<div id="designing-challenges-to-assess-understanding" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Designing challenges to assess understanding</h3>
+<p>Once you have identified these high-impact skills, the lesson content should be designed to
+create frequent opportunities for learners to practice these skills while exemplifying the
+tasks they perform in their daily work. Live coding and hands-on challenges that learners
+can directly relate to should allow them to envision how they can start using the skills
+taught with their own data as soon as the workshop is over.</p>
+<p>In traditional Western instruction, learners are presented with new material during course time
+and then sent home to practice applying the concepts learnt on their own. A major limitation of this
+approach is that learners often encounter difficulties in trying to apply their new knowledge or skills
+and need to troubleshoot on their own, without support. Education research shows that novices learn best when
+they are given feedback and coaching in real time while practicing their new skills (see principle
+number 5 above) so that errors are corrected and mis-steps redirected before mistakes have a chance to become
+discouraging or engrained in learners’ memory.</p>
+<p>To this end, Carpentries workshops are designed to provide frequent opportunities for learners to practice new skills. To be
+helpful in providing useful feedback, these challenges need to both be:</p>
+<ol style="list-style-type: decimal">
+<li>narrowly targeted to the skills that have been taught (i.e. not to depend
+on untaught concepts), and;</li>
+<li>diagnostic (Instructors should be able to tell what the learner is
+misunderstanding based on how they answer the question).</li>
+</ol>
+<p>The practical aspects of creating useful challenge problems is discussed in <a href="designing-challenges.html#designing-challenges-1">a
+later chapter</a>.</p>
+</div>
+<div id="planning-the-content-of-the-lesson" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> Planning the content of the lesson</h3>
+<p>After deciding on a list of core skills your learners need, and
+creating a set of well-targeted, diagnostic exercises, you can
+then start to create the bulk of the content for the lesson.
+This material can be thought of as the “script” for the
+instructor to follow while teaching and should be planned
+very carefully to complement the exercises you’ve already
+designed. We cover the process of creating curricular content
+in <a href="developing-content.html#developing-content">a later chapter</a></p>
+</div>
+</div>
+<div id="creating-a-narrative-and-selecting-a-dataset" class="section level2">
+<h2><span class="header-section-number">1.2</span> Creating a narrative and selecting a dataset</h2>
+<p>Because we strive to provide a realistic experience for learners
+that is as similar as possible to the workflow they would use
+in their own work, our lessons use real data and are structured
+in a natural flow that corresponds to how a learner would experience
+working with their data in real life. For many curricula, this
+means starting with a lesson on data organisation and progressing
+through data cleaning, analysis, and visualisation or reporting.
+It is important to choose a dataset that is an authentic
+representation of what your audience would encounter in their
+day-to-day work. The practicalities of chosing an appropriate
+dataset are covered in a <a href="designing-challenges.html#picking-a-dataset">later section</a>
+of this handbook.</p>
+</div>
+<div id="limitations-of-our-approach" class="section level2">
+<h2><span class="header-section-number">1.3</span> Limitations of our approach</h2>
+<p>Learners can’t go from complete novices to experts in two days (or
+in the course of any single class). We aim to provide learners with
+three things:</p>
+<ol style="list-style-type: decimal">
+<li>A set of foundational concepts and skills;</li>
+<li>A mental model that connects those concepts into a useful
+framework and that can be built upon in their future learning; and</li>
+<li>The motivation and skillset they need to continue learning
+past the end of the workshop.</li>
+</ol>
+<p>Managing learners’ expectations, and clearly communicating to
+them what they will (and won’t) be able to do by the end of the
+workshop, is important because it limits the chance of demotivation.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-ambrose2010learning">
+<p>Ambrose, Susan A, Michael W Bridges, Michele DiPietro, Marsha C Lovett, and Marie K Norman. 2010. <em>How Learning Works: Seven Research-Based Principles for Smart Teaching</em>. John Wiley &amp; Sons.</p>
+</div>
+<div id="ref-jordan2018assessment">
+<p>Jordan, Kari, François Michonneau, and Belinda Weaver. 2018. “Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys.” <a href="https://doi.org/10.5281/zenodo.1325464" class="uri">https://doi.org/10.5281/zenodo.1325464</a>.</p>
+</div>
+<div id="ref-wilson2017goodenough">
+<p>Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” <em>PLOS Computational Biology</em> 13 (6). Public Library of Science: 1–20. <a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="our-curriculum-structure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/carpentries/curriculum-development/edit/master/01-principles.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

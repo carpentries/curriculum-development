@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 Technological introductions | The Carpentries Curriculum Development Handbook</title>
+  <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  <meta name="generator" content="bookdown 0.20.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 Technological introductions | The Carpentries Curriculum Development Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  <meta name="github-repo" content="carpentries/curriculum-development" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 Technological introductions | The Carpentries Curriculum Development Handbook" />
+  
+  <meta name="twitter:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  
+
+<meta name="author" content="Erin Becker and François Michonneau" />
+
+
+<meta name="date" content="2020-07-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="the-lesson-life-cycle.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curriculum Development Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="guiding-principles.html"><a href="guiding-principles.html"><i class="fa fa-check"></i><b>1</b> Guiding principles</a><ul>
+<li class="chapter" data-level="1.1" data-path="guiding-principles.html"><a href="guiding-principles.html#backward-design"><i class="fa fa-check"></i><b>1.1</b> Backward design</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="guiding-principles.html"><a href="guiding-principles.html#identifying-the-practical-skills"><i class="fa fa-check"></i><b>1.1.1</b> Identifying the practical skills</a></li>
+<li class="chapter" data-level="1.1.2" data-path="guiding-principles.html"><a href="guiding-principles.html#designing-challenges-to-assess-understanding"><i class="fa fa-check"></i><b>1.1.2</b> Designing challenges to assess understanding</a></li>
+<li class="chapter" data-level="1.1.3" data-path="guiding-principles.html"><a href="guiding-principles.html#planning-the-content-of-the-lesson"><i class="fa fa-check"></i><b>1.1.3</b> Planning the content of the lesson</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="guiding-principles.html"><a href="guiding-principles.html#creating-a-narrative-and-selecting-a-dataset"><i class="fa fa-check"></i><b>1.2</b> Creating a narrative and selecting a dataset</a></li>
+<li class="chapter" data-level="1.3" data-path="guiding-principles.html"><a href="guiding-principles.html#limitations-of-our-approach"><i class="fa fa-check"></i><b>1.3</b> Limitations of our approach</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html"><i class="fa fa-check"></i><b>2</b> Our curriculum structure</a><ul>
+<li class="chapter" data-level="2.1" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#episodes"><i class="fa fa-check"></i><b>2.1</b> Episodes</a></li>
+<li class="chapter" data-level="2.2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#lessons"><i class="fa fa-check"></i><b>2.2</b> Lessons</a></li>
+<li class="chapter" data-level="2.3" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#curricula"><i class="fa fa-check"></i><b>2.3</b> Curricula</a></li>
+<li class="chapter" data-level="2.4" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#lesson-collections"><i class="fa fa-check"></i><b>2.4</b> Lesson Collections</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html"><i class="fa fa-check"></i><b>3</b> Deciding what to teach</a><ul>
+<li class="chapter" data-level="3.1" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#target-audience"><i class="fa fa-check"></i><b>3.1</b> Target audience</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#audience-definition-questions"><i class="fa fa-check"></i><b>3.1.1</b> Audience definition questions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#learner-profiles"><i class="fa fa-check"></i><b>3.1.2</b> Learner profiles</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#skills-list"><i class="fa fa-check"></i><b>3.2</b> Skills list</a></li>
+<li class="chapter" data-level="3.3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#example-using-a-software-carpentry-learner-profile"><i class="fa fa-check"></i><b>3.3</b> Example using a Software Carpentry Learner Profile</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="designing-challenges.html"><a href="designing-challenges.html"><i class="fa fa-check"></i><b>4</b> Designing challenges</a><ul>
+<li class="chapter" data-level="4.1" data-path="designing-challenges.html"><a href="designing-challenges.html#picking-a-dataset"><i class="fa fa-check"></i><b>4.1</b> Picking a dataset</a></li>
+<li class="chapter" data-level="4.2" data-path="designing-challenges.html"><a href="designing-challenges.html#formatting-the-dataset-for-teaching"><i class="fa fa-check"></i><b>4.2</b> Formatting the dataset for teaching</a></li>
+<li class="chapter" data-level="4.3" data-path="designing-challenges.html"><a href="designing-challenges.html#designing-challenges-1"><i class="fa fa-check"></i><b>4.3</b> Designing challenges</a></li>
+<li class="chapter" data-level="4.4" data-path="designing-challenges.html"><a href="designing-challenges.html#different-types-of-challenges"><i class="fa fa-check"></i><b>4.4</b> Different types of challenges</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="designing-challenges.html"><a href="designing-challenges.html#multiple-choice-questions"><i class="fa fa-check"></i><b>4.4.1</b> Multiple Choice Questions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="designing-challenges.html"><a href="designing-challenges.html#parsons-problems"><i class="fa fa-check"></i><b>4.4.2</b> Parson’s problems</a></li>
+<li class="chapter" data-level="4.4.3" data-path="designing-challenges.html"><a href="designing-challenges.html#fill-in-the-blank-problems"><i class="fa fa-check"></i><b>4.4.3</b> Fill-in-the-blank problems</a></li>
+<li class="chapter" data-level="4.4.4" data-path="designing-challenges.html"><a href="designing-challenges.html#use-the-concept-in-a-different-context"><i class="fa fa-check"></i><b>4.4.4</b> Use the concept in a different context</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="developing-content.html"><a href="developing-content.html"><i class="fa fa-check"></i><b>5</b> Developing content</a><ul>
+<li class="chapter" data-level="5.1" data-path="developing-content.html"><a href="developing-content.html#fundamental-elements"><i class="fa fa-check"></i><b>5.1</b> Fundamental elements</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="developing-content.html"><a href="developing-content.html#code-chunks"><i class="fa fa-check"></i><b>5.1.1</b> Code chunks</a></li>
+<li class="chapter" data-level="5.1.2" data-path="developing-content.html"><a href="developing-content.html#narrative-text"><i class="fa fa-check"></i><b>5.1.2</b> Narrative text</a></li>
+<li class="chapter" data-level="5.1.3" data-path="developing-content.html"><a href="developing-content.html#considering-cognitive-load"><i class="fa fa-check"></i><b>5.1.3</b> Considering cognitive load</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="developing-content.html"><a href="developing-content.html#supporting-elements"><i class="fa fa-check"></i><b>5.2</b> Supporting elements</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="developing-content.html"><a href="developing-content.html#learning-objectives"><i class="fa fa-check"></i><b>5.2.1</b> Learning objectives</a></li>
+<li class="chapter" data-level="5.2.2" data-path="developing-content.html"><a href="developing-content.html#key-points"><i class="fa fa-check"></i><b>5.2.2</b> Key points</a></li>
+<li class="chapter" data-level="5.2.3" data-path="developing-content.html"><a href="developing-content.html#framing-questions"><i class="fa fa-check"></i><b>5.2.3</b> Framing questions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="community-development-roles.html"><a href="community-development-roles.html"><i class="fa fa-check"></i><b>6</b> Community development roles</a><ul>
+<li class="chapter" data-level="6.1" data-path="community-development-roles.html"><a href="community-development-roles.html#lesson-authors"><i class="fa fa-check"></i><b>6.1</b> Lesson Authors</a></li>
+<li class="chapter" data-level="6.2" data-path="community-development-roles.html"><a href="community-development-roles.html#reviewers"><i class="fa fa-check"></i><b>6.2</b> Reviewers</a></li>
+<li class="chapter" data-level="6.3" data-path="community-development-roles.html"><a href="community-development-roles.html#lesson-maintainers"><i class="fa fa-check"></i><b>6.3</b> Lesson Maintainers</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="community-development-roles.html"><a href="community-development-roles.html#maintainer-recruitment-requirements-and-time-commitment"><i class="fa fa-check"></i><b>6.3.1</b> Maintainer recruitment, requirements and time commitment</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="community-development-roles.html"><a href="community-development-roles.html#curriculum-advisors"><i class="fa fa-check"></i><b>6.4</b> Curriculum Advisors</a></li>
+<li class="chapter" data-level="6.5" data-path="community-development-roles.html"><a href="community-development-roles.html#beta-pilot-instructors"><i class="fa fa-check"></i><b>6.5</b> Beta Pilot Instructors</a></li>
+<li class="chapter" data-level="6.6" data-path="community-development-roles.html"><a href="community-development-roles.html#instructors"><i class="fa fa-check"></i><b>6.6</b> Instructors</a></li>
+<li class="chapter" data-level="6.7" data-path="community-development-roles.html"><a href="community-development-roles.html#summary"><i class="fa fa-check"></i><b>6.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html"><i class="fa fa-check"></i><b>7</b> The lesson life-cycle</a><ul>
+<li class="chapter" data-level="7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#scope-of-this-chapter"><i class="fa fa-check"></i><b>7.1</b> Scope of this chapter</a></li>
+<li class="chapter" data-level="7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#overview-and-definitions"><i class="fa fa-check"></i><b>7.2</b> Overview and definitions</a></li>
+<li class="chapter" data-level="7.3" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#where-to-start"><i class="fa fa-check"></i><b>7.3</b> Where to start</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track"><i class="fa fa-check"></i><b>7.3.1</b> Official Track</a></li>
+<li class="chapter" data-level="7.3.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#community-track"><i class="fa fa-check"></i><b>7.3.2</b> Community Track</a></li>
+<li class="chapter" data-level="7.3.3" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#carpentries-lab-track"><i class="fa fa-check"></i><b>7.3.3</b> Carpentries Lab Track</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"><i class="fa fa-check"></i><b>7.4</b> Early development (pre-alpha through alpha)</a></li>
+<li class="chapter" data-level="7.5" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#field-testing-alpha-stage"><i class="fa fa-check"></i><b>7.5</b> Field testing: alpha stage</a></li>
+<li class="chapter" data-level="7.6" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#polishing-beta-stage"><i class="fa fa-check"></i><b>7.6</b> Polishing: beta stage</a></li>
+<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.7</b> The stable lesson: Maintenance and lesson releases</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a><ul>
+<li class="chapter" data-level="8.1" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-hosting-and-rendering"><i class="fa fa-check"></i><b>8.1</b> Lesson hosting and rendering</a></li>
+<li class="chapter" data-level="8.2" data-path="technological-introductions.html"><a href="technological-introductions.html#using-the-lesson-template"><i class="fa fa-check"></i><b>8.2</b> Using the lesson template</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="technological-introductions.html"><a href="technological-introductions.html#creating-your-lesson-repository"><i class="fa fa-check"></i><b>8.2.1</b> Creating your lesson repository</a></li>
+<li class="chapter" data-level="8.2.2" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-homepage"><i class="fa fa-check"></i><b>8.2.2</b> Lesson homepage</a></li>
+<li class="chapter" data-level="8.2.3" data-path="technological-introductions.html"><a href="technological-introductions.html#episode-files"><i class="fa fa-check"></i><b>8.2.3</b> Episode files</a></li>
+<li class="chapter" data-level="8.2.4" data-path="technological-introductions.html"><a href="technological-introductions.html#extras"><i class="fa fa-check"></i><b>8.2.4</b> Extras</a></li>
+<li class="chapter" data-level="8.2.5" data-path="technological-introductions.html"><a href="technological-introductions.html#other-information"><i class="fa fa-check"></i><b>8.2.5</b> Other information</a></li>
+<li class="chapter" data-level="8.2.6" data-path="technological-introductions.html"><a href="technological-introductions.html#special-notes-on-rmarkdown"><i class="fa fa-check"></i><b>8.2.6</b> Special notes on RMarkdown</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Carpentries Curriculum Development Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="technological-introductions" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Technological introductions</h1>
+<p>Our goal is to make
+developing and contributing to lessons as simple and accessible
+as possible. The more people who are able to contribute to a
+lesson, the more we can harness community knowledge and
+experience to create materials that are teachable and applicable
+in a range of learning contexts. We recognize that technology
+can be a major barrier to contribution, and we are currently
+working on a major update to our lesson infrastructure to reduce
+this barrier. This chapter reflects our current lesson
+infrastructure and describes what lesson authors and other
+contributors need to know to use The Carpentries lesson template.
+In the individual sections below, we have noted whether particular
+technological knowledge will remain necessary or be phased out
+in upcoming infrastructure updates.</p>
+<p>What knowledge are we assuming lesson authors will have?
+What knowledge will this chapter help them gain?</p>
+<div id="lesson-hosting-and-rendering" class="section level2">
+<h2><span class="header-section-number">8.1</span> Lesson hosting and rendering</h2>
+<p>The Carpentries hosts all of our lessons on <a href="https://github.com">GitHub</a>. We use a
+shared <a href="http://carpentries.github.io/lesson-example/setup.html">lesson template</a> to provide aesthetic and structural
+consistency across our lessons. Template files for each lesson are
+rendered into a webpage using <a href="https://jekyllrb.com/">Jekyll</a> -
+a static site generator which is written in <a href="https://www.ruby-lang.org/en/">Ruby</a>.</p>
+<p>You do <em>not</em> need to know Ruby or Jekyll to write
+or contribute to a Carpentries lesson. However, you will need to
+have these software packages installed on your computer if you
+want to view your lesson materials locally before pushing them
+to GitHub.</p>
+<p>Information about installing Ruby and Jekyll is available in the APPENDIX.</p>
+</div>
+<div id="using-the-lesson-template" class="section level2">
+<h2><span class="header-section-number">8.2</span> Using the lesson template</h2>
+<p>Each lesson is made up of <em>episodes</em>, which are focused on a
+particular topic and
+include time for both teaching and exercises. A lesson repository
+(or “repo”) includes one file for each episode,
+and a set of helper files that are required to build
+the lesson webpage. Most of these helper files are standardized
+across all of our lessons and aren’t something that lesson
+authors or contributors need to interact with. In this section,
+we will focus only on the files that you are likely to
+interact with. If you’re interested in the details
+of how the template is structured, and what each of the files
+does, these details are provided in APPENDIX. We recommend not
+spending time learning these details now, as we are in the
+process of greatly simplifying our lesson template.</p>
+<div id="creating-your-lesson-repository" class="section level3">
+<h3><span class="header-section-number">8.2.1</span> Creating your lesson repository</h3>
+<p>The following sections will guide you through the pieces of
+the lesson template that you will need to modify to create your lesson.
+In order to follow along with these examples, you can start by creating your
+lesson repository in GitHub. To do this, follow <a href="http://carpentries.github.io/lesson-example/setup.html">the setup instructions
+on our example lesson</a>.</p>
+</div>
+<div id="lesson-homepage" class="section level3">
+<h3><span class="header-section-number">8.2.2</span> Lesson homepage</h3>
+<p>The lesson homepage provides an overview of the lesson, including
+any prequisites, an introduction to the
+dataset used, a schedule showing
+the episodes and the time alloted for each, and any other
+information learners will need for the lesson.</p>
+<p>For inspiration to guide you in writing your lesson homepage,
+check out these examples for <a href="https://datacarpentry.org/python-ecology-lesson/">Data Carpentry</a>, <a href="http://swcarpentry.github.io/git-novice/">Software Carpentry</a>, and <a href="https://librarycarpentry.org/lc-open-refine/">Library Carpentry</a>.</p>
+<p>The lesson homepage is built from the <code>index.md</code> file, which is
+automatically created when you initialize a lesson repository. You
+will need to add the following to this file:</p>
+<ol style="list-style-type: decimal">
+<li>A few paragraphs of explanatory text describing the lesson.</li>
+<li>One or more <code>.prereq</code> boxes detailing the lesson’s prerequisites, giving an overview of the dataset, and/or calling attention to the lesson’s Instructor notes.</li>
+</ol>
+<p>The schedule will automatically be included in the lesson homepage based on information present in the
+episode files.</p>
+</div>
+<div id="episode-files" class="section level3">
+<h3><span class="header-section-number">8.2.3</span> Episode files</h3>
+<p>The majority of a lessons content is in its episode files.
+Episode files are stored in the <code>_episodes/</code> folder within your lesson repo (or in <code>_episodes_rmd/</code> for lessons written in R).
+Episode file names must start with a two-digit identifier number (e.g. <code>01</code>) followed
+by a short descriptive name, separated by a dash (<code>-</code>). For example <code>02-loop.md</code>, <code>03-lists.md</code>.
+The numeric identifier is used to place your episode files in the correct sequence within the lesson.
+Episode files are written in <em>Markdown</em> (more on that in a moment) or <em>RMarkdown</em>.</p>
+<div id="episode-headers" class="section level4">
+<h4><span class="header-section-number">8.2.3.1</span> Episode headers</h4>
+<p>When your lesson repository is created, it will start out with one pre-made episode file (<code>01-introduction.md</code>).
+You can use this file as a template for creating each of your episode files, as it provides an
+example of how these files must be structured. The content of this pre-made episode file is shown below:</p>
+<pre><code>---
+title: &quot;Introduction&quot;
+teaching: 0
+exercises: 0
+questions:
+- &quot;Key question (FIXME)&quot;
+objectives:
+- &quot;First learning objective. (FIXME)&quot;
+keypoints:
+- &quot;First key point. Brief Answer to questions. (FIXME)&quot;
+---
+FIXME
+
+{% include links.md %}</code></pre>
+<p>The material between the first and second instances of <code>---</code> is called the <em>YAML header</em>. The information
+stored in the YAML header is used by the lesson template to populate important parts of the lesson webpage.
+This section explains each component of the YAML header and what that information is used for.</p>
+<p>For each episode, you will need to create a copy of this file and:</p>
+<ol style="list-style-type: decimal">
+<li>Replace <code>Introduction</code> with the episode title (<strong>not</strong> the lesson title) in quotation marks. The episode
+title will appear on the episode page and in the schedule that appears on the lesson homepage.</li>
+<li>Enter an estimated number of minutes for teaching the episode and an estimated number of minutes for learners to spend completing challenge problems (including class discussion of challenge solutions). These time estimates
+will likely be updated by Instructors as they get real-world data on how learners respond to the pacing of
+the episodes, but it is useful to have a starting point to benchmark from. The lesson template creates a schedule
+from these time estimates and places it on the lesson homepage.</li>
+<li>Replace <code>Key question (FIXME)</code> with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear in the schedule on the lesson homepage.</li>
+<li>Replace <code>First learning objective. (FIXME)</code> with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see the <a href="https://carpentries.github.io/curriculum-development/developing-content.html">Developing Content</a> chapter.</li>
+<li>Replace <code>First key point. Brief Answer to questions. (FIXME)</code> with 3-7 major take-aways from the episode. For
+information on how to distill an episode’s key points, see the <a href="https://carpentries.github.io/curriculum-development/developing-content.html">Developing Content</a> chapter. Key points for all episodes are shown
+together in the lesson’s reference page.</li>
+</ol>
+</div>
+<div id="episode-content" class="section level4">
+<h4><span class="header-section-number">8.2.3.2</span> Episode content</h4>
+<p>After the YAML header, your episode file will contain the content for that episode. This content will likely
+include:</p>
+<ul>
+<li>paragraphs of text</li>
+<li>lists</li>
+<li>tables</li>
+<li>images or figures</li>
+<li>code chunks</li>
+<li>special blockquotes, including exercises and solutions (described below)</li>
+</ul>
+<p>This content will be written in <em>Markdown</em>, a light-weight markup language that makes it possible to create
+fancy HTML pages using only a few formating tricks. In this section, we’ll cover only the Markdown syntax that
+you will need in order to create the content types listed above. You can find more information about Markdown
+at <a href="https://commonmark.org/help/" class="uri">https://commonmark.org/help/</a>.</p>
+<ol style="list-style-type: decimal">
+<li>Paragraphs of text - To create text paragraphs in Markdown, just type as you normally would! A few neat tricks:</li>
+</ol>
+<ul>
+<li>surround text with a single pair of stars (<code>*</code>) to make text <em>italic</em> (<code>*italic*</code>)</li>
+<li>use a double pair of stars to make text <strong>bold</strong> (<code>**bold**</code>)</li>
+<li>create headers by starting a line of text with two hash signs (<code>##</code>)
+There are lots of other fancy things you can do, but this should get you started!</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Lists - To create a numbered list in Markdown, do this:</li>
+</ol>
+<pre><code>1. A
+1. numbered
+1. list</code></pre>
+<p>This will show up like this:</p>
+<ol style="list-style-type: decimal">
+<li>A</li>
+<li>numbered</li>
+<li>list</li>
+</ol>
+<p>Hint: You can use sequential numbers if you want, but it’s easier to update the list later if you use only 1s.
+Markdown will create the sequence for you.</p>
+<p>To create an un-numbered list in Markdown, do this:</p>
+<pre><code>* An
+* unnumbered
+* list</code></pre>
+<p>This will show up like this:</p>
+<ul>
+<li>An</li>
+<li>unnumbered</li>
+<li>list</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Tables - To insert a small table into your episode, do this:</li>
+</ol>
+<pre><code>| Category | Item | 
+|--------- | ---- |
+| Food     | Sandwich |
+| Drink    | Tea | 
+| Food     | Apple |</code></pre>
+<p>This will show up like this:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Item</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Food</td>
+<td>Sandwich</td>
+</tr>
+<tr class="even">
+<td>Drink</td>
+<td>Tea</td>
+</tr>
+<tr class="odd">
+<td>Food</td>
+<td>Apple</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li>Images or figures - Place a copy of the image you would like to display into the <code>fig</code> directory. You can
+then link to the figure using the syntax:</li>
+</ol>
+<pre><code>![Figure Description](../fig/figure_file_name.svg)</code></pre>
+<p>Note about alt text. Question: Is this the “proper” way to insert a figure link?</p>
+<ol style="list-style-type: decimal">
+<li>Code chunks - As discussed in <a href="https://carpentries.github.io/curriculum-development/developing-content.html">an earlier chapter</a>, Carpentries workshops are taught using participatory
+live coding. Instructors
+type the code as they teach it and learners type along with the Instructor. For more information about how
+live coding works, and what its advantages and disadvantages are, read that section of our
+<a href="https://carpentries.github.io/instructor-training/14-live/index.html">Instructor Training program</a>. The fact
+that Carpentries workshops are taught using live coding means that much of your episode content will be
+<em>code chunks</em> - short blocks of code that learners type along with the Instructor and evaluate on their own
+machines. Each code chunk should correspond to one interactive session. If learners will be
+running the code as two distinct commands, that code should be displayed as two distinct chunks in the episode
+file.</li>
+</ol>
+<p>You can add a code chunk to your episode using the following syntax:</p>
+<pre><code>~~~
+pwd
+~~~
+{: .source}</code></pre>
+<p>Which will show up like:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="bu">pwd</span></a></code></pre></div>
+<p>Code chunks that learners should type out with the Instructor should use the <code>{: .source}</code> tag as shown above.
+Chunks that show expected output should use the <code>{: .output}</code> tag. Chunks that show an expected error
+message should use the <code>{: .error}</code> tag.</p>
+<p>The generic <code>{: .source}</code> tag can be used for all programming languages. To make your code more stylish,
+you can use a language-specific tag (instead of <code>{: .source}</code>). This will add things like syntax highlighting
+to your code. The language-specific tags available with our lesson template are:</p>
+<ul>
+<li><code>{: .language-bash}</code></li>
+<li><code>{: .html}</code></li>
+<li><code>{: .language-make}</code></li>
+<li><code>{: .language-matlab}</code></li>
+<li><code>{: .language-python}</code></li>
+<li><code>{: .language-r}</code></li>
+<li><code>{: .language-sql}</code></li>
+</ul>
+<p>You don’t need to use these language-specific tags, but they make your lesson a little prettier.</p>
+<ol style="list-style-type: decimal">
+<li>Special blockquotes - Exercises, solutions, helpful tips, and a few other types of special information are
+formatted as blockquotes within the episode file. Each blockquote has the same general structure, but ends
+with a different tag. The ending tag determines how the blockquote will appear on the lesson webpage. The
+general structure of a blockquote is:</li>
+</ol>
+<pre><code>&gt; ## Title
+&gt;
+&gt; text
+&gt; text
+&gt; text
+{: .callout}</code></pre>
+<p>where the <code>{: .callout}</code> tag should be replaced with one of the following as appropriate:</p>
+<ul>
+<li><code>{: .callout}</code> for sharing an aside or comment. Use sparingly.</li>
+<li><code>{: .challenge}</code> for an exercise.</li>
+<li><code>{: .discussion}</code> for a discussion question.</li>
+<li><code>{: .solution}</code> for an exercise solution.</li>
+</ul>
+<p>Additional blockquote tags included in our lesson template are described in APPENDIX, however, the four listed
+above should cover all normal use cases for a lesson author.</p>
+<p>Exercise solutions are nested within the blockquote for that exercise, as shown below:</p>
+<pre><code>&gt; ## Challenge Title
+&gt;
+&gt; This is the body of the challenge.
+&gt;
+&gt; &gt; ## Solution
+&gt; &gt;
+&gt; &gt; This is the body of the solution.
+&gt; {: .solution}
+{: .challenge}</code></pre>
+<p>Code chunks may also be nested within blockquotes as needed.</p>
+</div>
+</div>
+<div id="extras" class="section level3">
+<h3><span class="header-section-number">8.2.4</span> Extras</h3>
+<p>So far we’ve covered how to create and format the content of your lesson homepage (in the <code>index.md</code> file)
+and your lesson episodes (in multiple <code>.md</code> files within the <code>_episodes</code> directory). This covers most of the
+files you will need to work with when you create a new lesson. There are a few remaining files that you will
+need to populate in order for your lesson to be fully fleshed out and ready to teach:</p>
+<ol style="list-style-type: decimal">
+<li><p>The Reference page (<code>reference.md</code>) - this file will be created automatically and will include a list
+of all of the keypoints that you defined in your episode YAML headers. You don’t need to do anything to create
+this list! However, it’s a good idea to add a glossary of terms that are used in your lesson.</p></li>
+<li><p>The Setup page (<code>setup.md</code>) - this file will be created automatically, but needs to be populated with
+installation instructions for software learners will need to have before begining the lesson. If learners are
+expected to download data prior to the workshop, that data should also be linked and described here. The setup
+page may be <a href="http://swcarpentry.github.io/git-novice/setup.html">quite simple</a> or
+<a href="https://datacarpentry.org/geospatial-workshop/setup.html">more complex</a>, but should
+always include installation information for all three major platforms (Windows, Unix/MacOS, Linux).</p></li>
+<li><p>The Instructors’ Guide (<code>_extras/guide.md</code>) - this file should provide additional discussion useful to
+instructors,
+but not appropriate for inclusion in the main lessons. Remember not to overload on details, and to keep the
+information here positive and useful for instructors! This guide should include the following sections:</p></li>
+</ol>
+<ul>
+<li><p>Lesson motivation and learning objectives - These concepts should be highlighted in the main lesson material,
+but ideas for
+explaining these concepts further can be placed here.</p></li>
+<li><p>Lesson design - Most lessons contain more material than can be taught in a single workshop.
+Describe a general narrative (with time estimates) for teaching either a half day
+or full day with this lesson material. You may also choose to include multiple
+options for lesson design, or what material can be skipped while teaching.
+This section may also include recommendations for how this lesson fits into
+the overall workshop.</p></li>
+<li><p>Technical tips and tricks - Provide information on setting up your environment for learners to view your
+live coding (increasing text size, changing text color, etc), as well as
+general recommendations for working with coding tools to best suit the
+learning environment.</p></li>
+<li><p>Common problems - This can include answers to common learner questions, as well as links to
+resources (blog posts, stack overflow answers, etc) that may solve problems that
+may occur during a workshop.</p></li>
+</ul>
+</div>
+<div id="other-information" class="section level3">
+<h3><span class="header-section-number">8.2.5</span> Other information</h3>
+<p>In addition to populating the lesson homepage, lesson content (episodes),
+Instructors’ guide, and other lesson-specific
+pages, lesson authors need to make a few changes to the template
+files to make sure that the lesson has all of the neccessary
+information.</p>
+<ol style="list-style-type: decimal">
+<li>In the <code>_config.yml</code> file,</li>
+</ol>
+<ul>
+<li>set the <code>carpentry</code> variable to the appropriate lesson program,</li>
+<li>set <code>title</code> to be the overall title for your lesson,</li>
+<li>set <code>email</code> to the correct contact email for your lesson.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>In the <code>CONTRIBUTING.md</code> file, change the <code>issues</code> and <code>repo</code> links to match the URLs of your lesson.</p></li>
+<li><p>In the <code>CITATION</code> file, add information about how to cite your lesson.</p></li>
+<li><p>The <code>AUTHORS</code> file should include a list of the lesson’s authors.</p></li>
+</ol>
+</div>
+<div id="special-notes-on-rmarkdown" class="section level3">
+<h3><span class="header-section-number">8.2.6</span> Special notes on RMarkdown</h3>
+<p>Coming soon!</p>
+</div>
+</div>
+<div id="working-on-github" class="section level2">
+<h2><span class="header-section-number">8.3</span> Working on GitHub</h2>
+<p>GitHub is a web-based service for hosting code under version control. In addition to being a technical
+platform, GitHub is also a social media platform and has its own standards around etiquite and interaction. This
+section describes how The Carpentries community tends to interact on GitHub and gives you some tips for
+navigating this new social scene.</p>
+<p>All Carpentries lesson materials, whether they are established or in early development, are hosted publically
+on GitHub in one of several <em>organisations</em>. The following high-level organisations are managed by The Carpentries:</p>
+<ul>
+<li><a href="https://github.com/carpentries">carpentries</a> - hosts The Carpentries website and materials for programs that span individual lesson programs, such as our Instructor Training curriculum and The Carpentries Handbook</li>
+<li><a href="https://github.com/datacarpentry">datacarpentry</a> - hosts Data Carpentry specific lesson materials and website</li>
+<li><a href="https://github.com/librarycarpentry">librarycarpentry</a> - hosts Library Carpentry specific lesson materials and website</li>
+<li><a href="https://github.com/swcarpentry">swcarpentry</a> - hosts Software Carpentry specific lesson materials and website</li>
+<li><a href="https://github.com/data-lessons">data-lessons</a> - hosts lessons in development which are targeted to become part of the official Carpentries lesson stack</li>
+<li><a href="http://github.com/carpentrieslab">carpentrieslab</a> - community-developed lessons which may or may not become part of the official Carpentries lesson stack</li>
+</ul>
+<p>In order to contribute to lesson materials, you will need a GitHub account.</p>
+<p>To manage changes, we follow <a href="https://guides.github.com/introduction/flow/">GitHub flow</a>.
+Each lesson has two maintainers who review issues and pull requests or encourage others to do so.
+The maintainers are community volunteers and have final say over what gets merged into the lesson.
+To use the web interface for contributing to a lesson:</p>
+<ol style="list-style-type: decimal">
+<li>Fork the originating repository to your GitHub account.</li>
+<li>Within your version of the forked repository, move to the
+default branch (e.g. <code>gh-pages</code>) and
+create a new branch for each significant change being made.</li>
+<li>Navigate to the file(s) you wish to change within the new branches and make revisions as required.</li>
+<li>Commit all changed files within the appropriate branches.</li>
+<li>Create individual pull requests from each of your changed branches
+to the <code>gh-pages</code> branch within the originating repository.</li>
+<li>If you receive feedback, make changes using your issue-specific branches of the forked
+repository and the pull requests will update automatically.</li>
+<li>Repeat as needed until all feedback has been addressed.</li>
+</ol>
+<p>When starting work, please make sure your clone of the originating <code>gh-pages</code> branch is up-to-date
+before creating your own revision-specific branch(es) from there.
+Additionally, please only work from your newly-created branch(es) and <em>not</em>
+your clone of the originating <code>gh-pages</code> branch.
+Lastly, published copies of all the lessons are available in the <code>gh-pages</code> branch of the originating
+repository for reference while revising.</p>
+<p>If you choose to contribute via GitHub, you may want to look at
+<a href="https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a>.</p>
+
+<div id="refs" class="references">
+<div>
+<p>Ambrose, Susan A, Michael W Bridges, Michele DiPietro, Marsha C Lovett, and Marie K Norman. 2010. <em>How Learning Works: Seven Research-Based Principles for Smart Teaching</em>. John Wiley &amp; Sons.</p>
+</div>
+<div>
+<p>Jordan, Kari, François Michonneau, and Belinda Weaver. 2018. “Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys.” <a href="https://doi.org/10.5281/zenodo.1325464" class="uri">https://doi.org/10.5281/zenodo.1325464</a>.</p>
+</div>
+<div>
+<p>Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” <em>PLOS Computational Biology</em> 13 (6). Public Library of Science: 1–20. <a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a>.</p>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="the-lesson-life-cycle.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/carpentries/curriculum-development/edit/master/08-technological-introductions.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
