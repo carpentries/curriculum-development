@@ -4,11 +4,11 @@ Our lessons are intended to be teachable by any certified
 Carpentries Instructor with the appropriate domain experience
 and background knowledge. Lessons should also be appropriate for
 learners at different institutions, and not require specialized
-local or institutional knowledge. Our lessons attain this 
+local or institutional knowledge. Our lessons attain this
 broad usability by virtue of being the product of many people
 at differnt institutions around the world who work together
 in different roles to create, test, and iteratively improve and
-update lesson materials. 
+update lesson materials.
 
 ## Lesson Authors
 
@@ -17,52 +17,52 @@ the lesson content, figures, and code and create appropriate challenge problems.
 experience - working in the same field as the intended audience for the materials,
 and programmatic experience -- regularly using the tools for which they are
 developing lessons in their own work. From a technical standpoint, authors
-will also need to be familiar with specific technologies that we use for 
+will also need to be familiar with specific technologies that we use for
 developing and hosting The Carpentries lessons - including git, GitHub, Markdown,
 RMarkdown, ... But don't panic! If you're not comfortable with any or all of these
 tools, we'll walk you through what you need to know to use them [later in this
 Handbook][Technological Introductions]. Most importantly, to ensure that lesson materials are consistent with The Carpentries vision and
-values, 
+values,
 lesson authors should be certified Carpentries Instructors or otherwise involved
 in The Carpentries community. If a group of authors are writing a lesson
 collaboratively, we recommend dividing lessons up by episode, and having only one
 author per episode. Clearly defining the learning objectives for each episode
 will help avoid overlap and ensure the lesson flows smoothly - but it will
-still be important to have regular checkins with all authors. 
+still be important to have regular checkins with all authors.
 
 ## Reviewers
 
 No one is perfect! Lesson materials should be read and tested by at least
-one person other than the original author before being released for use by the broader community in beta pilot workshops. 
-If a lesson has more than one author, co-authors can review each other's content. 
+one person other than the original author before being released for use by the broader community in beta pilot workshops.
+If a lesson has more than one author, co-authors can review each other's content.
 Community members can also serve as reviewers. A reviewer commits to carefully
 reading and testing all code for a lesson or set of episodes and leaving detailed
-feedback for lesson authors to correct any errors or other issues found. This feedback is 
-provided as issues and/or pull requests (PRs) in the lesson's GitHub repository 
-(we'll explain all of that soon!). Authors modify the lessons based on reviewer feedback to ensure the 
+feedback for lesson authors to correct any errors or other issues found. This feedback is
+provided as issues and/or pull requests (PRs) in the lesson's GitHub repository
+(we'll explain all of that soon!). Authors modify the lessons based on reviewer feedback to ensure the
 lesson is bug-free, all code runs as expected, exercises are appropriate and test
 only the concepts being taught, and in general that the lesson is ready to be
 delivered to learners in a beta pilot workshop.
 
-Reviewers will also check to be sure the lesson complies with our 
-[our accessibility requirements][accessibility-reqs]. 
+Reviewers will also check to be sure the lesson complies with our
+[our accessibility requirements][accessibility-reqs].
 
 Don't worry - this review stage is not the only point at which lessons will
-receive feedback. Our collaborative lesson development model ensures that 
-Instructors and other community members will continue to engage with the lesson 
+receive feedback. Our collaborative lesson development model ensures that
+Instructors and other community members will continue to engage with the lesson
 materials at all stages of their development and provide near real-time feedback
 to keep the lessons in good shape for as long as they are actively being taught!
 
-Reviewers do not need to have any particular domain background or tool expertise. 
+Reviewers do not need to have any particular domain background or tool expertise.
 In fact, we recommend including reviewers who are complete novices either
 the tool being taught by the lesson and/or the lesson's target domain. This can
-help overcome authors' [expert blind spot][expert-blind-spot]. 
+help overcome authors' [expert awareness gap][expert-awareness-gap].
 
 Reviewers should also include people from different geographic regions and
 cultural and linguistic contexts than the lessons' authors. If all of
 a lesson's authors are based in the UK, for example, there should be at least
 one reviewer from outside the UK, and ideally from a non-majority English-speaking
-area. Ensuring that lessons are reviewed by people from a variety of cultural and linguistic 
+area. Ensuring that lessons are reviewed by people from a variety of cultural and linguistic
 contexts helps us to avoid colloquialisms, culturally-specific references, and other issues that might make our lessons less accessible to a global community. You will likely need one or two reviewers for every
 two hours of lesson content. A four-hour (half day) lesson should have at least two to four reviewers.
 
@@ -73,19 +73,19 @@ lesson is taught, new Instructors and learners identify potential places
 for improvement - whether correcting a typo, simplifying code, or suggesting
 a significant shift in the narrative of a lesson. Maintainers proactively monitor
 their lesson's GitHub repository to make sure that PRs and issues are addressed
-in a timely manner. Maintainers also play a vital role in communicating with 
+in a timely manner. Maintainers also play a vital role in communicating with
 contributors, ensuring that our community lives up to its ideals in welcoming
 and appreciating contributions from everyone - from first-time contributors to long-time
 members of The Carpentries community.
 
-People acting as Maintainers should be experienced with the tool that is being 
-taught in the lesson, ideally using it daily or weekly in their own work. In 
+People acting as Maintainers should be experienced with the tool that is being
+taught in the lesson, ideally using it daily or weekly in their own work. In
 addition, they should have experience working in a relevant domain related to the
 lesson materials and/or experience working with GitHub and the [other technologies
 we use to create and host our lessons][Technological Introductions]. Each
 lesson will have at least two Maintainers, and it's ok for one Maintainer
 to have domain experience and another to be more comfortable with the technical
-aspects of lesson maintainence. 
+aspects of lesson maintainence.
 
 ### Maintainer recruitment, requirements and time commitment
 
@@ -93,43 +93,43 @@ It's a good idea to recruit at least four Maintainers per lesson, as our
 community members are volunteers and may have fluxuating levels of time to
 commit to this role. Having a larger team of Maintainers ensures you'll
 always have
-at least one or two active Maintainers at any given time. 
+at least one or two active Maintainers at any given time.
 
 Maintainers commit to a [specific set of duties][maintainer-guidelines], and
 go through a short onboarding process to familiarise them with the social,
-technological, and curriculum-specific elements of lesson maintanence. 
+technological, and curriculum-specific elements of lesson maintanence.
 This onboarding is available as a [written curriculum][maintainer-onboarding-lesson]
-and in future may be made available as a video recording, however, if 
+and in future may be made available as a video recording, however, if
 time allows, we recommend running onboarding for your Maintainer group via
 synchronous video-conference. Getting everyone in the same virtual room for
 these discussions creates a sense of community and will make it easier for
 your lesson Maintainers to work together. Information about how to run
-a synchronous Maintainer onboarding, including email templates and 
+a synchronous Maintainer onboarding, including email templates and
 scheduling information, is available in [The Carpentries Handbook][maintainer-onboarding-process].
 
 Once your Maintainers have been onboarded, they will join The Carpentries
 full [Maintainer team][maintainer-team]. This team meets monthly to share
-skills, exchange ideas, and get suggestions from each other around 
+skills, exchange ideas, and get suggestions from each other around
 challenging issues and pull requests in their individual lesson repositories.
 Meeting times and information about how to stay in touch with the Maintainer
 team is available in [The Carpentries Handbook][maintainer-stay-in-touch].
 
-A lesson should have at least three onboarded Maintainers before it enters the 
-beta pilot workshop phase. Before that time, lesson feedback and edits will generally be 
+A lesson should have at least three onboarded Maintainers before it enters the
+beta pilot workshop phase. Before that time, lesson feedback and edits will generally be
 managed by the lesson authors.
 
 ## Curriculum Advisors
 
 Curriculum Advisors provide high-level oversight, vision, and leadership for a
 curriculum and guide large-scale updates. Unlike Maintainers, who are responsible
-for the day-to-day work of keeping lessons stable and teachable, Curriculum 
-Advisors maintain a broader perspective on the state of the field and make 
+for the day-to-day work of keeping lessons stable and teachable, Curriculum
+Advisors maintain a broader perspective on the state of the field and make
 strategic decisions about major changes to a lesson, for example, updating the
-technology being taught to take into account major advances in the field or 
+technology being taught to take into account major advances in the field or
 changing the dataset used in the lessons to appeal to a broader group of learners.
 
 A Curriculum Advisory Committee (CAC)
-is composed of 5-8 people with significant domain expertise who represent the 
+is composed of 5-8 people with significant domain expertise who represent the
 breadth of the field that a curriculum is intended to reach. For example, the
 [Data Carpentry Geospatial CAC][dc-geo-cac]
 includes researchers in ecology, limnology, environmental sciences, and sociology,
@@ -139,47 +139,47 @@ work, to mid-late career professionals. At least one member of the CAC should
 be actively teaching in the field, so they can bring a practical perspective
 about what skills students and early-career researchers need. Lesson Maintainers
 may also serve as Curriculum Advisors, but most Curriculum Advisors will not
-also be Maintainers. Curriculum Advisors commit to a minimum one-year term, but 
+also be Maintainers. Curriculum Advisors commit to a minimum one-year term, but
 may serve multiple terms. A CAC should include members from multiple geographic
-regions and cultural and linguistic contexts to ensure that the curriculum 
-meets the needs of our global community. 
+regions and cultural and linguistic contexts to ensure that the curriculum
+meets the needs of our global community.
 
 A Curriculum Advisory Committee meets virtually approximately twice a year to
 discuss and make decisions about proposed large-scale
 changes to the lessons within their curriculum. These proposals may be initiated
 by community members, including Maintainers, or by members of the CAC. The CAC
 communicates their recommendations back to the Lesson Maintainers and provides
-consulation and support to Maintainers in implementing proposed changes. 
+consulation and support to Maintainers in implementing proposed changes.
 
 Ideally, a Curriculum Advisory Committee should be assembled in the initial
 stages of lesson development, before materials start to be drafted. The CAC
 can then provide high-level guidance, including defining the learning objectives
-and core content for the curriculum and selecting an appropriate dataset that 
-will speak to a broad group of learners. However, we recognize that lesson 
+and core content for the curriculum and selecting an appropriate dataset that
+will speak to a broad group of learners. However, we recognize that lesson
 development may be part of a grant or other structure with requirements that are
 incompatible with putting together a CAC at such an early stage. If a curriculum
 will be included in the official Carpentries lesson stack, there
-must be a Curriculum Advisory Committee in place at the time of 
+must be a Curriculum Advisory Committee in place at the time of
 its first publication. The CAC should meet regularly for as long as a curriculum
-remains active. 
+remains active.
 
 ## Beta Pilot Instructors
 
-A new lesson or curriculum is often taught for the first time locally at 
-the organization that houses the lesson authors. This can be an opportunity 
+A new lesson or curriculum is often taught for the first time locally at
+the organization that houses the lesson authors. This can be an opportunity
 to troubleshoot organizational or technological issues with the lesson, and
 should certainly be done if resources allow, but is
 not a sufficient test of the lesson's broader teachability. It is always easier
 for the creator of a set of curricular materials to use those materials, but
 more difficult to communicate all of the relevant details to enable
 others to deliver the curriculum efficiently. In order to ensure
-that our lessons are able to be taught by all appropriately experienced 
-certified Instructors, a lesson should be beta piloted at least twice outside of the institution 
+that our lessons are able to be taught by all appropriately experienced
+certified Instructors, a lesson should be beta piloted at least twice outside of the institution
 in which it was developed, ideally in two different countries. Because lessons at this stage are
 expected to still have some technical and flow issues, instructors for these beta pilot
 workshops should be certified Carpentries Instructors who have previously taught at least two
 Carpentries workshops. Instructors with this level of experience will be more prepared to troubleshoot
-issues that arise during the workshop, and more likely to provide useful feedback after the workshop. 
+issues that arise during the workshop, and more likely to provide useful feedback after the workshop.
 Beta pilot instructors may be lesson reviewers,
 Maintainers, Curriculum Advisors, or any Carpentries community member other than
 lesson authors. In fact, recruiting beta pilot instructors who are already playing active roles
@@ -187,7 +187,7 @@ in the lesson is likely to be fruitful,
 as these people are invested in bringing the lesson
 to maturity. For two beta pilot workshops, you will need at least four instructors. Lesson
 authors should plan to meet virtually with pilot instructors before the workshop to
-answer questions and provide any technical help with setup. 
+answer questions and provide any technical help with setup.
 
 ## Instructors
 
@@ -196,14 +196,14 @@ appropriate domain experience. In many cases, there will already be Instructors 
 the necessary background in our community. To help these Instructors prepare to teach
 the new materials, we recommend preparing an onboarding video to introduce the
 structure of the lesson, the dataset used, and any technical specifics that make
-this lesson different from other lessons Instructors are likely to be familiar with. 
+this lesson different from other lessons Instructors are likely to be familiar with.
 Onboarding videos should be made available on The Carpentries [YouTube channel][carpentries-youtube]
-with accurate (not auto-generated) subtitles. For inspiration, 
-check out the existing onboarding videos in our [Curriculum Onboarding playlist][onboarding-playlist]. To raise awareness of your curriculum, 
+with accurate (not auto-generated) subtitles. For inspiration,
+check out the existing onboarding videos in our [Curriculum Onboarding playlist][onboarding-playlist]. To raise awareness of your curriculum,
 you can also schedule themed [Community Discussions][community-discussions] around your lesson.
 
 If your lesson reaches a new domain which isn't well represented in The Carpentries community,
-and you would like to build capacity for teaching your lessons within The Carpentries, get in 
+and you would like to build capacity for teaching your lessons within The Carpentries, get in
 touch with team@carpentries.org.
 
 ## Summary
@@ -221,7 +221,7 @@ touch with team@carpentries.org.
 [carpentries-youtube]: https://www.youtube.com/c/thecarpentries
 [community-discussions]: https://pad.carpentries.org/community-discussions
 [dc-geo-cac]: https://datacarpentry.org/lesson-leadership/
-[expert-blind-spot]: https://carpentries.github.io/instructor-training/03-expertise/
+[expert-awareness-gap]: https://carpentries.github.io/instructor-training/03-expertise/index.html#expertise-and-teaching
 [maintainer-guidelines]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-guidelines
 [maintainer-onboarding-lesson]: https://carpentries.github.io/maintainer-onboarding/
 [maintainer-onboarding-process]: https://docs.carpentries.org/topic_folders/maintainers/maintainers.html#maintainer-onboarding

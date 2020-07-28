@@ -1,35 +1,36 @@
 # Deciding what to teach
 
-As discussed in an [earlier chapter](https://carpentries.github.io/curriculum-development/conceptual-elements.html#backward-design), the first step in designing a curriculum according to backward design principles is to 
-identify the practical skills that you aim to teach. This step is absolutely critical to defining the scope of 
+As discussed in an [earlier chapter](https://carpentries.github.io/curriculum-development/conceptual-elements.html#backward-design), the first step in designing a curriculum according to backward design principles is to
+identify the practical skills that you aim to teach. This step is absolutely critical to defining the scope of
 your curriculum and to avoid [scope creep](https://en.wikipedia.org/wiki/Scope_creep), both during initial writing of the lesson materials and later
-community-driven development. 
+community-driven development.
 
 ## Target audience
 
-To identify the skills you aim to teach, it is first essential to define your 
+To identify the skills you aim to teach, it is first essential to define your
 target audience, as different audiences will have different needs, as well as different starting skill sets. For
 example, Data Carpentry's [Genomics workshop curriculum](https://datacarpentry.org/genomics-workshop/) assumes
-that learners have some background in the biological sciences and will understand biological terminology and 
+that learners have some background in the biological sciences and will understand biological terminology and
 abbreviations used in those lessons, but does not assume any prior experience with the tools taught in the lesson,
-including The Unix Shell and Amazon Web Services. These assumptions set the stage for lesson development, by 
+including The Unix Shell and Amazon Web Services. These assumptions set the stage for lesson development, by
 placing boundaries around what will and won't need to be explained in the lesson.
 
-Defining your target audience is also essential to reducing the impact of expert
-blind spot. As an experienced researcher in your field, there are likely many steps in the data 
-management and analysis process that you do without consciously thinking about. Without 
+Defining your target audience is also essential to reducing the impact of
+[expert awareness gaps](https://carpentries.github.io/instructor-training/03-expertise/index.html#expertise-and-teaching).
+As an experienced researcher in your field, there are likely many steps in the data
+management and analysis process that you do without consciously thinking about. Without
 explicitly evaluating your target audience and understanding their actual background
-and skill level, you are in danger of skipping over intermediate steps that they 
-need to know in order to succeed in their research. 
+and skill level, you are in danger of skipping over intermediate steps that they
+need to know in order to succeed in their research.
 
-You probably already have some sense of your target audience. To help refine this sense, ask yourself the 
+You probably already have some sense of your target audience. To help refine this sense, ask yourself the
 following questions. Write down your answers and see if you can clearly articulate who is and isn't included
-in your audience. Share these thoughts with your colleagues and see if they agree. 
+in your audience. Share these thoughts with your colleagues and see if they agree.
 
 ### Audience definition questions
 
 * **What is the expected educational level of your audience?** -- Do you expect most learners to be undergraduate students, graduate students, or to have completed graduate school?
-If you are targeting graduate students, 
+If you are targeting graduate students,
 do you expect learners to be new graduate students,
 masters degree holders, or doctoral candidates?
 
@@ -46,9 +47,9 @@ with others in your field, especially colleagues at different institutions and
 in different countries. Having an accurate picture of your target audience's
 actual exposure to these skills will help you plan a realistic curriculum.
 
-* **What types of tools do they already use?** -- Related to the previous question, it is useful to understand 
-the toolkit that your target audience is already comfortable with. Do they commonly use spreadsheet software 
-like Microsoft Excel, Numbers, or Google Sheets? Are they most comfortable working in rich text editors like 
+* **What types of tools do they already use?** -- Related to the previous question, it is useful to understand
+the toolkit that your target audience is already comfortable with. Do they commonly use spreadsheet software
+like Microsoft Excel, Numbers, or Google Sheets? Are they most comfortable working in rich text editors like
 Microsoft Word or Google Docs? Do they use any web-based GUIs or databases? Having this information will help you
 appropriately target your content by making useful analogies and tying new knowledge to existing knowledge. It
 is also very important to understand what tools established researchers in the field are using. No matter how
@@ -56,60 +57,60 @@ enthusiastic a new doctoral student might be about using Python, if everyone els
 their advisor) uses MATLAB, they're unlikely to be successful in convincing the entire lab to change their
 workflows.
 
-* **What are the pain points they are currently experiencing?** -- The Carpentries trainings are designed to 
+* **What are the pain points they are currently experiencing?** -- The Carpentries trainings are designed to
 meet learners where they are and help them improve their workflows in a way that is immediately useful for them.
-We avoid idealism in favor of realism. Yes, it would be excellent if use of version control was standard 
-across the research community, but if the learners at your workshop don't see the immediate benefit of version 
+We avoid idealism in favor of realism. Yes, it would be excellent if use of version control was standard
+across the research community, but if the learners at your workshop don't see the immediate benefit of version
 control, they are unlikely to implement it. Talk with students and other new researchers in your field. What are
-the computational tasks they spend hours upon hours doing, only to have to redo when they get their reviews 
-back from the publisher? What repetitive tasks do they do by hand and find mistakes in weeks or months later? 
+the computational tasks they spend hours upon hours doing, only to have to redo when they get their reviews
+back from the publisher? What repetitive tasks do they do by hand and find mistakes in weeks or months later?
 People love to share stories like this and you can learn a lot about what others in your field are struggling with
-by collecting these stories. These are the skills you should be targeting in your lesson. 
+by collecting these stories. These are the skills you should be targeting in your lesson.
 
 * **What types of data does your target audience work with? What are the commonalities in the datasets your target audience will encounter?** (types of variable, size, standard data formats, etc.) - If you're designing
-a domain-specific curriculum, you'll need to consider the range of data types that members of your domain 
+a domain-specific curriculum, you'll need to consider the range of data types that members of your domain
 community work with. For example, researchers in the social sciences work with a wide range of data types, but
 survey data is common in this research community. Data Carpentry elected to develop lessons around closed-ended
-survey data, with the hopes of expanding this lesson set to include analysis of free-response text in the future. 
-Similarly, a genomics researcher may work with data sets that span multiple species or multiple individuals or 
-populations within a species. The Data Carpentry Genomics curriculum development team chose to focus on 
-intra-species data sets. Researchers in the field who work with different data types will still be able to 
+survey data, with the hopes of expanding this lesson set to include analysis of free-response text in the future.
+Similarly, a genomics researcher may work with data sets that span multiple species or multiple individuals or
+populations within a species. The Data Carpentry Genomics curriculum development team chose to focus on
+intra-species data sets. Researchers in the field who work with different data types will still be able to
 benefit from the lessons, but choosing a common data type will ensure your lesson is maximally useful for a broad
-component of your domain community. It is important to make this decision early on, as trying to include every 
-type of data that researchers in your field work with will result in sprawling, ungainly lessons that aren't 
+component of your domain community. It is important to make this decision early on, as trying to include every
+type of data that researchers in your field work with will result in sprawling, ungainly lessons that aren't
 useful for anyone. Choose one thing and do it well!
 
 ### Learner profiles
 
 After thinking through the audience definition questions above, and discussing these questions with colleagues
 in other institutions, you should have a fairly clear understanding of your target audience. You should now
-know who you expect to show up to your workshops, what knowledge and expectations they will bring with them, 
+know who you expect to show up to your workshops, what knowledge and expectations they will bring with them,
 and what their motivations are. Keeping this information front-and-center throughout the lesson development
 process is incredibly important, as it is all too easy to forget your target learner and go down tangents in
-your lesson that don't serve this set of learner's needs. To make your target audience more concrete, we 
-recommend creating a set of learner profiles. A learner profile describes a fictional learner at your workshop 
-and includes the person’s general background, the problems they face, and how the course will help them. 
+your lesson that don't serve this set of learner's needs. To make your target audience more concrete, we
+recommend creating a set of learner profiles. A learner profile describes a fictional learner at your workshop
+and includes the person’s general background, the problems they face, and how the course will help them.
 Software Carpentry has [example learner profiles](https://carpentries.org/audience/) that will be useful
 in developing learner profiles for your own course. We recommend creating 2-4 learner profiles that describe
-different segments of your target audience. These profiles can then be consulted at future stages in the 
-curriculum development process. For example, when developing an exercise, you can look at your learner 
-profiles and ask "Is this exercise useful for my target learners?". 
+different segments of your target audience. These profiles can then be consulted at future stages in the
+curriculum development process. For example, when developing an exercise, you can look at your learner
+profiles and ask "Is this exercise useful for my target learners?".
 
 ## Skills list
 
-Congratulations! You now have a solid understanding of the users of your lesson materials and can concretely 
-define the background knowledge and goals of your learners. These goals are a combination of a) reducing or 
-removing pain points that your learners can self-identify and b) achieving next-level competencies that 
-learners may not realize are possible, but which will be practically useful to them in their research. 
+Congratulations! You now have a solid understanding of the users of your lesson materials and can concretely
+define the background knowledge and goals of your learners. These goals are a combination of a) reducing or
+removing pain points that your learners can self-identify and b) achieving next-level competencies that
+learners may not realize are possible, but which will be practically useful to them in their research.
 You can think of these two components as the
-starting and ending points for your lesson. The background knowledge and skills that your learners bring 
+starting and ending points for your lesson. The background knowledge and skills that your learners bring
 to the workshop define the starting point, while your learners' goals define the end point. With these
-start and end points, you can now define the list of skills that you will need to teach at your workshop. 
+start and end points, you can now define the list of skills that you will need to teach at your workshop.
 
 ## Example using a Software Carpentry Learner Profile
 
 The following example illustrates how a learner profile can be used to define a list of
-concrete skills. 
+concrete skills.
 
 
 > ### Example of Learner Profile {-}
@@ -152,7 +153,7 @@ Fan's background knowledge and skills include:
 - use of Excel to process tabular data and create graphics
 - interaction with a web GUI to upload data to his lab's website
 
-Fan's goals include: 
+Fan's goals include:
 
 - creating parameter files automatically
 - managing his many parameter files efficiently
