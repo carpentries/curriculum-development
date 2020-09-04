@@ -6,7 +6,7 @@ name: bookdown
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -17,9 +17,13 @@ jobs:
         uses: r-lib/actions/setup-r@master
 
       - name: Install pandoc and pandoc citeproc
+        uses: r-lib/actions/setup-pandoc@v1
+
+      - name: Install rsvg-convert
         run: |
-          brew install pandoc
-          brew install pandoc-citeproc
+          sudo apt-get install librsvg2-bin
+
+      - uses: r-lib/actions/setup-tinytex@v1
 
       - name: Query dependencies
         run: |
@@ -48,11 +52,10 @@ jobs:
         shell: Rscript {0}
 
       - name: Build site
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+        run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook", quiet = TRUE)'
 
       - name: Build PDF & epub
         run: |
-          tinytex::install_tinytex()
           options(tinytex.verbose = TRUE)
           bookdown::render_book('index.Rmd', 'bookdown::pdf_book')
           bookdown::render_book('index.Rmd', 'bookdown::epub_book')
