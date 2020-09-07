@@ -5,6 +5,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Curriculum Development Handbook</a></li>
       after: |
+        <li><a href="https://github.com/carpentries/curriculum-development/blob/master/LICENSE.md" target="blank">Licensed under CC-BY 4.0</a></li> by <a href="https://carpentries.org/" target="blank">The Carpentries</a>
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/carpentries/curriculum-development/edit/master/%s
     view: https://github.com/carpentries/curriculum-development/blob/master/%s
