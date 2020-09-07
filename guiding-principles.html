@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Guiding principles | The Carpentries Curriculum Development Handbook</title>
   <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
-  <meta name="generator" content="bookdown 0.20.2 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Guiding principles | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Erin Becker and François Michonneau" />
 
 
-<meta name="date" content="2020-07-28" />
+<meta name="date" content="2020-09-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,16 +65,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -82,9 +83,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -217,6 +218,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
 </ul></li>
 <li class="divider"></li>
+<li><a href="https://github.com/carpentries/curriculum-development/blob/master/CITATION" target="blank">Cite this handbook</a></li>
+<li><a href="https://github.com/carpentries/curriculum-development/blob/master/LICENSE.md" target="blank">Licensed under CC-BY 4.0</a></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
 </ul>
@@ -240,7 +243,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 1</span> Guiding principles</h1>
 <p>Carpentries curricula are developed based on the results of research in the science of
 teaching and learning. We rely on findings synthesized in the book
-<a href="https://www.wiley.com/en-us/How+Learning+Works%3A+Seven+Research+Based+Principles+for+Smart+Teaching-p-9780470484104">How Learning Works: Seven Research-Based Principles for Smart Teaching</a> <span class="citation">(Ambrose et al. <a href="#ref-ambrose2010learning">2010</a>)</span>. We use this text in our Instructor Trainer training program, so that
+<a href="https://www.wiley.com/en-us/How+Learning+Works%3A+Seven+Research+Based+Principles+for+Smart+Teaching-p-9780470484104">How Learning Works: Seven Research-Based Principles for Smart Teaching</a> <span class="citation">(Ambrose et al. <a href="#ref-ambrose2010learning" role="doc-biblioref">2010</a>)</span>. We use this text in our Instructor Trainer training program, so that
 Trainers (who teach our Instructor Training courses) can understand why we teach the way we
 do, and why our lessons are designed the way they are.</p>
 <p>The authors identify seven principles of learning (direct quotation from the book are bolded):</p>
@@ -372,10 +375,10 @@ own data.</p>
 <h3><span class="header-section-number">1.1.1</span> Identifying the practical skills</h3>
 <p>Our primary aim in a Carpentries workshop is to increase the confidence of our learners. We
 want to demystify and make accessible the process of computing and analyzing data. More than
-a third of learners at our workshops have little to no coding experience <span class="citation">(Jordan, Michonneau, and Weaver <a href="#ref-jordan2018assessment">2018</a>)</span>. Our workshops provide them an
+a third of learners at our workshops have little to no coding experience <span class="citation">(Jordan, Michonneau, and Weaver <a href="#ref-jordan2018assessment" role="doc-biblioref">2018</a>)</span>. Our workshops provide them an
 opportunity to try, in a friendly environment, something they perceive as intimidating.</p>
 <p>Another important goal is to make the research life of our learners easier. We
-emphasize teaching “good enough practices” <span class="citation">(Wilson et al. <a href="#ref-wilson2017goodenough">2017</a>)</span> - concrete
+emphasize teaching “good enough practices” <span class="citation">(Wilson et al. <a href="#ref-wilson2017goodenough" role="doc-biblioref">2017</a>)</span> - concrete
 skills that are accessible, able to be adopted by researchers of any skill
 level, and likely to make an immediate positive impact on learners’ work.
 Teaching defensive programming, how to use spreadsheets effectively, or how to
@@ -465,10 +468,10 @@ workshop, is important because it limits the chance of demotivation.</p>
 <p>Ambrose, Susan A, Michael W Bridges, Michele DiPietro, Marsha C Lovett, and Marie K Norman. 2010. <em>How Learning Works: Seven Research-Based Principles for Smart Teaching</em>. John Wiley &amp; Sons.</p>
 </div>
 <div id="ref-jordan2018assessment">
-<p>Jordan, Kari, François Michonneau, and Belinda Weaver. 2018. “Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys.” <a href="https://doi.org/10.5281/zenodo.1325464" class="uri">https://doi.org/10.5281/zenodo.1325464</a>.</p>
+<p>Jordan, Kari, François Michonneau, and Belinda Weaver. 2018. “Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys.” <a href="https://doi.org/10.5281/zenodo.1325464">https://doi.org/10.5281/zenodo.1325464</a>.</p>
 </div>
 <div id="ref-wilson2017goodenough">
-<p>Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” <em>PLOS Computational Biology</em> 13 (6). Public Library of Science: 1–20. <a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a>.</p>
+<p>Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” <em>PLOS Computational Biology</em> 13 (6): 1–20. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a>.</p>
 </div>
 </div>
             </section>
@@ -516,7 +519,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": null,
+"link": "https://github.com/carpentries/curriculum-development/blob/master/01-principles.Rmd",
 "text": null
 },
 "download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],

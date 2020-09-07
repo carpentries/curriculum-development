@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Designing challenges | The Carpentries Curriculum Development Handbook</title>
   <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
-  <meta name="generator" content="bookdown 0.20.2 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Designing challenges | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Erin Becker and François Michonneau" />
 
 
-<meta name="date" content="2020-07-28" />
+<meta name="date" content="2020-09-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,16 +65,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -82,9 +83,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -217,6 +218,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
 </ul></li>
 <li class="divider"></li>
+<li><a href="https://github.com/carpentries/curriculum-development/blob/master/CITATION" target="blank">Cite this handbook</a></li>
+<li><a href="https://github.com/carpentries/curriculum-development/blob/master/LICENSE.md" target="blank">Licensed under CC-BY 4.0</a></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
 </ul>
@@ -267,11 +270,11 @@ governing use and sharing of data and databases vary among countries. The <a hre
 Zero</a> (CC0) license is designed to allow unrestricted use and sharing of data universally. The CC0
 license allows the development of lessons around the dataset and modification of the dataset
 to suit our teaching needs.</p></li>
-<li><strong>The dataset should be deposited in a public repository</strong> – All variations of the
+<li><p><strong>The dataset should be deposited in a public repository</strong> – All variations of the
 dataset that are used in the lesson should be deposited. The Carpentries deposits
 data for our lessons on <a href="https://figshare.com/">figshare</a>.
 If you choose another option, make sure the repository where the data is archived
-has the following features:
+has the following features:</p>
 <ul>
 <li>a DOI link pointing to an overview of the dataset</li>
 <li>pre-registration of the DOI</li>
@@ -389,25 +392,25 @@ for observations from the Dream island collected after 2007.</p>
 <ol style="list-style-type: lower-alpha">
 <li></li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">penguins <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="st">  </span><span class="kw">select</span>(species, body_mass_g)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="designing-challenges.html#cb1-1"></a>penguins <span class="op">%&gt;%</span></span>
+<span id="cb1-2"><a href="designing-challenges.html#cb1-2"></a><span class="st">  </span><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></span>
+<span id="cb1-3"><a href="designing-challenges.html#cb1-3"></a><span class="st">  </span><span class="kw">select</span>(species, body_mass_g)</span></code></pre></div>
 <p>This is the correct answer.</p>
 <ol start="2" style="list-style-type: lower-alpha">
 <li></li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">penguins <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">select</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">  </span><span class="kw">filter</span>(species, body_mass_g)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="designing-challenges.html#cb2-1"></a>penguins <span class="op">%&gt;%</span></span>
+<span id="cb2-2"><a href="designing-challenges.html#cb2-2"></a><span class="st">  </span><span class="kw">select</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></span>
+<span id="cb2-3"><a href="designing-challenges.html#cb2-3"></a><span class="st">  </span><span class="kw">filter</span>(species, body_mass_g)</span></code></pre></div>
 <p>Learners who select this answer have a factual misconception. They have confused the
 <code>select()</code> and <code>filter()</code> functions. They need to be reminded that <code>filter()</code> is for
 subsetting by row and <code>select()</code> is for subsetting by column.</p>
 <ol start="3" style="list-style-type: lower-alpha">
 <li></li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">penguins <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">select</span>(species, body_mass_g) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="designing-challenges.html#cb3-1"></a>penguins <span class="op">%&gt;%</span></span>
+<span id="cb3-2"><a href="designing-challenges.html#cb3-2"></a><span class="st">  </span><span class="kw">select</span>(species, body_mass_g) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-3"><a href="designing-challenges.html#cb3-3"></a><span class="st">  </span><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>)</span></code></pre></div>
 <p>Learners who select this answer have a conceptual misunderstanding that may require more
 time and effort to correct. They haven’t understood that the pipe (<code>%&gt;%</code>) character only
 passes into the next command the output of the previous command, and <strong>nothing else</strong>. Since
@@ -443,16 +446,16 @@ benefit are Parson’s problems. A Parson’s problem is an exercise where learn
 set of items (in our case, lines of code) and asked to put them into an appropriate order to
 accomplish a specific task. The MCQ example given above could be formulated as a Parson’s
 problem:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">penguins <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="kw">select</span>(species, body_mass_g)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="designing-challenges.html#cb4-1"></a><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></span>
+<span id="cb4-2"><a href="designing-challenges.html#cb4-2"></a>penguins <span class="op">%&gt;%</span></span>
+<span id="cb4-3"><a href="designing-challenges.html#cb4-3"></a><span class="kw">select</span>(species, body_mass_g)</span></code></pre></div>
 <p>A more difficult version of a Parson’s problem might include lines that are not part of the
 solution (<em>distractors</em>):</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">select</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3">penguins <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="kw">filter</span>(species, body_mass_g)</a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="kw">select</span>(species, body_mass_g)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="designing-challenges.html#cb5-1"></a><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></span>
+<span id="cb5-2"><a href="designing-challenges.html#cb5-2"></a><span class="kw">select</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></span>
+<span id="cb5-3"><a href="designing-challenges.html#cb5-3"></a>penguins <span class="op">%&gt;%</span></span>
+<span id="cb5-4"><a href="designing-challenges.html#cb5-4"></a><span class="kw">filter</span>(species, body_mass_g)</span>
+<span id="cb5-5"><a href="designing-challenges.html#cb5-5"></a><span class="kw">select</span>(species, body_mass_g)</span></code></pre></div>
 <p>If this is the case, make sure learners know that not all of the code chunks need to be
 included in their answer!</p>
 <p>Parson’s problems are somewhat less structured than MCQs, which makes them slightly
@@ -474,25 +477,25 @@ application of fill-in-the-blank problems:</p>
 <h3 id="challenge-moving-to-the-current-folder" class="unnumbered">Challenge: Moving to the Current Folder</h3>
 <p>After running the following commands, Jamie realizes that she put the files
 <code>sucrose.dat</code> and <code>maltose.dat</code> into the wrong folder:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" data-line-number="1">$ <span class="fu">ls</span> -F</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"> <span class="ex">analyzed/</span> raw/</a>
-<a class="sourceLine" id="cb6-3" data-line-number="3">$ <span class="fu">ls</span> -F analyzed</a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="ex">fructose.dat</span> glucose.dat maltose.dat sucrose.dat</a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">$ <span class="bu">cd</span> raw/</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="designing-challenges.html#cb6-1"></a>$ <span class="fu">ls</span> -F</span>
+<span id="cb6-2"><a href="designing-challenges.html#cb6-2"></a> <span class="ex">analyzed/</span> raw/</span>
+<span id="cb6-3"><a href="designing-challenges.html#cb6-3"></a>$ <span class="fu">ls</span> -F analyzed</span>
+<span id="cb6-4"><a href="designing-challenges.html#cb6-4"></a><span class="ex">fructose.dat</span> glucose.dat maltose.dat sucrose.dat</span>
+<span id="cb6-5"><a href="designing-challenges.html#cb6-5"></a>$ <span class="bu">cd</span> raw/</span></code></pre></div>
 <p>Fill in the blanks to move these files to the current folder
 (i.e., the one she is currently in):</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" data-line-number="1">$ <span class="fu">mv</span> ___/sucrose.dat  ___/maltose.dat ___</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="designing-challenges.html#cb7-1"></a>$ <span class="fu">mv</span> ___/sucrose.dat  ___/maltose.dat ___</span></code></pre></div>
 <h3 id="solution" class="unnumbered">Solution</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" data-line-number="1">$ <span class="fu">mv</span> ../analyzed/sucrose.dat ../analyzed/maltose.dat .</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="designing-challenges.html#cb8-1"></a>$ <span class="fu">mv</span> ../analyzed/sucrose.dat ../analyzed/maltose.dat .</span></code></pre></div>
 <p>Recall that <code>..</code> refers to the parent directory (i.e. one above the current
 directory) and that <code>.</code> refers to the current directory.</p>
 </blockquote>
 <p>We can also apply this concept to our earlier example and ask learners to fill-in-the-blanks
 to build a code block that will return only the values of the “species” and “body_mass_g”
 variables and only for observations from the “Dream” island collected after 2007:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">penguins <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="st">  </span><span class="kw">________</span>(island __ <span class="st">&quot;Dream&quot;</span> ___ year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="st">  </span><span class="kw">________</span>(species, ___ )</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="designing-challenges.html#cb9-1"></a>penguins <span class="op">%&gt;%</span></span>
+<span id="cb9-2"><a href="designing-challenges.html#cb9-2"></a><span class="st">  </span><span class="kw">________</span>(island __ <span class="st">&quot;Dream&quot;</span> ___ year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>) <span class="op">%&gt;%</span></span>
+<span id="cb9-3"><a href="designing-challenges.html#cb9-3"></a><span class="st">  </span><span class="kw">________</span>(species, ___ )</span></code></pre></div>
 <p>The difficulty of a fill-in-the-blank problem can be adjusted by changing the number of blanks,
 and by providing (or not providing) a “word bank” of options to use. You can even use a series
 of similar fill-in-the-blank problems, increasing the number of blanks each time, to prepare
@@ -516,9 +519,9 @@ of a plot’s <em>geometry</em>. Different plot types have different underlying 
 differently with other plot parameters. In this lesson, learners are led through an example
 where they create a scatterplot (using <code>geom_point()</code>) of weight versus an animal’s hindfoot
 length.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" data-line-number="1">surveys_plot <span class="op">=</span> p9.ggplot(data<span class="op">=</span>surveys_complete,</a>
-<a class="sourceLine" id="cb10-2" data-line-number="2">                         mapping<span class="op">=</span>p9.aes(x<span class="op">=</span><span class="st">&#39;weight&#39;</span>, y<span class="op">=</span><span class="st">&#39;hindfoot_length&#39;</span>))</a>
-<a class="sourceLine" id="cb10-3" data-line-number="3">surveys_plot <span class="op">+</span> p9.geom_point()</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="designing-challenges.html#cb10-1"></a>surveys_plot <span class="op">=</span> p9.ggplot(data<span class="op">=</span>surveys_complete,</span>
+<span id="cb10-2"><a href="designing-challenges.html#cb10-2"></a>                         mapping<span class="op">=</span>p9.aes(x<span class="op">=</span><span class="st">&#39;weight&#39;</span>, y<span class="op">=</span><span class="st">&#39;hindfoot_length&#39;</span>))</span>
+<span id="cb10-3"><a href="designing-challenges.html#cb10-3"></a>surveys_plot <span class="op">+</span> p9.geom_point()</span></code></pre></div>
 <p><img src="figures/python_scatterplot_example.png" /><!-- --></p>
 <p>They are then asked to create a barchart showing the number of observations in each region
 (or “plot”) of the field site.</p>
@@ -528,10 +531,10 @@ length.</p>
 create a <code>bar</code>-plot that counts the number of records for each plot. (Check
 the documentation of the bar geometry to handle the counts)</p>
 <h3 id="answers" class="unnumbered">Answers</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" data-line-number="1">(p9.ggplot(data<span class="op">=</span>surveys_complete,</a>
-<a class="sourceLine" id="cb11-2" data-line-number="2">           mapping<span class="op">=</span>p9.aes(x<span class="op">=</span><span class="st">&#39;plot_id&#39;</span>))</a>
-<a class="sourceLine" id="cb11-3" data-line-number="3">    <span class="op">+</span> p9.geom_bar()</a>
-<a class="sourceLine" id="cb11-4" data-line-number="4">)</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="designing-challenges.html#cb11-1"></a>(p9.ggplot(data<span class="op">=</span>surveys_complete,</span>
+<span id="cb11-2"><a href="designing-challenges.html#cb11-2"></a>           mapping<span class="op">=</span>p9.aes(x<span class="op">=</span><span class="st">&#39;plot_id&#39;</span>))</span>
+<span id="cb11-3"><a href="designing-challenges.html#cb11-3"></a>    <span class="op">+</span> p9.geom_bar()</span>
+<span id="cb11-4"><a href="designing-challenges.html#cb11-4"></a>)</span></code></pre></div>
 <p><img src="figures/python_barplot_example.png" /><!-- --></p>
 </blockquote>
 <p>To answer this problem, learners need to locate and decipher the appropriate help file (for
@@ -596,7 +599,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": null,
+"link": "https://github.com/carpentries/curriculum-development/blob/master/04-designing-challenges.Rmd",
 "text": null
 },
 "download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],

@@ -1,39 +1,46 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{book}
+\documentclass[
+]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={The Carpentries Curriculum Development Handbook},
-            pdfauthor={Erin Becker and François Michonneau},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  pdftitle={The Carpentries Curriculum Development Handbook},
+  pdfauthor={Erin Becker and François Michonneau},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -75,8 +82,14 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -86,25 +99,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -118,7 +120,7 @@
 
 \title{The Carpentries Curriculum Development Handbook}
 \author{Erin Becker and François Michonneau}
-\date{2020-07-28}
+\date{2020-09-07}
 
 \begin{document}
 \maketitle
@@ -773,7 +775,7 @@ and to meet the following criteria.
   highlights the power and usefulness of the tools covered in the lessons. The dataset should
   be larger than what would be easy to analyze and manipulate in a spreadsheet program. It
   should be similar in size to what researchers in that domain work with in their actual
-  research. For instance, the core dataset for the \href{https://datacarpentry.org/ecology-workshop/data/}{Data Carpentry Ecology curriculum} has \textasciitilde{}35,000 rows.
+  research. For instance, the core dataset for the \href{https://datacarpentry.org/ecology-workshop/data/}{Data Carpentry Ecology curriculum} has \textasciitilde35,000 rows.
 \item
   \textbf{The dataset should be complex enough to ask interesting questions} -- Each observation
   should have at least 4-5 variables. These variables should be of a few
@@ -1206,7 +1208,7 @@ In order to solve this challenge, learners need to know the following (in approx
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  That options come after the command (e.g. \texttt{ls\ -l} not \texttt{-l\ ls}).
+  That options come after the command (e.g.~\texttt{ls\ -l} not \texttt{-l\ ls}).
 \item
   How to find the manual page for \texttt{ls} to understand the output.
 \item
@@ -1309,7 +1311,7 @@ presented with more than this many discrete pieces of information, they will not
 pieces in mind simultaneously. Once they have had an opportunity to work with those pieces of information, their
 brains will create connections that will allow them to store the information in long-term memory and retrieve it
 as needed. This is why it is essential to include frequent exercises, spread throughout the lesson at regular
-intervals with only \textasciitilde{}5 intervening new concepts. If you find that you need more than about this many code chunks
+intervals with only \textasciitilde5 intervening new concepts. If you find that you need more than about this many code chunks
 between exercises, you probably need to either simplify your exercise, or add another exercise in between.
 
 \hypertarget{supporting-elements}{%
@@ -1351,7 +1353,7 @@ levels isn't as important as using action verbs in defining your learning object
 are framed in this way, learners should be able to self-evaluate whether they have completed each learning
 objective and concretely understand what they have gained from the lesson or what they still need to work on.
 
-Keeping in mind our discussion of cognitive load above, each episode should have \textasciitilde{}5-7 learning objectives. If you
+Keeping in mind our discussion of cognitive load above, each episode should have \textasciitilde5-7 learning objectives. If you
 have more than that, you should consider splitting the material into multiple episodes.
 
 \hypertarget{key-points}{%
@@ -1359,7 +1361,7 @@ have more than that, you should consider splitting the material into multiple ep
 
 While learning objectives communicate to learners the skills they should develop by working through each episode,
 key points summarize the main pieces of knowledge that learners should remember after completing
-the episode. These should also be limited to \textasciitilde{}5-7 items. For the episode we've been considering in the Data Carpentry lesson \href{https://datacarpentry.org/shell-genomics/}{Introduction to the Command Line for Genomics}, the
+the episode. These should also be limited to \textasciitilde5-7 items. For the episode we've been considering in the Data Carpentry lesson \href{https://datacarpentry.org/shell-genomics/}{Introduction to the Command Line for Genomics}, the
 key points are:
 
 \begin{itemize}
@@ -1382,7 +1384,7 @@ page as review.
 \subsection{Framing questions}\label{framing-questions}}
 
 The final supporting component for the lesson are the framing questions for each episode. These questions
-provide a high-level overview of the motivations for learning the lesson content. There should be \textasciitilde{}1-3
+provide a high-level overview of the motivations for learning the lesson content. There should be \textasciitilde1-3
 questions for each episode, which should correspond to questions that your target audience ask themselves
 about their own workflows. The set of framing questions for the Data Carpentry lesson \href{https://datacarpentry.org/shell-genomics/}{Introduction to the Command Line for Genomics} includes:
 
@@ -1757,11 +1759,14 @@ support.
 
 Before you start developing a new lesson, check
 to see if there are already people working on creating
-a lesson for this topic. The \href{https://github.com/carpentries-incubator/proposals/blob/master/README.md}{Carpentries Incubator} is where our community comes
-together to talk about lesson ideas and find
-collaborators. You can check existing \href{https://github.com/carpentries-incubator/proposals/issues}{issues}
+a lesson for this topic.
+The \href{https://github.com/carpentries-incubator/}{Carpentries Incubator} is where our community
+develops new curriculum together.
+New lessons are suggested for development and added to Incubator via the \href{https://github.com/carpentries-incubator/proposals/blob/master/README.md}{Proposals} repository,
+so this is the best place to talk about lesson ideas and find collaborators.
+You can check existing \href{https://github.com/carpentries-incubator/proposals/issues}{issues} on that repository
 or start a new issue if you don't see any discussions
-on your topic. The \href{https://github.com/carpentries-incubator/proposals/blob/master/ISSUE_TEMPLATE.md}{issue template} has
+on your lesson topic. The \href{https://github.com/carpentries-incubator/proposals/blob/master/ISSUE_TEMPLATE.md}{issue template} has
 a short set of questions for you to answer. Your answers
 to these questions will help us to determine an
 appropriate next step for your lesson materials or
@@ -1840,6 +1845,101 @@ Official Track, authors will meet regularly with
 a member of the Curriculum Team to work through the
 lesson drafting process.
 
+Lessons under community development in the Carpentries Incubator are
+\href{https://carpentries.org/community-lessons/}{listed on The Carpentries website},
+based on topics added to the lesson repository.
+Some topics are essential, while others are more flexible.
+See the table below for guidance about the types and number of topics each
+lesson repository should have.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.26\columnwidth}\raggedright
+category\strut
+\end{minipage} & \begin{minipage}[b]{0.26\columnwidth}\raggedright
+example\strut
+\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
+number\strut
+\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
+description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+lesson*\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{lesson}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+Must be \texttt{lesson} to be listed on the Community Developed Lessons page.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+location*\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{carpentries-incubator}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+\texttt{carpentries-incubator} or \texttt{carpentrieslab}.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+language*\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{español}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\textgreater0\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+The language(s) the lesson is available in.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+stage*\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{alpha}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+The current development stage for the lesson. Read on for more info.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+domain\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{microbial-ecology}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+1-2\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+The high-level domain(s) of the lesson, for a general categorization.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+tools\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{python}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+1-3\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+The main tool(s) taught in the lesson.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+skills\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\texttt{taxonomic-classification}\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+1-3\strut
+\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+The main skill(s) taught in the lesson.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\_Categories marked with an asterisk (*) are essential.\_
+
+The Curriculum Team will support you in setting topics for your lesson.
+To help ensure consistency across our lesson repositories,
+please refer to \href{https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing}{this listing} of topics currently
+in use in The Carpentries Incubator,
+and re-use these values where appropriate,
+creating new topics where no pre-existing label exists for your lesson.
+
 \hypertarget{field-testing-alpha-stage}{%
 \section{Field testing: alpha stage}\label{field-testing-alpha-stage}}
 
@@ -1851,13 +1951,13 @@ helpers who can compare their expectations to
 reality. The initial feedback gathered during these first
 workshops is really important.
 
-During alpha pilot workshops, instructors and helpers should take detailed notes, including:\\
-- amount of time used to teach each section\\
-- amount of time used for each exercise\\
-- technical issues that arose during installation\\
-- bugs or parts of the lesson code that didn't work as expected\\
-- incorrect or missing exercise solutions\\
-- questions learners asked (and their answers)\\
+During alpha pilot workshops, instructors and helpers should take detailed notes, including:
+- amount of time used to teach each section
+- amount of time used for each exercise
+- technical issues that arose during installation
+- bugs or parts of the lesson code that didn't work as expected
+- incorrect or missing exercise solutions
+- questions learners asked (and their answers)
 - parts of the lesson that were confusing for learners
 
 These notes can be collected in an Etherpad, Google Doc, or other collaborative document that is shared
@@ -1868,7 +1968,7 @@ After the workshop, instructors should share the notes document with the lesson 
 will convert the notes into individual issues in the lesson repo. For two-day workshops, lesson authors should expect
 to spend at least four hours to create follow-up issues, and at least
 eight hours to putting in PRs to fix these issues. For two pilot workshops, this translates
-to \textasciitilde{}24 hours of work, which can be distributed among the lesson authors.
+to \textasciitilde24 hours of work, which can be distributed among the lesson authors.
 
 After incorporating workshop feedback, the lesson is
 now ready to be published. For lessons on the Official
@@ -1911,7 +2011,7 @@ will be involved with this clean-up phase as well.
 After this polishing process, and a final check by a member of the
 Curriculum Team, your lesson will be published again on Zenodo,
 this time in its \textbf{stable state}. Official Track lessons will be added to
-the appropriate Lesson Program lessons page (e.g. \href{https://datacarpentry.org/lessons/}{Data Carpentry's lessons page})
+the appropriate Lesson Program lessons page (e.g.~\href{https://datacarpentry.org/lessons/}{Data Carpentry's lessons page})
 and to our \href{http://carpentries.org/request-workshop}{workshop request form}. Anyone may now request a centrally-organized
 Carpentries workshop using this curriculum.
 
@@ -1952,12 +2052,12 @@ but we recommend the following as a starting point.
 \tightlist
 \item
   Maintainers for a lesson should set a regular meeting to discuss any unresolved issues that have arisen and to decide on the division of responsibilities until
-  their next meeting.\\
+  their next meeting.
 \item
   One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
-  thank the contributor, and apply appropriate \href{https://docs.carpentries.org/topic_folders/maintainers/github_labels.html}{issue tags}.\\
+  thank the contributor, and apply appropriate \href{https://docs.carpentries.org/topic_folders/maintainers/github_labels.html}{issue tags}.
 \item
-  Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one team member, based on the time commitment and availability discussed at that month's meeting.\\
+  Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one team member, based on the time commitment and availability discussed at that month's meeting.
 \item
   Individual team members work on resolving issues and PRs, as assigned, asking
   their co-Maintainers for review when needed.
@@ -2070,7 +2170,7 @@ episode files.
 
 The majority of a lessons content is in its episode files.
 Episode files are stored in the \texttt{\_episodes/} folder within your lesson repo (or in \texttt{\_episodes\_rmd/} for lessons written in R).
-Episode file names must start with a two-digit identifier number (e.g. \texttt{01}) followed
+Episode file names must start with a two-digit identifier number (e.g.~\texttt{01}) followed
 by a short descriptive name, separated by a dash (\texttt{-}). For example \texttt{02-loop.md}, \texttt{03-lists.md}.
 The numeric identifier is used to place your episode files in the correct sequence within the lesson.
 Episode files are written in \emph{Markdown} (more on that in a moment) or \emph{RMarkdown}.
@@ -2508,7 +2608,7 @@ To use the web interface for contributing to a lesson:
   Fork the originating repository to your GitHub account.
 \item
   Within your version of the forked repository, move to the
-  default branch (e.g. \texttt{gh-pages}) and
+  default branch (e.g.~\texttt{gh-pages}) and
   create a new branch for each significant change being made.
 \item
   Navigate to the file(s) you wish to change within the new branches and make revisions as required.
@@ -2534,6 +2634,6 @@ repository for reference while revising.
 If you choose to contribute via GitHub, you may want to look at
 \href{https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github}{How to Contribute to an Open Source Project on GitHub}.
 
-\bibliography{book.bib}
+  \bibliography{book.bib}
 
 \end{document}
