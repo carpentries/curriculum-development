@@ -75,8 +75,8 @@ Before you start developing a new lesson, check
 to see if there are already people working on creating
 a lesson for this topic.
 The [Carpentries Incubator][incubator] is where our community
-develops new curriculum together.
-New lessons are suggested for development and added to Incubator via the [Proposals][proposals] repository,
+develops new curricula together.
+New lessons are suggested for development and added to the Incubator via the [Proposals][proposals] repository,
 so this is the best place to talk about lesson ideas and find collaborators.
 You can check existing [issues][issues] on that repository
 or start a new issue if you don't see any discussions
@@ -135,7 +135,7 @@ as high-quality resources.
 ## Early development (pre-alpha through alpha)
 
 We will create a repository for you in the appropriate
-GitHub organization, using our
+GitHub organization, using The Carpentries
 [lesson template][lesson-template]. You will use the
 guidelines in the first five chapters of this handbook
 to develop your content. The Curriculum Team will
@@ -147,9 +147,10 @@ lesson drafting process.
 
 Lessons under community development in the Carpentries Incubator are
 [listed on The Carpentries website][community-lessons],
-based on topics added to the lesson repository.
-Some topics are essential, while others are more flexible.
-See the table below for guidance about the types and number of topics each
+based on metadata describing the lesson.
+This metadata is added in the form of topic tags on the lesson repository.
+Some of these topic tags are essential, while others are more flexible.
+See the table below for guidance about the types and number of topic tags each
 lesson repository should have.
 
 | Category | Example | Number | Description |
@@ -162,14 +163,15 @@ lesson repository should have.
 | Tools | `python` | 1-3 | The main tool(s) taught in the lesson. |
 | Skills | `taxonomic-classification` | 1-3 | The main skill(s) taught in the lesson. |
 
-*Categories marked with an asterisk (\*) are essential.*
+*Categories marked with an asterisk (\*) are required in order for a lesson to appear and be appropriately sorted on the Community Developed Lessons page.*
 
-The Curriculum Team will support you in setting topics for your lesson.
-To help ensure consistency across our lesson repositories,
-please refer to [this listing][incubator-topics] of topics currently
+The Curriculum Team will support you in setting appropriate topic tags for your lesson.
+To help ensure consistency across all lesson repositories
+developed by The Carpentires community,
+please refer to [this listing][incubator-topics] of topic tags currently
 in use in The Carpentries Incubator,
 and re-use these values where appropriate,
-creating new topics where no pre-existing label exists for your lesson.
+creating new topic tags where no pre-existing label exists for your lesson.
 
 ## Field testing: alpha stage
 
