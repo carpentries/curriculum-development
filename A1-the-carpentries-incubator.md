@@ -1,5 +1,22 @@
 # The Carpentries Incubator
 
+The Carpentries Incubator is where The Carpentries community develops
+curricula together.
+It is intended to serve as a place to find and contribute to lessons
+that members of our community are developing with the approaches
+and infrastructure introduced in this handbook.
+
+## Lesson Proposals
+
+Proposals to begin development of a new lesson in the Incubator,
+and to transfer existing material
+(regardless of its current state/stage of development) into the Incubator,
+can be made by opening an Issue on the [Proposals GitHub repository][proposals].
+The requirements are minimal for a proposal to be accepted,
+predominantly designed to maintain consistency across the community's lessons.
+The [README of that repository][proposals-readme] contains
+more detailed guidance for those who wish to submit a proposal.
+
 ## Topic Tags
 
 Lessons under community development in the Carpentries Incubator are
@@ -33,3 +50,5 @@ creating new topic tags where no pre-existing label exists for your lesson.
 [community-lessons]: https://carpentries.org/community-lessons/
 [incubator]: https://github.com/carpentries-incubator/
 [incubator-topics]: https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing
+[proposals]: https://github.com/carpentries-incubator/proposals/
+[proposals-readme]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
