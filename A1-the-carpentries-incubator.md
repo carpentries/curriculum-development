@@ -29,3 +29,7 @@ please refer to [this listing][incubator-topics] of topic tags currently
 in use in The Carpentries Incubator,
 and re-use these values where appropriate,
 creating new topic tags where no pre-existing label exists for your lesson.
+
+[community-lessons]: https://carpentries.org/community-lessons/
+[incubator]: https://github.com/carpentries-incubator/
+[incubator-topics]: https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing
