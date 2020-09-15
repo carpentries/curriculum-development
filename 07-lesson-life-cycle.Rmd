@@ -146,7 +146,7 @@ a member of the Curriculum Team to work through the
 lesson drafting process.
 
 Lessons on the Community Track will be developed in the Carpentries Incubator.
-[This Appendix](the-carpentries-incubator) aims to provide 
+[This Appendix](the-carpentries-incubator.html) aims to provide 
 information and further guidance for Incubator lesson developers.
 
 ## Field testing: alpha stage
