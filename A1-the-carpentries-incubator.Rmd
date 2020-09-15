@@ -1,3 +1,5 @@
+# (APPENDIX) Appendix {-}
+
 # The Carpentries Incubator
 
 The Carpentries Incubator is where The Carpentries community develops
@@ -23,7 +25,10 @@ Lessons under community development in the Carpentries Incubator are
 [listed on The Carpentries website][community-lessons],
 based on metadata describing the lesson.
 This metadata is added in the form of topic tags on the lesson repository.
-Some of these topic tags are essential, while others are more flexible.
+These topic tags should be set as soon as possible after the lesson has been
+created or added to the Incubator.
+Some are essential and taken from a limited set of values,
+while others are more flexible.
 See the table below for guidance about the types and number of topic tags each
 lesson repository should have.
 
@@ -52,3 +57,5 @@ creating new topic tags where no pre-existing label exists for your lesson.
 [incubator-topics]: https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing
 [proposals]: https://github.com/carpentries-incubator/proposals/
 [proposals-readme]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
+
+# Bibliography
