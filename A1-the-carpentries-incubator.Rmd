@@ -42,7 +42,7 @@ lesson repository should have.
 | Tools | `python` | 1-3 | The main tool(s) taught in the lesson. |
 | Skills | `taxonomic-classification` | 1-3 | The main skill(s) taught in the lesson. |
 
-*Categories marked with an asterisk (\*) are required in order for a lesson to appear and be appropriately sorted on the Community Developed Lessons page.*
+*Categories marked with an asterisk (\*) are required in order for a lesson to appear and be appropriately sorted on the [Community Developed Lessons page][community-lessons].*
 
 The Curriculum Team will support you in setting appropriate topic tags for your lesson.
 To help ensure consistency across all lesson repositories

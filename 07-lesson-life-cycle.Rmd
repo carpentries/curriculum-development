@@ -77,7 +77,7 @@ a lesson for this topic.
 The [Carpentries Incubator][incubator] is where our community
 develops new curricula together.
 New lessons are suggested for development and added to the Incubator via the [Proposals][proposals] repository,
-so this is the best place to talk about lesson ideas and find collaborators.
+so this is the best place to discuss lesson ideas and find collaborators.
 You can check existing [issues][issues] on that repository
 or start a new issue if you don't see any discussions
 on your lesson topic. The [issue template][issue-template] has
@@ -146,7 +146,7 @@ a member of the Curriculum Team to work through the
 lesson drafting process.
 
 Lessons on the Community Track will be developed in the Carpentries Incubator.
-[This Appendix](the-carpentries-incubator.html) aims to provide 
+[This Appendix](the-carpentries-incubator.html) aims to provide
 information and further guidance for Incubator lesson developers.
 
 ## Field testing: alpha stage
