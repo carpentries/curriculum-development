@@ -37,7 +37,7 @@ lesson repository should have.
 | Lesson* | `lesson` | 1 | Must be `lesson` to be listed on the Community Developed Lessons page. |
 | Location* | `carpentries-incubator` | 1 | `carpentries-incubator` or `carpentrieslab`. |
 | Language* | `español` | >0 | The language(s) the lesson is available in. |
-| Stage* | `alpha` | 1 | The current development stage for the lesson. Read on for more info. |
+| Stage* | `alpha` | 1 | The current development stage for the lesson. See [Chapter 7][life-cycle-overview] for more info. |
 | Domain | `microbial-ecology` | 1-2 | The high-level domain(s) of the lesson, for a general categorization. |
 | Tools | `python` | 1-3 | The main tool(s) taught in the lesson. |
 | Skills | `taxonomic-classification` | 1-3 | The main skill(s) taught in the lesson. |
@@ -55,6 +55,7 @@ creating new topic tags where no pre-existing label exists for your lesson.
 [community-lessons]: https://carpentries.org/community-lessons/
 [incubator]: https://github.com/carpentries-incubator/
 [incubator-topics]: https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing
+[life-cycle-overview]: https://cdh.carpentries.org/the-lesson-life-cycle.html#overview-and-definitions
 [proposals]: https://github.com/carpentries-incubator/proposals/
 [proposals-readme]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
 
