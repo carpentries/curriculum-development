@@ -75,9 +75,9 @@ Before you start developing a new lesson, check
 to see if there are already people working on creating
 a lesson for this topic.
 The [Carpentries Incubator][incubator] is where our community
-develops new curriculum together.
-New lessons are suggested for development and added to Incubator via the [Proposals][proposals] repository,
-so this is the best place to talk about lesson ideas and find collaborators.
+develops new curricula together.
+New lessons are suggested for development and added to the Incubator via the [Proposals][proposals] repository,
+so this is the best place to discuss lesson ideas and find collaborators.
 You can check existing [issues][issues] on that repository
 or start a new issue if you don't see any discussions
 on your lesson topic. The [issue template][issue-template] has
@@ -135,7 +135,7 @@ as high-quality resources.
 ## Early development (pre-alpha through alpha)
 
 We will create a repository for you in the appropriate
-GitHub organization, using our
+GitHub organization, using The Carpentries
 [lesson template][lesson-template]. You will use the
 guidelines in the first five chapters of this handbook
 to develop your content. The Curriculum Team will
@@ -145,31 +145,9 @@ Official Track, authors will meet regularly with
 a member of the Curriculum Team to work through the
 lesson drafting process.
 
-Lessons under community development in the Carpentries Incubator are
-[listed on The Carpentries website][community-lessons],
-based on topics added to the lesson repository.
-Some topics are essential, while others are more flexible.
-See the table below for guidance about the types and number of topics each
-lesson repository should have.
-
-| category | example | number | description |
-|----------|----------|--------|------|
-| lesson* | `lesson` | 1 | Must be `lesson` to be listed on the Community Developed Lessons page. |
-| location* | `carpentries-incubator` | 1 | `carpentries-incubator` or `carpentrieslab`. |
-| language* | `español` | >0 | The language(s) the lesson is available in. |
-| stage* | `alpha` | 1 | The current development stage for the lesson. Read on for more info. |
-| domain | `microbial-ecology` | 1-2 | The high-level domain(s) of the lesson, for a general categorization. |
-| tools | `python` | 1-3 | The main tool(s) taught in the lesson. |
-| skills | `taxonomic-classification` | 1-3 | The main skill(s) taught in the lesson. |
-
-_Categories marked with an asterisk (*) are essential._
-
-The Curriculum Team will support you in setting topics for your lesson.
-To help ensure consistency across our lesson repositories,
-please refer to [this listing][incubator-topics] of topics currently
-in use in The Carpentries Incubator,
-and re-use these values where appropriate,
-creating new topics where no pre-existing label exists for your lesson.
+Lessons on the Community Track will be developed in the Carpentries Incubator.
+[This Appendix](the-carpentries-incubator.html) aims to provide
+information and further guidance for Incubator lesson developers.
 
 ## Field testing: alpha stage
 
