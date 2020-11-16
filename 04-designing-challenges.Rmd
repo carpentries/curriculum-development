@@ -159,7 +159,7 @@ that each of the distractors helps the instructor figure out
 what concepts learners are having difficulty with.  
 
 For example, if learners are learning about subsetting data in `R` with the `dplyr` 
-functions `filter()` and `select()`, you might ask them, using the `[palmerpenguins](https://cran.r-project.org/package=palmerpenguins)` dataset to determine which of the 
+functions `filter()` and `select()`, you might ask them, using the [`palmerpenguins`](https://cran.r-project.org/package=palmerpenguins) dataset to determine which of the 
 following code blocks will return only the values of the "species" and "body_mass_g" variables
 for observations from the Dream island collected after 2007.
 
