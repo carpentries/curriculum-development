@@ -160,6 +160,7 @@ reality. The initial feedback gathered during these first
 workshops is really important.
 
 During alpha pilot workshops, instructors and helpers should take detailed notes, including:
+
 - amount of time used to teach each section
 - amount of time used for each exercise
 - technical issues that arose during installation
