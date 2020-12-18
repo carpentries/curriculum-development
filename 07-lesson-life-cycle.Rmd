@@ -25,7 +25,7 @@ developing the lesson content, while the **beta** stage
 focuses on documenting the lesson, so that it can be
 taught by anyone with the appropriate subject knowledge.
 
-```{r release-timeline, fig.cap="release timeline", echo=FALSE}
+```{r release-timeline, fig.cap="Four stages of lesson release timeline. Pre-alpha stage includes approval of lesson proposal, review of lesson by Editor, and teaching for the first time. Alpha stage inclues incorporating feedback, announcement to the community, community review, and beta release. Beta stage includes other people start contributing and lesson polishing (Bug BBQ). After official release, lesson advances to stable stage.", echo=FALSE}
 include_svg("figures/release_timeline.svg")
 ```
 
@@ -97,7 +97,7 @@ tracks:
 1. the Carpentries Lab Track
 
 
-![Lesson development tracks](figures/lesson-development-tracks.png)
+![Flowchart of three lesson development tracks. All lessons start with opening issue in carpentries-incubator repository.](figures/lesson-development-tracks.png)
 
 ### Official Track
 
@@ -107,7 +107,7 @@ Curriculum Team will work closely with you from
 pre-alpha through stable release, providing support on
 each step of the process. Your lesson will be
 developed in one of the official Lesson Program GitHub
-organisations.
+organisations and released as an official lesson.
 
 ### Community Track
 
@@ -117,8 +117,8 @@ general interest to our community, the lesson authors
 will complete the development process independently.
 You will develop
 your lesson in the Carpentries Incubator and it will be
-made available through the Incubator
-website. If the lesson attracts a strong community
+made available through the [Community Developed Lessons page](https://carpentries.org/community-lessons/).
+If the lesson attracts a strong community
 of contributors, it will be considered for adoption
 as an official Carpentries lesson.
 
