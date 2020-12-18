@@ -1,6 +1,6 @@
 # Our curriculum structure
 
-![image of lessons and episodes](figures/leson-episode-01.png)
+![Examples of lesson programs, lessons, and episodes. Data Carpentry, Library Carpentry, and Software Carpentry are Lesson Programs. Within Library Carpentry, OpenRefine is a lesson, which has several episodes, including one called "Faceting and filtering". Data Carpentry lessons are domain-specific, and lessons that are taught together form a curriculum.](figures/leson-episode-01.png)
 
 ## Episodes
 
