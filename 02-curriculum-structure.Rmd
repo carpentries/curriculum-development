@@ -1,6 +1,14 @@
 # Our curriculum structure
 
-![image of lessons and episodes](figures/leson-episode-01.png)
+| Lesson Program | Lesson | Episode | 
+| -------------- | ------ | ------- | 
+| Data Carpentry | Data Organization in Spreadsheets for Ecologists | Exporting data |
+| | Data Wrangling and Processing for Genomics | Assessing Read Quality |
+| Library Carpentry | Open Refine | Faceting and filtering | 
+| | The Unix Shell | Automating the tedious with loops |
+| Software Carpentry | Plotting and Programming in Python | Writing Functions |
+| | R para Análisis Científicos Reproducibles | Guardando datos | 
+Data Carpentry lessons are domain-specific, and lessons that are taught together form a "curriculum". 
 
 ## Episodes
 
