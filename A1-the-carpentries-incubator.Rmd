@@ -13,7 +13,7 @@ and infrastructure introduced in this handbook.
 Proposals to begin development of a new lesson in the Incubator,
 and to transfer existing material
 (regardless of its current state/stage of development) into the Incubator,
-can be made by opening an Issue on the [Proposals GitHub repository][proposals].
+can be made by opening an issue on the [Proposals GitHub repository][proposals].
 The requirements are minimal for a proposal to be accepted,
 predominantly designed to maintain consistency across the community's lessons.
 The [README of that repository][proposals-readme] contains
@@ -52,7 +52,25 @@ in use in The Carpentries Incubator,
 and re-use these values where appropriate,
 creating new topic tags where no pre-existing label exists for your lesson.
 
+## Using GitHub Issue Labels
+
+GitHub allows the maintainers of a repository to add contextual information to Issues and Pull Requests in the form of labels.
+Visit the [How to Label Issues page of The Carpentries handbook][handbook-issue-labels] for a list of the labels used on official Carpentries lesson repositories and to read recommendations on how to use them for your own lesson.
+
+### Using Labels to Encourage Contributions
+
+Two labels, used by The Carpentries and in many repositories across GitHub, can be deployed to increase the visibility of your lesson and encourage community members to contribute to its development.
+
+The **"help wanted"** label should be used to highlight issues with which you would welcome additional help. The Carpentries website includes [a Help Wanted page][help-wanted], which can automatically list every issue labelled "help wanted" on repositories from The Carpentries, Software Carpentry, Data Carpentry, Library Carpentry, CarpentriesLab, and The Carpentries Incubator.
+Find out how to include issues from your lesson repository on the Help Wanted page by reading the [Information for Maintainers][help-wanted-maintainers] on the page itself.
+
+The **"good first issue"** label should be used to identify issues that would make a good entry point for newcomers looking for a way to contribute to your lesson. The work needed to close an issue with this label would typically not require an extensive knowledge of the structure or intricacies of your lesson repository, or an expert understanding of the content. The "good first issue" label is used so extensively that GitHub provides a page at [`[repository URL]/contribute`][contribute-page-example] for every repository, listing issues with this label.
+
 [community-lessons]: https://carpentries.org/community-lessons/
+[contribute-page-example]: https://github.com/swcarpentry/r-novice-gapminder/contribute
+[handbook-issue-labels]: https://docs.carpentries.org/topic_folders/maintainers/github_labels.html
+[help-wanted]: https://carpentries.org/help-wanted-issues/
+[help-wanted-maintainers]: https://carpentries.org/help-wanted-issues/#for-maintainers
 [incubator]: https://github.com/carpentries-incubator/
 [incubator-topics]: https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing
 [life-cycle-overview]: https://cdh.carpentries.org/the-lesson-life-cycle.html#overview-and-definitions
