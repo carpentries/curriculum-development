@@ -1,59 +1,59 @@
 # Technological introductions
 
-Our goal is to make 
+Our goal is to make
 developing and contributing to lessons as simple and accessible
 as possible. The more people who are able to contribute to a
-lesson, the more we can harness community knowledge and 
+lesson, the more we can harness community knowledge and
 experience to create materials that are teachable and applicable
 in a range of learning contexts. We recognize that technology
-can be a major barrier to contribution, and we are currently 
+can be a major barrier to contribution, and we are currently
 working on a major update to our lesson infrastructure to reduce
 this barrier. This chapter reflects our current lesson
-infrastructure and describes what lesson authors and other 
-contributors need to know to use The Carpentries lesson template. 
+infrastructure and describes what lesson authors and other
+contributors need to know to use The Carpentries lesson template.
 In the individual sections below, we have noted whether particular
 technological knowledge will remain necessary or be phased out
-in upcoming infrastructure updates. 
+in upcoming infrastructure updates.
 
 What knowledge are we assuming lesson authors will have?
 What knowledge will this chapter help them gain?
 
 ## Lesson hosting and rendering
 
-The Carpentries hosts all of our lessons on [GitHub](https://github.com). We use a 
-shared [lesson template](http://carpentries.github.io/lesson-example/setup.html) to provide aesthetic and structural 
-consistency across our lessons. Template files for each lesson are 
-rendered into a webpage using [Jekyll](https://jekyllrb.com/) - 
+The Carpentries hosts all of our lessons on [GitHub](https://github.com). We use a
+shared [lesson template](http://carpentries.github.io/lesson-example/setup.html) to provide aesthetic and structural
+consistency across our lessons. Template files for each lesson are
+rendered into a webpage using [Jekyll](https://jekyllrb.com/) -
 a static site generator which is written in [Ruby](https://www.ruby-lang.org/en/).
 
 You do *not* need to know Ruby or Jekyll to write
-or contribute to a Carpentries lesson. However, you will need to 
+or contribute to a Carpentries lesson. However, you will need to
 have these software packages installed on your computer if you
 want to view your lesson materials locally before pushing them
 to GitHub.
 
-Information about installing Ruby and Jekyll is available in the APPENDIX. 
+Information about installing Ruby and Jekyll is available in the APPENDIX.
 
 ## Using the lesson template
 
 Each lesson is made up of *episodes*, which are focused on a
 particular topic and
 include time for both teaching and exercises. A lesson repository
-(or "repo") includes one file for each episode, 
+(or "repo") includes one file for each episode,
 and a set of helper files that are required to build
 the lesson webpage. Most of these helper files are standardized
 across all of our lessons and aren't something that lesson
 authors or contributors need to interact with. In this section,
-we will focus only on the files that you are likely to 
+we will focus only on the files that you are likely to
 interact with. If you're interested in the details
-of how the template is structured, and what each of the files 
+of how the template is structured, and what each of the files
 does, these details are provided in APPENDIX. We recommend not
-spending time learning these details now, as we are in the 
-process of greatly simplifying our lesson template. 
+spending time learning these details now, as we are in the
+process of greatly simplifying our lesson template.
 
 ### Creating your lesson repository
 
-The following sections will guide you through the pieces of 
+The following sections will guide you through the pieces of
 the lesson template that you will need to modify to create your lesson.
 In order to follow along with these examples, you can start by creating your
 lesson repository in GitHub. To do this, follow [the setup instructions
@@ -67,27 +67,27 @@ dataset used, a schedule showing
 the episodes and the time alloted for each, and any other
 information learners will need for the lesson.
 
-For inspiration to guide you in writing your lesson homepage, 
+For inspiration to guide you in writing your lesson homepage,
 check out these examples for [Data Carpentry](https://datacarpentry.org/python-ecology-lesson/), [Software Carpentry](http://swcarpentry.github.io/git-novice/), and [Library Carpentry](https://librarycarpentry.org/lc-open-refine/).
 
 The lesson homepage is built from the `index.md` file, which is
 automatically created when you initialize a lesson repository. You
-will need to add the following to this file: 
+will need to add the following to this file:
 
-1. A few paragraphs of explanatory text describing the lesson. 
+1. A few paragraphs of explanatory text describing the lesson.
 1. One or more `.prereq` boxes detailing the lesson's prerequisites, giving an overview of the dataset, and/or calling attention to the lesson's Instructor notes.
 
-The schedule will automatically be included in the lesson homepage based on information present in the 
-episode files. 
+The schedule will automatically be included in the lesson homepage based on information present in the
+episode files.
 
 ### Episode files
 
-The majority of a lessons content is in its episode files. 
-Episode files are stored in the `_episodes/` folder within your lesson repo (or in `_episodes_rmd/` for lessons written in R). 
+The majority of a lessons content is in its episode files.
+Episode files are stored in the `_episodes/` folder within your lesson repo (or in `_episodes_rmd/` for lessons written in R).
 Episode file names must start with a two-digit identifier number (e.g. `01`) followed
-by a short descriptive name, separated by a dash (`-`). For example `02-loop.md`, `03-lists.md`. 
-The numeric identifier is used to place your episode files in the correct sequence within the lesson. 
-Episode files are written in *Markdown* (more on that in a moment) or *RMarkdown*. 
+by a short descriptive name, separated by a dash (`-`). For example `02-loop.md`, `03-lists.md`.
+The numeric identifier is used to place your episode files in the correct sequence within the lesson.
+Episode files are written in *Markdown* (more on that in a moment) or *RMarkdown*.
 
 #### Episode headers
 
@@ -114,22 +114,22 @@ FIXME
 ```
 
 The material between the first and second instances of `---` is called the *YAML header*. The information
-stored in the YAML header is used by the lesson template to populate important parts of the lesson webpage. 
-This section explains each component of the YAML header and what that information is used for. 
+stored in the YAML header is used by the lesson template to populate important parts of the lesson webpage.
+This section explains each component of the YAML header and what that information is used for.
 
-For each episode, you will need to create a copy of this file and: 
+For each episode, you will need to create a copy of this file and:
 
 1. Replace `Introduction` with the episode title (**not** the lesson title) in quotation marks. The episode
-title will appear on the episode page and in the schedule that appears on the lesson homepage. 
+title will appear on the episode page and in the schedule that appears on the lesson homepage.
 1. Enter an estimated number of minutes for teaching the episode and an estimated number of minutes for learners to spend completing challenge problems (including class discussion of challenge solutions). These time estimates
 will likely be updated by Instructors as they get real-world data on how learners respond to the pacing of
 the episodes, but it is useful to have a starting point to benchmark from. The lesson template creates a schedule
-from these time estimates and places it on the lesson homepage. 
-1. Replace `Key question (FIXME)` with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear in the schedule on the lesson homepage. 
-1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see the [Developing Content](https://carpentries.github.io/curriculum-development/developing-content.html) chapter. 
+from these time estimates and places it on the lesson homepage.
+1. Replace `Key question (FIXME)` with 1-3 motivating questions for the episode, each on a new line and in quotation marks. These motivating questions will appear in the schedule on the lesson homepage.
+1. Replace `First learning objective. (FIXME)` with 3-7 learning objectives for the episode, each on a new line and in quotation marks. For information on writing useful learning objectives, see the [Developing Content](https://carpentries.github.io/curriculum-development/developing-content.html) chapter.
 1. Replace `First key point. Brief Answer to questions. (FIXME)` with 3-7 major take-aways from the episode. For
-information on how to distill an episode's key points, see the [Developing Content](https://carpentries.github.io/curriculum-development/developing-content.html) chapter. Key points for all episodes are shown 
-together in the lesson's reference page. 
+information on how to distill an episode's key points, see the [Developing Content](https://carpentries.github.io/curriculum-development/developing-content.html) chapter. Key points for all episodes are shown
+together in the lesson's reference page.
 
 #### Episode content
 
@@ -148,7 +148,7 @@ fancy HTML pages using only a few formating tricks. In this section, we'll cover
 you will need in order to create the content types listed above. You can find more information about Markdown
 at https://commonmark.org/help/.
 
-1. Paragraphs of text - To create text paragraphs in Markdown, just type as you normally would! A few neat tricks: 
+1. Paragraphs of text - To create text paragraphs in Markdown, just type as you normally would! A few neat tricks:
 * surround text with a single pair of stars (`*`) to make text *italic* (`*italic*`)
 * use a double pair of stars to make text **bold** (`**bold**`)
 * create headers by starting a line of text with two hash signs (`##`)
@@ -169,7 +169,7 @@ This will show up like this:
 1. list
 
 Hint: You can use sequential numbers if you want, but it's easier to update the list later if you use only 1s.
-Markdown will create the sequence for you. 
+Markdown will create the sequence for you.
 
 To create an un-numbered list in Markdown, do this:
 
@@ -188,19 +188,19 @@ This will show up like this:
 1. Tables - To insert a small table into your episode, do this:
 
 ```
-| Category | Item | 
+| Category | Item |
 |--------- | ---- |
 | Food     | Sandwich |
-| Drink    | Tea | 
+| Drink    | Tea |
 | Food     | Apple |
 ```
 
 This will show up like this:
 
-| Category | Item | 
+| Category | Item |
 |--------- | ---- |
 | Food     | Sandwich |
-| Drink    | Tea | 
+| Drink    | Tea |
 | Food     | Apple |
 
 
@@ -211,20 +211,20 @@ then link to the figure using the syntax:
 ![Figure Description](../fig/figure_file_name.svg)
 ```
 
-Note about alt text. Question: Is this the "proper" way to insert a figure link? 
+Note about alt text. Question: Is this the "proper" way to insert a figure link?
 
 1. Code chunks - As discussed in [an earlier chapter](https://carpentries.github.io/curriculum-development/developing-content.html), Carpentries workshops are taught using participatory
 live coding. Instructors
 type the code as they teach it and learners type along with the Instructor. For more information about how
-live coding works, and what its advantages and disadvantages are, read that section of our 
-[Instructor Training program](https://carpentries.github.io/instructor-training/14-live/index.html). The fact 
-that Carpentries workshops are taught using live coding means that much of your episode content will be 
+live coding works, and what its advantages and disadvantages are, read that section of our
+[Instructor Training program](https://carpentries.github.io/instructor-training/14-live/index.html). The fact
+that Carpentries workshops are taught using live coding means that much of your episode content will be
 *code chunks* - short blocks of code that learners type along with the Instructor and evaluate on their own
 machines. Each code chunk should correspond to one interactive session. If learners will be
 running the code as two distinct commands, that code should be displayed as two distinct chunks in the episode
 file.
 
-You can add a code chunk to your episode using the following syntax: 
+You can add a code chunk to your episode using the following syntax:
 
 ```
 ~~~
@@ -233,7 +233,7 @@ pwd
 {: .source}
 ```
 
-Which will show up like: 
+Which will show up like:
 
 ```{bash, echo = TRUE, eval = FALSE}
 pwd
@@ -243,9 +243,9 @@ Code chunks that learners should type out with the Instructor should use the `{:
 Chunks that show expected output should use the `{: .output}` tag. Chunks that show an expected error
 message should use the `{: .error}` tag.
 
-The generic `{: .source}` tag can be used for all programming languages. To make your code more stylish, 
+The generic `{: .source}` tag can be used for all programming languages. To make your code more stylish,
 you can use a language-specific tag (instead of `{: .source}`). This will add things like syntax highlighting
-to your code. The language-specific tags available with our lesson template are: 
+to your code. The language-specific tags available with our lesson template are:
 
 * `{: .language-bash}`
 * `{: .html}`
@@ -255,11 +255,11 @@ to your code. The language-specific tags available with our lesson template are:
 * `{: .language-r}`
 * `{: .language-sql}`
 
-You don't need to use these language-specific tags, but they make your lesson a little prettier. 
+You don't need to use these language-specific tags, but they make your lesson a little prettier.
 
 1. Special blockquotes - Exercises, solutions, helpful tips, and a few other types of special information are
 formatted as blockquotes within the episode file. Each blockquote has the same general structure, but ends
-with a different tag. The ending tag determines how the blockquote will appear on the lesson webpage. The 
+with a different tag. The ending tag determines how the blockquote will appear on the lesson webpage. The
 general structure of a blockquote is:
 
 ```
@@ -279,9 +279,9 @@ where the `{: .callout}` tag should be replaced with one of the following as app
 * `{: .solution}` for an exercise solution.
 
 Additional blockquote tags included in our lesson template are described in APPENDIX, however, the four listed
-above should cover all normal use cases for a lesson author. 
+above should cover all normal use cases for a lesson author.
 
-Exercise solutions are nested within the blockquote for that exercise, as shown below: 
+Exercise solutions are nested within the blockquote for that exercise, as shown below:
 
 ```
 > ## Challenge Title
@@ -295,7 +295,7 @@ Exercise solutions are nested within the blockquote for that exercise, as shown 
 {: .challenge}
 ```
 
-Code chunks may also be nested within blockquotes as needed. 
+Code chunks may also be nested within blockquotes as needed.
 
 ### Extras
 
@@ -306,14 +306,14 @@ need to populate in order for your lesson to be fully fleshed out and ready to t
 
 1. The Reference page (`reference.md`) - this file will be created automatically and will include a list
 of all of the keypoints that you defined in your episode YAML headers. You don't need to do anything to create
-this list! However, it's a good idea to add a glossary of terms that are used in your lesson. 
+this list! However, it's a good idea to add a glossary of terms that are used in your lesson.
 
 1. The Setup page (`setup.md`) - this file will be created automatically, but needs to be populated with
 installation instructions for software learners will need to have before begining the lesson. If learners are
 expected to download data prior to the workshop, that data should also be linked and described here. The setup
-page may be [quite simple](http://swcarpentry.github.io/git-novice/setup.html) or 
+page may be [quite simple](http://swcarpentry.github.io/git-novice/setup.html) or
 [more complex](https://datacarpentry.org/geospatial-workshop/setup.html), but should
-always include installation information for all three major platforms (Windows, Unix/MacOS, Linux). 
+always include installation information for all three major platforms (Windows, Unix/MacOS, Linux).
 
 1. The Instructors' Guide (`_extras/guide.md`) - this file should provide additional discussion useful to
 instructors,
@@ -340,15 +340,15 @@ learning environment.
 resources (blog posts, stack overflow answers, etc) that may solve problems that
 may occur during a workshop.
 
-### Other information 
+### Other information
 
-In addition to populating the lesson homepage, lesson content (episodes), 
+In addition to populating the lesson homepage, lesson content (episodes),
 Instructors' guide, and other lesson-specific
 pages, lesson authors need to make a few changes to the template
-files to make sure that the lesson has all of the neccessary 
-information. 
+files to make sure that the lesson has all of the neccessary
+information.
 
-1. In the `_config.yml` file, 
+1. In the `_config.yml` file,
 * set the `carpentry` variable to the appropriate lesson program,
 * set `title` to be the overall title for your lesson,
 * set `email` to the correct contact email for your lesson.
@@ -357,20 +357,29 @@ information.
 
 1. In the `CITATION` file, add information about how to cite your lesson.
 
-1. The `AUTHORS` file should include a list of the lesson's authors. 
+1. The `AUTHORS` file should include a list of the lesson's authors.
 
 ### Special notes on RMarkdown
 
-Coming soon!
+It is also possible to write episodes in [RMarkdown][rmd],
+to be executed and rendered as pages via
+an automated step in the lesson template configuration.
+
+To learn more about how to incorporate RMarkdown documents as episodes in a lesson,
+please read [the Using RMarkdown section of The Carpentries Lesson Example][rmd-example].
+The Lesson Example page assumes the reader is already familiar with
+the Rmarkdown framework.
+For those wishing to get started with writing in RMarkdown,
+[this online book provides an excellent introduction][rmd-yihui].
 
 ## Working on GitHub
 
 GitHub is a web-based service for hosting code under version control. In addition to being a technical
 platform, GitHub is also a social media platform and has its own standards around etiquite and interaction. This
-section describes how The Carpentries community tends to interact on GitHub and gives you some tips for 
+section describes how The Carpentries community tends to interact on GitHub and gives you some tips for
 navigating this new social scene.
 
-All Carpentries lesson materials, whether they are established or in early development, are hosted publically 
+All Carpentries lesson materials, whether they are established or in early development, are hosted publically
 on GitHub in one of several *organisations*. The following high-level organisations are managed by The Carpentries:
 
 * [carpentries](https://github.com/carpentries) - hosts The Carpentries website and materials for programs that span individual lesson programs, such as our Instructor Training curriculum and The Carpentries Handbook
@@ -380,9 +389,9 @@ on GitHub in one of several *organisations*. The following high-level organisati
 * [data-lessons](https://github.com/data-lessons) - hosts lessons in development which are targeted to become part of the official Carpentries lesson stack
 * [carpentrieslab](http://github.com/carpentrieslab) - community-developed lessons which may or may not become part of the official Carpentries lesson stack
 
-In order to contribute to lesson materials, you will need a GitHub account. 
+In order to contribute to lesson materials, you will need a GitHub account.
 
-To manage changes, we follow [GitHub flow][github-flow]. 
+To manage changes, we follow [GitHub flow][github-flow].
 Each lesson has two maintainers who review issues and pull requests or encourage others to do so.
 The maintainers are community volunteers and have final say over what gets merged into the lesson.
 To use the web interface for contributing to a lesson:
@@ -409,8 +418,12 @@ repository for reference while revising.
 If you choose to contribute via GitHub, you may want to look at
 [How to Contribute to an Open Source Project on GitHub][how-contribute].
 
+
 [github-flow]: https://guides.github.com/introduction/flow/
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+[rmd]: https://rmarkdown.rstudio.com/index.html
+[rmd-example]: https://carpentries.github.io/lesson-example/05-rmarkdown-example/index.html#on-branch-names-and-automation
+[rmd-yihui]: https://bookdown.org/yihui/rmarkdown/
 [template-setup]: http://carpentries.github.io/lesson-example/setup.html
 [lesson-template]: https://github.com/carpentries/styles
