@@ -423,7 +423,7 @@ If you choose to contribute via GitHub, you may want to look at
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [rmd]: https://rmarkdown.rstudio.com/index.html
-[rmd-example]: https://carpentries.github.io/lesson-example/05-rmarkdown-example/index.html#on-branch-names-and-automation
+[rmd-example]: https://carpentries.github.io/lesson-example/05-rmarkdown-example/index.html
 [rmd-yihui]: https://bookdown.org/yihui/rmarkdown/
 [template-setup]: http://carpentries.github.io/lesson-example/setup.html
 [lesson-template]: https://github.com/carpentries/styles
