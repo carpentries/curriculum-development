@@ -62,6 +62,13 @@ Lesson Program. It is added to The Carpentries
 supported lesson. The lesson is now considered **stable** and will remain in this stage for as long
 as it has active support from its Maintainer team.
 
+If you require access to cloud compute resources to provide
+environments for instructors and/or learners to use in pilot workshops,
+for example if the lesson content involves specialised compute infrastructure
+or a very large data set,
+The Carpentries may be able to provide some support.
+Contact team@carpentries.org to discuss the options in such cases.
+
 Lessons with grant support may be eligible for
 support from The Carpentries staff in some or all of
 these stages. If you are pursuing grant funding for
