@@ -1,13 +1,13 @@
 # Designing challenges
 
 Now that you have a list of the concrete skills that your learners will develop in your
-workshop, it's time to start the second step of backward design - designing the 
+workshop, it's time to start the second step of backward design - designing the
 challenges that you will use to help your learners practice those skills. These challenges
 will also enable the instructors to evaluate learner's skill progression in real time
 and re-direct their teaching as needed. Carpentries workshops use real-world
-data to increase the immediate applicability of our lessons and to reduce cognitive load 
-for the learner. The first step towards developing the exercises you will use in your 
-lessons is to select an appropriate dataset. 
+data to increase the immediate applicability of our lessons and to reduce cognitive load
+for the learner. The first step towards developing the exercises you will use in your
+lessons is to select an appropriate dataset.
 
 ## Picking a dataset
 
@@ -18,11 +18,11 @@ and to meet the following criteria.
 used across all lessons that are part of the same curriculum. When developing a
 standalone lesson (one that is not part of a curriculum), we encourage you to choose a
 dataset that is already in
-use in one of our existing curricula. Although each lesson should use the same dataset, 
+use in one of our existing curricula. Although each lesson should use the same dataset,
 it is often appropriate to use variations of the core dataset for different lessons within a
 curriculum. For instance, the Data Carpentry lessons on data organization with spreadsheets
 use messy spreadsheets that have been created from the
-original dataset, but which introduce formatting issues to teach tidy data principles. 
+original dataset, but which introduce formatting issues to teach tidy data principles.
 Whenever possible, these derived datasets should be created using scripts rather than
 manually, so they can be regenerated if the original dataset changes.
 
@@ -32,18 +32,18 @@ Zero](https://creativecommons.org/share-your-work/public-domain/cc0/) (CC0) lice
 license allows the development of lessons around the dataset and modification of the dataset
 to suit our teaching needs.
 
-1. **The dataset should be deposited in a public repository** -- All variations of the 
+1. **The dataset should be deposited in a public repository** -- All variations of the
 dataset that are used in the lesson should be deposited. The Carpentries deposits
-data for our lessons on [figshare](https://figshare.com/). 
+data for our lessons on [figshare](https://figshare.com/).
 If you choose another option, make sure the repository where the data is archived
-has the following features: 
+has the following features:
    - a DOI link pointing to an overview of the dataset
    - pre-registration of the DOI
    - all files can be downloaded directly as an archive (e.g., zip file) with a persistent link
    - each file can be downloaded directly with a persistent link
    - the repository supports versioning
 
-1. **The dataset should be real and represent what researchers in the field encounter** -- 
+1. **The dataset should be real and represent what researchers in the field encounter** --
 The datasets used as examples in the
 lessons should be based on real research datasets, and be of sufficient complexity that they
 are representative of the type of dataset that learners would encounter in their own
@@ -56,7 +56,7 @@ the research projects based on the data we use.
 1. **The dataset should be large enough** -- Analysing the dataset should represent a real
 challenge that
 highlights the power and usefulness of the tools covered in the lessons. The dataset should
-be larger than what would be easy to analyze and manipulate in a spreadsheet program. It 
+be larger than what would be easy to analyze and manipulate in a spreadsheet program. It
 should be similar in size to what researchers in that domain work with in their actual
 research. For instance, the core dataset for the [Data Carpentry Ecology curriculum](https://datacarpentry.org/ecology-workshop/data/) has ~35,000 rows.
 
@@ -93,10 +93,10 @@ learners' cognitive load. While it is important for the dataset to
 provide an authentic experience for learners, it is often useful to simplify it or
 do some initial data cleaning and wrangling to make it easier for learners
 to focus on the core skills you are teaching. For instance, you
-may want to edit the dataset so that missing values are parsed appropriately. 
-You may also want to remove data which leads to errors or warnings during parsing, 
+may want to edit the dataset so that missing values are parsed appropriately.
+You may also want to remove data which leads to errors or warnings during parsing,
 columns with data types
-that are not relevant for the learning objectives of the workshops, or variables which 
+that are not relevant for the learning objectives of the workshops, or variables which
 require additional context to understand.
 
 When preparing a dataset for teaching, aim to find a balance between providing an
@@ -118,7 +118,7 @@ lesson will remain focused, and can reveal gaps in your skills list.
 
 The challenges in a lesson should be a mixture of direct application challenges and synthesis
 challenges. A direct application challenge is a straightforward implementation of a concept
-that learners have just been exposed to, while a synthesis challenge requires learners to 
+that learners have just been exposed to, while a synthesis challenge requires learners to
 integrate recently learned skills with skills that were covered earlier in
 the lesson. Learning is reinforced when Instructors explicitly point out how the skills seen in
 earlier parts of the lesson are being integrated to solve the challenges.
@@ -131,46 +131,46 @@ become ingrained.
 
 When starting to design challenges, it is helpful to start by planning the last exercise of each
 episode. This will help you keep the big picture in mind and ensure that the rest of the
-exercises you develop lead up to this larger goal. These final challenges are also 
-the most likely to be "unscaffolded", and so are easier to develop without detailed 
-knowledge of the various types of exercises discussed later in this chapter. So you 
+exercises you develop lead up to this larger goal. These final challenges are also
+the most likely to be "unscaffolded", and so are easier to develop without detailed
+knowledge of the various types of exercises discussed later in this chapter. So you
 can go ahead and draft those final challenges now before reading the rest!
 
 ## Different types of challenges
 
-There are many different types of challenge questions that can be developed. In this 
-section, we introduce a few common types of challenges, in order of increasing 
+There are many different types of challenge questions that can be developed. In this
+section, we introduce a few common types of challenges, in order of increasing
 difficulty (for the learner). When planning your exercises, keep in mind that you will
-need at least one exercise for every 10-15 minutes of instruction (and more is better!). 
-To quickly estimate how many exercises you need to develop, divide the number of 
-minutes of total delivery time (the number of minutes your learners will be in their 
-seats) by 20. For example, a two hour lesson needs around six exercises. 
-As a rough estimate, plan 8 minutes for each exercise 
+need at least one exercise for every 10-15 minutes of instruction (and more is better!).
+To quickly estimate how many exercises you need to develop, divide the number of
+minutes of total delivery time (the number of minutes your learners will be in their
+seats) by 20. For example, a two hour lesson needs around six exercises.
+As a rough estimate, plan 8 minutes for each exercise
 (including discussion of the solution and questions) and 12 minutes of instructional time
-between exercises. 
+between exercises.
 
 ### Multiple Choice Questions
 
 Multiple choice questions (MCQs) can be a useful tool for formative assessment if they are
-designed such that each incorrect answer helps the Instructor to identify learners' 
-misconceptions. Each incorrect answer should be a *plausible distractor* with *diagnostic power*. 
+designed such that each incorrect answer helps the Instructor to identify learners'
+misconceptions. Each incorrect answer should be a *plausible distractor* with *diagnostic power*.
 "Plausible" means that an answer looks like it could be right, and "diagnostic power" means
 that each of the distractors helps the instructor figure out
-what concepts learners are having difficulty with.  
+what concepts learners are having difficulty with.
 
-For example, if learners are learning about subsetting data in `R` with the `dplyr` 
-functions `filter()` and `select()`, you might ask them, using the [`palmerpenguins`](https://cran.r-project.org/package=palmerpenguins) dataset to determine which of the 
+For example, if learners are learning about subsetting data in `R` with the `dplyr`
+functions `filter()` and `select()`, you might ask them, using the [`palmerpenguins`](https://cran.r-project.org/package=palmerpenguins) dataset to determine which of the
 following code blocks will return only the values of the "species" and "body_mass_g" variables
 for observations from the Dream island collected after 2007.
 
-a. 
+a.
 ```{r, echo=TRUE, eval=FALSE}
 penguins %>%
   filter(island == "Dream" & year > 2007) %>%
   select(species, body_mass_g)
 ```
 
-This is the correct answer. 
+This is the correct answer.
 
 b.
 ```{r, echo=TRUE, eval=FALSE}
@@ -179,41 +179,41 @@ penguins %>%
   filter(species, body_mass_g)
 ```
 
-Learners who select this answer have a factual misconception. They have confused the 
-`select()` and `filter()` functions. They need to be reminded that `filter()` is for 
-subsetting by row and `select()` is for subsetting by column. 
+Learners who select this answer have a factual misconception. They have confused the
+`select()` and `filter()` functions. They need to be reminded that `filter()` is for
+subsetting by row and `select()` is for subsetting by column.
 
 c.
 ```{r, echo=TRUE, eval=FALSE}
 penguins %>%
-  select(species, body_mass_g) %>% 
+  select(species, body_mass_g) %>%
   filter(island == "Dream" & year > 2007)
 ```
 
-Learners who select this answer have a conceptual misunderstanding that may require more 
-time and effort to correct. They haven't understood that the pipe (`%>%`) character only 
+Learners who select this answer have a conceptual misunderstanding that may require more
+time and effort to correct. They haven't understood that the pipe (`%>%`) character only
 passes into the next command the output of the previous command, and **nothing else**. Since
 they have used the `select()` function first, the "island" column is no longer present
-in the output and cannot be used for comparison. This misconception might be addressed by 
-drawing a diagram and walking through what the data looks like at each step of the command. 
+in the output and cannot be used for comparison. This misconception might be addressed by
+drawing a diagram and walking through what the data looks like at each step of the command.
 Another follow-up question using the same skills could then be used to assess whether learners
 have understood the concept.
 
 As illustrated above, formative assessments are most powerful when an instructor modifies their
 instruction depending on the
 results of the assessment. An instructor may learn they need to change their pace or review a
-particular concept. 
+particular concept.
 Knowing how to respond to the results of a formative assessment is a skill that you will develop
 over time. Making sure your assessments are designed to test only one or two concepts at a time
-will help ensure that the feedback is useful. 
+will help ensure that the feedback is useful.
 
 The process of developing diagnostic plausible distractors takes time and requires some
 knowledge of what common
-misconceptions are for a particular topic. This knowledge can come through teaching experience 
-(yourself or others') and is sometimes formally defined through [concept inventories]().
+misconceptions are for a particular topic. This knowledge can come through teaching experience
+(yourself or others') and is sometimes formally defined through [concept inventories](https://en.wikipedia.org/wiki/Concept_inventory).
 One strength of The Carpentries community is that our lessons are taught over and over again
 by different Instructors in different teaching contexts. Some of those Instructors give
-feedback on challenges and misconceptions that their learners had. Our exercises are thus 
+feedback on challenges and misconceptions that their learners had. Our exercises are thus
 continuously improved by pooling the teaching experience of our 1,500+ strong Instructor
 community!
 
@@ -223,7 +223,7 @@ One reason well-designed multiple choice questions are so useful is that they co
 the problem space. Learners don't need to worry about all of the details of syntax and how
 to spell all of the variable names, but can focus on just the concepts that the exercise
 author intended them to focus on. Another type of formative assessment that provides this
-benefit are Parson's problems. A Parson's problem is an exercise where learners are given a 
+benefit are Parson's problems. A Parson's problem is an exercise where learners are given a
 set of items (in our case, lines of code) and asked to put them into an appropriate order to
 accomplish a specific task. The MCQ example given above could be formulated as a Parson's
 problem:
@@ -234,7 +234,7 @@ penguins %>%
 select(species, body_mass_g)
 ```
 
-A more difficult version of a Parson's problem might include lines that are not part of the 
+A more difficult version of a Parson's problem might include lines that are not part of the
 solution (*distractors*):
 
 ```{r, echo=TRUE, eval=FALSE}
@@ -246,23 +246,23 @@ select(species, body_mass_g)
 ```
 
 If this is the case, make sure learners know that not all of the code chunks need to be
-included in their answer! 
+included in their answer!
 
 Parson's problems are somewhat less structured than MCQs, which makes them slightly
 better for preparing learners to tackle similar problems in their own work. However, this also
-makes it more difficult for Instructors to diagnose learner misconceptions and adjust their 
+makes it more difficult for Instructors to diagnose learner misconceptions and adjust their
 teaching accordingly (because there are more possible responses). As will all of the challenge
 types we will discuss in this chapter, MCQs and Parson's problems can be used in combination
-to provide learners with both structure and appropriate levels of challenge. 
+to provide learners with both structure and appropriate levels of challenge.
 
 ### Fill-in-the-blank problems
 
 Fill-in-the blank problems can be thought of as the next level of decreasing structure after
 MCQs and Parson's problems (although this depends on the number of lines in the Parson's
-problem and the number of possible choices for filling in the blanks, among other factors). 
-The following challenge (from the Software Carpentry lesson on 
+problem and the number of possible choices for filling in the blanks, among other factors).
+The following challenge (from the Software Carpentry lesson on
 [The Unix Shell](http://swcarpentry.github.io/shell-novice/)) illustrates one possible
-application of fill-in-the-blank problems: 
+application of fill-in-the-blank problems:
 
 > ### Challenge: Moving to the Current Folder {-}
 >
@@ -305,28 +305,28 @@ penguins %>%
 
 The difficulty of a fill-in-the-blank problem can be adjusted by changing the number of blanks,
 and by providing (or not providing) a "word bank" of options to use. You can even use a series
-of similar fill-in-the-blank problems, increasing the number of blanks each time, to prepare 
+of similar fill-in-the-blank problems, increasing the number of blanks each time, to prepare
 learners to build a code chunk without scaffolding. When used in this way, fill-in-the-blank
 problems are also called *faded examples*. We discuss the use of faded examples, and why they
-are a useful tool, in more detail in 
-[our Instructor Training course](https://carpentries.github.io/instructor-training/05-memory/index.html). 
+are a useful tool, in more detail in
+[our Instructor Training course](https://carpentries.github.io/instructor-training/05-memory/index.html).
 
 ### Use the concept in a different context
 
 Once learners have had an opportunity to practice using a concept in the same context as
 it was originally taught (direct application challenges), it's time to stretch their
-understanding by asking them to apply the same concept in a different context. This adds 
+understanding by asking them to apply the same concept in a different context. This adds
 realism and makes learners better prepared to apply these concepts to unique
 problems in their own work. This type of exercise will often require learners to proactively
-look up help files or do a Google search. 
+look up help files or do a Google search.
 
-For example, in the Data Carpentry lesson [Data Analysis and Visualization in Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python/index.html), 
+For example, in the Data Carpentry lesson [Data Analysis and Visualization in Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python/index.html),
 plotting is taught using the `plotnine` package. That package implements the grammar of graphics developed by
 [Leland Wilkinson](https://en.wikipedia.org/wiki/Leland_Wilkinson), which includes the concept
 of a plot's *geometry*. Different plot types have different underlying geometries that interact
 differently with other plot parameters. In this lesson, learners are led through an example
 where they create a scatterplot (using `geom_point()`) of weight versus an animal's hindfoot
-length. 
+length.
 
 ```{python, eval=FALSE}
 surveys_plot = p9.ggplot(data=surveys_complete,
@@ -339,8 +339,8 @@ knitr::include_graphics("./figures/python_scatterplot_example.png")
 ```
 
 
-They are then asked to create a barchart showing the number of observations in each region 
-(or "plot") of the field site. 
+They are then asked to create a barchart showing the number of observations in each region
+(or "plot") of the field site.
 
 > ### Challenge - bar chart {-}
 >
@@ -360,22 +360,19 @@ They are then asked to create a barchart showing the number of observations in e
 > ```{r, echo=FALSE}
 > knitr::include_graphics("./figures/python_barplot_example.png")
 > ```
-                     
-                      
+
+
 To answer this problem, learners need to locate and decipher the appropriate help file (for
 the `geom_bar()` function). They also need to change the `mapping` attribute to apply to "plot_id" rather than "weight" and "hindfoot_length". Later challenges in this lesson require
 learners to apply multiple concepts in new contexts, for example, modifying both the plot type
-and underlying *aesthetics* like color. 
+and underlying *aesthetics* like color.
 
-These types of problems are incredibly powerful, as 
-they provide the most realistic example we've discussed so far of the skills learners will 
+These types of problems are incredibly powerful, as
+they provide the most realistic example we've discussed so far of the skills learners will
 need to be able to apply what they've learned to their own work. This also means, however,
 that these problems are fairly unstructured, and include many more potential areas for learners
-to get off track. It is also very easy, when designing these problems, to make them more 
+to get off track. It is also very easy, when designing these problems, to make them more
 difficult than you intended - either by requiring learners to apply multiple concepts in new
 contexts or by including new concepts that haven't yet been covered in the lesson. Be careful,
 always have your lesson reviewed by at least one novice user if possible, and above all else,
-be prepared for feedback from Instructors "in the field" about how to improve these (and all of your) challenge problems. 
-
-
-
+be prepared for feedback from Instructors "in the field" about how to improve these (and all of your) challenge problems.
