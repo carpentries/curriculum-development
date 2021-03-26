@@ -182,7 +182,7 @@ key points are:
 * "Most commands take options (flags) which begin with a `-`."
 * "Tab completion can reduce errors from mistyping and make work more efficient in the shell."
 
-The Carpentries lesson template automatically creates [a reference page](https://datacarpentry.org/shell-genomics/reference/) that includes all of the key points for
+The Carpentries lesson template automatically creates [a reference page](https://datacarpentry.org/shell-genomics/reference.html) that includes all of the key points for
 each episode in the lesson. Key points should be specific enough that learners are able to use this reference
 page as review.
 
