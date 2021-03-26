@@ -1,0 +1,188 @@
+# Adapting Existing Lessons for The Carpentries
+
+A guide for those wishing to adapt existing lesson materials,
+written/published in formats other than The Carpentries lesson template,
+to conform to the requirements for inclusion in a Carpentries lesson program
+or The Carpentries Incubator.
+
+## Lesson Template
+
+Below are some suggested approaches to incorporate previously-written
+lesson content into The Carpentries lesson template.
+Unfortunately we cannot provide detailed instructions or automated conversion
+for content in every format,
+but this section includes suggested workflows to adapt content in several
+of the most common formats for lessons teaching software and data skills.
+
+## Conversion from Jupyter
+
+Jupyter notebooks in `.ipynb` format can be converted to Markdown via
+_File_ -> _Download as_ -> _Markdown (.md)_ in the graphical Notebooks interface
+or by using [the `nbconvert` command line tool](https://nbconvert.readthedocs.io/en/latest/).
+
+[The `convert.py` Python script](https://github.com/datacarpentry/astronomy-python/blob/gh-pages/_episodes/convert.py),
+written by [Allen Downey](https://www.allendowney.com/wp/) while developing the
+[Data Carpentry Astronomy curriculum](https://datacarpentry.github.io/astronomy-python),
+processes Jupyter Notebooks such that, afterwards,
+the Markdown derived from them
+can be more readily incorporated into The Carpentries Lesson Template.
+The script makes some assumptions about what your Jupyter notebooks will look like
+(e.g. it looks for third-level headings beginning "Exercise" to define exercise blocks),
+but it may save you some time if you have a large number of notebooks containing
+a lot of code blocks etc.
+
+To be rendered as episodes of a lesson site,
+the resulting Markdown generated from the `.ipynb` files processed by `convert.py`
+will need to have YAML front matter added, before being placed into the `_episodes` directory of a lesson repository (see [Markdown](#markdown) below).
+
+## Conversion from RMarkdown
+
+Lesson content written with RMarkdown can be directly included in the lesson template, by adding RMarkdown episodes to the `_episodes_rmd` directory.
+
+[The _Using Rmarkdown_ episode of the Lesson Example](https://carpentries.github.io/lesson-example/05-rmarkdown-example/)
+provides more details of how to write episodes in RMarkdown.
+Briefly, the important points are:
+
+1. You must add the episode front matter just as you would for standard
+   Markdown (see below).
+2. You should commit your RMarkdown files to the `main` branch.
+   The lesson build workflows have been configured such that
+   any RMarkdown files commited to the `_episodes_rmd` directory
+   in the `main` branch of the GitHub lesson repository
+   will be converted to standard Markdown and copied to
+   the `_episodes` directory of the `gh-pages` branch,
+   where the content will be served by GitHub Pages.
+3. You should use the `fig.alt` parameter to define the alternative text
+   property for any figures/images created by code chunks in your RMarkdown.
+4. You will need to write the lesson landing page (`index.md`),
+   installation/setup instructions (`setup.md`),
+   Instructor Notes (`guide.md`),
+   and glossary/reference guide (`reference.md`)
+   in standard Markdown.
+
+## Conversion from other formats
+
+[Pandoc](https://pandoc.org/) is a universal format conversion tool,
+which may be able to help when converting other formats
+(e.g. ReStructured Text) to Markdown.
+
+## Markdown
+
+Whether you have lesson content already in Markdown (e.g. from GitBook)
+or converted to Markdown from a Jupyter Notebook or any other format,
+there are some additional steps you will need to take to make this content
+compatible with the lesosn template:
+
+### Set up a lesson repository
+
+For lessons in [The Carpentries Incubator](https://cdh.carpentries.org/the-lesson-life-cycle.html#where-to-start):
+submit a new issue to
+[the Incubator Proposals repository](https://github.com/carpentries-incubator/proposals)
+to request a new lesson repository.
+You will receive full administrative access to a "blank slate" lesson repository
+with some brief instructions to help you get started.
+
+For lessons being developed outside The Carpentries Incubator:
+follow [the setup instructions in the Lesson Example](https://carpentries.github.io/lesson-example/setup.html).
+
+**A note about the license and code of conduct**:
+[Carpentries lessons use the Creative Commons Attribution version 4.0 (CC-BY) license for lesson material, and the MIT license for any example code included in the lesson](https://github.com/carpentries-incubator/jekyll-pages-novice/blob/gh-pages/LICENSE.md).
+Laws vary from country to country but,
+as a general rule,
+**changing the license of a project requires explicit agreement**
+**from all previous contributors to the repository**.
+You should make sure that you have done this before you transfer the material
+into the lesson repository (which already includes the license file),
+or clearly state that you are re-using material originally created elsewhere
+(if the license of the existing material allows this).
+Similarly, **we require that all lessons follow [our Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html)**,
+and you should make sure that you and all your collaborators have read and
+understand this document, and that your existing lesson material complies with
+the policies described in it, before you begin working in the new repository.
+
+### Add YAML Front Matter
+
+The Jekyll engine that renders sites on GitHub Pages
+identifies Markdown files to build into webpages based on the presence of
+[a header section](https://carpentries.github.io/lesson-example/04-formatting/index.html#episode-header),
+known as [_front matter_](https://jekyllrb.com/docs/front-matter/), at the top of the file.
+[The _Technological Introductions_ chapter](https://cdh.carpentries.org/technological-introductions.html#episode-files)
+details the fields that must be present in this YAML header.
+Note: episode files written in RMarkdown must include an additional line,
+`source: Rmd`, to be rendered correctly.
+
+If your lesson already includes statements of learning objectives/outcomes,
+questions, and/or key points for each section,
+this information should be transferred to the YAML header
+for the respective episodes.
+
+### Add _alt_ Text to Images
+
+To increase the accessibility of Carpentries lessons,
+all images should include a short, descriptive _alternative text_ property.
+In Markdown, alternative text is added between the `[]` of the
+image definition, i.e.
+
+`![Image alt text](path/to/image/file.svg)`
+
+Accessibility consultants Deque provide
+[a good overview of the important things to consider when writing alternative text](https://www.deque.com/blog/great-alt-text-introduction/).
+
+### Add to `_episodes`
+
+To be built by Jekyll and included in the navigation of the resulting lesson site,
+Markdown files with front matter should be added to the `_episodes` directory of
+your lesson repository.
+Other files needed for a lesson, but not located in the `_episodes` directory,
+include the lesson landing page (`index.md`),
+the installation/setup instructions (`setup.md`),
+Instructor Notes as an aid to those teaching the lesson (`guide.md`),
+and the glossary/reference guide (`reference.md`).
+You can find more complete information about these files, and others included in
+the lesson template, in [the _Lesson Organization_ episode of the Lesson Example](https://carpentries.github.io/lesson-example/03-organization/index.html#starter-files).
+
+### Organise supporting files
+
+Images used as figures in the lesson should be stored in the `fig` directory,
+example code in the `code` directory,
+and example data in `data`.
+Any other supporting files that do not fit into the previous three categories
+can be placed in `files`.
+Remember to adjust any internal links in your lesson to match the new locations
+of these files.
+
+### Implement formatted blocks
+
+Some of the key visual elements of a Carpentries lesson are the
+boxes used for callouts, lesson prerequisites, exercises, solutions, etc.
+You should add the appropriate formatting to any relevant parts of your
+lesson, so that they render correctly.
+Generally speaking, this involves converting these to blockquotes followed
+by a tag that applies a CSS class to the preceding block.
+
+See [the _Formatting_ episode of the Lesson Example](https://carpentries.github.io/lesson-example/04-formatting/index.html#special-blockquotes)
+for details and examples.
+That page also includes more information about the best way to display
+code blocks in the lesson template.
+
+### (Recommended) Centralise Link References
+
+To reduce the effort associated with modifying the target URLs of
+links in your lesson if/when they change,
+you can collect all these target URLs as Markdown link references,
+in the format `[link-ref]: https://carpentries.org`,
+in the `_includes/links.md` file of the lesson repository.
+
+You can then refer to these with the syntax `[link text][link-ref]`
+after adding `{% include links.md %} to the very bottom of the page content.
+
+### Complete Lesson Repository Setup
+
+To finish setting up your lesson repository
+
+- fill in any fields marked "FIXME" in the lesson `README.md` and/or `_config.yml`
+- list the names of current and past maintainers in the lesson `README.md`
+- update the `AUTHORS` and `CITATION` files in the lesson repository
+- add the lesson URL and 
+  [topic tags](https://cdh.carpentries.org/the-carpentries-incubator.html#topic-tags)
+  to the _Description_ of your lesson repository on GitHub
