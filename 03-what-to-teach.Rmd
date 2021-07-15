@@ -1,6 +1,6 @@
 # Deciding what to teach
 
-As discussed in an [earlier chapter](https://carpentries.github.io/curriculum-development/conceptual-elements.html#backward-design), the first step in designing a curriculum according to backward design principles is to
+As discussed in an [earlier chapter](#backward-design), the first step in designing a curriculum according to backward design principles is to
 identify the practical skills that you aim to teach. This step is absolutely critical to defining the scope of
 your curriculum and to avoid [scope creep](https://en.wikipedia.org/wiki/Scope_creep), both during initial writing of the lesson materials and later
 community-driven development.
