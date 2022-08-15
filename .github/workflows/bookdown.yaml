@@ -62,7 +62,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Install npm
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
 
       - name: Deploy to Netlify
         if: github.repository == 'carpentries/curriculum-development'
