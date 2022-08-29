@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Developing content | The Carpentries Curriculum Development Handbook</title>
   <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
-  <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Developing content | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
   <meta name="github-repo" content="carpentries/curriculum-development" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Erin Becker and François Michonneau" />
 
 
-<meta name="date" content="2020-09-07" />
+<meta name="date" content="2022-08-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,8 @@
   
 <link rel="prev" href="designing-challenges.html"/>
 <link rel="next" href="community-development-roles.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,8 +49,29 @@
 
 
 
-
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '11']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 
 
 <style type="text/css">
@@ -117,6 +138,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -203,7 +225,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.4" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"><i class="fa fa-check"></i><b>7.4</b> Early development (pre-alpha through alpha)</a></li>
 <li class="chapter" data-level="7.5" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#field-testing-alpha-stage"><i class="fa fa-check"></i><b>7.5</b> Field testing: alpha stage</a></li>
 <li class="chapter" data-level="7.6" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#polishing-beta-stage"><i class="fa fa-check"></i><b>7.6</b> Polishing: beta stage</a></li>
-<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.7</b> The stable lesson: Maintenance and lesson releases</a></li>
+<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#stable-stage"><i class="fa fa-check"></i><b>7.7</b> Stable stage</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track-1"><i class="fa fa-check"></i><b>7.7.1</b> Official Track</a></li>
+<li class="chapter" data-level="7.7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#communitycarpentries-lab-track"><i class="fa fa-check"></i><b>7.7.2</b> Community/Carpentries Lab track</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.8</b> The stable lesson: Maintenance and lesson releases</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a><ul>
 <li class="chapter" data-level="8.1" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-hosting-and-rendering"><i class="fa fa-check"></i><b>8.1</b> Lesson hosting and rendering</a></li>
@@ -216,6 +242,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.2.6" data-path="technological-introductions.html"><a href="technological-introductions.html#special-notes-on-rmarkdown"><i class="fa fa-check"></i><b>8.2.6</b> Special notes on RMarkdown</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html"><i class="fa fa-check"></i><b>A</b> The Carpentries Incubator</a><ul>
+<li class="chapter" data-level="A.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#lesson-proposals"><i class="fa fa-check"></i><b>A.1</b> Lesson Proposals</a></li>
+<li class="chapter" data-level="A.2" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#topic-tags"><i class="fa fa-check"></i><b>A.2</b> Topic Tags</a></li>
+<li class="chapter" data-level="A.3" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-github-issue-labels"><i class="fa fa-check"></i><b>A.3</b> Using GitHub Issue Labels</a><ul>
+<li class="chapter" data-level="A.3.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-labels-to-encourage-contributions"><i class="fa fa-check"></i><b>A.3.1</b> Using Labels to Encourage Contributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>B</b> Bibliography</a></li>
+<li class="chapter" data-level="C" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html"><i class="fa fa-check"></i><b>C</b> Adapting Existing Lessons for The Carpentries</a><ul>
+<li class="chapter" data-level="C.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#lesson-template"><i class="fa fa-check"></i><b>C.1</b> Lesson Template</a></li>
+<li class="chapter" data-level="C.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-jupyter"><i class="fa fa-check"></i><b>C.2</b> Conversion from Jupyter</a></li>
+<li class="chapter" data-level="C.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-rmarkdown"><i class="fa fa-check"></i><b>C.3</b> Conversion from RMarkdown</a></li>
+<li class="chapter" data-level="C.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-other-formats"><i class="fa fa-check"></i><b>C.4</b> Conversion from other formats</a></li>
+<li class="chapter" data-level="C.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#markdown"><i class="fa fa-check"></i><b>C.5</b> Markdown</a><ul>
+<li class="chapter" data-level="C.5.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#set-up-a-lesson-repository"><i class="fa fa-check"></i><b>C.5.1</b> Set up a lesson repository</a></li>
+<li class="chapter" data-level="C.5.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-yaml-front-matter"><i class="fa fa-check"></i><b>C.5.2</b> Add YAML Front Matter</a></li>
+<li class="chapter" data-level="C.5.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-alt-text-to-images"><i class="fa fa-check"></i><b>C.5.3</b> Add <em>alt</em> Text to Images</a></li>
+<li class="chapter" data-level="C.5.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-to-_episodes"><i class="fa fa-check"></i><b>C.5.4</b> Add to <code>_episodes</code></a></li>
+<li class="chapter" data-level="C.5.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#organise-supporting-files"><i class="fa fa-check"></i><b>C.5.5</b> Organise supporting files</a></li>
+<li class="chapter" data-level="C.5.6" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#implement-formatted-blocks"><i class="fa fa-check"></i><b>C.5.6</b> Implement formatted blocks</a></li>
+<li class="chapter" data-level="C.5.7" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#recommended-centralise-link-references"><i class="fa fa-check"></i><b>C.5.7</b> (Recommended) Centralise Link References</a></li>
+<li class="chapter" data-level="C.5.8" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#complete-lesson-repository-setup"><i class="fa fa-check"></i><b>C.5.8</b> Complete Lesson Repository Setup</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html"><i class="fa fa-check"></i><b>D</b> Lesson Sprint Recommendations</a><ul>
+<li class="chapter" data-level="D.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#introduction"><i class="fa fa-check"></i><b>D.1</b> Introduction</a><ul>
+<li class="chapter" data-level="D.1.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#target-audience-1"><i class="fa fa-check"></i><b>D.1.1</b> Target Audience</a></li>
+<li class="chapter" data-level="D.1.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#objectives"><i class="fa fa-check"></i><b>D.1.2</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="D.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint"><i class="fa fa-check"></i><b>D.2</b> Before the Sprint</a><ul>
+<li class="chapter" data-level="D.2.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.2.1</b> Before The Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.3" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint"><i class="fa fa-check"></i><b>D.3</b> During the Sprint</a><ul>
+<li class="chapter" data-level="D.3.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.3.1</b> During the Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.4" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint"><i class="fa fa-check"></i><b>D.4</b> After the Sprint</a><ul>
+<li class="chapter" data-level="D.4.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.4.1</b> After the Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.5" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#tools-and-resources"><i class="fa fa-check"></i><b>D.5</b> Tools and Resources</a></li>
+<li class="chapter" data-level="D.6" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#acknowledgments"><i class="fa fa-check"></i><b>D.6</b> Acknowledgments</a></li>
+<li class="chapter" data-level="D.7" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#further-reading"><i class="fa fa-check"></i><b>D.7</b> Further Reading</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/carpentries/curriculum-development/blob/master/CITATION" target="blank">Cite this handbook</a></li>
@@ -239,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="developing-content" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Developing content</h1>
+<div id="developing-content" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 5</span> Developing content<a href="developing-content.html#developing-content" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>At this point in the lesson development process, you should have a list of the core skills that your lesson
 will teach, along with a set of exercises that you will incorporate into your lesson. If you’ve taken the time
 to go through these steps, the remaining parts of the development process will be much more straightforward
@@ -255,15 +324,15 @@ steps described in this chapter before worrying about the logistics of putting y
 but if you’re working with multiple authors, it may be worth putting your materials on GitHub at this stage,
 to make collaboration easier. The <a href="https://carpentries.github.io/curriculum-development/technological-introductions.html">Technological Introductions</a> chapter
 can get you started with hosting your lesson on GitHub.</p>
-<div id="fundamental-elements" class="section level2">
-<h2><span class="header-section-number">5.1</span> Fundamental elements</h2>
+<div id="fundamental-elements" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.1</span> Fundamental elements<a href="developing-content.html#fundamental-elements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The bulk of a Carpentries lesson consists of exercises, example code chunks, and
 narrative text. You have already developed many or all of the exercises you will
 include in your lesson, so congratulations on being one-third done with content
 development! The remaining two major components of the lesson are described
 below.</p>
-<div id="code-chunks" class="section level3">
-<h3><span class="header-section-number">5.1.1</span> Code chunks</h3>
+<div id="code-chunks" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.1.1</span> Code chunks<a href="developing-content.html#code-chunks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Carpentries workshops are taught using participatory live coding. Instructors
 type the code as they teach it and learners type along with the Instructor. For
 more information about how live coding works, and what its advantages and
@@ -280,7 +349,7 @@ solve the exercise. For example, the first exercise in the Data Carpentry lesson
 <a href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line for
 Genomics</a> asks learners to:</p>
 <blockquote>
-<h3 id="challenge" class="unnumbered">Challenge</h3>
+<h3 id="challenge" class="unnumbered hasAnchor">Challenge<a href="developing-content.html#challenge" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Use the <code>-l</code> option for the <code>ls</code> command to display more information for each
 item in the directory. What is one piece of additional information this long
 format gives you that you don’t see with the bare <code>ls</code> command?</p>
@@ -312,8 +381,8 @@ be used in a lesson), are something like:</p>
 <p>You now have your first set of code chunks corresponding with your first exercise. Put these in reverse order
 and you’re well on your way to writing your lesson!</p>
 </div>
-<div id="narrative-text" class="section level3">
-<h3><span class="header-section-number">5.1.2</span> Narrative text</h3>
+<div id="narrative-text" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.1.2</span> Narrative text<a href="developing-content.html#narrative-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The narrative text component of the lesson provides a guide for Instructors to use while teaching. It should
 provide a clear and complete narrative that (in theory) could be used by an Instructor as a script for
 the lesson. Instructors <em>will not</em> actually be using this text as a script, because they will be responding to
@@ -344,8 +413,8 @@ are important caveats, those can be included in a callout box (see the
 chapter for formatting details of callout boxes). Only include callouts for cases a significant fraction of your
 learners will experience in their work. It’s very easy to clutter the lesson and overwhelm learners.</p>
 </div>
-<div id="considering-cognitive-load" class="section level3">
-<h3><span class="header-section-number">5.1.3</span> Considering cognitive load</h3>
+<div id="considering-cognitive-load" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.1.3</span> Considering cognitive load<a href="developing-content.html#considering-cognitive-load" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You may have noticed that the exercise we dissected above required six pieces of knowledge to solve.
 This number isn’t random! Cognitive science research has clearly established that human working memory is
 limited, and can only handle a small number of separate items of information at once. This number is generally
@@ -358,8 +427,8 @@ intervals with only ~5 intervening new concepts. If you find that you need more 
 between exercises, you probably need to either simplify your exercise, or add another exercise in between.</p>
 </div>
 </div>
-<div id="supporting-elements" class="section level2">
-<h2><span class="header-section-number">5.2</span> Supporting elements</h2>
+<div id="supporting-elements" class="section level2 hasAnchor">
+<h2><span class="header-section-number">5.2</span> Supporting elements<a href="developing-content.html#supporting-elements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Once you’ve created your exercises and written your code chunks and narrative, your lesson is nearly complete!
 There are a few remaining elements that support the main episode content by providing a clear outline
 of content for both learners and Instructors. These supporting elements are learning objectives, key points, and
@@ -367,8 +436,8 @@ framing questions. When you create your lesson repository from The Carpentries t
 for you to enter these supporting items for each episode. The template will extract these elements and embed
 them in the rendered lesson webpage. For details, see the
 <a href="technological-introductions.html#technological-introductions">Technological Introductions</a> chapter.</p>
-<div id="learning-objectives" class="section level3">
-<h3><span class="header-section-number">5.2.1</span> Learning objectives</h3>
+<div id="learning-objectives" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.2.1</span> Learning objectives<a href="developing-content.html#learning-objectives" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Great news - you’ve already almost completed writing your learning objectives! The skills list that you developed
 for your lesson can be easily transformed to learning objectives. Learning objectives are statements that
 communicate to learners the skills they can expect to gain from the lesson. They should always be framed
@@ -389,8 +458,8 @@ objective and concretely understand what they have gained from the lesson or wha
 <p>Keeping in mind our discussion of cognitive load above, each episode should have ~5-7 learning objectives. If you
 have more than that, you should consider splitting the material into multiple episodes.</p>
 </div>
-<div id="key-points" class="section level3">
-<h3><span class="header-section-number">5.2.2</span> Key points</h3>
+<div id="key-points" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.2.2</span> Key points<a href="developing-content.html#key-points" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>While learning objectives communicate to learners the skills they should develop by working through each episode,
 key points summarize the main pieces of knowledge that learners should remember after completing
 the episode. These should also be limited to ~5-7 items. For the episode we’ve been considering in the Data Carpentry lesson <a href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line for Genomics</a>, the
@@ -401,12 +470,12 @@ key points are:</p>
 <li>“Most commands take options (flags) which begin with a <code>-</code>.”</li>
 <li>“Tab completion can reduce errors from mistyping and make work more efficient in the shell.”</li>
 </ul>
-<p>The Carpentries lesson template automatically creates <a href="https://datacarpentry.org/shell-genomics/reference/">a reference page</a> that includes all of the key points for
+<p>The Carpentries lesson template automatically creates <a href="https://datacarpentry.org/shell-genomics/reference.html">a reference page</a> that includes all of the key points for
 each episode in the lesson. Key points should be specific enough that learners are able to use this reference
 page as review.</p>
 </div>
-<div id="framing-questions" class="section level3">
-<h3><span class="header-section-number">5.2.3</span> Framing questions</h3>
+<div id="framing-questions" class="section level3 hasAnchor">
+<h3><span class="header-section-number">5.2.3</span> Framing questions<a href="developing-content.html#framing-questions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The final supporting component for the lesson are the framing questions for each episode. These questions
 provide a high-level overview of the motivations for learning the lesson content. There should be ~1-3
 questions for each episode, which should correspond to questions that your target audience ask themselves
@@ -433,7 +502,6 @@ questions for each episode.</p>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -452,6 +520,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -472,6 +541,10 @@ gitbook.start({
 "text": null
 },
 "download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

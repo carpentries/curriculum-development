@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 8 Technological introductions | The Carpentries Curriculum Development Handbook</title>
   <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
-  <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 8 Technological introductions | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
   <meta name="github-repo" content="carpentries/curriculum-development" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Erin Becker and François Michonneau" />
 
 
-<meta name="date" content="2020-09-07" />
+<meta name="date" content="2022-08-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +31,9 @@
   
   
 <link rel="prev" href="the-lesson-life-cycle.html"/>
-
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="the-carpentries-incubator.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,8 +49,29 @@
 
 
 
-
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '11']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 
 
 <style type="text/css">
@@ -117,6 +138,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -203,7 +225,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.4" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"><i class="fa fa-check"></i><b>7.4</b> Early development (pre-alpha through alpha)</a></li>
 <li class="chapter" data-level="7.5" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#field-testing-alpha-stage"><i class="fa fa-check"></i><b>7.5</b> Field testing: alpha stage</a></li>
 <li class="chapter" data-level="7.6" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#polishing-beta-stage"><i class="fa fa-check"></i><b>7.6</b> Polishing: beta stage</a></li>
-<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.7</b> The stable lesson: Maintenance and lesson releases</a></li>
+<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#stable-stage"><i class="fa fa-check"></i><b>7.7</b> Stable stage</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track-1"><i class="fa fa-check"></i><b>7.7.1</b> Official Track</a></li>
+<li class="chapter" data-level="7.7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#communitycarpentries-lab-track"><i class="fa fa-check"></i><b>7.7.2</b> Community/Carpentries Lab track</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.8</b> The stable lesson: Maintenance and lesson releases</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a><ul>
 <li class="chapter" data-level="8.1" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-hosting-and-rendering"><i class="fa fa-check"></i><b>8.1</b> Lesson hosting and rendering</a></li>
@@ -216,6 +242,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.2.6" data-path="technological-introductions.html"><a href="technological-introductions.html#special-notes-on-rmarkdown"><i class="fa fa-check"></i><b>8.2.6</b> Special notes on RMarkdown</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html"><i class="fa fa-check"></i><b>A</b> The Carpentries Incubator</a><ul>
+<li class="chapter" data-level="A.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#lesson-proposals"><i class="fa fa-check"></i><b>A.1</b> Lesson Proposals</a></li>
+<li class="chapter" data-level="A.2" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#topic-tags"><i class="fa fa-check"></i><b>A.2</b> Topic Tags</a></li>
+<li class="chapter" data-level="A.3" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-github-issue-labels"><i class="fa fa-check"></i><b>A.3</b> Using GitHub Issue Labels</a><ul>
+<li class="chapter" data-level="A.3.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-labels-to-encourage-contributions"><i class="fa fa-check"></i><b>A.3.1</b> Using Labels to Encourage Contributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>B</b> Bibliography</a></li>
+<li class="chapter" data-level="C" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html"><i class="fa fa-check"></i><b>C</b> Adapting Existing Lessons for The Carpentries</a><ul>
+<li class="chapter" data-level="C.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#lesson-template"><i class="fa fa-check"></i><b>C.1</b> Lesson Template</a></li>
+<li class="chapter" data-level="C.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-jupyter"><i class="fa fa-check"></i><b>C.2</b> Conversion from Jupyter</a></li>
+<li class="chapter" data-level="C.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-rmarkdown"><i class="fa fa-check"></i><b>C.3</b> Conversion from RMarkdown</a></li>
+<li class="chapter" data-level="C.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-other-formats"><i class="fa fa-check"></i><b>C.4</b> Conversion from other formats</a></li>
+<li class="chapter" data-level="C.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#markdown"><i class="fa fa-check"></i><b>C.5</b> Markdown</a><ul>
+<li class="chapter" data-level="C.5.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#set-up-a-lesson-repository"><i class="fa fa-check"></i><b>C.5.1</b> Set up a lesson repository</a></li>
+<li class="chapter" data-level="C.5.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-yaml-front-matter"><i class="fa fa-check"></i><b>C.5.2</b> Add YAML Front Matter</a></li>
+<li class="chapter" data-level="C.5.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-alt-text-to-images"><i class="fa fa-check"></i><b>C.5.3</b> Add <em>alt</em> Text to Images</a></li>
+<li class="chapter" data-level="C.5.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-to-_episodes"><i class="fa fa-check"></i><b>C.5.4</b> Add to <code>_episodes</code></a></li>
+<li class="chapter" data-level="C.5.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#organise-supporting-files"><i class="fa fa-check"></i><b>C.5.5</b> Organise supporting files</a></li>
+<li class="chapter" data-level="C.5.6" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#implement-formatted-blocks"><i class="fa fa-check"></i><b>C.5.6</b> Implement formatted blocks</a></li>
+<li class="chapter" data-level="C.5.7" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#recommended-centralise-link-references"><i class="fa fa-check"></i><b>C.5.7</b> (Recommended) Centralise Link References</a></li>
+<li class="chapter" data-level="C.5.8" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#complete-lesson-repository-setup"><i class="fa fa-check"></i><b>C.5.8</b> Complete Lesson Repository Setup</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html"><i class="fa fa-check"></i><b>D</b> Lesson Sprint Recommendations</a><ul>
+<li class="chapter" data-level="D.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#introduction"><i class="fa fa-check"></i><b>D.1</b> Introduction</a><ul>
+<li class="chapter" data-level="D.1.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#target-audience-1"><i class="fa fa-check"></i><b>D.1.1</b> Target Audience</a></li>
+<li class="chapter" data-level="D.1.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#objectives"><i class="fa fa-check"></i><b>D.1.2</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="D.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint"><i class="fa fa-check"></i><b>D.2</b> Before the Sprint</a><ul>
+<li class="chapter" data-level="D.2.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.2.1</b> Before The Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.3" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint"><i class="fa fa-check"></i><b>D.3</b> During the Sprint</a><ul>
+<li class="chapter" data-level="D.3.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.3.1</b> During the Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.4" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint"><i class="fa fa-check"></i><b>D.4</b> After the Sprint</a><ul>
+<li class="chapter" data-level="D.4.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.4.1</b> After the Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.5" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#tools-and-resources"><i class="fa fa-check"></i><b>D.5</b> Tools and Resources</a></li>
+<li class="chapter" data-level="D.6" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#acknowledgments"><i class="fa fa-check"></i><b>D.6</b> Acknowledgments</a></li>
+<li class="chapter" data-level="D.7" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#further-reading"><i class="fa fa-check"></i><b>D.7</b> Further Reading</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/carpentries/curriculum-development/blob/master/CITATION" target="blank">Cite this handbook</a></li>
@@ -239,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="technological-introductions" class="section level1">
-<h1><span class="header-section-number">Chapter 8</span> Technological introductions</h1>
+<div id="technological-introductions" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 8</span> Technological introductions<a href="technological-introductions.html#technological-introductions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Our goal is to make
 developing and contributing to lessons as simple and accessible
 as possible. The more people who are able to contribute to a
@@ -257,8 +326,8 @@ technological knowledge will remain necessary or be phased out
 in upcoming infrastructure updates.</p>
 <p>What knowledge are we assuming lesson authors will have?
 What knowledge will this chapter help them gain?</p>
-<div id="lesson-hosting-and-rendering" class="section level2">
-<h2><span class="header-section-number">8.1</span> Lesson hosting and rendering</h2>
+<div id="lesson-hosting-and-rendering" class="section level2 hasAnchor">
+<h2><span class="header-section-number">8.1</span> Lesson hosting and rendering<a href="technological-introductions.html#lesson-hosting-and-rendering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The Carpentries hosts all of our lessons on <a href="https://github.com">GitHub</a>. We use a
 shared <a href="http://carpentries.github.io/lesson-example/setup.html">lesson template</a> to provide aesthetic and structural
 consistency across our lessons. Template files for each lesson are
@@ -271,8 +340,8 @@ want to view your lesson materials locally before pushing them
 to GitHub.</p>
 <p>Information about installing Ruby and Jekyll is available in the APPENDIX.</p>
 </div>
-<div id="using-the-lesson-template" class="section level2">
-<h2><span class="header-section-number">8.2</span> Using the lesson template</h2>
+<div id="using-the-lesson-template" class="section level2 hasAnchor">
+<h2><span class="header-section-number">8.2</span> Using the lesson template<a href="technological-introductions.html#using-the-lesson-template" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Each lesson is made up of <em>episodes</em>, which are focused on a
 particular topic and
 include time for both teaching and exercises. A lesson repository
@@ -287,16 +356,16 @@ of how the template is structured, and what each of the files
 does, these details are provided in APPENDIX. We recommend not
 spending time learning these details now, as we are in the
 process of greatly simplifying our lesson template.</p>
-<div id="creating-your-lesson-repository" class="section level3">
-<h3><span class="header-section-number">8.2.1</span> Creating your lesson repository</h3>
+<div id="creating-your-lesson-repository" class="section level3 hasAnchor">
+<h3><span class="header-section-number">8.2.1</span> Creating your lesson repository<a href="technological-introductions.html#creating-your-lesson-repository" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The following sections will guide you through the pieces of
 the lesson template that you will need to modify to create your lesson.
 In order to follow along with these examples, you can start by creating your
 lesson repository in GitHub. To do this, follow <a href="http://carpentries.github.io/lesson-example/setup.html">the setup instructions
 on our example lesson</a>.</p>
 </div>
-<div id="lesson-homepage" class="section level3">
-<h3><span class="header-section-number">8.2.2</span> Lesson homepage</h3>
+<div id="lesson-homepage" class="section level3 hasAnchor">
+<h3><span class="header-section-number">8.2.2</span> Lesson homepage<a href="technological-introductions.html#lesson-homepage" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The lesson homepage provides an overview of the lesson, including
 any prequisites, an introduction to the
 dataset used, a schedule showing
@@ -314,16 +383,16 @@ will need to add the following to this file:</p>
 <p>The schedule will automatically be included in the lesson homepage based on information present in the
 episode files.</p>
 </div>
-<div id="episode-files" class="section level3">
-<h3><span class="header-section-number">8.2.3</span> Episode files</h3>
+<div id="episode-files" class="section level3 hasAnchor">
+<h3><span class="header-section-number">8.2.3</span> Episode files<a href="technological-introductions.html#episode-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The majority of a lessons content is in its episode files.
 Episode files are stored in the <code>_episodes/</code> folder within your lesson repo (or in <code>_episodes_rmd/</code> for lessons written in R).
 Episode file names must start with a two-digit identifier number (e.g. <code>01</code>) followed
 by a short descriptive name, separated by a dash (<code>-</code>). For example <code>02-loop.md</code>, <code>03-lists.md</code>.
 The numeric identifier is used to place your episode files in the correct sequence within the lesson.
 Episode files are written in <em>Markdown</em> (more on that in a moment) or <em>RMarkdown</em>.</p>
-<div id="episode-headers" class="section level4">
-<h4><span class="header-section-number">8.2.3.1</span> Episode headers</h4>
+<div id="episode-headers" class="section level4 hasAnchor">
+<h4><span class="header-section-number">8.2.3.1</span> Episode headers<a href="technological-introductions.html#episode-headers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>When your lesson repository is created, it will start out with one pre-made episode file (<code>01-introduction.md</code>).
 You can use this file as a template for creating each of your episode files, as it provides an
 example of how these files must be structured. The content of this pre-made episode file is shown below:</p>
@@ -359,8 +428,8 @@ information on how to distill an episode’s key points, see the <a href="https:
 together in the lesson’s reference page.</li>
 </ol>
 </div>
-<div id="episode-content" class="section level4">
-<h4><span class="header-section-number">8.2.3.2</span> Episode content</h4>
+<div id="episode-content" class="section level4 hasAnchor">
+<h4><span class="header-section-number">8.2.3.2</span> Episode content<a href="technological-introductions.html#episode-content" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>After the YAML header, your episode file will contain the content for that episode. This content will likely
 include:</p>
 <ul>
@@ -411,10 +480,10 @@ Markdown will create the sequence for you.</p>
 <ol style="list-style-type: decimal">
 <li>Tables - To insert a small table into your episode, do this:</li>
 </ol>
-<pre><code>| Category | Item | 
+<pre><code>| Category | Item |
 |--------- | ---- |
 | Food     | Sandwich |
-| Drink    | Tea | 
+| Drink    | Tea |
 | Food     | Apple |</code></pre>
 <p>This will show up like this:</p>
 <table>
@@ -514,8 +583,8 @@ above should cover all normal use cases for a lesson author.</p>
 <p>Code chunks may also be nested within blockquotes as needed.</p>
 </div>
 </div>
-<div id="extras" class="section level3">
-<h3><span class="header-section-number">8.2.4</span> Extras</h3>
+<div id="extras" class="section level3 hasAnchor">
+<h3><span class="header-section-number">8.2.4</span> Extras<a href="technological-introductions.html#extras" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>So far we’ve covered how to create and format the content of your lesson homepage (in the <code>index.md</code> file)
 and your lesson episodes (in multiple <code>.md</code> files within the <code>_episodes</code> directory). This covers most of the
 files you will need to work with when you create a new lesson. There are a few remaining files that you will
@@ -554,8 +623,8 @@ resources (blog posts, stack overflow answers, etc) that may solve problems that
 may occur during a workshop.</p></li>
 </ul>
 </div>
-<div id="other-information" class="section level3">
-<h3><span class="header-section-number">8.2.5</span> Other information</h3>
+<div id="other-information" class="section level3 hasAnchor">
+<h3><span class="header-section-number">8.2.5</span> Other information<a href="technological-introductions.html#other-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In addition to populating the lesson homepage, lesson content (episodes),
 Instructors’ guide, and other lesson-specific
 pages, lesson authors need to make a few changes to the template
@@ -575,13 +644,21 @@ information.</p>
 <li><p>The <code>AUTHORS</code> file should include a list of the lesson’s authors.</p></li>
 </ol>
 </div>
-<div id="special-notes-on-rmarkdown" class="section level3">
-<h3><span class="header-section-number">8.2.6</span> Special notes on RMarkdown</h3>
-<p>Coming soon!</p>
+<div id="special-notes-on-rmarkdown" class="section level3 hasAnchor">
+<h3><span class="header-section-number">8.2.6</span> Special notes on RMarkdown<a href="technological-introductions.html#special-notes-on-rmarkdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is also possible to write episodes in <a href="https://rmarkdown.rstudio.com/index.html">RMarkdown</a>,
+to be executed and rendered as pages via
+an automated step in the lesson template configuration.</p>
+<p>To learn more about how to incorporate RMarkdown documents as episodes in a lesson,
+please read <a href="https://carpentries.github.io/lesson-example/05-rmarkdown-example/index.html">the Using RMarkdown section of The Carpentries Lesson Example</a>.
+The Lesson Example page assumes the reader is already familiar with
+the Rmarkdown framework.
+For those wishing to get started with writing in RMarkdown,
+<a href="https://bookdown.org/yihui/rmarkdown/">this online book provides an excellent introduction</a>.</p>
 </div>
 </div>
-<div id="working-on-github" class="section level2">
-<h2><span class="header-section-number">8.3</span> Working on GitHub</h2>
+<div id="working-on-github" class="section level2 hasAnchor">
+<h2><span class="header-section-number">8.3</span> Working on GitHub<a href="technological-introductions.html#working-on-github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>GitHub is a web-based service for hosting code under version control. In addition to being a technical
 platform, GitHub is also a social media platform and has its own standards around etiquite and interaction. This
 section describes how The Carpentries community tends to interact on GitHub and gives you some tips for
@@ -623,30 +700,21 @@ repository for reference while revising.</p>
 <p>If you choose to contribute via GitHub, you may want to look at
 <a href="https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a>.</p>
 
-<div id="refs" class="references">
-<div>
-<p>Ambrose, Susan A, Michael W Bridges, Michele DiPietro, Marsha C Lovett, and Marie K Norman. 2010. <em>How Learning Works: Seven Research-Based Principles for Smart Teaching</em>. John Wiley &amp; Sons.</p>
-</div>
-<div>
-<p>Jordan, Kari, François Michonneau, and Belinda Weaver. 2018. “Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys.” <a href="https://doi.org/10.5281/zenodo.1325464">https://doi.org/10.5281/zenodo.1325464</a>.</p>
-</div>
-<div>
-<p>Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” <em>PLOS Computational Biology</em> 13 (6): 1–20. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a>.</p>
 </div>
 </div>
-</div>
-</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-lesson-life-cycle.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="the-lesson-life-cycle.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-carpentries-incubator.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -665,6 +733,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -685,6 +754,10 @@ gitbook.start({
 "text": null
 },
 "download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

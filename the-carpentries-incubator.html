@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>The Carpentries Curriculum Development Handbook</title>
+  <title>A The Carpentries Incubator | The Carpentries Curriculum Development Handbook</title>
   <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="The Carpentries Curriculum Development Handbook" />
+  <meta property="og:title" content="A The Carpentries Incubator | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
   <meta name="github-repo" content="carpentries/curriculum-development" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="The Carpentries Curriculum Development Handbook" />
+  <meta name="twitter:title" content="A The Carpentries Incubator | The Carpentries Curriculum Development Handbook" />
   
   <meta name="twitter:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="guiding-principles.html"/>
+<link rel="prev" href="technological-introductions.html"/>
+<link rel="next" href="bibliography.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -308,28 +308,125 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">The Carpentries Curriculum Development Handbook</h1>
-<p class="author"><em>Erin Becker and François Michonneau</em></p>
-<p class="date"><em>2022-08-29</em></p>
+<div id="the-carpentries-incubator" class="section level1 hasAnchor">
+<h1><span class="header-section-number">A</span> The Carpentries Incubator<a href="the-carpentries-incubator.html#the-carpentries-incubator" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The Carpentries Incubator is where The Carpentries community develops
+curricula together.
+It is intended to serve as a place to find and contribute to lessons
+that members of our community are developing with the approaches
+and infrastructure introduced in this handbook.</p>
+<div id="lesson-proposals" class="section level2 hasAnchor">
+<h2><span class="header-section-number">A.1</span> Lesson Proposals<a href="the-carpentries-incubator.html#lesson-proposals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Proposals to begin development of a new lesson in the Incubator,
+and to transfer existing material
+(regardless of its current state/stage of development) into the Incubator,
+can be made by opening an issue on the <a href="https://github.com/carpentries-incubator/proposals/">Proposals GitHub repository</a>.
+The requirements are minimal for a proposal to be accepted,
+predominantly designed to maintain consistency across the community’s lessons.
+The <a href="https://github.com/carpentries-incubator/proposals/blob/master/README.md">README of that repository</a> contains
+more detailed guidance for those who wish to submit a proposal.</p>
 </div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This is work in progress. Comments and suggestions are welcome either as:</p>
-<ul>
-<li>an issue or a pull request on the GitHub <a href="https://github.com/carpentries/curriculum-development">repository</a></li>
-<li>or using <a href="https://web.hypothes.is/start/">hypothes.is</a></li>
-</ul>
-<p><a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" alt="Deploys by Netlify" /> </a></p>
-
+<div id="topic-tags" class="section level2 hasAnchor">
+<h2><span class="header-section-number">A.2</span> Topic Tags<a href="the-carpentries-incubator.html#topic-tags" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Lessons under community development in the Carpentries Incubator are
+<a href="https://carpentries.org/community-lessons/">listed on The Carpentries website</a>,
+based on metadata describing the lesson.
+This metadata is added in the form of topic tags on the lesson repository.
+These topic tags should be set as soon as possible after the lesson has been
+created or added to the Incubator.
+Some are essential and taken from a limited set of values,
+while others are more flexible.
+See the table below for guidance about the types and number of topic tags each
+lesson repository should have.</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="22%" />
+<col width="20%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Example</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lesson*</td>
+<td><code>lesson</code></td>
+<td>1</td>
+<td>Must be <code>lesson</code> to be listed on the Community Developed Lessons page.</td>
+</tr>
+<tr class="even">
+<td>Location*</td>
+<td><code>carpentries-incubator</code></td>
+<td>1</td>
+<td><code>carpentries-incubator</code> or <code>carpentrieslab</code>.</td>
+</tr>
+<tr class="odd">
+<td>Language*</td>
+<td><code>español</code></td>
+<td>&gt;0</td>
+<td>The language(s) the lesson is available in.</td>
+</tr>
+<tr class="even">
+<td>Stage*</td>
+<td><code>alpha</code></td>
+<td>1</td>
+<td>The current development stage for the lesson. See <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#overview-and-definitions">Chapter 7</a> for more info.</td>
+</tr>
+<tr class="odd">
+<td>Domain</td>
+<td><code>microbial-ecology</code></td>
+<td>1-2</td>
+<td>The high-level domain(s) of the lesson, for a general categorization.</td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td><code>python</code></td>
+<td>1-3</td>
+<td>The main tool(s) taught in the lesson.</td>
+</tr>
+<tr class="odd">
+<td>Skills</td>
+<td><code>taxonomic-classification</code></td>
+<td>1-3</td>
+<td>The main skill(s) taught in the lesson.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Categories marked with an asterisk (*) are required in order for a lesson to appear and be appropriately sorted on the <a href="https://carpentries.org/community-lessons/">Community Developed Lessons page</a>.</em></p>
+<p>The Curriculum Team will support you in setting appropriate topic tags for your lesson.
+To help ensure consistency across all lesson repositories
+developed by The Carpentires community,
+please refer to <a href="https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing">this listing</a> of topic tags currently
+in use in The Carpentries Incubator,
+and re-use these values where appropriate,
+creating new topic tags where no pre-existing label exists for your lesson.</p>
+</div>
+<div id="using-github-issue-labels" class="section level2 hasAnchor">
+<h2><span class="header-section-number">A.3</span> Using GitHub Issue Labels<a href="the-carpentries-incubator.html#using-github-issue-labels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>GitHub allows the maintainers of a repository to add contextual information to Issues and Pull Requests in the form of labels.
+Visit the <a href="https://docs.carpentries.org/topic_folders/maintainers/github_labels.html">How to Label Issues page of The Carpentries handbook</a> for a list of the labels used on official Carpentries lesson repositories and to read recommendations on how to use them for your own lesson.</p>
+<div id="using-labels-to-encourage-contributions" class="section level3 hasAnchor">
+<h3><span class="header-section-number">A.3.1</span> Using Labels to Encourage Contributions<a href="the-carpentries-incubator.html#using-labels-to-encourage-contributions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Two labels, used by The Carpentries and in many repositories across GitHub, can be deployed to increase the visibility of your lesson and encourage community members to contribute to its development.</p>
+<p>The <strong>“help wanted”</strong> label should be used to highlight issues with which you would welcome additional help. The Carpentries website includes <a href="https://carpentries.org/help-wanted-issues/">a Help Wanted page</a>, which can automatically list every issue labelled “help wanted” on repositories from The Carpentries, Software Carpentry, Data Carpentry, Library Carpentry, CarpentriesLab, and The Carpentries Incubator.
+Find out how to include issues from your lesson repository on the Help Wanted page by reading the <a href="https://carpentries.org/help-wanted-issues/#for-maintainers">Information for Maintainers</a> on the page itself.</p>
+<p>The <strong>“good first issue”</strong> label should be used to identify issues that would make a good entry point for newcomers looking for a way to contribute to your lesson. The work needed to close an issue with this label would typically not require an extensive knowledge of the structure or intricacies of your lesson repository, or an expert understanding of the content. The “good first issue” label is used so extensively that GitHub provides a page at <a href="https://github.com/swcarpentry/r-novice-gapminder/contribute"><code>[repository URL]/contribute</code></a> for every repository, listing issues with this label.</p>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="guiding-principles.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="technological-introductions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliography.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -360,7 +457,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/carpentries/curriculum-development/edit/master/index.Rmd",
+"link": "https://github.com/carpentries/curriculum-development/edit/master/A1-the-carpentries-incubator.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -368,7 +465,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/carpentries/curriculum-development/blob/master/index.Rmd",
+"link": "https://github.com/carpentries/curriculum-development/blob/master/A1-the-carpentries-incubator.Rmd",
 "text": null
 },
 "download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],

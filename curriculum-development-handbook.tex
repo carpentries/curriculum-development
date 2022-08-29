@@ -120,7 +120,7 @@
 
 \title{The Carpentries Curriculum Development Handbook}
 \author{Erin Becker and François Michonneau}
-\date{2020-09-07}
+\date{2022-08-29}
 
 \begin{document}
 \maketitle
@@ -415,11 +415,63 @@ workshop, is important because it limits the chance of demotivation.
 \hypertarget{our-curriculum-structure}{%
 \chapter{Our curriculum structure}\label{our-curriculum-structure}}
 
-\begin{figure}
-\centering
-\includegraphics{figures/leson-episode-01.png}
-\caption{image of lessons and episodes}
-\end{figure}
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright
+Lesson Program\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+Lesson\strut
+\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
+Episode\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Data Carpentry\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Data Organization in Spreadsheets for Ecologists\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Exporting data\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Data Wrangling and Processing for Genomics\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Assessing Read Quality\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Library Carpentry\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Open Refine\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Faceting and filtering\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+The Unix Shell\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Automating the tedious with loops\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Software Carpentry\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+Plotting and Programming in Python\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Writing Functions\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+R para Análisis Científicos Reproducibles\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Guardando datos\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Data Carpentry lessons are domain-specific, and lessons that are taught together form a ``curriculum''.
 
 \hypertarget{episodes}{%
 \section{Episodes}\label{episodes}}
@@ -472,7 +524,7 @@ the broader Carpentries community.
 \hypertarget{deciding-what-to-teach}{%
 \chapter{Deciding what to teach}\label{deciding-what-to-teach}}
 
-As discussed in an \href{https://carpentries.github.io/curriculum-development/conceptual-elements.html\#backward-design}{earlier chapter}, the first step in designing a curriculum according to backward design principles is to
+As discussed in an \protect\hyperlink{backward-design}{earlier chapter}, the first step in designing a curriculum according to backward design principles is to
 identify the practical skills that you aim to teach. This step is absolutely critical to defining the scope of
 your curriculum and to avoid \href{https://en.wikipedia.org/wiki/Scope_creep}{scope creep}, both during initial writing of the lesson materials and later
 community-driven development.
@@ -881,7 +933,7 @@ that each of the distractors helps the instructor figure out
 what concepts learners are having difficulty with.
 
 For example, if learners are learning about subsetting data in \texttt{R} with the \texttt{dplyr}
-functions \texttt{filter()} and \texttt{select()}, you might ask them, using the \texttt{{[}palmerpenguins{]}(https://cran.r-project.org/package=palmerpenguins)} dataset to determine which of the
+functions \texttt{filter()} and \texttt{select()}, you might ask them, using the \href{https://cran.r-project.org/package=palmerpenguins}{\texttt{palmerpenguins}} dataset to determine which of the
 following code blocks will return only the values of the ``species'' and ``body\_mass\_g'' variables
 for observations from the Dream island collected after 2007.
 
@@ -927,7 +979,7 @@ subsetting by row and \texttt{select()} is for subsetting by column.
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{penguins }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{select}\NormalTok{(species, body_mass_g) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(species, body_mass_g) }\OperatorTok{%>%}
 \StringTok{  }\KeywordTok{filter}\NormalTok{(island }\OperatorTok{==}\StringTok{ "Dream"} \OperatorTok{&}\StringTok{ }\NormalTok{year }\OperatorTok{>}\StringTok{ }\DecValTok{2007}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
@@ -952,7 +1004,7 @@ will help ensure that the feedback is useful.
 The process of developing diagnostic plausible distractors takes time and requires some
 knowledge of what common
 misconceptions are for a particular topic. This knowledge can come through teaching experience
-(yourself or others') and is sometimes formally defined through \href{}{concept inventories}.
+(yourself or others') and is sometimes formally defined through \href{https://en.wikipedia.org/wiki/Concept_inventory}{concept inventories}.
 One strength of The Carpentries community is that our lessons are taught over and over again
 by different Instructors in different teaching contexts. Some of those Instructors give
 feedback on challenges and misconceptions that their learners had. Our exercises are thus
@@ -1099,7 +1151,7 @@ length.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{./figures/python_scatterplot_example.png}
+\includegraphics[width=7.82in]{./figures/python_scatterplot_example}
 
 They are then asked to create a barchart showing the number of observations in each region
 (or ``plot'') of the field site.
@@ -1126,7 +1178,7 @@ the documentation of the bar geometry to handle the counts)
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{./figures/python_barplot_example.png}
+\includegraphics[width=8.01in]{./figures/python_barplot_example}
 \end{quote}
 
 To answer this problem, learners need to locate and decipher the appropriate help file (for
@@ -1376,7 +1428,7 @@ key points are:
   ``Tab completion can reduce errors from mistyping and make work more efficient in the shell.''
 \end{itemize}
 
-The Carpentries lesson template automatically creates \href{https://datacarpentry.org/shell-genomics/reference/}{a reference page} that includes all of the key points for
+The Carpentries lesson template automatically creates \href{https://datacarpentry.org/shell-genomics/reference.html}{a reference page} that includes all of the key points for
 each episode in the lesson. Key points should be specific enough that learners are able to use this reference
 page as review.
 
@@ -1412,7 +1464,7 @@ and background knowledge. Lessons should also be appropriate for
 learners at different institutions, and not require specialized
 local or institutional knowledge. Our lessons attain this
 broad usability by virtue of being the product of many people
-at differnt institutions around the world who work together
+at different institutions around the world who work together
 in different roles to create, test, and iteratively improve and
 update lesson materials.
 
@@ -1494,20 +1546,20 @@ lesson materials and/or experience working with GitHub and the \protect\hyperlin
 we use to create and host our lessons}. Each
 lesson will have at least two Maintainers, and it's ok for one Maintainer
 to have domain experience and another to be more comfortable with the technical
-aspects of lesson maintainence.
+aspects of lesson maintenance.
 
 \hypertarget{maintainer-recruitment-requirements-and-time-commitment}{%
 \subsection{Maintainer recruitment, requirements and time commitment}\label{maintainer-recruitment-requirements-and-time-commitment}}
 
 It's a good idea to recruit at least four Maintainers per lesson, as our
-community members are volunteers and may have fluxuating levels of time to
+community members are volunteers and may have fluctuating levels of time to
 commit to this role. Having a larger team of Maintainers ensures you'll
 always have
 at least one or two active Maintainers at any given time.
 
 Maintainers commit to a \href{https://docs.carpentries.org/topic_folders/maintainers/maintainers.html\#maintainer-guidelines}{specific set of duties}, and
 go through a short onboarding process to familiarise them with the social,
-technological, and curriculum-specific elements of lesson maintanence.
+technological, and curriculum-specific elements of lesson maintenance.
 This onboarding is available as a \href{https://carpentries.github.io/maintainer-onboarding/}{written curriculum}
 and in future may be made available as a video recording, however, if
 time allows, we recommend running onboarding for your Maintainer group via
@@ -1521,6 +1573,7 @@ Once your Maintainers have been onboarded, they will join The Carpentries
 full \href{https://carpentries.org/maintainers/}{Maintainer team}. This team meets monthly to share
 skills, exchange ideas, and get suggestions from each other around
 challenging issues and pull requests in their individual lesson repositories.
+The minutes for these meetings are stored in the \href{https://github.com/carpentries/maintainer-resources}{Maintainer Resources repository}.
 Meeting times and information about how to stay in touch with the Maintainer
 team is available in \href{https://docs.carpentries.org/topic_folders/maintainers/maintainers.html\#how-to-stay-in-touch}{The Carpentries Handbook}.
 
@@ -1560,7 +1613,7 @@ discuss and make decisions about proposed large-scale
 changes to the lessons within their curriculum. These proposals may be initiated
 by community members, including Maintainers, or by members of the CAC. The CAC
 communicates their recommendations back to the Lesson Maintainers and provides
-consulation and support to Maintainers in implementing proposed changes.
+consulting and support to Maintainers in implementing proposed changes.
 
 Ideally, a Curriculum Advisory Committee should be assembled in the initial
 stages of lesson development, before materials start to be drafted. The CAC
@@ -1711,7 +1764,7 @@ taught by anyone with the appropriate subject knowledge.
 \begin{figure}
 \centering
 \includegraphics{figures/release_timeline.pdf}
-\caption{\label{fig:release-timeline}release timeline}
+\caption{\label{fig:release-timeline}Four stages of lesson release timeline. Pre-alpha stage includes approval of lesson proposal, review of lesson by Editor, and teaching for the first time. Alpha stage inclues incorporating feedback, announcement to the community, community review, and beta release. Beta stage includes other people start contributing and lesson polishing (Bug BBQ). After official release, lesson advances to stable stage.}
 \end{figure}
 
 Lessons start in the \textbf{pre-alpha} stage - this stage
@@ -1747,6 +1800,13 @@ Lesson Program. It is added to The Carpentries
 supported lesson. The lesson is now considered \textbf{stable} and will remain in this stage for as long
 as it has active support from its Maintainer team.
 
+If you require access to cloud compute resources to provide
+environments for instructors and/or learners to use in pilot workshops,
+for example if the lesson content involves specialised compute infrastructure
+or a very large data set,
+The Carpentries may be able to provide some support.
+Contact \href{mailto:team@carpentries.org}{\nolinkurl{team@carpentries.org}} to discuss the options in such cases.
+
 Lessons with grant support may be eligible for
 support from The Carpentries staff in some or all of
 these stages. If you are pursuing grant funding for
@@ -1761,9 +1821,9 @@ Before you start developing a new lesson, check
 to see if there are already people working on creating
 a lesson for this topic.
 The \href{https://github.com/carpentries-incubator/}{Carpentries Incubator} is where our community
-develops new curriculum together.
-New lessons are suggested for development and added to Incubator via the \href{https://github.com/carpentries-incubator/proposals/blob/master/README.md}{Proposals} repository,
-so this is the best place to talk about lesson ideas and find collaborators.
+develops new curricula together.
+New lessons are suggested for development and added to the Incubator via the \href{https://github.com/carpentries-incubator/proposals/}{Proposals} repository,
+so this is the best place to discuss lesson ideas and find collaborators.
 You can check existing \href{https://github.com/carpentries-incubator/proposals/issues}{issues} on that repository
 or start a new issue if you don't see any discussions
 on your lesson topic. The \href{https://github.com/carpentries-incubator/proposals/blob/master/ISSUE_TEMPLATE.md}{issue template} has
@@ -1792,7 +1852,7 @@ tracks:
 \begin{figure}
 \centering
 \includegraphics{figures/lesson-development-tracks.png}
-\caption{Lesson development tracks}
+\caption{Flowchart of three lesson development tracks. All lessons start with opening issue in carpentries-incubator repository.}
 \end{figure}
 
 \hypertarget{official-track}{%
@@ -1804,7 +1864,7 @@ Curriculum Team will work closely with you from
 pre-alpha through stable release, providing support on
 each step of the process. Your lesson will be
 developed in one of the official Lesson Program GitHub
-organisations.
+organisations and released as an official lesson.
 
 \hypertarget{community-track}{%
 \subsection{Community Track}\label{community-track}}
@@ -1815,8 +1875,8 @@ general interest to our community, the lesson authors
 will complete the development process independently.
 You will develop
 your lesson in the Carpentries Incubator and it will be
-made available through the Incubator
-website. If the lesson attracts a strong community
+made available through the \href{https://carpentries.org/community-lessons/}{Community Developed Lessons page}.
+If the lesson attracts a strong community
 of contributors, it will be considered for adoption
 as an official Carpentries lesson.
 
@@ -1835,7 +1895,7 @@ as high-quality resources.
 \section{Early development (pre-alpha through alpha)}\label{early-development-pre-alpha-through-alpha}}
 
 We will create a repository for you in the appropriate
-GitHub organization, using our
+GitHub organization, using The Carpentries
 \href{https://github.com/carpentries/styles}{lesson template}. You will use the
 guidelines in the first five chapters of this handbook
 to develop your content. The Curriculum Team will
@@ -1845,100 +1905,9 @@ Official Track, authors will meet regularly with
 a member of the Curriculum Team to work through the
 lesson drafting process.
 
-Lessons under community development in the Carpentries Incubator are
-\href{https://carpentries.org/community-lessons/}{listed on The Carpentries website},
-based on topics added to the lesson repository.
-Some topics are essential, while others are more flexible.
-See the table below for guidance about the types and number of topics each
-lesson repository should have.
-
-\begin{longtable}[]{@{}llll@{}}
-\toprule
-\begin{minipage}[b]{0.26\columnwidth}\raggedright
-category\strut
-\end{minipage} & \begin{minipage}[b]{0.26\columnwidth}\raggedright
-example\strut
-\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
-number\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-description\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-lesson*\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{lesson}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-Must be \texttt{lesson} to be listed on the Community Developed Lessons page.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-location*\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{carpentries-incubator}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\texttt{carpentries-incubator} or \texttt{carpentrieslab}.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-language*\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{español}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-\textgreater0\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-The language(s) the lesson is available in.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-stage*\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{alpha}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-The current development stage for the lesson. Read on for more info.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-domain\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{microbial-ecology}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-1-2\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-The high-level domain(s) of the lesson, for a general categorization.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-tools\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{python}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-1-3\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-The main tool(s) taught in the lesson.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-skills\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\texttt{taxonomic-classification}\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
-1-3\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-The main skill(s) taught in the lesson.\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\_Categories marked with an asterisk (*) are essential.\_
-
-The Curriculum Team will support you in setting topics for your lesson.
-To help ensure consistency across our lesson repositories,
-please refer to \href{https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing}{this listing} of topics currently
-in use in The Carpentries Incubator,
-and re-use these values where appropriate,
-creating new topics where no pre-existing label exists for your lesson.
+Lessons on the Community Track will be developed in the Carpentries Incubator.
+\href{the-carpentries-incubator.html}{This Appendix} aims to provide
+information and further guidance for Incubator lesson developers.
 
 \hypertarget{field-testing-alpha-stage}{%
 \section{Field testing: alpha stage}\label{field-testing-alpha-stage}}
@@ -1952,13 +1921,24 @@ reality. The initial feedback gathered during these first
 workshops is really important.
 
 During alpha pilot workshops, instructors and helpers should take detailed notes, including:
-- amount of time used to teach each section
-- amount of time used for each exercise
-- technical issues that arose during installation
-- bugs or parts of the lesson code that didn't work as expected
-- incorrect or missing exercise solutions
-- questions learners asked (and their answers)
-- parts of the lesson that were confusing for learners
+
+\begin{itemize}
+\tightlist
+\item
+  amount of time used to teach each section
+\item
+  amount of time used for each exercise
+\item
+  technical issues that arose during installation
+\item
+  bugs or parts of the lesson code that didn't work as expected
+\item
+  incorrect or missing exercise solutions
+\item
+  questions learners asked (and their answers)
+\item
+  parts of the lesson that were confusing for learners
+\end{itemize}
 
 These notes can be collected in an Etherpad, Google Doc, or other collaborative document that is shared
 with co-instructors and workshop helpers. This document should not be shared with workshop learners,
@@ -1975,6 +1955,9 @@ now ready to be published. For lessons on the Official
 Track, our Curriculum Team will create a publication
 record on \href{https://zenodo.org/communities/carpentries/?page=1\&size=20}{Zenodo}. Lesson authors on the Community or CarpentriesLab tracks
 may also choose to publish their lesson on Zenodo. At this stage, the lesson is in \textbf{beta}.
+
+\href{https://docs.carpentries.org/}{The Carpentries Community Handbook} contains
+\href{https://docs.carpentries.org/topic_folders/lesson_development/lesson_pilots.html}{guidance and templates to help you organise and run pilot workshops}.
 
 \hypertarget{polishing-beta-stage}{%
 \section{Polishing: beta stage}\label{polishing-beta-stage}}
@@ -2008,16 +1991,35 @@ will convert those notes to issues and PRs to resolve concerns
 raised during the workshop. Maintainers and other community members
 will be involved with this clean-up phase as well.
 
-After this polishing process, and a final check by a member of the
-Curriculum Team, your lesson will be published again on Zenodo,
-this time in its \textbf{stable state}. Official Track lessons will be added to
+\hypertarget{stable-stage}{%
+\section{Stable stage}\label{stable-stage}}
+
+After the polishing process, the lesson is ready to be marked as stable.
+
+\hypertarget{official-track-1}{%
+\subsection{Official Track}\label{official-track-1}}
+
+Lessons that have completed beta testing go through a final check by a member of the
+Curriculum Team, before being published again on Zenodo,
+this time in its \textbf{stable state}.
+
+Official Track lessons will be added to
 the appropriate Lesson Program lessons page (e.g.~\href{https://datacarpentry.org/lessons/}{Data Carpentry's lessons page})
 and to our \href{http://carpentries.org/request-workshop}{workshop request form}. Anyone may now request a centrally-organized
 Carpentries workshop using this curriculum.
+Stable official lessons are also eligible for trainee Instructors to teach from in
+\href{https://carpentries.github.io/instructor-training/checkout/index.html\#3-teaching-demonstration}{a teaching demonstration} for their Instructor Training checkout.
+
+The Curriculum Team will recommend suitable starting points for teaching demonstrations using the lesson,
+and will submit these to the Instructor Training Leadership for and review and addition to the
+list of approved lessons for demonstrations.
+
+\hypertarget{communitycarpentries-lab-track}{%
+\subsection{Community/Carpentries Lab track}\label{communitycarpentries-lab-track}}
 
 For lessons on the CarpentriesLab track, authors will submit their stable stage lessons for review.
-The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience and/o
-r appropriate domain expertise, who will provide an open and friendly review of the lesson.
+The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience
+and/or appropriate domain expertise, who will provide an open and friendly review of the lesson.
 After incorporating feedback and comments from the reviewers, your lesson will be badged
 ``Reviewed by the Carpentries Community'' and will be listed on our websites as such. During this process,
 you will have the possibility to include a short paper describing your
@@ -2328,10 +2330,10 @@ This will show up like this:
 \end{enumerate}
 
 \begin{verbatim}
-| Category | Item | 
+| Category | Item |
 |--------- | ---- |
 | Food     | Sandwich |
-| Drink    | Tea | 
+| Drink    | Tea |
 | Food     | Apple |
 \end{verbatim}
 
@@ -2565,7 +2567,16 @@ information.
 \hypertarget{special-notes-on-rmarkdown}{%
 \subsection{Special notes on RMarkdown}\label{special-notes-on-rmarkdown}}
 
-Coming soon!
+It is also possible to write episodes in \href{https://rmarkdown.rstudio.com/index.html}{RMarkdown},
+to be executed and rendered as pages via
+an automated step in the lesson template configuration.
+
+To learn more about how to incorporate RMarkdown documents as episodes in a lesson,
+please read \href{https://carpentries.github.io/lesson-example/05-rmarkdown-example/index.html}{the Using RMarkdown section of The Carpentries Lesson Example}.
+The Lesson Example page assumes the reader is already familiar with
+the Rmarkdown framework.
+For those wishing to get started with writing in RMarkdown,
+\href{https://bookdown.org/yihui/rmarkdown/}{this online book provides an excellent introduction}.
 
 \hypertarget{working-on-github}{%
 \section{Working on GitHub}\label{working-on-github}}
@@ -2633,6 +2644,987 @@ repository for reference while revising.
 
 If you choose to contribute via GitHub, you may want to look at
 \href{https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github}{How to Contribute to an Open Source Project on GitHub}.
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{the-carpentries-incubator}{%
+\chapter{The Carpentries Incubator}\label{the-carpentries-incubator}}
+
+The Carpentries Incubator is where The Carpentries community develops
+curricula together.
+It is intended to serve as a place to find and contribute to lessons
+that members of our community are developing with the approaches
+and infrastructure introduced in this handbook.
+
+\hypertarget{lesson-proposals}{%
+\section{Lesson Proposals}\label{lesson-proposals}}
+
+Proposals to begin development of a new lesson in the Incubator,
+and to transfer existing material
+(regardless of its current state/stage of development) into the Incubator,
+can be made by opening an issue on the \href{https://github.com/carpentries-incubator/proposals/}{Proposals GitHub repository}.
+The requirements are minimal for a proposal to be accepted,
+predominantly designed to maintain consistency across the community's lessons.
+The \href{https://github.com/carpentries-incubator/proposals/blob/master/README.md}{README of that repository} contains
+more detailed guidance for those who wish to submit a proposal.
+
+\hypertarget{topic-tags}{%
+\section{Topic Tags}\label{topic-tags}}
+
+Lessons under community development in the Carpentries Incubator are
+\href{https://carpentries.org/community-lessons/}{listed on The Carpentries website},
+based on metadata describing the lesson.
+This metadata is added in the form of topic tags on the lesson repository.
+These topic tags should be set as soon as possible after the lesson has been
+created or added to the Incubator.
+Some are essential and taken from a limited set of values,
+while others are more flexible.
+See the table below for guidance about the types and number of topic tags each
+lesson repository should have.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+Category\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+Example\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
+Number\strut
+\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Lesson*\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{lesson}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+Must be \texttt{lesson} to be listed on the Community Developed Lessons page.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Location*\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{carpentries-incubator}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\texttt{carpentries-incubator} or \texttt{carpentrieslab}.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Language*\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{español}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+\textgreater0\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+The language(s) the lesson is available in.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Stage*\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{alpha}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+The current development stage for the lesson. See \href{https://cdh.carpentries.org/the-lesson-life-cycle.html\#overview-and-definitions}{Chapter 7} for more info.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Domain\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{microbial-ecology}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+1-2\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+The high-level domain(s) of the lesson, for a general categorization.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Tools\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{python}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+1-3\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+The main tool(s) taught in the lesson.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+Skills\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{taxonomic-classification}\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+1-3\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+The main skill(s) taught in the lesson.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\emph{Categories marked with an asterisk (*) are required in order for a lesson to appear and be appropriately sorted on the \href{https://carpentries.org/community-lessons/}{Community Developed Lessons page}.}
+
+The Curriculum Team will support you in setting appropriate topic tags for your lesson.
+To help ensure consistency across all lesson repositories
+developed by The Carpentires community,
+please refer to \href{https://docs.google.com/spreadsheets/d/1KkmBtCu4PaNb5nzJAD82UHcfHQlaPY84qPVxw8WO8es/edit?usp=sharing}{this listing} of topic tags currently
+in use in The Carpentries Incubator,
+and re-use these values where appropriate,
+creating new topic tags where no pre-existing label exists for your lesson.
+
+\hypertarget{using-github-issue-labels}{%
+\section{Using GitHub Issue Labels}\label{using-github-issue-labels}}
+
+GitHub allows the maintainers of a repository to add contextual information to Issues and Pull Requests in the form of labels.
+Visit the \href{https://docs.carpentries.org/topic_folders/maintainers/github_labels.html}{How to Label Issues page of The Carpentries handbook} for a list of the labels used on official Carpentries lesson repositories and to read recommendations on how to use them for your own lesson.
+
+\hypertarget{using-labels-to-encourage-contributions}{%
+\subsection{Using Labels to Encourage Contributions}\label{using-labels-to-encourage-contributions}}
+
+Two labels, used by The Carpentries and in many repositories across GitHub, can be deployed to increase the visibility of your lesson and encourage community members to contribute to its development.
+
+The \textbf{``help wanted''} label should be used to highlight issues with which you would welcome additional help. The Carpentries website includes \href{https://carpentries.org/help-wanted-issues/}{a Help Wanted page}, which can automatically list every issue labelled ``help wanted'' on repositories from The Carpentries, Software Carpentry, Data Carpentry, Library Carpentry, CarpentriesLab, and The Carpentries Incubator.
+Find out how to include issues from your lesson repository on the Help Wanted page by reading the \href{https://carpentries.org/help-wanted-issues/\#for-maintainers}{Information for Maintainers} on the page itself.
+
+The \textbf{``good first issue''} label should be used to identify issues that would make a good entry point for newcomers looking for a way to contribute to your lesson. The work needed to close an issue with this label would typically not require an extensive knowledge of the structure or intricacies of your lesson repository, or an expert understanding of the content. The ``good first issue'' label is used so extensively that GitHub provides a page at \href{https://github.com/swcarpentry/r-novice-gapminder/contribute}{\texttt{{[}repository\ URL{]}/contribute}} for every repository, listing issues with this label.
+
+\hypertarget{bibliography}{%
+\chapter{Bibliography}\label{bibliography}}
+
+\hypertarget{adapting-existing-lessons-for-the-carpentries}{%
+\chapter{Adapting Existing Lessons for The Carpentries}\label{adapting-existing-lessons-for-the-carpentries}}
+
+A guide for those wishing to adapt existing lesson materials,
+written/published in formats other than The Carpentries lesson template,
+to conform to the requirements for inclusion in a Carpentries lesson program
+or The Carpentries Incubator.
+
+\hypertarget{lesson-template}{%
+\section{Lesson Template}\label{lesson-template}}
+
+Below are some suggested approaches to incorporate previously-written
+lesson content into The Carpentries lesson template.
+Unfortunately we cannot provide detailed instructions or automated conversion
+for content in every format,
+but this section includes suggested workflows to adapt content in several
+of the most common formats for lessons teaching software and data skills.
+
+\hypertarget{conversion-from-jupyter}{%
+\section{Conversion from Jupyter}\label{conversion-from-jupyter}}
+
+Jupyter notebooks in \texttt{.ipynb} format can be converted to Markdown via
+\emph{File} -\textgreater{} \emph{Download as} -\textgreater{} \emph{Markdown (.md)} in the graphical Notebooks interface
+or by using \href{https://nbconvert.readthedocs.io/en/latest/}{the \texttt{nbconvert} command line tool}.
+
+\href{utils/convert_ipynb.py}{The \texttt{convert\_ipynb.py} Python script},
+based on the \texttt{convert.py} script written by \href{https://www.allendowney.com/wp/}{Allen Downey} while developing the
+\href{https://datacarpentry.github.io/astronomy-python}{Data Carpentry Astronomy curriculum},
+processes Jupyter Notebooks such that, afterwards,
+the Markdown derived from them
+can be more readily incorporated into The Carpentries Lesson Template.
+The script makes some assumptions about what your Jupyter notebooks will look like
+(e.g.~it looks for third-level headings beginning ``Exercise'' to define exercise blocks),
+but it may save you some time if you have a large number of notebooks containing
+a lot of code blocks etc.
+
+To be rendered as episodes of a lesson site,
+the resulting Markdown generated from the \texttt{.ipynb} files processed by \texttt{convert\_ipynb.py}
+will need to have \protect\hyperlink{add-yaml-front-matter}{YAML front matter} added, before being placed in the \texttt{\_episodes} directory of a lesson repository (see \protect\hyperlink{markdown}{Markdown} below).
+
+\hypertarget{conversion-from-rmarkdown}{%
+\section{Conversion from RMarkdown}\label{conversion-from-rmarkdown}}
+
+Lesson content written with RMarkdown can be directly included in the lesson template, by adding RMarkdown episodes to the \texttt{\_episodes\_rmd} directory.
+
+\href{https://carpentries.github.io/lesson-example/05-rmarkdown-example/}{The \emph{Using Rmarkdown} episode of the Lesson Example}
+provides more details of how to write episodes in RMarkdown.
+Briefly, the important points are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  You must \protect\hyperlink{add-yaml-front-matter}{add the episode front matter}
+  just as you would for standard Markdown.
+\item
+  You should commit your RMarkdown files to the \texttt{main} branch.
+  The lesson build workflows have been configured such that
+  any RMarkdown files commited to the \texttt{\_episodes\_rmd} directory
+  in the \texttt{main} branch of the GitHub lesson repository
+  will be converted to standard Markdown and copied to
+  the \texttt{\_episodes} directory of the \texttt{gh-pages} branch,
+  where the content will be served by GitHub Pages.
+\item
+  You should use the \texttt{fig.alt} parameter to define the alternative text
+  property for any figures/images created by code chunks in your RMarkdown.
+\item
+  You will need to write the lesson landing page (\texttt{index.md}),
+  installation/setup instructions (\texttt{setup.md}),
+  Instructor Notes (\texttt{guide.md}),
+  and glossary/reference guide (\texttt{reference.md})
+  in standard Markdown.
+\end{enumerate}
+
+\hypertarget{conversion-from-other-formats}{%
+\section{Conversion from other formats}\label{conversion-from-other-formats}}
+
+\href{https://pandoc.org/}{Pandoc} is a universal format conversion tool,
+which may be able to help when converting other formats
+(e.g.~ReStructured Text) to Markdown.
+
+\hypertarget{markdown}{%
+\section{Markdown}\label{markdown}}
+
+Whether you have lesson content already in Markdown (e.g.~from GitBook)
+or converted to Markdown from a Jupyter Notebook or any other format,
+there are some additional steps you will need to take to make this content
+compatible with the lesson template:
+
+\hypertarget{set-up-a-lesson-repository}{%
+\subsection{Set up a lesson repository}\label{set-up-a-lesson-repository}}
+
+For lessons being submitted to \href{https://cdh.carpentries.org/the-lesson-life-cycle.html\#where-to-start}{The Carpentries Incubator}:
+create a new issue to
+\href{https://github.com/carpentries-incubator/proposals}{the Incubator Proposals repository}
+to request a new lesson repository.
+After accepting an invitation, sent by email,
+to join the \texttt{carpentries-incubator} organisation,
+you will receive full administrative access to a new lesson repository
+with some brief instructions to help you get started.
+
+For lessons being developed outside The Carpentries Incubator:
+follow \href{https://carpentries.github.io/lesson-example/setup.html}{the setup instructions in the Lesson Example}.
+
+\textbf{A note about the license and code of conduct}:
+\href{https://github.com/carpentries/styles/blob/gh-pages/LICENSE.md}{Carpentries lessons use the Creative Commons Attribution version 4.0 (CC-BY) license for lesson material, and the MIT license for any software and example code included in the lesson repository}.
+Laws vary from country to country but,
+as a general rule,
+\textbf{changing the license of a project requires explicit agreement}
+\textbf{from all previous contributors to the repository}.
+You should make sure that you have obtained this agreement
+before you transfer the material
+into the lesson repository (which already includes the license file),
+or clearly state that you are re-using material originally created elsewhere
+(if the license of the existing material allows this).
+Similarly, \textbf{we require that all lessons follow \href{https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html}{our Code of Conduct}},
+and you should make sure that you and all of your collaborators have read and
+understand this document, and that your existing lesson material complies with
+the policies described in it, before you begin working in the new repository.
+
+\hypertarget{add-yaml-front-matter}{%
+\subsection{Add YAML Front Matter}\label{add-yaml-front-matter}}
+
+The Jekyll engine that renders sites on GitHub Pages
+identifies Markdown files to build into webpages based on the presence of
+\href{https://carpentries.github.io/lesson-example/04-formatting/index.html\#episode-header}{a header section},
+known as \href{https://jekyllrb.com/docs/front-matter/}{\emph{front matter}},
+which is located at the top of the file.
+\href{https://cdh.carpentries.org/technological-introductions.html\#episode-files}{The \emph{Technological Introductions} chapter}
+details the fields that must be present in this YAML header.
+Note: episode files written in RMarkdown must include an additional line,
+\texttt{source:\ Rmd}, to be rendered correctly.
+
+If your lesson already includes statements of learning objectives/outcomes,
+questions, and/or key points for each section,
+this information should be transferred to the YAML header
+for the respective episodes.
+
+\hypertarget{add-alt-text-to-images}{%
+\subsection{\texorpdfstring{Add \emph{alt} Text to Images}{Add alt Text to Images}}\label{add-alt-text-to-images}}
+
+To increase the accessibility of Carpentries lessons,
+all images should include a short, descriptive \emph{alternative text} property.
+In Markdown, alternative text (alt text) is added between the \texttt{{[}{]}} of the
+image definition, i.e.
+
+\texttt{!{[}Image\ alt\ text{]}(path/to/image/file.svg)}
+
+Accessibility consultants Deque provide
+\href{https://www.deque.com/blog/great-alt-text-introduction/}{a good overview of the important things to consider when writing alt text},
+and a Medium post from \href{https://twitter.com/AmyCesal}{Amy Cesal} gives
+\href{https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81}{guidance on alt text for data visualisations}.
+
+\hypertarget{add-to-_episodes}{%
+\subsection{\texorpdfstring{Add to \texttt{\_episodes}}{Add to \_episodes}}\label{add-to-_episodes}}
+
+To be built by Jekyll and included in the navigation of the resulting lesson site,
+Markdown files with front matter should be located in the \texttt{\_episodes} directory of
+your lesson repository.
+Other files needed for a lesson, but not located in the \texttt{\_episodes} directory,
+include the lesson landing page (\texttt{index.md}),
+the installation/setup instructions (\texttt{setup.md}),
+Instructor Notes as an aid to those teaching the lesson (\texttt{guide.md}),
+and the glossary/reference guide (\texttt{reference.md}).
+You can find more complete information about these files, and others included in
+the lesson template, in \href{https://carpentries.github.io/lesson-example/03-organization/index.html\#starter-files}{the \emph{Lesson Organization} episode of the Lesson Example}.
+
+\hypertarget{organise-supporting-files}{%
+\subsection{Organise supporting files}\label{organise-supporting-files}}
+
+Images used as figures in the lesson should be stored in the \texttt{fig} directory,
+example code in the \texttt{code} directory,
+and example data in \texttt{data}.
+Any other supporting files that do not fit into the previous three categories
+can be placed in \texttt{files}.
+Remember to adjust any internal links in your lesson to match the new locations
+of these files.
+
+\hypertarget{implement-formatted-blocks}{%
+\subsection{Implement formatted blocks}\label{implement-formatted-blocks}}
+
+Some of the key visual elements of a Carpentries lesson are the
+boxes used for callouts, lesson prerequisites, exercises, solutions, etc.
+You should add the appropriate formatting to any relevant parts of your
+lesson, so that they render correctly.
+Generally speaking, this involves converting these elements to blockquotes
+followed by a tag that applies a CSS class to the preceding block.
+
+See \href{https://carpentries.github.io/lesson-example/04-formatting/index.html\#special-blockquotes}{the \emph{Formatting} episode of the Lesson Example}
+for details and examples.
+That page also includes more information about the best way to display
+code blocks in the lesson template.
+
+\hypertarget{recommended-centralise-link-references}{%
+\subsection{(Recommended) Centralise Link References}\label{recommended-centralise-link-references}}
+
+To reduce the effort associated with modifying the target URLs of
+links in your lesson if/when they change,
+you can collect all these target URLs as Markdown link references,
+in the format \texttt{{[}link-ref{]}:\ https://carpentries.org},
+in the \texttt{\_includes/links.md} file of the lesson repository.
+
+You can then refer to these with the syntax \texttt{{[}link\ text{]}{[}link-ref{]}}
+after adding \texttt{\{\%\ include\ links.md\ \%\}} to the very bottom of the page content.
+
+\hypertarget{complete-lesson-repository-setup}{%
+\subsection{Complete Lesson Repository Setup}\label{complete-lesson-repository-setup}}
+
+To finish setting up your lesson repository
+
+\begin{itemize}
+\tightlist
+\item
+  fill in any fields marked ``FIXME'' in the lesson \texttt{README.md} and/or \texttt{\_config.yml}
+\item
+  list the names of current and past maintainers in the lesson \texttt{README.md}
+\item
+  update the \texttt{AUTHORS} and \texttt{CITATION} files in the lesson repository
+\item
+  add the lesson URL and
+  \href{https://cdh.carpentries.org/the-carpentries-incubator.html\#topic-tags}{topic tags}
+  to the \emph{Description} of your lesson repository on GitHub
+\end{itemize}
+
+\hypertarget{lesson-sprint-recommendations}{%
+\chapter{Lesson Sprint Recommendations}\label{lesson-sprint-recommendations}}
+
+One way of making progress and encouraging collaboration on the development
+of a lesson is to organise a dedicated event such as a co-working session
+or a lesson development sprint.
+A co-working session is typically a shorter, less formal event bringing
+people together to work simultaneously on the lesson.
+The co-working session might include brief check-ins for the group to discuss
+progress and next steps, but most of the time will be spent working on the lesson
+independently or in small groups.
+A sprint is typically a longer, more structured event designed to welcome and
+bring onboard new contributors to the lesson project.
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+The following set of recommendations,
+written by members of The Carpentries community,
+is intended to guide lesson authors through the process of
+organising a lesson sprint.
+The recommendations are relevant to a lesson sprint consisting of a single session
+or in multiple sessions with breaks between,
+whether on one day or multiple consecutive days.
+We have tried to note where a particular recommendation is only relevant or
+particularly relevant to a sprint being run across multiple days/sessions.
+These recommendations were written with a particular focus on sprints taking place
+virtually, i.e.~with participants meeting by video conference,
+but many of the recommendations
+(especially those in the \protect\hyperlink{before-the-sprint}{Before}
+and \protect\hyperlink{after-the-sprint}{After} sections)
+are also relevant to in-person events.
+
+\hypertarget{target-audience-1}{%
+\subsection{Target Audience}\label{target-audience-1}}
+
+The target reader is one of the lead developers/maintainers of a lesson under active development
+e.g.~in \href{https://github.com/carpentries-incubator/}{The Carpentries Incubator}.
+They should already have a clear idea of the target audience and main learning objectives for their lesson,
+even if they haven't started writing the actual material yet -
+see the \protect\hyperlink{lesson-planning}{\emph{Planning your lesson}} section for more details
+of the steps we recommend you take with your lesson before it is time for a sprint.
+They may be planning to teach the lesson for the first time,
+or have recently taught it for the first time,
+and now want to improve the lesson material based on feedback collected when teaching.
+
+If you in the stage where you are not yet clear on the target audience or the overall learning objectives for your lesson, we suggest you work through \href{https://cdh.carpentries.org/deciding-what-to-teach.html}{the \emph{Deciding what to teach} chapter of this handbook} before returning to this guide.
+
+\hypertarget{objectives}{%
+\subsection{Objectives}\label{objectives}}
+
+Provide practical tips and more theoretical guidance about how to:
+
+\begin{itemize}
+\tightlist
+\item
+  organise an inclusive and accessible sprint
+\item
+  make the most of a dedicated lesson sprint
+\item
+  create coherent lesson material from individual contributions made during the sprint
+\item
+  engage contributors before, during, and after the lesson sprint
+\end{itemize}
+
+\hypertarget{before-the-sprint}{%
+\section{Before the Sprint}\label{before-the-sprint}}
+
+\begin{itemize}
+\item
+  \textbf{Establish an organising committee.} Organising the sprint will be much easier if there are multiple people involved in planning and running the event.
+  Aim to establish an organising committee with members from diverse backgrounds who can bring a broad perspective to create an accessible and inclusive event for your participants.
+  If you have more than 2 people, be sure to assign roles and responsibilities to avoid diffusion of responsibility.
+\item
+  \textbf{Select a code of conduct.} If your lesson repository already has a code of conduct,
+  apply it to the sprint and associated events too.
+  If your lesson repository does not already have a code of conduct, add one.
+  Like licenses, we do not recommend that you write your own code of conduct from scratch.
+  Instead, re-use/adapt an existing text you find online.
+  We recommend \href{https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html}{The Carpentries Code of Conduct},
+  which was designed with exactly these kinds of project in mind.
+  Assign at least one person as the contact person/facilitator for
+  matters relating to the Code of Conduct,
+  and make sure all sprint participants are aware of who this is and how they should connect with them.
+  You can do this by including their details in the ``primer'' information
+  you provide to participants before the event
+  and by introducing them when you mention the code of conduct
+  at the start of the sprint itself.
+\item
+  \textbf{Set up a planning meeting/call for the committee} Use this meeting to agree on the dates, event format and
+  the target audience in sufficient detail and high-level objectives of your sprint.
+  Document your discussions and plans in a central location so that everyone involved in the process can access them.
+  Divide responsibilities to put together resources (such as for communication and norms) that will be shared with all participants. (See below for more details.)
+\item
+  \textbf{Consider participants' roles and expertise.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Do you have a team with diverse skillsets and topic knowledge required to meet your high-level objectives? If not, consider finding and inviting other people.
+  \end{itemize}
+\item
+  \textbf{Establish communication channels and norms.} This will set an expectation for how collaborators will communicate before, during, and after the sprint.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Dedicated messaging channels have been used with success for conversations/short updates during the sprint and in-between sprint conversations.
+    See \protect\hyperlink{during-the-sprint}{During the Sprint} for more details.
+  \item
+    Mailing lists for initial organisation and other important and more permanent communication, e.g.~scheduling meetings.
+  \item
+    \textbf{{[}Online{]}} Video conferencing technology that is an accessible choice for everyone and suitable for the format of the sprint.
+  \item
+    Decide on the basic etiquette for participation, such as how to collect ideas, who to contact for support, how to participate in an ongoing discussion, how to contribute to content development and how to review contributions.
+  \item
+    Choose a collaborative note-taking platform for recording and communicating decisions, minutes and actions from meetings. (See \protect\hyperlink{tools-and-resources}{the tools section} for details of some different note taking platforms.)
+  \end{itemize}
+\item
+  \textbf{Think about the timing of your sprint.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You can run the sprint in conjunction with an upcoming event, e.g.~a conference/meeting that many in your community will already be engaged with.
+    If you would like to attract new contributors, this will make it easier to get people's attention and
+    convince them to block time in their calendar to join in with the sprint.
+    You may also be able to tap into the promotional communications etc. for that event,
+    and/or invite people to join the sprint, e.g.~via a lightning talk or poster.
+  \item
+    Conversely, you may want to avoid clashes with another event if your team is going to be engaged elsewhere or have other commitments.
+  \item
+    Announce the dates for your sprint at least 6 weeks in advance.
+  \end{itemize}
+\item
+  \textbf{Add dates and time in your calendar}: In addition to the event dates, schedule a few planning meetings with the committee members \emph{before} the sprint and one meeting/co-working session \emph{after} the sprint for wrap-up/follow-up tasks.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    When possible, offer a pre-event onboarding call that can be used for sharing all the relevant resources and setting expectations around what to expect at the event.
+  \end{itemize}
+\item
+  \textbf{Scope out what content will be worked on.}
+  Defining objectives and which sections/aspects of the lesson should be worked on during the sprint
+  will reduce the energy/time required for contributors to begin working and help to keep efforts focused during the event.
+  This guidance might be in the form of a list on a shared document or open issues on the lesson repository and do not need to contain much detail.
+  You do not need to micromanage individual contributions,
+  but a summary of each key objective can serve as a starting point for discussions between collaborators about the best approach to reach those goals.
+\item
+  \textbf{Create a resource for good practices for lesson design.} This resource should be shared with all the participants to assist them in designing lessons to be as effective as possible.
+  Consult \href{https://cdh.carpentries.org}{the rest of this Handbook}
+  for recommendations that you and your collaborators can follow when creating the lesson material during the sprint.
+\item
+  \textbf{Prepare a video call link for all sprint sessions.}
+  \textbf{{[}Online{]}} If your sprint is taking place across multiple sessions,
+  or will include multiple video calls between participants, try to provide a single meeting link for them all.
+  This will save contributors time when returning to the sprint calls, e.g.~for a check-in session or after a break.
+\item
+  \textbf{Communicate participation information and send reminders before the Sprint}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Send short reminders a week and a day before the Sprint, with time and date, video conferencing URL, note docs and any prior preparation work
+  \item
+    If prior reading/preparation is required, give at least a week lead time
+  \item
+    Think of a way to let participants withdraw their participation/leave early/join late comfortably; this helps especially for folks juggling with multiple responsibilities
+  \end{itemize}
+\item
+  \textbf{Use time zone-converted event links for remote participants.}
+  \textbf{{[}Online{]}} For sprints running online with the potential for participants from multiple
+  regions/time zones,
+  it is vital to announce time(s) and date(s) for your sprint in a way that
+  allows visitors to see the equivalent in their local time.
+  Always list event timings in UTC and use tools like \href{https://timeanddate.com}{timeanddate.com} to provide an automatic conversion to local time.
+\item
+  \textbf{Promote the sprint widely.} You might want to promote your upcoming sprint to attract contributors beyond your current team.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You can use mailing lists, Slack channels, Newsletters, Twitter and direct invitation to reach your desired participant groups.
+  \item
+    When possible, offer financial support to people who may want to participate but may have special needs to facilitate their participation for the duration of the event (for example, childcare for in-person, high-speed internet for remote events).
+  \item
+    Consider whether you need a system to track participation for the Sprint, e.g.~a Google Form/Eventbrite page
+
+    \begin{itemize}
+    \tightlist
+    \item
+      You may not need this if you already have dedicated communication channels (see ``establish communication channels and norms'') and the Sprint is open to everyone in those channels
+    \item
+      You may want to collect additional information from participants, e.g.~if there are multiple parallel discussion topics, which discussion they'd like to participate in; dietary requirements and emergency contact information for in-person events; accessibility needs and time zone for virtual events
+    \item
+      Tools like Eventbrite allow organisers to easily send emails to all attendees, e.g.~reminders and follow-ups.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Prepare a ``sprint primer'' document and publish it.}
+  Provide participants in advance with a single document that provides all the information they need to know before joining (or deciding to join) the sprint:
+  what steps do they need to take to register,
+  to attend/connect,
+  to prepare?
+  What can they expect when they join?
+  What will the format be?
+  What roles will there be within the group?
+  In what different ways can participants contribute during the sprint?
+  What channels will be used for communication?
+  What is the schedule?
+  Take everything you have been preparing from the other recommendations in this list and put all that information into this document so your (potential) participants can refer to it before and during the sprint.
+  See \href{https://docs.google.com/document/d/1IwnClDjruY9yLmJEUjz-JvRptxqaLsiOTieUlgVbry8/edit?usp=sharing}{this primer document from the CarpentryCon@Home 2020 sprint}
+  on \href{https://librarycarpentry.org/lc-fair-research/}{the Library Carpentry FAIR Data and Software lesson}.
+\end{itemize}
+
+There is a number of tools that in combination could be used for running effective curriculum development sprints - we cover a good number of tried and tested technologies under \protect\hyperlink{tools-and-resources}{the tools section}.
+
+\hypertarget{before-the-sprint-recommendations-for-github}{%
+\subsection{Before The Sprint: Recommendations for GitHub}\label{before-the-sprint-recommendations-for-github}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Review open issues on your lesson repository} before the sprint
+  and consider flagging (labelling) existing issues and opening new ones to describe tasks
+  that could be tackled during the event.
+  \href{https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards}{GitHub Projects}
+  can help with this,
+  allowing you to label particular issues within scope for the sprint
+  and even organise them further into categories to help contributors find something to work on.
+  Even if you cannot invest time into managing issues to this extent,
+  make sure open issues include all the contextual information necessary
+  for a new or part-time contributor to understand what needs doing
+  and whether they can help.
+\end{itemize}
+
+\hypertarget{during-the-sprint}{%
+\section{During the Sprint}\label{during-the-sprint}}
+
+\begin{itemize}
+\item
+  \textbf{Enable access to documents for shared note-taking.}
+  When possible store all the shareable documents in a central repository or shared drive so they are easy to find.
+  One main document should be created to share links to all the resources that will be used for the sprint.
+  This document should be kept visible to all participants and persist beyond the end of the sprint.
+\item
+  \textbf{Run a ``sprint primer'' session.} A primer session helps contributors get oriented with the structure of your lesson and its associated repository,
+  the setup required to work on the lesson
+  (e.g.~local builds to preview lesson webpages),
+  and the communication channels that will be used during and in-between the sprint sessions.
+  You could run this primer session a week or two days before the sprint begins.
+  This can also be the first session of the sprint event before co-working sessions begin.
+\item
+  \textbf{Start the video conference call 10 mins ahead of official start time. {[}Online{]}} To allow newcomers and first-time participants to get familiar with tools, test audio and video set up, warm up, etc.
+\item
+  \textbf{Record information about participants and contributions.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Start your event by asking people to sign-in to the shared document by providing names, \href{https://orcid.org/}{ORCID identifiers}, \href{https://github.com}{GitHub usernames}, and any other identifiers/handles that can be used to acknowledge their contributions.
+    You can also ask you the participant to optionally provide their pronouns to ensure that everyone is addressed with their preferred pronouns.
+  \item
+    When working on an online repository, you can use issues to describe and assign tasks.
+    This can also be directly done on the shared notes that everyone has access to.
+    This helps to avoid duplication of effort during the sprint,
+    and gives participants a way of coordinating additional discussions
+    among themselves where appropriate to make progress on a task.
+  \item
+    Prompt participants to add their details to the shared notes,
+    so you can refer to it later and ensure everyone's contributions are recorded and proper credit is
+    given when publishing the lesson.
+  \end{itemize}
+\item
+  \textbf{Divide co-working sessions with scheduled check-ins}
+  Plan your sprint to have several co-working sessions that are followed by check-ins or report outs to allow contributors to reflect on their progress.
+  This will also allow them to share what they've achieved, what's blocking their progress, where they would like some feedback and what they intend to do next.
+  We recommend using a web-based shared clock such as \href{https://cuckoo.team/}{cuckoo.team} to keep track of co-working, share-out and breaks.
+\item
+  \textbf{Record the check-ins.}
+  If technically possible, and provided all participants consent,
+  record these check-ins (video or written) so that those who could not join can catch up
+  on the latest progress when they (re-)join the sprint.
+  This is particularly important for sprints taking place
+  across multiple sessions/days and/or a wide range of time zones.
+  These check-in discussions can end by taking extensive notes in the shared document.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Assign roles for check-ins.}
+    To ensure everyone has an equal chance to contribute to the discussion
+    and the sprint,
+    the lead organiser(s) should assign meeting roles for the check-in calls.
+    To further promote equity of participation,
+    these roles should be rotated for each day of the sprint,
+    or each separate sprint event.
+    Roles may include:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      a \emph{Facilitator} who coordinates the discussion and keeps it moving,
+      watching out for raised hands and making sure those with something to contribute
+      get the chance to do so;
+    \item
+      a \emph{Timekeeper} who monitors the time remaining for the check-in and
+      ensures that all topics are covered in a timely fashion.
+      The Timekeeper prompts the
+      Facilitator/speaker to move on when necessary to cover everything.
+    \item
+      an \emph{Issue/Task Creator}, who keeps track of actions that arise from the check-in discussion and creates an issue or describes the task in the shared notes.
+    \item
+      a \emph{Notetaker}, who takes minutes of what is discussed in the check-in.
+      In some instances, it may be possible to combine the roles of Notetaker and Task Creator.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Consider participants' roles and expertise.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Consider the power dynamics in the group, e.g.~if you have PIs and early-career PhD candidates participating, have seperate breakout rooms for each of those groups so participants can comfortably discuss with peers (but report out at the end so folks can learn from other perspectives), have a moderator who keeps track how much folks are speaking and provide space and (gentle) prompts to encourage the lesser-spoken folks to speak, etc
+  \end{itemize}
+\item
+  \textbf{Use a chat channel for communication outside check-ins.}
+  To allow participants to ``unplug'' from video calls/move to separate locations for the bulk of the sprint,
+  use a text-based chat such as Slack or Gitter for discussion when not
+  checking in.
+  If your chosen platform allows it, minimise global notifications
+  to sprint participants by making use of threaded conversations.
+  This will allow contributors to focus on their chosen task unless involved in
+  a conversation directly relevant to them.
+\item
+  \textbf{Prepare breakout rooms for small group discussion and co-working between check-ins.}
+  \textbf{{[}Online{]}} Open a small number of break out rooms for sprint participants to use during working sessions.
+  This allows the participants to self-organize if they need to discuss something they are working on or co-work on a particular task.
+  In Zoom, select the option to ``Let participants choose room''.
+  For \textbf{{[}in-person{]}} sprints, prepare an equivalent set of different rooms/locations
+  for participants to gather and discuss in smaller groups without fear of
+  disturbing the whole team.
+\item
+  \textbf{Provide a way for contributors to mark their work ready for review.}
+  If you prefer to require material is reviewed before being included in the lesson,
+  give participants a way to signal when their contributions are ready.
+  You might consider providing guidance/assigning responsibility for reviewers
+  of particular sections/types of contribution.
+  If your lesson is being developed on GitHub, see the section below for more
+  specific recommendations.
+\item
+  \textbf{Reviewing contributions.}
+  Allocate 1-2 sessions in the sprint to review and approve contributions made by others.
+  If this is not planned in the event, sprints may end with an influx of new material as contributors finish up what they were working on as the event closed.
+  Make sure that each contribution is reviewed and if possible (and where appropriate), merged into the lesson.
+  This allows contributors to leave the event with a sense of accomplishment from the sprint,
+  and ties up any loose ends before new tasks are taken on to develop the material further.
+  If the participants who were originally assigned to review have had to leave before the review session,
+  the organisers should delegate the review task to those who are available and willing to help finish the review process on time.
+\item
+  \textbf{Ask for feedback.}
+  Allocate a short feedback session before closing the event.
+  Feedback should be kept short and recorded anonymously via a feedback form or shared document (that does not require signing in).
+  Ask your participants to reflect on the event in terms of what worked and what can be improved.
+\end{itemize}
+
+\hypertarget{during-the-sprint-recommendations-for-github}{%
+\subsection{During the Sprint: Recommendations for GitHub}\label{during-the-sprint-recommendations-for-github}}
+
+\begin{itemize}
+\item
+  \textbf{Consider running a skill-up session for contributors.}
+  Depending on their previous experience with the platform,
+  contributors may benefit from learning/being reminded how to use GitHub,
+  working on branches/forks,
+  and the associated tools on their local system.
+  Providing a session/resources on this will also make your sprint less
+  intimidating for newcomers to lesson development,
+  which may increase participation.
+  \href{https://gitpod.io/}{GitPod} may offer a way for participants to contribute to the lesson
+  without the need for setting up a local development environment.
+  As with the ``primer'' session mentioned above,
+  this skill-up may fit best at the beginning of the sprint.
+  This can also run as a separate event
+  that takes place in the days leading up to the full sprint.
+\item
+  \textbf{Flag pull requests as a draft and ready for review as you work.}
+  Opening draft pull requests early, while work on a task is ongoing,
+  can help contributors understand where progress is being made and identify
+  tasks/issues that still need to be tackled.
+  Marking pull requests as ready for review helps maintainers prioritise their
+  focus during the sprint and maintains momentum by ensuring that completed work
+  is merged into the lesson as soon as possible.
+  Opening draft pull requests is particularly important at the end of a sprint,
+  to capture progress up to that point even if a task hasn't yet been completed.
+\item
+  \textbf{Plan who will review pull requests.}
+  Make a plan for who will review each pull request (PR).
+  As a group, you can create a list of reviewers by subject so the person who opens the pull request knows who is interested and capable of reviewing and can request a review accordingly.
+  Alternatively, you may decide on a circle of reviewers. E.g. Aaliyah reviews Juan's PRs, Juan reviews Alex's PRs, and Alex reviews Aaliyah's PRs.
+  Another option might be to ask for a reviewer when planning who will do the task.
+  For particularly small groups where reviewing is more likely to become a bottleneck, or in cases where the main objective of the sprint is to create quantity rather than quality, you may decide it is acceptable for contributors to merge their own pull requests.
+\item
+  \textbf{Link pull requests to open issues.}
+  Mentioning open issues in pull requests (even when a work in progress)
+  informs people about which issues are being worked on.
+  As mentioned in the point above, this is particularly useful to ensure progress
+  can continue on the lesson after the sprint has finished.
+\item
+  \textbf{Record contributions that do not (directly) result in commits.}
+  Some participants may be more comfortable writing material on a different platform
+  e.g.~Google Docs, which is later transferred to GitHub by someone else.
+  Make use of GitHub's \href{https://github.blog/2018-01-29-commit-together-with-co-authors/}{commit co-author} feature where possible or,
+  if the author does not have a GitHub account,
+  make sure their name and other details are included in your README, AUTHORS,
+  or any other listing/metadata about contributors to the project
+  (\texttt{.zenodo.json}, \texttt{.allcontributorsrc}, etc).
+\item
+  \textbf{Review open pull requests.}
+  At the end of the sprint, organisers should ensure that any pull requests marked as ready for review are processed and (where appropriate) merged,
+  so that these contributions are not forgotten or left to go stale before changes can be requested.
+\end{itemize}
+
+\hypertarget{after-the-sprint}{%
+\section{After the Sprint}\label{after-the-sprint}}
+
+\begin{itemize}
+\item
+  \textbf{Celebrate the progress.}
+  Though lesson development is an iterative process, every contribution counts towards the completion of a lesson.
+  It is, therefore, important to celebrate the progress you and your colleagues make at the lesson development sprint.
+  Take a break (if you can) before meeting the organising committee for a debrief call.
+\item
+  \textbf{List completed and outstanding tasks.}
+  Create GitHub issues or share a document to highlight the status of different tasks.
+  Set a deadline for the completion of outstanding tasks to share online with all the contributors.
+  These will help you and other contributors understand the next steps when working together on the lesson as well as continue working on the lesson asynchronously.
+\item
+  \textbf{Plan the next steps!}
+  Review the shared documents from the sprint and highlight successes and place for improvements to include in a report.
+  Feedback and reflections from running a sprint often inform a new set of changes and updates to be made in the event format or lesson material, discuss and document those for planning the next events.
+  Plan to host a periodic co-working call to keep collaborators engaged or schedule the next sprint to
+  ensure that momentum is maintained on the lesson.
+\item
+  \textbf{Write up a report and share it with your contributors.}
+  A summary of progress made and next steps (with links to open issues/work-in-progress pull requests)
+  will help you and your contributors appreciate the progress made during your sprint,
+  and encourage efforts on the lesson to continue.
+  Consider turning this overview into a blog post to share your experience and achievements with the wider community!
+\item
+  \textbf{Contribute to these recommendations.}
+  While organising and running your sprint, did you find any useful resources or steps not already covered
+  in this guide?
+  Do you have any advice or guidance for others who may follow these recommendations in future?
+  If so, please contribute back to improve this resource!
+  To tell us about changes you would like to see to these recommendations,
+  please email the authors (\texttt{tobyhodges@\ carpentries.org}),
+  \href{https://github.com/carpentries/docs.carpentries.org/issues/new}{open an issue}
+  or contribute your changes directly in a \href{https://github.com/carpentries/docs.carpentries.org/pulls}{new pull request}.
+\end{itemize}
+
+\hypertarget{after-the-sprint-recommendations-for-github}{%
+\subsection{After the Sprint: Recommendations for GitHub}\label{after-the-sprint-recommendations-for-github}}
+
+\begin{itemize}
+\item
+  \textbf{Capture outstanding tasks in new issues on the lesson repository.}
+  You may also wish to assign these to specific contributors for follow up after the sprint.
+\item
+  \textbf{Label issues to encourage asynchronous contributions.}
+  Issue labels, such as ``help-wanted'' and ``good-first-issue,'' provide valuable information to potential contributors
+  about where their contributions could be most valuable and how they could begin to get involved with developing
+  your lesson.
+  Issues labelled ``good first issue'' will appear automatically on the \texttt{/contribute} page of your repository,
+  providing a quick overview of ways to get involved that have a low barrier for entry.
+  Other labels can be used in a similar way to automatically display listings of issues to potential contributors.
+  For example, The Carpentries publishes \href{https://carpentries.org/help-wanted-issues/}{a Help Wanted page} that provides their community with an overview of
+  open issues with the ``help-wanted'' label on many of their repositories.
+\item
+  \textbf{Clean up branches on your repository.}
+  Sprints often leave behind a large number of merged branches that can be removed from the lesson repository.
+  Minimising the number of ``stale'' branches reduces clutter on your repository, allows contributors to name their branches without fear of an unintentional clash
+  and helps people working with local branches.
+\end{itemize}
+
+\hypertarget{tools-and-resources}{%
+\section{Tools and Resources}\label{tools-and-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://cuckoo.team/}{Cuckoo}
+  is a \textbf{shared countdown timer} for collaborative co-working sessions.
+  Create a page and share the URL with your contributors;
+  everyone connected to the page will be notified when the set countdown ends.
+  Shared timers such as this can be useful to help coordinate sprint
+  sessions between check-ins.
+\item
+  \href{https://www.gitpod.io/}{GitPod}
+  provides \textbf{a cloud-based development environment} for projects.
+  The service can deliver an interactive development environment for a project
+  on GitHub, with dependencies and environment setup already taken care of,
+  allowing contributors to begin working on a project without needing to
+  deal with this overhead on their local machine.
+  \href{https://www.gitpod.io/docs/configuration/}{The GitPod documentation provides instructions to configure your project to use the service}.
+\item
+  \textbf{Shared note-taking} tools:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://etherpad.org/}{Etherpad}
+    provides a relatively simple shared note-taking interface.
+    Useful features include
+    colouring to differentiate contributions from individual participants,
+    an integrated chat window,
+    and line numbering.
+    Open Etherpad services include FIXME
+  \item
+    \href{https://hedgedoc.org/}{HedgeDoc} (formerly CodiMD)
+    provides an interface for collaborative writing in Markdown.
+    Useful features include
+    a split-panel view for simultaneous editing and previewing,
+    built-in support for concept mapping with \href{http://graphviz.org/}{GraphViz} and
+    \href{https://mermaid-js.github.io/mermaid/\#/}{Mermaid.js},
+    and line numbering.
+    \href{https://codimd.carpentries.org/}{The Carpentries provides a CodiMD instance for use in activities and events relating to their community},
+    and \href{https://hackmd.io/}{HackMD} and \href{https://cryptpad.fr/code/}{Cryptpad}
+    provide similar, free services to a general audience.
+  \item
+    \href{https://docs.google.com/}{Google Docs}
+    provides an interface for collaborative writing similar
+    word processing software such as Microsoft Word.
+    Useful features include threaded comments,
+    a mode for suggesting changes instead of directly editing the document,
+    and visual formatting without the need for text markup.
+  \end{itemize}
+\item
+  \href{https://www.timeanddate.com/}{timeanddate.com}
+  provides many \textbf{services related to conversion between time zones}.
+  Useful features include
+  a meeting planner suggesting suitable times for events with attendees in multiple regions,
+  an event announcement system displaying the start time and date of an event converted to the visitor's locale,
+  and a time zone converter to check what time it is right now in another location around the world.
+\item
+  \href{https://calendar.google.com}{Google Calendar} and other
+  \textbf{timezone-aware calendar applications}
+  can be used to create entries for your event that will automatically
+  display in the local time of the person viewing the page/entry.
+  Alongside listing event times in UTC with a link to timeanddate.com (see above),
+  timezone-aware calendar events are essential to make your sprint inclusive to an international community.
+\item
+  \href{https://cdh.carpentries.org/}{The Carpentries Curriculum Development Handbook}
+  provides \textbf{an overview of the backwards design approach} recommended for lesson development by The Carpentries.
+  It includes guidance on identifying the target audience of your lesson,
+  defining meaningful learning objectives,
+  designing appropriate examples and exercises,
+  and the various stages of the lesson life cycle.
+\item
+  \href{https://slack.com/}{Slack}
+  provides a workplace \textbf{messaging platform} for threaded text discussion.
+  Useful features include multiple open and private channels,
+  document and image sharing,
+  and a wide range of plugins to interface with other systems.
+  Some features require a paid subscription.
+  Members of The Carpentries community can
+  create a channel for discussion around development of their lesson in
+  \href{https://swc-slack-invite.herokuapp.com/}{the organisation's Slack workspace}
+\item
+  \href{https://gitter.im/}{Gitter} is another \textbf{instant messaging service}.
+  It lacks some of the features of Slack but does not require a paid plan
+  to remove limits on usage and it integrates well with GitHub,
+  e.g.~by allowing references to particular repositories, issues, and pull requests.
+\end{itemize}
+
+These and many other tools that could be useful for organising and running your sprint are also described in \href{https://the-turing-way.netlify.app/collaboration/remote-collab/remote-collab-tools.html}{the Tools for Remote Collaboration} chapter of \href{https://the-turing-way.netlify.app/}{The Turing Way}.
+
+\hypertarget{acknowledgments}{%
+\section{Acknowledgments}\label{acknowledgments}}
+
+\href{https://github.com/tobyhodges/lesson-sprint-recommendations}{These recommendations were originally developed in a separate GitHub repository} by
+Steve Crouch,
+Toby Hodges,
+Zhian Kamvar,
+Aleksandra Nenadic,
+Malvika Sharan,
+Sarah Stevens,
+and Emmy Tsang.
+Ideas, suggestions, and guidance were provided by
+Sarah Alidoost,
+Chris Erdmann,
+Kristina Hettne,
+and Liz Stokes.
+
+\hypertarget{further-reading}{%
+\section{Further Reading}\label{further-reading}}
+
+\begin{itemize}
+\tightlist
+\item
+  The \href{https://the-turing-way.netlify.app/collaboration/collaboration.html}{Guide for Collaboration} section of The Turing Way has many more recommendations and guides to help your team collaborate effectively. \href{https://the-turing-way.netlify.app/welcome.html}{Many other sections of the book} are also relevant.
+\item
+  The Turing Way's \href{https://the-turing-way.netlify.app/community-handbook/bookdash.html}{process for organising and running a Book Dash} has many similarities to the recommendations made here for lesson sprints. We recommend that you explore this resource, which also includes checklist and schedule templates that could fit a lesson sprint with some minor adjustments.
+\item
+  In addition to \href{https://cdh.carpentries.org/}{the rest of this Handbook}, Greg Wilson's \href{https://teachtogether.tech}{Teaching Tech Together} provides a more in-depth overview of the reverse design approach to lesson development as well as many useful pointers for teaching and collaborating.
+\item
+  \href{https://carpentries.github.io/instructor-training/}{The Carpentries Instructor Training curriculum} is another valuable source of advice for writing and teaching lessons.
+\end{itemize}
 
   \bibliography{book.bib}
 

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Designing challenges | The Carpentries Curriculum Development Handbook</title>
   <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
-  <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Designing challenges | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
   <meta name="github-repo" content="carpentries/curriculum-development" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Erin Becker and François Michonneau" />
 
 
-<meta name="date" content="2020-09-07" />
+<meta name="date" content="2022-08-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,8 @@
   
 <link rel="prev" href="deciding-what-to-teach.html"/>
 <link rel="next" href="developing-content.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,8 +49,29 @@
 
 
 
-
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://carpentries.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '11']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/carpentries.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 
 
 <style type="text/css">
@@ -117,6 +138,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -203,7 +225,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.4" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"><i class="fa fa-check"></i><b>7.4</b> Early development (pre-alpha through alpha)</a></li>
 <li class="chapter" data-level="7.5" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#field-testing-alpha-stage"><i class="fa fa-check"></i><b>7.5</b> Field testing: alpha stage</a></li>
 <li class="chapter" data-level="7.6" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#polishing-beta-stage"><i class="fa fa-check"></i><b>7.6</b> Polishing: beta stage</a></li>
-<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.7</b> The stable lesson: Maintenance and lesson releases</a></li>
+<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#stable-stage"><i class="fa fa-check"></i><b>7.7</b> Stable stage</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track-1"><i class="fa fa-check"></i><b>7.7.1</b> Official Track</a></li>
+<li class="chapter" data-level="7.7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#communitycarpentries-lab-track"><i class="fa fa-check"></i><b>7.7.2</b> Community/Carpentries Lab track</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.8</b> The stable lesson: Maintenance and lesson releases</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a><ul>
 <li class="chapter" data-level="8.1" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-hosting-and-rendering"><i class="fa fa-check"></i><b>8.1</b> Lesson hosting and rendering</a></li>
@@ -216,6 +242,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.2.6" data-path="technological-introductions.html"><a href="technological-introductions.html#special-notes-on-rmarkdown"><i class="fa fa-check"></i><b>8.2.6</b> Special notes on RMarkdown</a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html"><i class="fa fa-check"></i><b>A</b> The Carpentries Incubator</a><ul>
+<li class="chapter" data-level="A.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#lesson-proposals"><i class="fa fa-check"></i><b>A.1</b> Lesson Proposals</a></li>
+<li class="chapter" data-level="A.2" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#topic-tags"><i class="fa fa-check"></i><b>A.2</b> Topic Tags</a></li>
+<li class="chapter" data-level="A.3" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-github-issue-labels"><i class="fa fa-check"></i><b>A.3</b> Using GitHub Issue Labels</a><ul>
+<li class="chapter" data-level="A.3.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-labels-to-encourage-contributions"><i class="fa fa-check"></i><b>A.3.1</b> Using Labels to Encourage Contributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>B</b> Bibliography</a></li>
+<li class="chapter" data-level="C" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html"><i class="fa fa-check"></i><b>C</b> Adapting Existing Lessons for The Carpentries</a><ul>
+<li class="chapter" data-level="C.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#lesson-template"><i class="fa fa-check"></i><b>C.1</b> Lesson Template</a></li>
+<li class="chapter" data-level="C.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-jupyter"><i class="fa fa-check"></i><b>C.2</b> Conversion from Jupyter</a></li>
+<li class="chapter" data-level="C.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-rmarkdown"><i class="fa fa-check"></i><b>C.3</b> Conversion from RMarkdown</a></li>
+<li class="chapter" data-level="C.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-other-formats"><i class="fa fa-check"></i><b>C.4</b> Conversion from other formats</a></li>
+<li class="chapter" data-level="C.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#markdown"><i class="fa fa-check"></i><b>C.5</b> Markdown</a><ul>
+<li class="chapter" data-level="C.5.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#set-up-a-lesson-repository"><i class="fa fa-check"></i><b>C.5.1</b> Set up a lesson repository</a></li>
+<li class="chapter" data-level="C.5.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-yaml-front-matter"><i class="fa fa-check"></i><b>C.5.2</b> Add YAML Front Matter</a></li>
+<li class="chapter" data-level="C.5.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-alt-text-to-images"><i class="fa fa-check"></i><b>C.5.3</b> Add <em>alt</em> Text to Images</a></li>
+<li class="chapter" data-level="C.5.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-to-_episodes"><i class="fa fa-check"></i><b>C.5.4</b> Add to <code>_episodes</code></a></li>
+<li class="chapter" data-level="C.5.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#organise-supporting-files"><i class="fa fa-check"></i><b>C.5.5</b> Organise supporting files</a></li>
+<li class="chapter" data-level="C.5.6" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#implement-formatted-blocks"><i class="fa fa-check"></i><b>C.5.6</b> Implement formatted blocks</a></li>
+<li class="chapter" data-level="C.5.7" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#recommended-centralise-link-references"><i class="fa fa-check"></i><b>C.5.7</b> (Recommended) Centralise Link References</a></li>
+<li class="chapter" data-level="C.5.8" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#complete-lesson-repository-setup"><i class="fa fa-check"></i><b>C.5.8</b> Complete Lesson Repository Setup</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html"><i class="fa fa-check"></i><b>D</b> Lesson Sprint Recommendations</a><ul>
+<li class="chapter" data-level="D.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#introduction"><i class="fa fa-check"></i><b>D.1</b> Introduction</a><ul>
+<li class="chapter" data-level="D.1.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#target-audience-1"><i class="fa fa-check"></i><b>D.1.1</b> Target Audience</a></li>
+<li class="chapter" data-level="D.1.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#objectives"><i class="fa fa-check"></i><b>D.1.2</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="D.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint"><i class="fa fa-check"></i><b>D.2</b> Before the Sprint</a><ul>
+<li class="chapter" data-level="D.2.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.2.1</b> Before The Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.3" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint"><i class="fa fa-check"></i><b>D.3</b> During the Sprint</a><ul>
+<li class="chapter" data-level="D.3.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.3.1</b> During the Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.4" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint"><i class="fa fa-check"></i><b>D.4</b> After the Sprint</a><ul>
+<li class="chapter" data-level="D.4.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.4.1</b> After the Sprint: Recommendations for GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="D.5" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#tools-and-resources"><i class="fa fa-check"></i><b>D.5</b> Tools and Resources</a></li>
+<li class="chapter" data-level="D.6" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#acknowledgments"><i class="fa fa-check"></i><b>D.6</b> Acknowledgments</a></li>
+<li class="chapter" data-level="D.7" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#further-reading"><i class="fa fa-check"></i><b>D.7</b> Further Reading</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/carpentries/curriculum-development/blob/master/CITATION" target="blank">Cite this handbook</a></li>
@@ -239,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="designing-challenges" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Designing challenges</h1>
+<div id="designing-challenges" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 4</span> Designing challenges<a href="designing-challenges.html#designing-challenges" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Now that you have a list of the concrete skills that your learners will develop in your
 workshop, it’s time to start the second step of backward design - designing the
 challenges that you will use to help your learners practice those skills. These challenges
@@ -249,8 +318,8 @@ and re-direct their teaching as needed. Carpentries workshops use real-world
 data to increase the immediate applicability of our lessons and to reduce cognitive load
 for the learner. The first step towards developing the exercises you will use in your
 lessons is to select an appropriate dataset.</p>
-<div id="picking-a-dataset" class="section level2">
-<h2><span class="header-section-number">4.1</span> Picking a dataset</h2>
+<div id="picking-a-dataset" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.1</span> Picking a dataset<a href="designing-challenges.html#picking-a-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The dataset is a critical element of a Carpentries lesson. It needs to be chosen carefully
 and to meet the following criteria.</p>
 <ol style="list-style-type: decimal">
@@ -318,8 +387,8 @@ data suitable for research re-use. Learners should be able to use these datasets
 and guides for their own research data that they would like to publish and make available to
 the broad scientific and academic community.</p>
 </div>
-<div id="formatting-the-dataset-for-teaching" class="section level2">
-<h2><span class="header-section-number">4.2</span> Formatting the dataset for teaching</h2>
+<div id="formatting-the-dataset-for-teaching" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.2</span> Formatting the dataset for teaching<a href="designing-challenges.html#formatting-the-dataset-for-teaching" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A possible challenge when using research datasets for teaching is that the dataset can
 include complexity that makes teaching more difficult by unnecessarily increasing
 learners’ cognitive load. While it is important for the dataset to
@@ -341,8 +410,8 @@ version of the data. Don’t introduce too many (no more than three) versions of
 your lessons, as dealing with many files and remembering their differences can become
 challenging for the learners.</p>
 </div>
-<div id="designing-challenges-1" class="section level2">
-<h2><span class="header-section-number">4.3</span> Designing challenges</h2>
+<div id="designing-challenges-1" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.3</span> Designing challenges<a href="designing-challenges.html#designing-challenges-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Once the dataset is in place, you can start to
 design challenges that provide learners an opportunity to practice the skills that you’ve
 included in your skills list. Writing the challenges before writing the content of the lesson ensures that the
@@ -365,8 +434,8 @@ the most likely to be “unscaffolded”, and so are easier to develop without d
 knowledge of the various types of exercises discussed later in this chapter. So you
 can go ahead and draft those final challenges now before reading the rest!</p>
 </div>
-<div id="different-types-of-challenges" class="section level2">
-<h2><span class="header-section-number">4.4</span> Different types of challenges</h2>
+<div id="different-types-of-challenges" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.4</span> Different types of challenges<a href="designing-challenges.html#different-types-of-challenges" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There are many different types of challenge questions that can be developed. In this
 section, we introduce a few common types of challenges, in order of increasing
 difficulty (for the learner). When planning your exercises, keep in mind that you will
@@ -377,8 +446,8 @@ seats) by 20. For example, a two hour lesson needs around six exercises.
 As a rough estimate, plan 8 minutes for each exercise
 (including discussion of the solution and questions) and 12 minutes of instructional time
 between exercises.</p>
-<div id="multiple-choice-questions" class="section level3">
-<h3><span class="header-section-number">4.4.1</span> Multiple Choice Questions</h3>
+<div id="multiple-choice-questions" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.4.1</span> Multiple Choice Questions<a href="designing-challenges.html#multiple-choice-questions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Multiple choice questions (MCQs) can be a useful tool for formative assessment if they are
 designed such that each incorrect answer helps the Instructor to identify learners’
 misconceptions. Each incorrect answer should be a <em>plausible distractor</em> with <em>diagnostic power</em>.
@@ -386,7 +455,7 @@ misconceptions. Each incorrect answer should be a <em>plausible distractor</em> 
 that each of the distractors helps the instructor figure out
 what concepts learners are having difficulty with.</p>
 <p>For example, if learners are learning about subsetting data in <code>R</code> with the <code>dplyr</code>
-functions <code>filter()</code> and <code>select()</code>, you might ask them, using the <code>[palmerpenguins](https://cran.r-project.org/package=palmerpenguins)</code> dataset to determine which of the
+functions <code>filter()</code> and <code>select()</code>, you might ask them, using the <a href="https://cran.r-project.org/package=palmerpenguins"><code>palmerpenguins</code></a> dataset to determine which of the
 following code blocks will return only the values of the “species” and “body_mass_g” variables
 for observations from the Dream island collected after 2007.</p>
 <ol style="list-style-type: lower-alpha">
@@ -409,7 +478,7 @@ subsetting by row and <code>select()</code> is for subsetting by column.</p>
 <li></li>
 </ol>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="designing-challenges.html#cb3-1"></a>penguins <span class="op">%&gt;%</span></span>
-<span id="cb3-2"><a href="designing-challenges.html#cb3-2"></a><span class="st">  </span><span class="kw">select</span>(species, body_mass_g) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-2"><a href="designing-challenges.html#cb3-2"></a><span class="st">  </span><span class="kw">select</span>(species, body_mass_g) <span class="op">%&gt;%</span></span>
 <span id="cb3-3"><a href="designing-challenges.html#cb3-3"></a><span class="st">  </span><span class="kw">filter</span>(island <span class="op">==</span><span class="st"> &quot;Dream&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2007</span>)</span></code></pre></div>
 <p>Learners who select this answer have a conceptual misunderstanding that may require more
 time and effort to correct. They haven’t understood that the pipe (<code>%&gt;%</code>) character only
@@ -429,15 +498,15 @@ will help ensure that the feedback is useful.</p>
 <p>The process of developing diagnostic plausible distractors takes time and requires some
 knowledge of what common
 misconceptions are for a particular topic. This knowledge can come through teaching experience
-(yourself or others’) and is sometimes formally defined through <a href="">concept inventories</a>.
+(yourself or others’) and is sometimes formally defined through <a href="https://en.wikipedia.org/wiki/Concept_inventory">concept inventories</a>.
 One strength of The Carpentries community is that our lessons are taught over and over again
 by different Instructors in different teaching contexts. Some of those Instructors give
 feedback on challenges and misconceptions that their learners had. Our exercises are thus
 continuously improved by pooling the teaching experience of our 1,500+ strong Instructor
 community!</p>
 </div>
-<div id="parsons-problems" class="section level3">
-<h3><span class="header-section-number">4.4.2</span> Parson’s problems</h3>
+<div id="parsons-problems" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.4.2</span> Parson’s problems<a href="designing-challenges.html#parsons-problems" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>One reason well-designed multiple choice questions are so useful is that they constrain
 the problem space. Learners don’t need to worry about all of the details of syntax and how
 to spell all of the variable names, but can focus on just the concepts that the exercise
@@ -465,8 +534,8 @@ teaching accordingly (because there are more possible responses). As will all of
 types we will discuss in this chapter, MCQs and Parson’s problems can be used in combination
 to provide learners with both structure and appropriate levels of challenge.</p>
 </div>
-<div id="fill-in-the-blank-problems" class="section level3">
-<h3><span class="header-section-number">4.4.3</span> Fill-in-the-blank problems</h3>
+<div id="fill-in-the-blank-problems" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.4.3</span> Fill-in-the-blank problems<a href="designing-challenges.html#fill-in-the-blank-problems" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Fill-in-the blank problems can be thought of as the next level of decreasing structure after
 MCQs and Parson’s problems (although this depends on the number of lines in the Parson’s
 problem and the number of possible choices for filling in the blanks, among other factors).
@@ -474,7 +543,7 @@ The following challenge (from the Software Carpentry lesson on
 <a href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a>) illustrates one possible
 application of fill-in-the-blank problems:</p>
 <blockquote>
-<h3 id="challenge-moving-to-the-current-folder" class="unnumbered">Challenge: Moving to the Current Folder</h3>
+<h3 id="challenge-moving-to-the-current-folder" class="unnumbered hasAnchor">Challenge: Moving to the Current Folder<a href="designing-challenges.html#challenge-moving-to-the-current-folder" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>After running the following commands, Jamie realizes that she put the files
 <code>sucrose.dat</code> and <code>maltose.dat</code> into the wrong folder:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="designing-challenges.html#cb6-1"></a>$ <span class="fu">ls</span> -F</span>
@@ -485,7 +554,7 @@ application of fill-in-the-blank problems:</p>
 <p>Fill in the blanks to move these files to the current folder
 (i.e., the one she is currently in):</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="designing-challenges.html#cb7-1"></a>$ <span class="fu">mv</span> ___/sucrose.dat  ___/maltose.dat ___</span></code></pre></div>
-<h3 id="solution" class="unnumbered">Solution</h3>
+<h3 id="solution" class="unnumbered hasAnchor">Solution<a href="designing-challenges.html#solution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="designing-challenges.html#cb8-1"></a>$ <span class="fu">mv</span> ../analyzed/sucrose.dat ../analyzed/maltose.dat .</span></code></pre></div>
 <p>Recall that <code>..</code> refers to the parent directory (i.e. one above the current
 directory) and that <code>.</code> refers to the current directory.</p>
@@ -504,8 +573,8 @@ problems are also called <em>faded examples</em>. We discuss the use of faded ex
 are a useful tool, in more detail in
 <a href="https://carpentries.github.io/instructor-training/05-memory/index.html">our Instructor Training course</a>.</p>
 </div>
-<div id="use-the-concept-in-a-different-context" class="section level3">
-<h3><span class="header-section-number">4.4.4</span> Use the concept in a different context</h3>
+<div id="use-the-concept-in-a-different-context" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.4.4</span> Use the concept in a different context<a href="designing-challenges.html#use-the-concept-in-a-different-context" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Once learners have had an opportunity to practice using a concept in the same context as
 it was originally taught (direct application challenges), it’s time to stretch their
 understanding by asking them to apply the same concept in a different context. This adds
@@ -522,20 +591,20 @@ length.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="designing-challenges.html#cb10-1"></a>surveys_plot <span class="op">=</span> p9.ggplot(data<span class="op">=</span>surveys_complete,</span>
 <span id="cb10-2"><a href="designing-challenges.html#cb10-2"></a>                         mapping<span class="op">=</span>p9.aes(x<span class="op">=</span><span class="st">&#39;weight&#39;</span>, y<span class="op">=</span><span class="st">&#39;hindfoot_length&#39;</span>))</span>
 <span id="cb10-3"><a href="designing-challenges.html#cb10-3"></a>surveys_plot <span class="op">+</span> p9.geom_point()</span></code></pre></div>
-<p><img src="figures/python_scatterplot_example.png" /><!-- --></p>
+<p><img src="figures/python_scatterplot_example.png" width="282" /></p>
 <p>They are then asked to create a barchart showing the number of observations in each region
 (or “plot”) of the field site.</p>
 <blockquote>
-<h3 id="challenge---bar-chart" class="unnumbered">Challenge - bar chart</h3>
+<h3 id="challenge---bar-chart" class="unnumbered hasAnchor">Challenge - bar chart<a href="designing-challenges.html#challenge---bar-chart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Working on the <code>surveys_complete</code> data set, use the <code>plot-id</code> column to
 create a <code>bar</code>-plot that counts the number of records for each plot. (Check
 the documentation of the bar geometry to handle the counts)</p>
-<h3 id="answers" class="unnumbered">Answers</h3>
+<h3 id="answers" class="unnumbered hasAnchor">Answers<a href="designing-challenges.html#answers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="designing-challenges.html#cb11-1"></a>(p9.ggplot(data<span class="op">=</span>surveys_complete,</span>
 <span id="cb11-2"><a href="designing-challenges.html#cb11-2"></a>           mapping<span class="op">=</span>p9.aes(x<span class="op">=</span><span class="st">&#39;plot_id&#39;</span>))</span>
 <span id="cb11-3"><a href="designing-challenges.html#cb11-3"></a>    <span class="op">+</span> p9.geom_bar()</span>
 <span id="cb11-4"><a href="designing-challenges.html#cb11-4"></a>)</span></code></pre></div>
-<p><img src="figures/python_barplot_example.png" /><!-- --></p>
+<p><img src="figures/python_barplot_example.png" width="288" /></p>
 </blockquote>
 <p>To answer this problem, learners need to locate and decipher the appropriate help file (for
 the <code>geom_bar()</code> function). They also need to change the <code>mapping</code> attribute to apply to “plot_id” rather than “weight” and “hindfoot_length”. Later challenges in this lesson require
@@ -564,7 +633,6 @@ be prepared for feedback from Instructors “in the field” about how to improv
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -583,6 +651,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -603,6 +672,10 @@ gitbook.start({
 "text": null
 },
 "download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
