@@ -192,6 +192,9 @@ Track, our Curriculum Team will create a publication
 record on [Zenodo][zenodo]. Lesson authors on the Community or CarpentriesLab tracks
 may also choose to publish their lesson on Zenodo. At this stage, the lesson is in **beta**.
 
+[The Carpentries Community Handbook](https://docs.carpentries.org/) contains
+[guidance and templates to help you organise and run pilot workshops](https://docs.carpentries.org/topic_folders/lesson_development/lesson_pilots.html).
+
 ## Polishing: beta stage
 
 Now that the lesson has been published, it is ready
@@ -223,16 +226,32 @@ will convert those notes to issues and PRs to resolve concerns
 raised during the workshop. Maintainers and other community members
 will be involved with this clean-up phase as well.
 
-After this polishing process, and a final check by a member of the
-Curriculum Team, your lesson will be published again on Zenodo,
-this time in its **stable state**. Official Track lessons will be added to
+## Stable stage
+
+After the polishing process, the lesson is ready to be marked as stable.
+
+### Official Track
+
+Lessons that have completed beta testing go through a final check by a member of the
+Curriculum Team, before being published again on Zenodo,
+this time in its **stable state**. 
+
+Official Track lessons will be added to
 the appropriate Lesson Program lessons page (e.g. [Data Carpentry's lessons page][dc-lessons])
 and to our [workshop request form][wkshp-request]. Anyone may now request a centrally-organized
 Carpentries workshop using this curriculum.
+Stable official lessons are also eligible for trainee Instructors to teach from in
+[a teaching demonstration](https://carpentries.github.io/instructor-training/checkout/index.html#3-teaching-demonstration) for their Instructor Training checkout.
+
+The Curriculum Team will recommend suitable starting points for teaching demonstrations using the lesson,
+and will submit these to the Instructor Training Leadership for and review and addition to the
+list of approved lessons for demonstrations.
+
+### Community/Carpentries Lab track
 
 For lessons on the CarpentriesLab track, authors will submit their stable stage lessons for review.
-The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience and/o
-r appropriate domain expertise, who will provide an open and friendly review of the lesson.
+The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience 
+and/or appropriate domain expertise, who will provide an open and friendly review of the lesson.
 After incorporating feedback and comments from the reviewers, your lesson will be badged
 "Reviewed by the Carpentries Community" and will be listed on our websites as such. During this process,
 you will have the possibility to include a short paper describing your
