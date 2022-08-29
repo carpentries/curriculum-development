@@ -65,7 +65,7 @@ jobs:
         shell: Rscript {0}
 
       - name: deploy
-        uses: JamesIves/github-pages-deploy-action@4.4.0
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: _book # The folder the action should deploy.
