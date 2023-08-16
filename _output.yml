@@ -11,6 +11,8 @@ bookdown::gitbook:
     edit: https://github.com/carpentries/curriculum-development/edit/master/%s
     view: https://github.com/carpentries/curriculum-development/blob/master/%s
     download: ["pdf", "epub"]
+  includes:
+    before_body: handbook-retirement-notice.html
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
