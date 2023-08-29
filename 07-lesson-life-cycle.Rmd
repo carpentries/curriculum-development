@@ -234,7 +234,7 @@ After the polishing process, the lesson is ready to be marked as stable.
 
 Lessons that have completed beta testing go through a final check by a member of the
 Curriculum Team, before being published again on Zenodo,
-this time in its **stable state**. 
+this time in its **stable state**.
 
 Official Track lessons will be added to
 the appropriate Lesson Program lessons page (e.g. [Data Carpentry's lessons page][dc-lessons])
@@ -250,7 +250,7 @@ list of approved lessons for demonstrations.
 ### Community/Carpentries Lab track
 
 For lessons on the CarpentriesLab track, authors will submit their stable stage lessons for review.
-The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience 
+The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience
 and/or appropriate domain expertise, who will provide an open and friendly review of the lesson.
 After incorporating feedback and comments from the reviewers, your lesson will be badged
 "Reviewed by the Carpentries Community" and will be listed on our websites as such. During this process,
@@ -310,6 +310,6 @@ handbook.
 [lesson-programs]: https://docs.carpentries.org/topic_folders/governance/lesson-program-policy.html
 [lesson-template]: https://github.com/carpentries/styles
 [proposals]: https://github.com/carpentries-incubator/proposals/blob/master/README.md
-[slack]: https://swc-slack-invite.herokuapp.com/
+[slack]: https://slack-invite.carpentries.org/
 [wkshp-request]: http://carpentries.org/request-workshop
 [zenodo]: https://zenodo.org/communities/carpentries/?page=1&size=20

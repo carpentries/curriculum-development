@@ -443,7 +443,7 @@ There is a number of tools that in combination could be used for running effecti
   Some features require a paid subscription.
   Members of The Carpentries community can
   create a channel for discussion around development of their lesson in
-  [the organisation's Slack workspace](https://swc-slack-invite.herokuapp.com/)
+  [the organisation's Slack workspace](https://slack-invite.carpentries.org/)
 - [Gitter](https://gitter.im/) is another **instant messaging service**.
   It lacks some of the features of Slack but does not require a paid plan
   to remove limits on usage and it integrates well with GitHub,
