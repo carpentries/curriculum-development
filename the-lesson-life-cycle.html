@@ -4,26 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 The lesson life-cycle | The Carpentries Curriculum Development Handbook</title>
-  <meta name="description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
-  <meta name="generator" content="bookdown 0.35.1 and GitBook 2.6.7" />
+  <title>7 The lesson life-cycle | The Carpentries Curriculum Development Handbook</title>
+  <meta name="description" content="The curriculum development handbook for The Carpentries (DEPRECATED)." />
+  <meta name="generator" content="bookdown 0.41.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 The lesson life-cycle | The Carpentries Curriculum Development Handbook" />
+  <meta property="og:title" content="7 The lesson life-cycle | The Carpentries Curriculum Development Handbook" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  <meta property="og:description" content="The curriculum development handbook for The Carpentries (DEPRECATED)." />
   <meta name="github-repo" content="carpentries/curriculum-development" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 The lesson life-cycle | The Carpentries Curriculum Development Handbook" />
+  <meta name="twitter:title" content="7 The lesson life-cycle | The Carpentries Curriculum Development Handbook" />
   
-  <meta name="twitter:description" content="This is a work in progress of the curriculum development handbook for The Carpentries." />
+  <meta name="twitter:description" content="The curriculum development handbook for The Carpentries (DEPRECATED)." />
   
 
 <meta name="author" content="Erin Becker and François Michonneau" />
 
 
-<meta name="date" content="2023-09-13" />
+<meta name="date" content="2024-12-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -74,77 +74,12 @@
 <!-- End Matomo Code -->
 
 
-<style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -157,144 +92,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Curriculum Development Handbook</a></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="guiding-principles.html"><a href="guiding-principles.html"><i class="fa fa-check"></i><b>1</b> Guiding principles</a><ul>
-<li class="chapter" data-level="1.1" data-path="guiding-principles.html"><a href="guiding-principles.html#backward-design"><i class="fa fa-check"></i><b>1.1</b> Backward design</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="guiding-principles.html"><a href="guiding-principles.html#identifying-the-practical-skills"><i class="fa fa-check"></i><b>1.1.1</b> Identifying the practical skills</a></li>
-<li class="chapter" data-level="1.1.2" data-path="guiding-principles.html"><a href="guiding-principles.html#designing-challenges-to-assess-understanding"><i class="fa fa-check"></i><b>1.1.2</b> Designing challenges to assess understanding</a></li>
-<li class="chapter" data-level="1.1.3" data-path="guiding-principles.html"><a href="guiding-principles.html#planning-the-content-of-the-lesson"><i class="fa fa-check"></i><b>1.1.3</b> Planning the content of the lesson</a></li>
-</ul></li>
-<li class="chapter" data-level="1.2" data-path="guiding-principles.html"><a href="guiding-principles.html#creating-a-narrative-and-selecting-a-dataset"><i class="fa fa-check"></i><b>1.2</b> Creating a narrative and selecting a dataset</a></li>
-<li class="chapter" data-level="1.3" data-path="guiding-principles.html"><a href="guiding-principles.html#limitations-of-our-approach"><i class="fa fa-check"></i><b>1.3</b> Limitations of our approach</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html"><i class="fa fa-check"></i><b>2</b> Our curriculum structure</a><ul>
-<li class="chapter" data-level="2.1" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#episodes"><i class="fa fa-check"></i><b>2.1</b> Episodes</a></li>
-<li class="chapter" data-level="2.2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#lessons"><i class="fa fa-check"></i><b>2.2</b> Lessons</a></li>
-<li class="chapter" data-level="2.3" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#curricula"><i class="fa fa-check"></i><b>2.3</b> Curricula</a></li>
-<li class="chapter" data-level="2.4" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html#lesson-collections"><i class="fa fa-check"></i><b>2.4</b> Lesson Collections</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html"><i class="fa fa-check"></i><b>3</b> Deciding what to teach</a><ul>
-<li class="chapter" data-level="3.1" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#target-audience"><i class="fa fa-check"></i><b>3.1</b> Target audience</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#audience-definition-questions"><i class="fa fa-check"></i><b>3.1.1</b> Audience definition questions</a></li>
-<li class="chapter" data-level="3.1.2" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#learner-profiles"><i class="fa fa-check"></i><b>3.1.2</b> Learner profiles</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#skills-list"><i class="fa fa-check"></i><b>3.2</b> Skills list</a></li>
-<li class="chapter" data-level="3.3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html#example-using-a-software-carpentry-learner-profile"><i class="fa fa-check"></i><b>3.3</b> Example using a Software Carpentry Learner Profile</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="designing-challenges.html"><a href="designing-challenges.html"><i class="fa fa-check"></i><b>4</b> Designing challenges</a><ul>
-<li class="chapter" data-level="4.1" data-path="designing-challenges.html"><a href="designing-challenges.html#picking-a-dataset"><i class="fa fa-check"></i><b>4.1</b> Picking a dataset</a></li>
-<li class="chapter" data-level="4.2" data-path="designing-challenges.html"><a href="designing-challenges.html#formatting-the-dataset-for-teaching"><i class="fa fa-check"></i><b>4.2</b> Formatting the dataset for teaching</a></li>
-<li class="chapter" data-level="4.3" data-path="designing-challenges.html"><a href="designing-challenges.html#designing-challenges-1"><i class="fa fa-check"></i><b>4.3</b> Designing challenges</a></li>
-<li class="chapter" data-level="4.4" data-path="designing-challenges.html"><a href="designing-challenges.html#different-types-of-challenges"><i class="fa fa-check"></i><b>4.4</b> Different types of challenges</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="designing-challenges.html"><a href="designing-challenges.html#multiple-choice-questions"><i class="fa fa-check"></i><b>4.4.1</b> Multiple Choice Questions</a></li>
-<li class="chapter" data-level="4.4.2" data-path="designing-challenges.html"><a href="designing-challenges.html#parsons-problems"><i class="fa fa-check"></i><b>4.4.2</b> Parson’s problems</a></li>
-<li class="chapter" data-level="4.4.3" data-path="designing-challenges.html"><a href="designing-challenges.html#fill-in-the-blank-problems"><i class="fa fa-check"></i><b>4.4.3</b> Fill-in-the-blank problems</a></li>
-<li class="chapter" data-level="4.4.4" data-path="designing-challenges.html"><a href="designing-challenges.html#use-the-concept-in-a-different-context"><i class="fa fa-check"></i><b>4.4.4</b> Use the concept in a different context</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="developing-content.html"><a href="developing-content.html"><i class="fa fa-check"></i><b>5</b> Developing content</a><ul>
-<li class="chapter" data-level="5.1" data-path="developing-content.html"><a href="developing-content.html#fundamental-elements"><i class="fa fa-check"></i><b>5.1</b> Fundamental elements</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="developing-content.html"><a href="developing-content.html#code-chunks"><i class="fa fa-check"></i><b>5.1.1</b> Code chunks</a></li>
-<li class="chapter" data-level="5.1.2" data-path="developing-content.html"><a href="developing-content.html#narrative-text"><i class="fa fa-check"></i><b>5.1.2</b> Narrative text</a></li>
-<li class="chapter" data-level="5.1.3" data-path="developing-content.html"><a href="developing-content.html#considering-cognitive-load"><i class="fa fa-check"></i><b>5.1.3</b> Considering cognitive load</a></li>
-</ul></li>
-<li class="chapter" data-level="5.2" data-path="developing-content.html"><a href="developing-content.html#supporting-elements"><i class="fa fa-check"></i><b>5.2</b> Supporting elements</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="developing-content.html"><a href="developing-content.html#learning-objectives"><i class="fa fa-check"></i><b>5.2.1</b> Learning objectives</a></li>
-<li class="chapter" data-level="5.2.2" data-path="developing-content.html"><a href="developing-content.html#key-points"><i class="fa fa-check"></i><b>5.2.2</b> Key points</a></li>
-<li class="chapter" data-level="5.2.3" data-path="developing-content.html"><a href="developing-content.html#framing-questions"><i class="fa fa-check"></i><b>5.2.3</b> Framing questions</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="community-development-roles.html"><a href="community-development-roles.html"><i class="fa fa-check"></i><b>6</b> Community development roles</a><ul>
-<li class="chapter" data-level="6.1" data-path="community-development-roles.html"><a href="community-development-roles.html#lesson-authors"><i class="fa fa-check"></i><b>6.1</b> Lesson Authors</a></li>
-<li class="chapter" data-level="6.2" data-path="community-development-roles.html"><a href="community-development-roles.html#reviewers"><i class="fa fa-check"></i><b>6.2</b> Reviewers</a></li>
-<li class="chapter" data-level="6.3" data-path="community-development-roles.html"><a href="community-development-roles.html#lesson-maintainers"><i class="fa fa-check"></i><b>6.3</b> Lesson Maintainers</a><ul>
-<li class="chapter" data-level="6.3.1" data-path="community-development-roles.html"><a href="community-development-roles.html#maintainer-recruitment-requirements-and-time-commitment"><i class="fa fa-check"></i><b>6.3.1</b> Maintainer recruitment, requirements and time commitment</a></li>
-</ul></li>
-<li class="chapter" data-level="6.4" data-path="community-development-roles.html"><a href="community-development-roles.html#curriculum-advisors"><i class="fa fa-check"></i><b>6.4</b> Curriculum Advisors</a></li>
-<li class="chapter" data-level="6.5" data-path="community-development-roles.html"><a href="community-development-roles.html#beta-pilot-instructors"><i class="fa fa-check"></i><b>6.5</b> Beta Pilot Instructors</a></li>
-<li class="chapter" data-level="6.6" data-path="community-development-roles.html"><a href="community-development-roles.html#instructors"><i class="fa fa-check"></i><b>6.6</b> Instructors</a></li>
-<li class="chapter" data-level="6.7" data-path="community-development-roles.html"><a href="community-development-roles.html#summary"><i class="fa fa-check"></i><b>6.7</b> Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html"><i class="fa fa-check"></i><b>7</b> The lesson life-cycle</a><ul>
-<li class="chapter" data-level="7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#scope-of-this-chapter"><i class="fa fa-check"></i><b>7.1</b> Scope of this chapter</a></li>
-<li class="chapter" data-level="7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#overview-and-definitions"><i class="fa fa-check"></i><b>7.2</b> Overview and definitions</a></li>
-<li class="chapter" data-level="7.3" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#where-to-start"><i class="fa fa-check"></i><b>7.3</b> Where to start</a><ul>
-<li class="chapter" data-level="7.3.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track"><i class="fa fa-check"></i><b>7.3.1</b> Official Track</a></li>
-<li class="chapter" data-level="7.3.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#community-track"><i class="fa fa-check"></i><b>7.3.2</b> Community Track</a></li>
-<li class="chapter" data-level="7.3.3" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#carpentries-lab-track"><i class="fa fa-check"></i><b>7.3.3</b> Carpentries Lab Track</a></li>
-</ul></li>
-<li class="chapter" data-level="7.4" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"><i class="fa fa-check"></i><b>7.4</b> Early development (pre-alpha through alpha)</a></li>
-<li class="chapter" data-level="7.5" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#field-testing-alpha-stage"><i class="fa fa-check"></i><b>7.5</b> Field testing: alpha stage</a></li>
-<li class="chapter" data-level="7.6" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#polishing-beta-stage"><i class="fa fa-check"></i><b>7.6</b> Polishing: beta stage</a></li>
-<li class="chapter" data-level="7.7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#stable-stage"><i class="fa fa-check"></i><b>7.7</b> Stable stage</a><ul>
-<li class="chapter" data-level="7.7.1" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#official-track-1"><i class="fa fa-check"></i><b>7.7.1</b> Official Track</a></li>
-<li class="chapter" data-level="7.7.2" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#communitycarpentries-lab-track"><i class="fa fa-check"></i><b>7.7.2</b> Community/Carpentries Lab track</a></li>
-</ul></li>
-<li class="chapter" data-level="7.8" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases"><i class="fa fa-check"></i><b>7.8</b> The stable lesson: Maintenance and lesson releases</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a><ul>
-<li class="chapter" data-level="8.1" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-hosting-and-rendering"><i class="fa fa-check"></i><b>8.1</b> Lesson hosting and rendering</a></li>
-<li class="chapter" data-level="8.2" data-path="technological-introductions.html"><a href="technological-introductions.html#using-the-lesson-template"><i class="fa fa-check"></i><b>8.2</b> Using the lesson template</a><ul>
-<li class="chapter" data-level="8.2.1" data-path="technological-introductions.html"><a href="technological-introductions.html#creating-your-lesson-repository"><i class="fa fa-check"></i><b>8.2.1</b> Creating your lesson repository</a></li>
-<li class="chapter" data-level="8.2.2" data-path="technological-introductions.html"><a href="technological-introductions.html#lesson-homepage"><i class="fa fa-check"></i><b>8.2.2</b> Lesson homepage</a></li>
-<li class="chapter" data-level="8.2.3" data-path="technological-introductions.html"><a href="technological-introductions.html#episode-files"><i class="fa fa-check"></i><b>8.2.3</b> Episode files</a></li>
-<li class="chapter" data-level="8.2.4" data-path="technological-introductions.html"><a href="technological-introductions.html#extras"><i class="fa fa-check"></i><b>8.2.4</b> Extras</a></li>
-<li class="chapter" data-level="8.2.5" data-path="technological-introductions.html"><a href="technological-introductions.html#other-information"><i class="fa fa-check"></i><b>8.2.5</b> Other information</a></li>
-<li class="chapter" data-level="8.2.6" data-path="technological-introductions.html"><a href="technological-introductions.html#special-notes-on-rmarkdown"><i class="fa fa-check"></i><b>8.2.6</b> Special notes on RMarkdown</a></li>
-</ul></li>
-<li class="chapter" data-level="8.3" data-path="technological-introductions.html"><a href="technological-introductions.html#working-on-github"><i class="fa fa-check"></i><b>8.3</b> Working on GitHub</a></li>
-</ul></li>
+<li class="chapter" data-level="1" data-path="guiding-principles.html"><a href="guiding-principles.html"><i class="fa fa-check"></i><b>1</b> Guiding principles</a></li>
+<li class="chapter" data-level="2" data-path="our-curriculum-structure.html"><a href="our-curriculum-structure.html"><i class="fa fa-check"></i><b>2</b> Our curriculum structure</a></li>
+<li class="chapter" data-level="3" data-path="deciding-what-to-teach.html"><a href="deciding-what-to-teach.html"><i class="fa fa-check"></i><b>3</b> Deciding what to teach</a></li>
+<li class="chapter" data-level="4" data-path="designing-challenges.html"><a href="designing-challenges.html"><i class="fa fa-check"></i><b>4</b> Designing challenges</a></li>
+<li class="chapter" data-level="5" data-path="developing-content.html"><a href="developing-content.html"><i class="fa fa-check"></i><b>5</b> Developing content</a></li>
+<li class="chapter" data-level="6" data-path="community-development-roles.html"><a href="community-development-roles.html"><i class="fa fa-check"></i><b>6</b> Community development roles</a></li>
+<li class="chapter" data-level="7" data-path="the-lesson-life-cycle.html"><a href="the-lesson-life-cycle.html"><i class="fa fa-check"></i><b>7</b> The lesson life-cycle</a></li>
+<li class="chapter" data-level="8" data-path="technological-introductions.html"><a href="technological-introductions.html"><i class="fa fa-check"></i><b>8</b> Technological introductions</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html"><i class="fa fa-check"></i><b>A</b> The Carpentries Incubator</a><ul>
-<li class="chapter" data-level="A.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#lesson-proposals"><i class="fa fa-check"></i><b>A.1</b> Lesson Proposals</a></li>
-<li class="chapter" data-level="A.2" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#topic-tags"><i class="fa fa-check"></i><b>A.2</b> Topic Tags</a></li>
-<li class="chapter" data-level="A.3" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-github-issue-labels"><i class="fa fa-check"></i><b>A.3</b> Using GitHub Issue Labels</a><ul>
-<li class="chapter" data-level="A.3.1" data-path="the-carpentries-incubator.html"><a href="the-carpentries-incubator.html#using-labels-to-encourage-contributions"><i class="fa fa-check"></i><b>A.3.1</b> Using Labels to Encourage Contributions</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="B" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>B</b> Bibliography</a></li>
-<li class="chapter" data-level="C" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html"><i class="fa fa-check"></i><b>C</b> Adapting Existing Lessons for The Carpentries</a><ul>
-<li class="chapter" data-level="C.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#lesson-template"><i class="fa fa-check"></i><b>C.1</b> Lesson Template</a></li>
-<li class="chapter" data-level="C.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-jupyter"><i class="fa fa-check"></i><b>C.2</b> Conversion from Jupyter</a></li>
-<li class="chapter" data-level="C.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-rmarkdown"><i class="fa fa-check"></i><b>C.3</b> Conversion from RMarkdown</a></li>
-<li class="chapter" data-level="C.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#conversion-from-other-formats"><i class="fa fa-check"></i><b>C.4</b> Conversion from other formats</a></li>
-<li class="chapter" data-level="C.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#markdown"><i class="fa fa-check"></i><b>C.5</b> Markdown</a><ul>
-<li class="chapter" data-level="C.5.1" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#set-up-a-lesson-repository"><i class="fa fa-check"></i><b>C.5.1</b> Set up a lesson repository</a></li>
-<li class="chapter" data-level="C.5.2" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-yaml-front-matter"><i class="fa fa-check"></i><b>C.5.2</b> Add YAML Front Matter</a></li>
-<li class="chapter" data-level="C.5.3" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-alt-text-to-images"><i class="fa fa-check"></i><b>C.5.3</b> Add <em>alt</em> Text to Images</a></li>
-<li class="chapter" data-level="C.5.4" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#add-to-_episodes"><i class="fa fa-check"></i><b>C.5.4</b> Add to <code>_episodes</code></a></li>
-<li class="chapter" data-level="C.5.5" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#organise-supporting-files"><i class="fa fa-check"></i><b>C.5.5</b> Organise supporting files</a></li>
-<li class="chapter" data-level="C.5.6" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#implement-formatted-blocks"><i class="fa fa-check"></i><b>C.5.6</b> Implement formatted blocks</a></li>
-<li class="chapter" data-level="C.5.7" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#recommended-centralise-link-references"><i class="fa fa-check"></i><b>C.5.7</b> (Recommended) Centralise Link References</a></li>
-<li class="chapter" data-level="C.5.8" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html#complete-lesson-repository-setup"><i class="fa fa-check"></i><b>C.5.8</b> Complete Lesson Repository Setup</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="D" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html"><i class="fa fa-check"></i><b>D</b> Lesson Sprint Recommendations</a><ul>
-<li class="chapter" data-level="D.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#introduction"><i class="fa fa-check"></i><b>D.1</b> Introduction</a><ul>
-<li class="chapter" data-level="D.1.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#target-audience-1"><i class="fa fa-check"></i><b>D.1.1</b> Target Audience</a></li>
-<li class="chapter" data-level="D.1.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#objectives"><i class="fa fa-check"></i><b>D.1.2</b> Objectives</a></li>
-</ul></li>
-<li class="chapter" data-level="D.2" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint"><i class="fa fa-check"></i><b>D.2</b> Before the Sprint</a><ul>
-<li class="chapter" data-level="D.2.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#before-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.2.1</b> Before The Sprint: Recommendations for GitHub</a></li>
-</ul></li>
-<li class="chapter" data-level="D.3" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint"><i class="fa fa-check"></i><b>D.3</b> During the Sprint</a><ul>
-<li class="chapter" data-level="D.3.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#during-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.3.1</b> During the Sprint: Recommendations for GitHub</a></li>
-</ul></li>
-<li class="chapter" data-level="D.4" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint"><i class="fa fa-check"></i><b>D.4</b> After the Sprint</a><ul>
-<li class="chapter" data-level="D.4.1" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#after-the-sprint-recommendations-for-github"><i class="fa fa-check"></i><b>D.4.1</b> After the Sprint: Recommendations for GitHub</a></li>
-</ul></li>
-<li class="chapter" data-level="D.5" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#tools-and-resources"><i class="fa fa-check"></i><b>D.5</b> Tools and Resources</a></li>
-<li class="chapter" data-level="D.6" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#acknowledgments"><i class="fa fa-check"></i><b>D.6</b> Acknowledgments</a></li>
-<li class="chapter" data-level="D.7" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html#further-reading"><i class="fa fa-check"></i><b>D.7</b> Further Reading</a></li>
-</ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/carpentries/curriculum-development/blob/master/CITATION" target="blank">Cite this handbook</a></li>
-<li><a href="https://github.com/carpentries/curriculum-development/blob/master/LICENSE.md" target="blank">Licensed under CC-BY 4.0</a></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-
+<li class="chapter" data-level="A" data-path="adapting-existing-lessons-for-the-carpentries.html"><a href="adapting-existing-lessons-for-the-carpentries.html"><i class="fa fa-check"></i><b>A</b> Adapting Existing Lessons for The Carpentries</a></li>
+<li class="chapter" data-level="B" data-path="lesson-sprint-recommendations.html"><a href="lesson-sprint-recommendations.html"><i class="fa fa-check"></i><b>B</b> Lesson Sprint Recommendations</a></li>
 </ul>
 
       </nav>
@@ -312,297 +120,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div style="color: #383838; background-color: #FDEAF2; padding: 5px">
-<p>
-<strong>The Carpentries is preparing to retire this handbook at the end of 2023.</strong> Existing content that has not already been replicated elsewhere will be relocated. <a href="https://github.com/carpentries/curriculum-development/issues/81">See the relevant issue on the source repository for more details.</a>
-</p>
-</div>
 <div id="the-lesson-life-cycle" class="section level1 hasAnchor">
-<h1><span class="header-section-number">Chapter 7</span> The lesson life-cycle<a href="the-lesson-life-cycle.html#the-lesson-life-cycle" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="scope-of-this-chapter" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.1</span> Scope of this chapter<a href="the-lesson-life-cycle.html#scope-of-this-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This chapter focuses on lessons that are being developed
-with the intention of becoming officially supported
-Carpentries lessons within an existing Lesson Program.
-Lessons being developed for unofficial community use
-may go through some or all of the stages discussed here,
-at the discretion of the lesson’s authors. Materials
-intended to become part of a <strong>new</strong> Lesson Program
-must meet additional requirements as described in
-the <a href="https://docs.carpentries.org/topic_folders/governance/lesson-program-policy.html">Lesson Programs</a> section of
-The Carpentries Handbook.</p>
-</div>
-<div id="overview-and-definitions" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.2</span> Overview and definitions<a href="the-lesson-life-cycle.html#overview-and-definitions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Before being adopted as an official Carpentries lesson,
-new lessons go through a series of stages designed to
-ensure they are sufficiently documented to be teachable
-by instructors outside of the initial author group.</p>
-<p>In brief: the <strong>pre-alpha</strong> and <strong>alpha</strong> stages focus on
-developing the lesson content, while the <strong>beta</strong> stage
-focuses on documenting the lesson, so that it can be
-taught by anyone with the appropriate subject knowledge.</p>
-<div class="figure"><span style="display:block;" id="fig:release-timeline"></span>
-<img src="figures/release_timeline.svg" alt="Four stages of lesson release timeline. Pre-alpha stage includes approval of lesson proposal, review of lesson by Editor, and teaching for the first time. Alpha stage inclues incorporating feedback, announcement to the community, community review, and beta release. Beta stage includes other people start contributing and lesson polishing (Bug BBQ). After official release, lesson advances to stable stage."  />
-<p class="caption">
-Figure 7.1: Four stages of lesson release timeline. Pre-alpha stage includes approval of lesson proposal, review of lesson by Editor, and teaching for the first time. Alpha stage inclues incorporating feedback, announcement to the community, community review, and beta release. Beta stage includes other people start contributing and lesson polishing (Bug BBQ). After official release, lesson advances to stable stage.
-</p>
-</div>
-<p>Lessons start in the <strong>pre-alpha</strong> stage - this stage
-encompasses everything from the initial lesson idea
-through the first time the lesson is taught. This
-first draft is usually written by an individual
-or a small group of people. From this first draft, the
-original authors organize an <strong>alpha pilot</strong> workshop at
-their home organisation, and collect and incorporate
-feedback from learners and co-instructors. They go
-through this iterative process a few times to bring the
-lesson to where it is ready to be taught by other
-members of The Carpentries community.</p>
-<p>When it is ready for broader teaching and contributions,
-the lesson is published for
-the first time on Zenodo and is now in the <strong>beta</strong>
-stage. The Carpentries staff will assist the lesson
-authors in organising <strong>beta pilots</strong>.
-<strong>Beta pilots</strong>
-should be hosted at a different organisation, and
-ideally in a different country than the alpha pilots.
-There are generally two or three beta pilots over a
-period of six months.</p>
-<p>After beta pilots, the lesson authors and Maintainers
-incorporate feedback and produce a polished version of
-the lesson. It is now mature enough and
-documented enough so that anyone interested can teach it. The lesson is published on <a href="https://zenodo.org/communities/carpentries/?page=1&amp;size=20">Zenodo</a> and listed on the
-Lessons page for the appropriate
-Lesson Program. It is added to The Carpentries
-<a href="http://carpentries.org/request-workshop">workshop request form</a>, and becomes an officially
-supported lesson. The lesson is now considered <strong>stable</strong> and will remain in this stage for as long
-as it has active support from its Maintainer team.</p>
-<p>If you require access to cloud compute resources to provide
-environments for instructors and/or learners to use in pilot workshops,
-for example if the lesson content involves specialised compute infrastructure
-or a very large data set,
-The Carpentries may be able to provide some support.
-Contact <a href="mailto:team@carpentries.org" class="email">team@carpentries.org</a> to discuss the options in such cases.</p>
-<p>Lessons with grant support may be eligible for
-support from The Carpentries staff in some or all of
-these stages. If you are pursuing grant funding for
-lesson development, please get in touch with us at
-<a href="mailto:team@carpentries.org" class="email">team@carpentries.org</a> to discuss opportunities for staff
-support.</p>
-</div>
-<div id="where-to-start" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.3</span> Where to start<a href="the-lesson-life-cycle.html#where-to-start" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Before you start developing a new lesson, check
-to see if there are already people working on creating
-a lesson for this topic.
-The <a href="https://github.com/carpentries-incubator/">Carpentries Incubator</a> is where our community
-develops new curricula together.
-New lessons are suggested for development and added to the Incubator via the <a href="https://github.com/carpentries-incubator/proposals/">Proposals</a> repository,
-so this is the best place to discuss lesson ideas and find collaborators.
-You can check existing <a href="https://github.com/carpentries-incubator/proposals/issues">issues</a> on that repository
-or start a new issue if you don’t see any discussions
-on your lesson topic. The <a href="https://github.com/carpentries-incubator/proposals/blob/master/ISSUE_TEMPLATE.md">issue template</a> has
-a short set of questions for you to answer. Your answers
-to these questions will help us to determine an
-appropriate next step for your lesson materials or
-idea. It’s a good idea to also post to our
-<a href="https://carpentries.topicbox.com/groups/discuss">discussion forum</a> and general <a href="https://slack-invite.carpentries.org/">Slack channel</a> to point interested people to your
-Incubator issue.</p>
-<p>Once you’ve submitted an issue to The Incubator,
-you will be directed towards one of the following
-tracks:</p>
-<ol style="list-style-type: decimal">
-<li>the Official Track</li>
-<li>the Community Track</li>
-<li>the Carpentries Lab Track</li>
-</ol>
-<div class="figure">
-<img src="figures/lesson-development-tracks.png" alt="" />
-<p class="caption">Flowchart of three lesson development tracks. All lessons start with opening issue in carpentries-incubator repository.</p>
-</div>
-<div id="official-track" class="section level3 hasAnchor">
-<h3><span class="header-section-number">7.3.1</span> Official Track<a href="the-lesson-life-cycle.html#official-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If The Carpentries have committed to develop a lesson
-on this topic (usually through grant funding), our
-Curriculum Team will work closely with you from
-pre-alpha through stable release, providing support on
-each step of the process. Your lesson will be
-developed in one of the official Lesson Program GitHub
-organisations and released as an official lesson.</p>
-</div>
-<div id="community-track" class="section level3 hasAnchor">
-<h3><span class="header-section-number">7.3.2</span> Community Track<a href="the-lesson-life-cycle.html#community-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If The Carpentries has not committed to develop a
-lesson on this topic, but the lesson is potentially of
-general interest to our community, the lesson authors
-will complete the development process independently.
-You will develop
-your lesson in the Carpentries Incubator and it will be
-made available through the <a href="https://carpentries.org/community-lessons/">Community Developed Lessons page</a>.
-If the lesson attracts a strong community
-of contributors, it will be considered for adoption
-as an official Carpentries lesson.</p>
-</div>
-<div id="carpentries-lab-track" class="section level3 hasAnchor">
-<h3><span class="header-section-number">7.3.3</span> Carpentries Lab Track<a href="the-lesson-life-cycle.html#carpentries-lab-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This track is available for lessons on the Community
-Track that do not attract a strong contributor
-community. Lesson authors will be able to submit their
-materials for peer-review. After the peer-review
-process, the lessons will be hosted in The Carpentries
-Lab and will be officially endorsed by The Carpentries
-as high-quality resources.</p>
-</div>
-</div>
-<div id="early-development-pre-alpha-through-alpha" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.4</span> Early development (pre-alpha through alpha)<a href="the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We will create a repository for you in the appropriate
-GitHub organization, using The Carpentries
-<a href="https://github.com/carpentries/styles">lesson template</a>. You will use the
-guidelines in the first five chapters of this handbook
-to develop your content. The Curriculum Team will
-be available to answer questions about the template
-and provide pedagogical guidance. For lessons on the
-Official Track, authors will meet regularly with
-a member of the Curriculum Team to work through the
-lesson drafting process.</p>
-<p>Lessons on the Community Track will be developed in the Carpentries Incubator.
-<a href="the-carpentries-incubator.html">This Appendix</a> aims to provide
-information and further guidance for Incubator lesson developers.</p>
-</div>
-<div id="field-testing-alpha-stage" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.5</span> Field testing: alpha stage<a href="the-lesson-life-cycle.html#field-testing-alpha-stage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Once your lesson is ready to be taught for the first
-time, it will enter the <strong>alpha stage</strong>. Field-testing a
-lesson is a good opportunity to receive and incorporate
-feedback from learners, instructors, and workshop
-helpers who can compare their expectations to
-reality. The initial feedback gathered during these first
-workshops is really important.</p>
-<p>During alpha pilot workshops, instructors and helpers should take detailed notes, including:</p>
-<ul>
-<li>amount of time used to teach each section</li>
-<li>amount of time used for each exercise</li>
-<li>technical issues that arose during installation</li>
-<li>bugs or parts of the lesson code that didn’t work as expected</li>
-<li>incorrect or missing exercise solutions</li>
-<li>questions learners asked (and their answers)</li>
-<li>parts of the lesson that were confusing for learners</li>
-</ul>
-<p>These notes can be collected in an Etherpad, Google Doc, or other collaborative document that is shared
-with co-instructors and workshop helpers. This document should not be shared with workshop learners,
-as it would add significantly to their cognitive load.</p>
-<p>After the workshop, instructors should share the notes document with the lesson authors - who
-will convert the notes into individual issues in the lesson repo. For two-day workshops, lesson authors should expect
-to spend at least four hours to create follow-up issues, and at least
-eight hours to putting in PRs to fix these issues. For two pilot workshops, this translates
-to ~24 hours of work, which can be distributed among the lesson authors.</p>
-<p>After incorporating workshop feedback, the lesson is
-now ready to be published. For lessons on the Official
-Track, our Curriculum Team will create a publication
-record on <a href="https://zenodo.org/communities/carpentries/?page=1&amp;size=20">Zenodo</a>. Lesson authors on the Community or CarpentriesLab tracks
-may also choose to publish their lesson on Zenodo. At this stage, the lesson is in <strong>beta</strong>.</p>
-<p><a href="https://docs.carpentries.org/">The Carpentries Community Handbook</a> contains
-<a href="https://docs.carpentries.org/topic_folders/lesson_development/lesson_pilots.html">guidance and templates to help you organise and run pilot workshops</a>.</p>
-</div>
-<div id="polishing-beta-stage" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.6</span> Polishing: beta stage<a href="the-lesson-life-cycle.html#polishing-beta-stage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Now that the lesson has been published, it is ready
-for teaching by instructors outside of the original
-authorship team, and for contributions from the broader
-Carpentries community. For lessons on the Official Track,
-Carpentries staff will assist lesson authors in recruiting instructors
-to teach beta pilots. Authors for non-Official Track lessons
-can recruit beta pilot hosts and instructors through our
-<a href="https://carpentries.topicbox.com/groups/discuss">discussion list</a>, <a href="https://slack-invite.carpentries.org/">Slack organization</a>,
-on Twitter, and through domain-specific mailing lists
-or other community groups they are part of.
-For more information about the role played by
-and qualifications needed to be a beta pilot instructors, see
-our chapter on <a href="https://cdh.carpentries.org/community-development-roles.html#beta-pilot-instructors">community development roles</a>.</p>
-<p>The <strong>beta stage</strong> lasts approximately 6 months. During this time, members of
-The Carpentries community can teach it and contribute to the content of the lesson.
-The main goal of this phase of the lesson development is to develop the documentation
-needed to ensure that people who have not contributed to the initial development
-efforts of the lesson have enough information to teach it effectively.</p>
-<p>Beta pilot instructors and helpers should take notes similar
-to those described above for alpha pilots, but should (hopefully!)
-notice fewer bugs and other issues. As with alpha pilots,
-beta pilot instructors will provide the lesson authors with
-the notes they’ve collected during the workshop and the authors
-will convert those notes to issues and PRs to resolve concerns
-raised during the workshop. Maintainers and other community members
-will be involved with this clean-up phase as well.</p>
-</div>
-<div id="stable-stage" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.7</span> Stable stage<a href="the-lesson-life-cycle.html#stable-stage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>After the polishing process, the lesson is ready to be marked as stable.</p>
-<div id="official-track-1" class="section level3 hasAnchor">
-<h3><span class="header-section-number">7.7.1</span> Official Track<a href="the-lesson-life-cycle.html#official-track-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Lessons that have completed beta testing go through a final check by a member of the
-Curriculum Team, before being published again on Zenodo,
-this time in its <strong>stable state</strong>.</p>
-<p>Official Track lessons will be added to
-the appropriate Lesson Program lessons page (e.g. <a href="https://datacarpentry.org/lessons/">Data Carpentry’s lessons page</a>)
-and to our <a href="http://carpentries.org/request-workshop">workshop request form</a>. Anyone may now request a centrally-organized
-Carpentries workshop using this curriculum.
-Stable official lessons are also eligible for trainee Instructors to teach from in
-<a href="https://carpentries.github.io/instructor-training/checkout/index.html#3-teaching-demonstration">a teaching demonstration</a> for their Instructor Training checkout.</p>
-<p>The Curriculum Team will recommend suitable starting points for teaching demonstrations using the lesson,
-and will submit these to the Instructor Training Leadership for and review and addition to the
-list of approved lessons for demonstrations.</p>
-</div>
-<div id="communitycarpentries-lab-track" class="section level3 hasAnchor">
-<h3><span class="header-section-number">7.7.2</span> Community/Carpentries Lab track<a href="the-lesson-life-cycle.html#communitycarpentries-lab-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>For lessons on the CarpentriesLab track, authors will submit their stable stage lessons for review.
-The CarpentriesLab Editor will select 2-3 reviewers within The Carpentries community with teaching experience
-and/or appropriate domain expertise, who will provide an open and friendly review of the lesson.
-After incorporating feedback and comments from the reviewers, your lesson will be badged
-“Reviewed by the Carpentries Community” and will be listed on our websites as such. During this process,
-you will have the possibility to include a short paper describing your
-lesson in the GitHub repository and have your lesson considered for publication in
-<a href="http://jose.theoj.org/">JOSE</a>, the Journal of Open Science Education.
-<strong>This review process is in development and we are not yet accepting submissions. Please watch for
-announcements as we roll out this program.</strong></p>
-</div>
-</div>
-<div id="the-stable-lesson-maintenance-and-lesson-releases" class="section level2 hasAnchor">
-<h2><span class="header-section-number">7.8</span> The stable lesson: Maintenance and lesson releases<a href="the-lesson-life-cycle.html#the-stable-lesson-maintenance-and-lesson-releases" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Congratulations! Your lesson has now been published and is being actively taught by the community.
-That means you’re done, right? Not exactly. In order to ensure that your wonderful lesson materials
-continue to be relevant and useful, you’ll need to build and train a team of lesson Maintainers, who
-are responsible for day-to-day upkeep and periodic publication of the lesson.</p>
-<p>In a <a href="community-development-roles#lesson-maintainers">previous chapter</a>, we discussed the process for recruiting and training Maintainers. Here, we
-will focus on the responsibilities of Maintainers, their day-to-day workflow, and their involvement
-in the lesson release process.</p>
-<p>As your lesson is taught, workshop instructors and helpers will post issues and pull requests to
-the lesson’s GitHub repository. These will range from typo corrections, to installation problems,
-to recommendations for changing the libraries or function calls demonstrated in the lesson, and will
-therefore require different levels of consideration and technical expertise to implement. A typo
-correction will probably be taken care of independently by a single Maintainer,
-while a proposal to change
-the plotting system used in the lesson from matplotlib to seaborn will require significant
-discussion. Each lesson Maintainer team will develop their own strategies for managing their work,
-but we recommend the following as a starting point.</p>
-<ul>
-<li>Maintainers for a lesson should set a regular meeting to discuss any unresolved issues that have arisen and to decide on the division of responsibilities until
-their next meeting.</li>
-<li>One Maintainer commits to monitor the repo daily and respond to new issues and PRs to acknowledge them,
-thank the contributor, and apply appropriate <a href="https://docs.carpentries.org/topic_folders/maintainers/github_labels.html">issue tags</a>.</li>
-<li>Once a week, one Maintainer looks at the list of active issues and PRs and assigns each to one team member, based on the time commitment and availability discussed at that month’s meeting.</li>
-<li>Individual team members work on resolving issues and PRs, as assigned, asking
-their co-Maintainers for review when needed.</li>
-</ul>
-<p><strong>The Maintainer community is working on developing a set of guidelines and template
-language for responding to common situations. These guidelines will be added
-to this section when they become available.</strong></p>
-<p>The above description focuses on Maintainers’ ongoing duties. Maintainers are
-also involved with lesson releases, which take place roughly every six months.
-Information about lesson releases will be added to a future version of this
-handbook.</p>
+<h1><span class="header-section-number">7</span> The lesson life-cycle<a href="the-lesson-life-cycle.html#the-lesson-life-cycle" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This handbook is deprecated.
+The content of this page has moved to <a href="https://docs.carpentries.org/resources/curriculum/lesson-life-cycle">The Carpentries Community Handbook</a>.</p>
 
-</div>
 </div>
             </section>
 
@@ -641,18 +163,18 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/carpentries/curriculum-development/edit/master/07-lesson-life-cycle.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,
 "text": null
 },
 "view": {
-"link": "https://github.com/carpentries/curriculum-development/blob/master/07-lesson-life-cycle.Rmd",
+"link": null,
 "text": null
 },
-"download": ["curriculum-development-handbook.pdf", "curriculum-development-handbook.epub"],
+"download": null,
 "search": {
 "engine": "fuse",
 "options": null
