@@ -7,5 +7,6 @@ developing-content
 community-development-roles
 the-lesson-life-cycle
 technological-introductions
+the-carpentries-incubator
 adapting-existing-lessons-for-the-carpentries
 lesson-sprint-recommendations
