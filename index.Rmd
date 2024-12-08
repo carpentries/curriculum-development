@@ -12,11 +12,8 @@ bibliography: ["book.bib"]
 biblio-style: apalike
 link-citations: yes
 github-repo: carpentries/curriculum-development
-description: "This is a work in progress of the curriculum development handbook for The Carpentries."
+description: "The curriculum development handbook for The Carpentries (DEPRECATED)."
 ---
 
-```{r setup, echo=FALSE}
-source("utils/utils.R")
-```
 
 This handbook is deprecated.
