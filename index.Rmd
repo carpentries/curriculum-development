@@ -15,5 +15,10 @@ github-repo: carpentries/curriculum-development
 description: "The curriculum development handbook for The Carpentries (DEPRECATED)."
 ---
 
-
+# Preface
 This handbook is deprecated.
+Relevant content can now be found across the following resources:
+
+* [Collaborative Lesson Development Training](https://carpentries.github.io/lesson-development-training/)
+* [The Carpentries Community Handbook](https://docs.carpentries.org/)
+* [The Carpentries Workbench Documentation](https://carpentries.github.io/sandpaper-docs/)
