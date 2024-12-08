@@ -19,11 +19,4 @@ description: "This is a work in progress of the curriculum development handbook 
 source("utils/utils.R")
 ```
 
-# Preface {-}
-
-This is work in progress. Comments and suggestions are welcome either as:
-
-- an issue or a pull request on the GitHub [repository](https://github.com/carpentries/curriculum-development)
-- or using [hypothes.is](https://web.hypothes.is/start/)
-
-<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" alt="Deploys by Netlify" /> </a>
+This handbook is deprecated.
