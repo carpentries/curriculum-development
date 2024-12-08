@@ -1,3 +1,4 @@
+preface
 guiding-principles
 our-curriculum-structure
 deciding-what-to-teach
