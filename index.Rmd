@@ -1,6 +1,6 @@
 --- 
 title: "The Carpentries Curriculum Development Handbook"
-author: "Erin Becker and François Michonneau"
+author: "Erin Becker, François Michonneau, Toby Hodges, and contributors"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output:
