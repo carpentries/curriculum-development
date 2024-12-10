@@ -2,4 +2,4 @@
 
 # The Carpentries Incubator
 This handbook is deprecated.
-The content of this page has been replaced by [The Carpentries Lesson Developer Handbook](https://docs.carpentries.org/handbooks/lesson_developers).
+The content of this page has been replaced by [The Carpentries Lesson Developer Handbook](https://docs.carpentries.org/handbooks/lesson_developers.html).

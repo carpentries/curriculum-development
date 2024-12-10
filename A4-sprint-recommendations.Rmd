@@ -1,3 +1,3 @@
 # Lesson Sprint Recommendations
 This handbook is deprecated.
-The content of this page has moved to [The Carpentries Community Handbook](https://docs.carpentries.org/resources/curriculum/lesson-sprint-recommendations).
+The content of this page has moved to [The Carpentries Community Handbook](https://docs.carpentries.org/resources/curriculum/lesson-sprint-recommendations.html).

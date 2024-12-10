@@ -1,3 +1,3 @@
 # The lesson life-cycle
 This handbook is deprecated.
-The content of this page has moved to [The Carpentries Community Handbook](https://docs.carpentries.org/resources/curriculum/lesson-life-cycle).
+The content of this page has moved to [The Carpentries Community Handbook](https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html).
